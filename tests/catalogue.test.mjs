@@ -108,14 +108,19 @@ test('generates and validates a reproducible registry from pinned source', (t) =
   succeeded(command(cwd, 'validate', '--base', 'baseline'))
 })
 
-test('uses the Compose import namespace and records evidenced package versions', (t) => {
+test('requires a top-level Compose component and records its import namespace and package version', (t) => {
   const cwd = fixture(t)
   const manifest = readJson(cwd, manifestPath)
   const namespace = 'androidx.compose.material'
   const declaration = 'src/Button.kt'
   const metadata = 'libraryversions.toml'
   const inputs = {
-    [declaration]: 'package androidx.compose.material\n\n@Composable\npublic fun Button() {}\n',
+    [declaration]: `package androidx.compose.material
+private object Hidden {
+  @Composable
+  public fun Button() {}
+}
+`,
     [metadata]: 'COMPOSE = "1.14.0-alpha01"\n',
   }
   for (const [path, value] of Object.entries(inputs)) {
@@ -146,9 +151,21 @@ test('uses the Compose import namespace and records evidenced package versions',
   }
   writeJson(cwd, manifestPath, manifest)
 
+  rejected(command(cwd, 'generate', '--source', 'sample-ui', '--revision', '1'), /Missing public component declaration Button/)
+  snapshot(cwd, declaration, `package androidx.compose.material
+/* /* nested comment */ { */
+private const val json = """{ "key": "value"
+@Composable
+public fun Button() {}
+"""
+@Composable
+public fun Button() {}
+`)
   succeeded(command(cwd, 'generate', '--source', 'sample-ui', '--revision', '1'))
   const root = 'systems/sample-ui/revisions/1'
-  assert.equal(readJson(cwd, `${root}/.wax/registries/compose.json`).components[0].package, namespace)
+  const [button] = readJson(cwd, `${root}/.wax/registries/compose.json`).components
+  assert.equal(button.package, namespace)
+  assert.equal(button.details.source_evidence.start_line, 8)
   assert.equal(readJson(cwd, `${root}/provenance.json`).source.packages[0].version, '1.14.0-alpha01')
   succeeded(command(cwd, 'validate', '--base', 'baseline'))
 })
@@ -317,11 +334,15 @@ test('requires changed inputs and a consecutive revision number', (t) => {
   succeeded(command(cwd, 'validate', '--base', 'published'))
 })
 
-test('groups Swift and React under one revision and requires the Swift module product', (t) => {
+test('groups Swift and React under one revision and requires a top-level Swift module export', (t) => {
   const cwd = fixture(t)
   const swiftPath = 'packages/apple/Sources/SampleUI/Button/Button.swift'
   const packagePath = 'packages/apple/Package.swift'
-  snapshot(cwd, swiftPath, 'import SwiftUI\n\npublic struct Button: View {}\n')
+  snapshot(cwd, swiftPath, `import SwiftUI
+internal enum Hidden {
+  public struct Button: View {}
+}
+`)
   snapshot(cwd, packagePath, '.library(name: "SampleUI", targets: ["SampleUI"]),\n')
   const manifest = readJson(cwd, manifestPath)
   manifest.packages.push({ coordinate: 'SampleUI', channel: 'experimental', supported_line: 'Pinned source' })
@@ -337,11 +358,22 @@ test('groups Swift and React under one revision and requires the Swift module pr
   rejected(command(cwd, 'generate', '--source', 'sample-ui', '--revision', '1'), /Swift module product evidence/)
   manifest.registries.swift[0].checks = [{ kind: 'swift-product', path: packagePath, symbol: 'SampleUI' }]
   writeJson(cwd, manifestPath, manifest)
+  rejected(command(cwd, 'generate', '--source', 'sample-ui', '--revision', '1'), /Missing public component declaration Button/)
+  snapshot(cwd, swiftPath, `import SwiftUI
+/* /* nested comment */ { */
+private let json = #"""
+{ "key": "value"
+public struct Button: View {}
+"""#
+public struct Button: View {}
+`)
   succeeded(command(cwd, 'generate', '--source', 'sample-ui', '--revision', '1'))
   succeeded(command(cwd, 'validate', '--base', 'baseline'))
   const index = readJson(cwd, 'catalog/index.json')
   assert.equal(index.entries.length, 1)
   assert.deepEqual(Object.keys(index.entries[0].registries), ['react', 'swift'])
+  const [button] = readJson(cwd, 'systems/sample-ui/revisions/1/.wax/registries/swift.json').components
+  assert.equal(button.details.source_evidence.start_line, 7)
 })
 
 test('replays a published revision after a reviewed schema upgrade', (t) => {
@@ -401,6 +433,26 @@ test('uses the package’s public entrypoint even when a component check is omit
   snapshot(cwd, 'src/index.ts', "export { Button } from './button.js'\n")
   succeeded(command(cwd, 'generate', '--source', 'sample-ui', '--revision', '1'))
   succeeded(command(cwd, 'validate', '--base', 'baseline'))
+})
+
+test('rejects React packages whose export map does not expose the package root', (t) => {
+  const cwd = fixture(t)
+  for (const exports of [
+    {},
+    { './button': './src/button.tsx' },
+    { '.': {} },
+    { '.': null },
+    { '.': { types: './dist/index.d.ts' } },
+    [],
+  ]) {
+    snapshot(cwd, 'package.json', JSON.stringify({
+      name: '@sample/ui',
+      version: '1.0.0',
+      source: './src/button.tsx',
+      exports,
+    }))
+    rejected(command(cwd, 'generate', '--source', 'sample-ui', '--revision', '1'), /Package root export is missing/)
+  }
 })
 
 test('requires an explicit source entrypoint for a dist-only package', (t) => {

@@ -90,12 +90,20 @@ function typeScriptTarget(value) {
   return undefined
 }
 
+function hasPackageRootTarget(value) {
+  if (typeof value === 'string') return value.startsWith('./') && !/\.d\.[cm]?ts$/.test(value)
+  if (Array.isArray(value)) return value.some(hasPackageRootTarget)
+  return value && typeof value === 'object' && Object.entries(value).some(([condition, target]) => (
+    condition !== 'types' && hasPackageRootTarget(target)
+  ))
+}
+
 function publicEntrypoint(pkg, document, evidence) {
   const packageDir = dirname(pkg.manifest)
   const exports = document.exports
   const includesSubpaths = exports && typeof exports === 'object' && Object.keys(exports).some((key) => key.startsWith('.'))
   const rootExport = includesSubpaths ? exports['.'] : exports
-  requireThat(!includesSubpaths || rootExport, `Package root export is missing from ${pkg.manifest}`)
+  requireThat(exports == null || hasPackageRootTarget(rootExport), `Package root export is missing from ${pkg.manifest}`)
   const target = [rootExport, document.source, document.module, document.main].map(typeScriptTarget).find(Boolean)
   if (target) {
     requireThat(!isAbsolute(target), `Package entrypoint must be relative in ${pkg.manifest}`)
@@ -216,31 +224,79 @@ function typescriptEvidence(manifest, evidence) {
   }
 }
 
-// Preserve line numbers while removing comments from native declaration evidence.
-function withoutComments(text) {
-  return text.replace(/"(?:\\.|[^"\\])*"|'(?:\\.|[^'\\])*'|\/\/[^\r\n]*|\/\*[\s\S]*?\*\//g, (token) => (
-    token.startsWith('/') ? token.replace(/[^\r\n]/g, ' ') : token
-  ))
+function blockCommentEnd(text, start) {
+  const delimiters = /\/\*|\*\//g
+  delimiters.lastIndex = start
+  let depth = 1
+  for (const token of text.matchAll(delimiters)) {
+    depth += token[0] === '/*' ? 1 : -1
+    if (depth === 0) return token.index + token[0].length
+  }
+  return text.length
+}
+
+function stringEnd(text, start, quote, hashes, kotlin) {
+  const delimiter = quote + hashes
+  const escape = '\\' + hashes
+  for (let index = start; index < text.length; index += 1) {
+    if (text.startsWith(delimiter, index)) return index + delimiter.length
+    if (!(kotlin && quote === '"""') && text.startsWith(escape, index)) index += escape.length
+  }
+  return text.length
+}
+
+// Mask trivia without shifting source line numbers or counting braces inside literals.
+function maskNativeTrivia(text, { kotlin = false, keepStrings = false } = {}) {
+  const trivia = /\/\/[^\r\n]*|\/\*|(#*)("""|")|(')/g
+  let result = ''
+  let cursor = 0
+  for (let token = trivia.exec(text); token; token = trivia.exec(text)) {
+    result += text.slice(cursor, token.index)
+    const [opener, hashes = '', doubleQuote, singleQuote] = token
+    const quote = doubleQuote ?? singleQuote
+    let end = trivia.lastIndex
+    if (opener === '/*') end = blockCommentEnd(text, end)
+    if (quote) end = stringEnd(text, end, quote, hashes, kotlin)
+    const value = text.slice(token.index, end)
+    result += keepStrings && quote ? value : value.replace(/[^\r\n]/g, ' ')
+    cursor = trivia.lastIndex = end
+  }
+  return result + text.slice(cursor)
+}
+
+function* topLevelMatches(text, pattern) {
+  const braces = /[{}]/g
+  let brace = braces.exec(text)
+  let depth = 0
+  for (const match of text.matchAll(pattern)) {
+    while (brace && brace.index < match.index) {
+      depth += brace[0] === '{' ? 1 : -1
+      brace = braces.exec(text)
+    }
+    if (depth === 0) yield match
+  }
 }
 
 function lineOf(text, index) {
   return text.slice(0, index).split('\n').length
 }
 
-function publicSwiftType(text, symbol) {
-  const pattern = new RegExp(`^[ \\t]*public\\s+(?:(?:final|nonisolated)\\s+)?(?:struct|class|enum)\\s+${RegExp.escape(symbol)}\\b`, 'm')
-  const match = pattern.exec(text)
-  return match ? lineOf(text, match.index) : null
+function publicSwiftType(source, symbol) {
+  const text = maskNativeTrivia(source)
+  const pattern = new RegExp(`^[ \\t]*public\\s+(?:(?:final|nonisolated)\\s+)?(?:struct|class|enum)\\s+${RegExp.escape(symbol)}\\b`, 'gm')
+  for (const match of topLevelMatches(text, pattern)) return lineOf(text, match.index)
+  return null
 }
 
-function publicKotlinComposable(text, symbol, namespace) {
+function publicKotlinComposable(source, symbol, namespace) {
+  const text = maskNativeTrivia(source, { kotlin: true })
   const packageDeclaration = /^\s*package\s+([\w.]+)\s*$/m.exec(text)
   if (packageDeclaration?.[1] !== namespace) return null
   const pattern = new RegExp(
     `^[ \\t]*@Composable\\b(?:\\s+@[^\\r\\n]+)*\\s+((?:\\w+\\s+)*)fun\\s+${RegExp.escape(symbol)}\\s*\\(`,
     'gm',
   )
-  for (const match of text.matchAll(pattern)) {
+  for (const match of topLevelMatches(text, pattern)) {
     if (!/\b(private|internal|protected)\b/.test(match[1])) {
       return lineOf(text, match.index + match[0].lastIndexOf(symbol))
     }
@@ -276,7 +332,7 @@ function verifyComponents(manifest, language, components, evidence, imports) {
     const declarationSymbol = checks.find((check) => (
       check.kind === 'typescript-declaration' && check.path === source
     ))?.symbol ?? symbol
-    const nativeSource = typescript ? null : withoutComments(evidence(source))
+    const nativeSource = typescript ? null : evidence(source)
     const declarations = {
       react: () => typescript.declaration(source, declarationSymbol),
       swift: () => {
@@ -298,13 +354,13 @@ function verifyComponents(manifest, language, components, evidence, imports) {
       const passed = {
         'typescript-declaration': () => typescript.declaration(check.path, expected),
         'typescript-export': () => typescript.exports(check.path, expected, source),
-        'swift-public-type': () => publicSwiftType(withoutComments(text), expected),
+        'swift-public-type': () => publicSwiftType(text, expected),
         'swift-product': () => {
           requireThat(expected === coordinate, `Swift product does not match module: ${expected}`)
           const escaped = RegExp.escape(expected)
-          return new RegExp(`\\.library\\s*\\(\\s*name:\\s*"${escaped}"\\s*,\\s*targets:\\s*\\[\\s*"${escaped}"\\s*\\]`).test(withoutComments(text))
+          return new RegExp(`\\.library\\s*\\(\\s*name:\\s*"${escaped}"\\s*,\\s*targets:\\s*\\[\\s*"${escaped}"\\s*\\]`).test(maskNativeTrivia(text, { keepStrings: true }))
         },
-        'kotlin-composable': () => publicKotlinComposable(withoutComments(text), expected, coordinate),
+        'kotlin-composable': () => publicKotlinComposable(text, expected, coordinate),
       }[check.kind]()
       requireThat(passed, `Missing public export ${expected} in ${check.path} (${check.kind})`)
     }
