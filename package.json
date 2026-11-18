@@ -1,0 +1,19 @@
+{
+  "name": "wax-registries",
+  "version": "0.0.0",
+  "private": true,
+  "type": "module",
+  "engines": {
+    "node": "24.x"
+  },
+  "scripts": {
+    "test": "node --test",
+    "generate": "node scripts/generate.mjs",
+    "validate": "node scripts/validate.mjs"
+  },
+  "devDependencies": {
+    "ajv": "8.17.1",
+    "semver": "7.7.2",
+    "typescript": "5.9.3"
+  }
+}

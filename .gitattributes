@@ -1,0 +1,8 @@
+# Use canonical line endings for the tooling and generated artefacts.
+* text=auto eol=lf
+
+# Source and schema hashes cover the upstream bytes, including line endings.
+schemas/** -text -eol
+sources/evidence/** -text -eol
+# AndroidX's license text includes a trailing blank line.
+sources/evidence/**/LICENSE.txt whitespace=-blank-at-eof

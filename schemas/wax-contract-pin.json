@@ -1,0 +1,11 @@
+{
+  "repository": "https://github.com/Daio-io/wax",
+  "commit": "c24e3298eb0fc3dde60d56664265dd3f4870013f",
+  "upstream_directory": "engine/crates/wax-contract/schemas",
+  "minimum_wax_version": "0.11.0-alpha.1",
+  "sha256": {
+    "registry-catalog.schema.json": "b050ff05c49184d36d34a99a9e44c02da0b197152e4bb664c0c7f1c5bc208baf",
+    "registry.schema.json": "78dd19cdf755f683d3c037f47cd742f894bf55a7dc5693499f26a61d466b036a",
+    "waxrc.schema.json": "bec27acd85cf0d16355fe89bcfab6582770516b59725018136d87fdcf2cf53fd"
+  }
+}

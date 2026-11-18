@@ -1,0 +1,248 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://wax.dev/schemas/waxrc.v2.schema.json",
+  "title": "wax config v2",
+  "description": "Repository wax configuration. Canonical path is .wax/wax.config.json.",
+  "type": "object",
+  "additionalProperties": false,
+  "required": ["schema_version"],
+  "properties": {
+    "schema_version": {
+      "const": 2
+    },
+    "engine": {
+      "type": "object",
+      "additionalProperties": false,
+      "properties": {
+        "scan_concurrency": {
+          "type": "integer",
+          "minimum": 1
+        }
+      }
+    },
+    "token_inference": {
+      "type": "object",
+      "additionalProperties": false,
+      "description": "Deterministic hard-coded style token inference settings.",
+      "properties": {
+        "numeric_tolerance": {
+          "type": "number",
+          "minimum": 0,
+          "description": "Absolute distance allowed for near numeric matches. Defaults to 2. 0 disables near matching."
+        }
+      }
+    },
+    "adoption": {
+      "type": "object",
+      "additionalProperties": false,
+      "description": "Adoption Metrics v2 scan behavior and reporting limits.",
+      "properties": {
+        "track_local_invocations": {
+          "const": true,
+          "description": "Parser-backed packs emit local invocation facts. false is reserved for a future reporting-gap mode."
+        },
+        "track_unresolved_invocations": {
+          "const": true,
+          "description": "Parser-backed packs emit unresolved UI invocation facts. false is reserved for a future reporting-gap mode."
+        },
+        "parent_attribution": {
+          "type": "object",
+          "additionalProperties": false,
+          "properties": {
+            "enabled": {
+              "const": true,
+              "description": "Usage sites include parent scope attribution. false is reserved for a future reporting-gap mode."
+            },
+            "scope_visibility": {
+              "type": "array",
+              "items": {
+                "type": "string",
+                "enum": ["public", "internal", "private"]
+              },
+              "description": "Which parent scope visibilities are included in attribution."
+            }
+          }
+        },
+        "candidate_policy": {
+          "const": "report_separately",
+          "description": "Candidates are reported separately from the primary adoption numerator and denominator. Other policies are reserved."
+        },
+        "symbol_usage_summary": {
+          "type": "object",
+          "additionalProperties": false,
+          "properties": {
+            "enabled": {
+              "const": true,
+              "description": "Derived symbol_usage_summary rows are emitted. false is reserved for a future reporting-gap mode."
+            },
+            "parent_scope_limit": {
+              "type": ["integer", "null"],
+              "minimum": 0,
+              "description": "null emits all parent rows; 0 emits none; N limits rows per symbol."
+            }
+          }
+        }
+      }
+    },
+    "languages": {
+      "type": "object",
+      "description": "Scan configuration keyed by language id. Presence of a key enables that language.",
+      "additionalProperties": false,
+      "patternProperties": {
+        "^[a-z][a-z0-9-]*$": {
+          "type": "object",
+          "propertyNames": {
+            "not": {
+              "enum": ["enabled", "id", "design_system_registry"]
+            }
+          },
+          "properties": {
+            "roots": {
+              "oneOf": [
+                {
+                  "type": "array",
+                  "items": {
+                    "type": "string",
+                    "minLength": 1
+                  }
+                },
+                {
+                  "type": "object",
+                  "description": "Repository-wide root groups keyed by stable group id.",
+                  "propertyNames": {
+                    "minLength": 1
+                  },
+                  "additionalProperties": {
+                    "type": "array",
+                    "minItems": 1,
+                    "items": {
+                      "type": "string",
+                      "minLength": 1
+                    }
+                  }
+                }
+              ]
+            },
+            "registry": {
+              "oneOf": [
+                {
+                  "type": "string",
+                  "minLength": 1
+                },
+                {
+                  "type": "object",
+                  "additionalProperties": false,
+                  "required": ["source"],
+                  "properties": {
+                    "source": {
+                      "type": "string",
+                      "minLength": 1
+                    },
+                    "upstream": {
+                      "type": "string",
+                      "minLength": 1,
+                      "description": "Optional upstream design-system reference as <design-system-id>/<language-id>."
+                    }
+                  }
+                },
+                {
+                  "type": "object",
+                  "additionalProperties": false,
+                  "required": ["git", "tag"],
+                  "dependentRequired": {
+                    "system": ["subdir"]
+                  },
+                  "description": "Git registry source. Without subdir, the registry is read from the fixed remote path .wax/registries/<language-id>.json. With subdir and system, the registry bundle is read from a repository-relative publisher definition.",
+                  "properties": {
+                    "git": {
+                      "type": "string",
+                      "minLength": 1,
+                      "pattern": "\\S"
+                    },
+                    "tag": {
+                      "type": "string",
+                      "minLength": 1,
+                      "pattern": "\\S"
+                    },
+                    "subdir": {
+                      "type": "string",
+                      "description": "Repository-relative directory containing the design-system bundle.",
+                      "pattern": "^(?:(?!\\.\\.?(?:/|$))(?!-)[^/\\\\:\\x00-\\x1f]+)(?:/(?!\\.\\.?(?:/|$))(?!-)[^/\\\\:\\x00-\\x1f]+)*$"
+                    },
+                    "system": {
+                      "type": "string",
+                      "description": "Design-system id selected from the bundle's publisher definition.",
+                      "pattern": "^[a-z][a-z0-9-]*$"
+                    }
+                  }
+                }
+              ]
+            },
+            "enabled": false,
+            "id": false,
+            "design_system_registry": false
+          },
+          "additionalProperties": true
+        }
+      }
+    },
+    "design_systems": {
+      "type": "object",
+      "description": "Design-system publication configuration keyed by design-system id.",
+      "additionalProperties": false,
+      "patternProperties": {
+        "^[a-z][a-z0-9-]*$": {
+          "type": "object",
+          "additionalProperties": false,
+          "required": ["name", "registries"],
+          "properties": {
+            "name": {
+              "type": "string",
+              "minLength": 1
+            },
+            "registries": {
+              "type": "object",
+              "additionalProperties": false,
+              "patternProperties": {
+                "^[a-z][a-z0-9-]*$": {
+                  "type": "object",
+                  "additionalProperties": false,
+                  "required": ["source"],
+                  "properties": {
+                    "source": {
+                      "type": "string",
+                      "minLength": 1
+                    },
+                    "published_source": {
+                      "type": "string",
+                      "minLength": 1
+                    }
+                  }
+                }
+              }
+            }
+          }
+        }
+      }
+    },
+    "outputs": {
+      "type": "array",
+      "description": "Default scan artifact outputs. CLI --output flags append to these entries.",
+      "items": {
+        "type": "object",
+        "additionalProperties": false,
+        "required": ["format", "path"],
+        "properties": {
+          "format": {
+            "type": "string",
+            "enum": ["json-summary", "graph-data", "markdown", "html"]
+          },
+          "path": {
+            "type": "string",
+            "minLength": 1
+          }
+        }
+      }
+    }
+  }
+}

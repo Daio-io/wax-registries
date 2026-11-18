@@ -1,0 +1,19 @@
+Wax public design-system catalogue
+
+Original catalogue tooling, documentation and fixture code are distributed
+under the MIT license in LICENSE. The upstream evidence retains its original
+license and copyright notices. Registry data derived from that evidence
+carries the corresponding attribution below.
+
+Radix Primitives — Copyright (c) 2022 WorkOS. MIT.
+Radix Themes — Copyright (c) 2023 WorkOS. MIT.
+shadcn/ui — Copyright (c) 2023 shadcn. MIT.
+Astryx — Copyright (c) 2026 Meta Platforms, Inc. MIT.
+AndroidX Compose Material and Material 3 — The Android Open Source Project.
+Apache License, Version 2.0. Copyright years are retained in each source file.
+
+Exact upstream commit, source file, license path and SHA-256 records are in
+sources/<id>.json and each system revision's provenance.json. Complete
+upstream license texts are in the corresponding sources/evidence directories.
+The AndroidX source snapshots are unmodified. This catalogue is independent
+of the upstream projects and their maintainers.

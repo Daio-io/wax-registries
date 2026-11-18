@@ -1,0 +1,139 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "title": "Wax catalogue source manifest",
+  "type": "object",
+  "additionalProperties": false,
+  "required": [
+    "id", "name", "upstream", "minimum_wax_version", "coverage", "gaps",
+    "files", "license", "packages", "registries", "overrides"
+  ],
+  "properties": {
+    "id": { "$ref": "#/$defs/slug" },
+    "name": { "type": "string", "minLength": 1, "pattern": "\\S" },
+    "upstream": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": ["repository", "commit"],
+      "properties": {
+        "repository": { "type": "string", "pattern": "^https://github\\.com/[A-Za-z0-9_.-]+/[A-Za-z0-9_.-]+$" },
+        "commit": { "type": "string", "pattern": "^[0-9a-f]{40}$" }
+      }
+    },
+    "minimum_wax_version": { "$ref": "#/$defs/text" },
+    "coverage": { "$ref": "#/$defs/texts" },
+    "gaps": { "$ref": "#/$defs/texts" },
+    "files": {
+      "type": "object",
+      "minProperties": 1,
+      "additionalProperties": { "type": "string", "pattern": "^[0-9a-f]{64}$" }
+    },
+    "license": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": ["spdx", "files"],
+      "properties": {
+        "spdx": { "enum": ["MIT", "Apache-2.0"] },
+        "files": { "$ref": "#/$defs/texts" },
+        "notice": { "$ref": "#/$defs/text" }
+      }
+    },
+    "packages": {
+      "type": "array",
+      "minItems": 1,
+      "items": {
+        "type": "object",
+        "additionalProperties": false,
+        "required": ["coordinate", "channel", "supported_line"],
+        "dependentRequired": {
+          "version": ["manifest"], "manifest": ["version"], "version_key": ["manifest"], "entrypoint": ["manifest"]
+        },
+        "properties": {
+          "coordinate": { "$ref": "#/$defs/text" },
+          "import": { "$ref": "#/$defs/text" },
+          "channel": { "$ref": "#/$defs/text" },
+          "supported_line": { "$ref": "#/$defs/text" },
+          "version": { "$ref": "#/$defs/text" },
+          "manifest": { "$ref": "#/$defs/text" },
+          "entrypoint": { "$ref": "#/$defs/text" },
+          "version_key": { "type": "string", "pattern": "^[A-Z][A-Z0-9_]*$" }
+        }
+      }
+    },
+    "registries": {
+      "type": "object",
+      "minProperties": 1,
+      "additionalProperties": false,
+      "properties": {
+        "react": { "$ref": "#/$defs/registry" },
+        "swift": { "$ref": "#/$defs/registry" },
+        "compose": { "$ref": "#/$defs/registry" }
+      }
+    },
+    "overrides": {
+      "type": "object",
+      "propertyNames": { "enum": ["react", "swift", "compose"] },
+      "additionalProperties": {
+        "type": "object",
+        "propertyNames": { "$ref": "#/$defs/slug" },
+        "additionalProperties": {
+          "type": "object",
+          "minProperties": 1,
+          "additionalProperties": false,
+          "properties": {
+            "aliases": { "$ref": "#/$defs/aliases" },
+            "documentation": { "$ref": "#/$defs/url" }
+          }
+        }
+      }
+    }
+  },
+  "$defs": {
+    "slug": { "type": "string", "pattern": "^[a-z][a-z0-9-]{0,127}$" },
+    "identifier": { "type": "string", "pattern": "^[A-Za-z_$][A-Za-z0-9_$]*$" },
+    "text": { "type": "string", "minLength": 1 },
+    "texts": {
+      "type": "array",
+      "minItems": 1,
+      "uniqueItems": true,
+      "items": { "$ref": "#/$defs/text" }
+    },
+    "url": { "type": "string", "pattern": "^https://[^/\\s]+(?:/[^\\s]*)?$" },
+    "aliases": {
+      "type": "array",
+      "uniqueItems": true,
+      "items": { "$ref": "#/$defs/identifier" }
+    },
+    "registry": {
+      "type": "array",
+      "minItems": 1,
+      "items": {
+        "type": "object",
+        "additionalProperties": false,
+        "required": ["id", "symbol", "package", "source", "documentation"],
+        "properties": {
+          "id": { "$ref": "#/$defs/slug" },
+          "symbol": { "$ref": "#/$defs/identifier" },
+          "package": { "$ref": "#/$defs/text" },
+          "source": { "$ref": "#/$defs/text" },
+          "documentation": { "$ref": "#/$defs/url" },
+          "aliases": { "$ref": "#/$defs/aliases" },
+          "checks": {
+            "type": "array",
+            "minItems": 1,
+            "uniqueItems": true,
+            "items": {
+              "type": "object",
+              "additionalProperties": false,
+              "required": ["path", "kind"],
+              "properties": {
+                "path": { "$ref": "#/$defs/text" },
+                "kind": { "enum": ["typescript-export", "typescript-declaration", "swift-public-type", "swift-product", "kotlin-composable"] },
+                "symbol": { "$ref": "#/$defs/identifier" }
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+}
