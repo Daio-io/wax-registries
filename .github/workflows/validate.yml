@@ -1,0 +1,56 @@
+name: Validate catalogue
+
+on:
+  pull_request:
+    branches: [main]
+
+permissions:
+  contents: read
+
+jobs:
+  validate:
+    name: Validate catalogue
+    runs-on: ubuntu-latest
+    env:
+      BASE_SHA: ${{ github.event.pull_request.base.sha }}
+    steps:
+      - uses: actions/checkout@de0fac2e4500dabe0009e67214ff5f5447ce83dd # v6.0.2
+        with:
+          fetch-depth: 0
+          persist-credentials: false
+      - name: Verify registry artifacts
+        run: |
+          python3 - <<'PY'
+          from hashlib import sha256
+          import json
+          from pathlib import Path
+          import subprocess
+
+          catalogue = json.loads(Path("catalog/index.json").read_bytes())
+          assert catalogue["schema_version"] == 1 and catalogue["entries"]
+          expected_files = set()
+
+          for entry in catalogue["entries"]:
+              directory = Path(entry["subdir"])
+              assert directory.is_relative_to("systems") and ".." not in directory.parts
+              assert entry["definition"]["path"] == ".wax/wax.config.json"
+              assert entry["provenance"]["path"] == "provenance.json"
+              for language, registry in entry["registries"].items():
+                  assert registry["path"] == f".wax/registries/{language}.json"
+
+              for artifact in [entry["definition"], entry["provenance"], *entry["registries"].values()]:
+                  path = directory / artifact["path"]
+                  assert path not in expected_files, f"Duplicate artifact: {path}"
+                  assert not path.is_symlink(), f"Expected a file: {path}"
+                  data = path.read_bytes()
+                  assert sha256(data).hexdigest() == artifact["sha256"], f"Digest mismatch: {path}"
+                  json.loads(data)
+                  expected_files.add(path)
+
+          tracked = subprocess.check_output(["git", "ls-files", "-z", "systems"], text=True)
+          assert {Path(path) for path in tracked.split("\0") if path} == expected_files
+          PY
+      - name: Preserve published registry files
+        run: |
+          test -z "$(git diff --name-only --diff-filter=DMRT "$BASE_SHA" HEAD -- systems/)"
+          git diff --check "$BASE_SHA" HEAD
