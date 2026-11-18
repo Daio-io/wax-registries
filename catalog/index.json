@@ -1,0 +1,233 @@
+{
+  "entries": [
+    {
+      "coverage": [
+        "Partial React beta and experimental SwiftUI component pilots from one pinned source commit"
+      ],
+      "definition": {
+        "path": ".wax/wax.config.json",
+        "sha256": "8957f2a9dc4f693c98735356fa56188c2fe1cabfb00549251b8cc14596083f2b"
+      },
+      "gaps": [
+        "Styling and theme tokens",
+        "Component signatures, variants and other rich detail",
+        "Components outside the named pilot",
+        "Astryx Android bindings and other native ecosystems",
+        "Swift release-artifact coverage"
+      ],
+      "id": "astryx",
+      "minimum_wax_version": "0.11.0-alpha.1",
+      "name": "Astryx",
+      "provenance": {
+        "path": "provenance.json",
+        "sha256": "9dd8cee241b8371cb4ccb8c579a46d0db11e2202ff9a0f0a02221d3cdae44d09"
+      },
+      "registries": {
+        "react": {
+          "path": ".wax/registries/react.json",
+          "sha256": "70a4f8bbf2833dc1772d60c51947adf7ba77ff7c5914c3c3e75d522390aa328a"
+        },
+        "swift": {
+          "path": ".wax/registries/swift.json",
+          "sha256": "63cebf981af5345be0beb80f41151aeeb028dfe8e5754d598fbf520f7c7d1e6d"
+        }
+      },
+      "revision": 1,
+      "subdir": "systems/astryx/revisions/1",
+      "upstream": [
+        {
+          "source": "https://github.com/meta/astryx",
+          "version": "commit:0c5b0f052b8adcaac9deff80dde7db2b9e28dbe2"
+        }
+      ]
+    },
+    {
+      "coverage": [
+        "Partial Jetpack Compose component pilot for androidx.compose.material from the pinned AndroidX source commit"
+      ],
+      "definition": {
+        "path": ".wax/wax.config.json",
+        "sha256": "5904a31a867f56e1f671d2a637b5acd05876510d726d4123958b61a7d83919a1"
+      },
+      "gaps": [
+        "Styling and theme tokens",
+        "Component signatures, variants and other rich detail",
+        "Components outside the named pilot",
+        "Material Web (HTML and Lit)",
+        "Material Components for iOS (UIKit)"
+      ],
+      "id": "material-m2",
+      "minimum_wax_version": "0.11.0-alpha.1",
+      "name": "Material Design 2 (Compose)",
+      "provenance": {
+        "path": "provenance.json",
+        "sha256": "9ad5b072f3d66cb12a8dd3abfc42b730ca50eeb8e3b82538990d5b8222c0d228"
+      },
+      "registries": {
+        "compose": {
+          "path": ".wax/registries/compose.json",
+          "sha256": "7aaaf1658941c209723c59e70933196653e6f195c9629ca64ef95a7d533baf61"
+        }
+      },
+      "revision": 1,
+      "subdir": "systems/material-m2/revisions/1",
+      "upstream": [
+        {
+          "source": "https://github.com/androidx/androidx",
+          "version": "commit:c8f2b366d38364cc72869b4fac20ea0ee2d9c00b"
+        }
+      ]
+    },
+    {
+      "coverage": [
+        "Partial Jetpack Compose component pilot for androidx.compose.material3 from the pinned AndroidX source commit"
+      ],
+      "definition": {
+        "path": ".wax/wax.config.json",
+        "sha256": "fad81d04c7f6a83c98c794da4d1731d259ba9c96094fc3e9d2947ead1ef008c0"
+      },
+      "gaps": [
+        "Styling and theme tokens",
+        "Component signatures, variants and other rich detail",
+        "Components outside the named pilot",
+        "Material Web (HTML and Lit)",
+        "Material Components for iOS (UIKit)"
+      ],
+      "id": "material-m3",
+      "minimum_wax_version": "0.11.0-alpha.1",
+      "name": "Material Design 3 (Compose)",
+      "provenance": {
+        "path": "provenance.json",
+        "sha256": "dc7fffca672f35fc726cd8c7a00a00ad0020d28fa15874876036231c68a5fb5e"
+      },
+      "registries": {
+        "compose": {
+          "path": ".wax/registries/compose.json",
+          "sha256": "0a2fcc32d6706bcb24a0fa9628a99c623713fcb5d061c6127130eab6509292d9"
+        }
+      },
+      "revision": 1,
+      "subdir": "systems/material-m3/revisions/1",
+      "upstream": [
+        {
+          "source": "https://github.com/androidx/androidx",
+          "version": "commit:c8f2b366d38364cc72869b4fac20ea0ee2d9c00b"
+        }
+      ]
+    },
+    {
+      "coverage": [
+        "Partial React component pilot from the pinned source commit",
+        "Canonical named exports of the individual Dialog, Checkbox and Tabs packages"
+      ],
+      "definition": {
+        "path": ".wax/wax.config.json",
+        "sha256": "95ae01978c0ce3e73c5306c45ee4c32f3b73231850993541d4e9edaf69984c25"
+      },
+      "gaps": [
+        "Styling and theme tokens",
+        "Component signatures, variants and other rich detail",
+        "Components outside the named pilot",
+        "Umbrella radix-ui imports",
+        "Short Root and Trigger exports",
+        "Namespace-member JSX forms"
+      ],
+      "id": "radix-primitives",
+      "minimum_wax_version": "0.11.0-alpha.1",
+      "name": "Radix Primitives",
+      "provenance": {
+        "path": "provenance.json",
+        "sha256": "b781544ea0a09ef9efe080ea4c78fe8a5045ca8864a34313421370f1e5551142"
+      },
+      "registries": {
+        "react": {
+          "path": ".wax/registries/react.json",
+          "sha256": "0d7e2749a22a839a844adc7dbbaa1ef066c76a49418a27964af63042851dd497"
+        }
+      },
+      "revision": 1,
+      "subdir": "systems/radix-primitives/revisions/1",
+      "upstream": [
+        {
+          "source": "https://github.com/radix-ui/primitives",
+          "version": "commit:eb3a2b7091293e27df8f9ba906632d8daa3d81a3"
+        }
+      ]
+    },
+    {
+      "coverage": [
+        "Partial React component pilot from the pinned source commit",
+        "Canonical named exports of @radix-ui/themes"
+      ],
+      "definition": {
+        "path": ".wax/wax.config.json",
+        "sha256": "aa75a49bc5877dea10bcf57d8a130ae24c97522421decff82acaf480f6fa392c"
+      },
+      "gaps": [
+        "Styling and theme tokens",
+        "Component signatures, variants and other rich detail",
+        "Components outside the named pilot",
+        "Package subpath imports"
+      ],
+      "id": "radix-themes",
+      "minimum_wax_version": "0.11.0-alpha.1",
+      "name": "Radix Themes",
+      "provenance": {
+        "path": "provenance.json",
+        "sha256": "12def9481d7c23dd3336a3bf54ff342eb66a95e64ca8a003212d9fefccd85072"
+      },
+      "registries": {
+        "react": {
+          "path": ".wax/registries/react.json",
+          "sha256": "266847150fbf7631995985375d8e696b7df3ae93f37b3acc9328960b30285afb"
+        }
+      },
+      "revision": 1,
+      "subdir": "systems/radix-themes/revisions/1",
+      "upstream": [
+        {
+          "source": "https://github.com/radix-ui/themes",
+          "version": "commit:1faff10ac26ae17f09944d418c6949b93fc6b566"
+        }
+      ]
+    },
+    {
+      "coverage": [
+        "Partial React component pilot for the pinned v4 Radix base and exact @/components/ui/<file> imports"
+      ],
+      "definition": {
+        "path": ".wax/wax.config.json",
+        "sha256": "67a32009af546ccce715c802b2bc72213f79510ce3a2beb743333cbfa20a9213"
+      },
+      "gaps": [
+        "Styling and theme tokens",
+        "Component signatures, variants and other rich detail",
+        "Components outside the named pilot",
+        "Other registry bases and workspace aliases",
+        "The import convention cannot establish upstream equivalence for locally copied or edited components"
+      ],
+      "id": "shadcn",
+      "minimum_wax_version": "0.11.0-alpha.1",
+      "name": "shadcn/ui",
+      "provenance": {
+        "path": "provenance.json",
+        "sha256": "9f8fee3644ff0f1964dbe690cdc3682013bc59825ac240653aa2e14c54e3e51e"
+      },
+      "registries": {
+        "react": {
+          "path": ".wax/registries/react.json",
+          "sha256": "cea298c321e35c84af0d8a416662b286306cdb14a0b0a0b92a0f149e6c6bd2ea"
+        }
+      },
+      "revision": 1,
+      "subdir": "systems/shadcn/revisions/1",
+      "upstream": [
+        {
+          "source": "https://github.com/shadcn-ui/ui",
+          "version": "commit:e62c9435fff729a175f38983dee73b2cb4f6a069"
+        }
+      ]
+    }
+  ],
+  "schema_version": 1
+}

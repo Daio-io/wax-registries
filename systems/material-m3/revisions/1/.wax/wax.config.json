@@ -1,0 +1,14 @@
+{
+  "design_systems": {
+    "material-m3": {
+      "name": "Material Design 3 (Compose)",
+      "registries": {
+        "compose": {
+          "source": ".wax/registries/compose.json"
+        }
+      }
+    }
+  },
+  "languages": {},
+  "schema_version": 2
+}

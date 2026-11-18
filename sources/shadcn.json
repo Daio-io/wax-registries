@@ -1,0 +1,100 @@
+{
+  "coverage": [
+    "Partial React component pilot for the pinned v4 Radix base and exact @/components/ui/<file> imports"
+  ],
+  "files": {
+    "LICENSE.md": "1564074e13439397221ffd522e2e504d56561994a23d371aa5e3ad43e4f5423f",
+    "apps/v4/registry/bases/radix/ui/badge.tsx": "7e3d99527690ba61aaa540c8305d5e148285907690c6c8e6caec589ad11bb3c8",
+    "apps/v4/registry/bases/radix/ui/button.tsx": "76c6abdf94fae4085fd6c50c97c7a99ec21240af187c63ea4b2e71551d33495f",
+    "apps/v4/registry/bases/radix/ui/card.tsx": "0d525c03e086b0047f7c0700850281023359cfc020eb233fdb0d74ec870ebea0",
+    "apps/v4/registry/bases/radix/ui/checkbox.tsx": "4dd2b8d1181fe7851a45e6f786413cf16565fcde9dc4e7caea5818d63f2fc415",
+    "apps/v4/registry/bases/radix/ui/separator.tsx": "b5b5460e5337c2d5f361c1512001615b2e5eacb38c7449a4418bb9ddb47c4bba"
+  },
+  "gaps": [
+    "Styling and theme tokens",
+    "Component signatures, variants and other rich detail",
+    "Components outside the named pilot",
+    "Other registry bases and workspace aliases",
+    "The import convention cannot establish upstream equivalence for locally copied or edited components"
+  ],
+  "id": "shadcn",
+  "license": {
+    "files": [
+      "LICENSE.md"
+    ],
+    "spdx": "MIT"
+  },
+  "minimum_wax_version": "0.11.0-alpha.1",
+  "name": "shadcn/ui",
+  "overrides": {},
+  "packages": [
+    {
+      "channel": "copied-source",
+      "coordinate": "@/components/ui/badge",
+      "supported_line": "v4 Radix base at the pinned source commit"
+    },
+    {
+      "channel": "copied-source",
+      "coordinate": "@/components/ui/button",
+      "supported_line": "v4 Radix base at the pinned source commit"
+    },
+    {
+      "channel": "copied-source",
+      "coordinate": "@/components/ui/card",
+      "supported_line": "v4 Radix base at the pinned source commit"
+    },
+    {
+      "channel": "copied-source",
+      "coordinate": "@/components/ui/checkbox",
+      "supported_line": "v4 Radix base at the pinned source commit"
+    },
+    {
+      "channel": "copied-source",
+      "coordinate": "@/components/ui/separator",
+      "supported_line": "v4 Radix base at the pinned source commit"
+    }
+  ],
+  "registries": {
+    "react": [
+      {
+        "documentation": "https://ui.shadcn.com/docs/components/radix/badge",
+        "id": "badge",
+        "package": "@/components/ui/badge",
+        "source": "apps/v4/registry/bases/radix/ui/badge.tsx",
+        "symbol": "Badge"
+      },
+      {
+        "documentation": "https://ui.shadcn.com/docs/components/radix/button",
+        "id": "button",
+        "package": "@/components/ui/button",
+        "source": "apps/v4/registry/bases/radix/ui/button.tsx",
+        "symbol": "Button"
+      },
+      {
+        "documentation": "https://ui.shadcn.com/docs/components/radix/card",
+        "id": "card",
+        "package": "@/components/ui/card",
+        "source": "apps/v4/registry/bases/radix/ui/card.tsx",
+        "symbol": "Card"
+      },
+      {
+        "documentation": "https://ui.shadcn.com/docs/components/radix/checkbox",
+        "id": "checkbox",
+        "package": "@/components/ui/checkbox",
+        "source": "apps/v4/registry/bases/radix/ui/checkbox.tsx",
+        "symbol": "Checkbox"
+      },
+      {
+        "documentation": "https://ui.shadcn.com/docs/components/radix/separator",
+        "id": "separator",
+        "package": "@/components/ui/separator",
+        "source": "apps/v4/registry/bases/radix/ui/separator.tsx",
+        "symbol": "Separator"
+      }
+    ]
+  },
+  "upstream": {
+    "commit": "e62c9435fff729a175f38983dee73b2cb4f6a069",
+    "repository": "https://github.com/shadcn-ui/ui"
+  }
+}

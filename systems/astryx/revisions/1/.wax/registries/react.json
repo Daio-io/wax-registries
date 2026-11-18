@@ -1,0 +1,70 @@
+{
+  "components": [
+    {
+      "details": {
+        "documentation": "https://github.com/meta/astryx/blob/0c5b0f052b8adcaac9deff80dde7db2b9e28dbe2/README.md",
+        "source_evidence": {
+          "path": "packages/core/src/Avatar/Avatar.tsx",
+          "start_line": 592
+        },
+        "status": "partial"
+      },
+      "id": "avatar",
+      "package": "@astryxdesign/core",
+      "symbol": "Avatar"
+    },
+    {
+      "details": {
+        "documentation": "https://github.com/meta/astryx/blob/0c5b0f052b8adcaac9deff80dde7db2b9e28dbe2/README.md",
+        "source_evidence": {
+          "path": "packages/core/src/Badge/Badge.tsx",
+          "start_line": 228
+        },
+        "status": "partial"
+      },
+      "id": "badge",
+      "package": "@astryxdesign/core",
+      "symbol": "Badge"
+    },
+    {
+      "details": {
+        "documentation": "https://github.com/meta/astryx/blob/0c5b0f052b8adcaac9deff80dde7db2b9e28dbe2/README.md",
+        "source_evidence": {
+          "path": "packages/core/src/Button/Button.tsx",
+          "start_line": 797
+        },
+        "status": "partial"
+      },
+      "id": "button",
+      "package": "@astryxdesign/core",
+      "symbol": "Button"
+    },
+    {
+      "details": {
+        "documentation": "https://github.com/meta/astryx/blob/0c5b0f052b8adcaac9deff80dde7db2b9e28dbe2/README.md",
+        "source_evidence": {
+          "path": "packages/core/src/Card/Card.tsx",
+          "start_line": 279
+        },
+        "status": "partial"
+      },
+      "id": "card",
+      "package": "@astryxdesign/core",
+      "symbol": "Card"
+    },
+    {
+      "details": {
+        "documentation": "https://github.com/meta/astryx/blob/0c5b0f052b8adcaac9deff80dde7db2b9e28dbe2/README.md",
+        "source_evidence": {
+          "path": "packages/core/src/Text/Text.tsx",
+          "start_line": 225
+        },
+        "status": "partial"
+      },
+      "id": "text",
+      "package": "@astryxdesign/core",
+      "symbol": "Text"
+    }
+  ],
+  "schema_version": 1
+}

@@ -1,0 +1,14 @@
+{
+  "design_systems": {
+    "radix-themes": {
+      "name": "Radix Themes",
+      "registries": {
+        "react": {
+          "source": ".wax/registries/react.json"
+        }
+      }
+    }
+  },
+  "languages": {},
+  "schema_version": 2
+}

@@ -1,0 +1,70 @@
+{
+  "components": [
+    {
+      "details": {
+        "documentation": "https://www.radix-ui.com/themes/docs/components/badge",
+        "source_evidence": {
+          "path": "packages/radix-ui-themes/src/components/badge.tsx",
+          "start_line": 17
+        },
+        "status": "partial"
+      },
+      "id": "badge",
+      "package": "@radix-ui/themes",
+      "symbol": "Badge"
+    },
+    {
+      "details": {
+        "documentation": "https://www.radix-ui.com/themes/docs/components/button",
+        "source_evidence": {
+          "path": "packages/radix-ui-themes/src/components/button.tsx",
+          "start_line": 8
+        },
+        "status": "partial"
+      },
+      "id": "button",
+      "package": "@radix-ui/themes",
+      "symbol": "Button"
+    },
+    {
+      "details": {
+        "documentation": "https://www.radix-ui.com/themes/docs/components/checkbox",
+        "source_evidence": {
+          "path": "packages/radix-ui-themes/src/components/checkbox.tsx",
+          "start_line": 27
+        },
+        "status": "partial"
+      },
+      "id": "checkbox",
+      "package": "@radix-ui/themes",
+      "symbol": "Checkbox"
+    },
+    {
+      "details": {
+        "documentation": "https://www.radix-ui.com/themes/docs/components/separator",
+        "source_evidence": {
+          "path": "packages/radix-ui-themes/src/components/separator.tsx",
+          "start_line": 16
+        },
+        "status": "partial"
+      },
+      "id": "separator",
+      "package": "@radix-ui/themes",
+      "symbol": "Separator"
+    },
+    {
+      "details": {
+        "documentation": "https://www.radix-ui.com/themes/docs/components/text",
+        "source_evidence": {
+          "path": "packages/radix-ui-themes/src/components/text.tsx",
+          "start_line": 22
+        },
+        "status": "partial"
+      },
+      "id": "text",
+      "package": "@radix-ui/themes",
+      "symbol": "Text"
+    }
+  ],
+  "schema_version": 1
+}

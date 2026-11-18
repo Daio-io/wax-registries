@@ -1,0 +1,86 @@
+{
+  "coverage": [
+    "Partial React component pilot from the pinned source commit",
+    "Canonical named exports of @radix-ui/themes"
+  ],
+  "files": {
+    "LICENSE": "89e4ae7d91c640c6e8a3ca90ba578d799eb2491b766ed65e0725ba36499d56ba",
+    "packages/radix-ui-themes/package.json": "0565d38c0bc04882fdfb0fe1d45f11869d5620216c4967b27ddcabc07a524337",
+    "packages/radix-ui-themes/src/components/badge.tsx": "8502d192a63f7bdef39c3be28ac9ccac880d1f3d0c7ae891013bdbc07c68c157",
+    "packages/radix-ui-themes/src/components/button.tsx": "e7f4aac7bd60201512ccfeb9d93a6a877b53b9b4614da5984871ab10f65f4820",
+    "packages/radix-ui-themes/src/components/checkbox.tsx": "c4e9cad7a8538e6b294debd0f814863e747991c9839170dd1369f2ba37218aa7",
+    "packages/radix-ui-themes/src/components/index.tsx": "42f4a4f65f0696396c041d4022af07a3ce0a896f4fe063081b9249249bce7918",
+    "packages/radix-ui-themes/src/components/separator.tsx": "a4b3ae5b6395eff2f4c6a80c93947b4d4f1435379ca582d901e8ddf58fe5a4b7",
+    "packages/radix-ui-themes/src/components/text.tsx": "bc05018e7ab35698db2a5bceea05349a63b908b249b4f9f4465c15f9ffe9b853",
+    "packages/radix-ui-themes/src/index.ts": "4df4da6e7bbe3ad62bd90f0fe36d1ee434697b3712e8b257b91eae573d1e8e0b"
+  },
+  "gaps": [
+    "Styling and theme tokens",
+    "Component signatures, variants and other rich detail",
+    "Components outside the named pilot",
+    "Package subpath imports"
+  ],
+  "id": "radix-themes",
+  "license": {
+    "files": [
+      "LICENSE"
+    ],
+    "spdx": "MIT"
+  },
+  "minimum_wax_version": "0.11.0-alpha.1",
+  "name": "Radix Themes",
+  "overrides": {},
+  "packages": [
+    {
+      "channel": "source-commit",
+      "coordinate": "@radix-ui/themes",
+      "entrypoint": "packages/radix-ui-themes/src/index.ts",
+      "manifest": "packages/radix-ui-themes/package.json",
+      "supported_line": "3.3.x source line, pinned commit only",
+      "version": "3.3.0"
+    }
+  ],
+  "registries": {
+    "react": [
+      {
+        "documentation": "https://www.radix-ui.com/themes/docs/components/badge",
+        "id": "badge",
+        "package": "@radix-ui/themes",
+        "source": "packages/radix-ui-themes/src/components/badge.tsx",
+        "symbol": "Badge"
+      },
+      {
+        "documentation": "https://www.radix-ui.com/themes/docs/components/button",
+        "id": "button",
+        "package": "@radix-ui/themes",
+        "source": "packages/radix-ui-themes/src/components/button.tsx",
+        "symbol": "Button"
+      },
+      {
+        "documentation": "https://www.radix-ui.com/themes/docs/components/checkbox",
+        "id": "checkbox",
+        "package": "@radix-ui/themes",
+        "source": "packages/radix-ui-themes/src/components/checkbox.tsx",
+        "symbol": "Checkbox"
+      },
+      {
+        "documentation": "https://www.radix-ui.com/themes/docs/components/separator",
+        "id": "separator",
+        "package": "@radix-ui/themes",
+        "source": "packages/radix-ui-themes/src/components/separator.tsx",
+        "symbol": "Separator"
+      },
+      {
+        "documentation": "https://www.radix-ui.com/themes/docs/components/text",
+        "id": "text",
+        "package": "@radix-ui/themes",
+        "source": "packages/radix-ui-themes/src/components/text.tsx",
+        "symbol": "Text"
+      }
+    ]
+  },
+  "upstream": {
+    "commit": "1faff10ac26ae17f09944d418c6949b93fc6b566",
+    "repository": "https://github.com/radix-ui/themes"
+  }
+}

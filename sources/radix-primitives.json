@@ -1,0 +1,130 @@
+{
+  "coverage": [
+    "Partial React component pilot from the pinned source commit",
+    "Canonical named exports of the individual Dialog, Checkbox and Tabs packages"
+  ],
+  "files": {
+    "LICENSE": "0e80a2d229d2fd4fc7e8636142ec5d0ff0bc031f14c15b682e2ac01dfd5b5138",
+    "packages/react/checkbox/package.json": "f184c2b1a249dac2a1fd1ebf39f5475557e2af3fd01ec3c688cb66ec9f87753a",
+    "packages/react/checkbox/src/checkbox.tsx": "7373b3d09736423775f3f793cd8a964593c5eeefd97c4ed4496a5e251c1ef1b8",
+    "packages/react/checkbox/src/index.ts": "c00c9b2f78d3867ea58ba769747105645c2e1231ac7538a70110bbc786d8b44e",
+    "packages/react/dialog/package.json": "ff664222a5672799f7442d0a51993906af99b64ac988b4afb9bdf94bddb41d6d",
+    "packages/react/dialog/src/dialog.tsx": "f12123db9af35afdc341d71f2759027ae172762cc6693d5c08e3bb059e7ee1d1",
+    "packages/react/dialog/src/index.ts": "182141eabebfae4453fcd1760c6036d6bdc1292852f4fc4894680dd576628eec",
+    "packages/react/tabs/package.json": "5bae8d90e478699220a953824c76bcbe44deb970d44837110b858a77578d20f3",
+    "packages/react/tabs/src/index.ts": "eb4550367bc86cfdf12ca5923b6c713d443784f0d25163867c5cfda8bbeaf92e",
+    "packages/react/tabs/src/tabs.tsx": "16398e474abfd040ed77ede5e0630c199da2082bf57207e2feae4234d165c617"
+  },
+  "gaps": [
+    "Styling and theme tokens",
+    "Component signatures, variants and other rich detail",
+    "Components outside the named pilot",
+    "Umbrella radix-ui imports",
+    "Short Root and Trigger exports",
+    "Namespace-member JSX forms"
+  ],
+  "id": "radix-primitives",
+  "license": {
+    "files": [
+      "LICENSE"
+    ],
+    "spdx": "MIT"
+  },
+  "minimum_wax_version": "0.11.0-alpha.1",
+  "name": "Radix Primitives",
+  "overrides": {},
+  "packages": [
+    {
+      "channel": "source-commit",
+      "coordinate": "@radix-ui/react-checkbox",
+      "manifest": "packages/react/checkbox/package.json",
+      "supported_line": "1.4.x source line, pinned commit only",
+      "version": "1.4.1"
+    },
+    {
+      "channel": "source-commit",
+      "coordinate": "@radix-ui/react-dialog",
+      "manifest": "packages/react/dialog/package.json",
+      "supported_line": "1.3.x source line, pinned commit only",
+      "version": "1.3.1"
+    },
+    {
+      "channel": "source-commit",
+      "coordinate": "@radix-ui/react-tabs",
+      "manifest": "packages/react/tabs/package.json",
+      "supported_line": "1.2.x source line, pinned commit only",
+      "version": "1.2.1"
+    }
+  ],
+  "registries": {
+    "react": [
+      {
+        "documentation": "https://www.radix-ui.com/primitives/docs/components/checkbox",
+        "id": "checkbox",
+        "package": "@radix-ui/react-checkbox",
+        "source": "packages/react/checkbox/src/checkbox.tsx",
+        "symbol": "Checkbox"
+      },
+      {
+        "documentation": "https://www.radix-ui.com/primitives/docs/components/checkbox",
+        "id": "checkbox-indicator",
+        "package": "@radix-ui/react-checkbox",
+        "source": "packages/react/checkbox/src/checkbox.tsx",
+        "symbol": "CheckboxIndicator"
+      },
+      {
+        "documentation": "https://www.radix-ui.com/primitives/docs/components/dialog",
+        "id": "dialog",
+        "package": "@radix-ui/react-dialog",
+        "source": "packages/react/dialog/src/dialog.tsx",
+        "symbol": "Dialog"
+      },
+      {
+        "documentation": "https://www.radix-ui.com/primitives/docs/components/dialog",
+        "id": "dialog-content",
+        "package": "@radix-ui/react-dialog",
+        "source": "packages/react/dialog/src/dialog.tsx",
+        "symbol": "DialogContent"
+      },
+      {
+        "documentation": "https://www.radix-ui.com/primitives/docs/components/dialog",
+        "id": "dialog-trigger",
+        "package": "@radix-ui/react-dialog",
+        "source": "packages/react/dialog/src/dialog.tsx",
+        "symbol": "DialogTrigger"
+      },
+      {
+        "documentation": "https://www.radix-ui.com/primitives/docs/components/tabs",
+        "id": "tabs",
+        "package": "@radix-ui/react-tabs",
+        "source": "packages/react/tabs/src/tabs.tsx",
+        "symbol": "Tabs"
+      },
+      {
+        "documentation": "https://www.radix-ui.com/primitives/docs/components/tabs",
+        "id": "tabs-content",
+        "package": "@radix-ui/react-tabs",
+        "source": "packages/react/tabs/src/tabs.tsx",
+        "symbol": "TabsContent"
+      },
+      {
+        "documentation": "https://www.radix-ui.com/primitives/docs/components/tabs",
+        "id": "tabs-list",
+        "package": "@radix-ui/react-tabs",
+        "source": "packages/react/tabs/src/tabs.tsx",
+        "symbol": "TabsList"
+      },
+      {
+        "documentation": "https://www.radix-ui.com/primitives/docs/components/tabs",
+        "id": "tabs-trigger",
+        "package": "@radix-ui/react-tabs",
+        "source": "packages/react/tabs/src/tabs.tsx",
+        "symbol": "TabsTrigger"
+      }
+    ]
+  },
+  "upstream": {
+    "commit": "eb3a2b7091293e27df8f9ba906632d8daa3d81a3",
+    "repository": "https://github.com/radix-ui/primitives"
+  }
+}

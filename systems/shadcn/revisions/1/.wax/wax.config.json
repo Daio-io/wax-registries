@@ -1,0 +1,14 @@
+{
+  "design_systems": {
+    "shadcn": {
+      "name": "shadcn/ui",
+      "registries": {
+        "react": {
+          "source": ".wax/registries/react.json"
+        }
+      }
+    }
+  },
+  "languages": {},
+  "schema_version": 2
+}

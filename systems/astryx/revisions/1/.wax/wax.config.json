@@ -1,0 +1,17 @@
+{
+  "design_systems": {
+    "astryx": {
+      "name": "Astryx",
+      "registries": {
+        "react": {
+          "source": ".wax/registries/react.json"
+        },
+        "swift": {
+          "source": ".wax/registries/swift.json"
+        }
+      }
+    }
+  },
+  "languages": {},
+  "schema_version": 2
+}

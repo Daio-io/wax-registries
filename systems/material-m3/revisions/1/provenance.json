@@ -1,0 +1,113 @@
+{
+  "generator": {
+    "commit": "7d0d68bbeedce0cbd6cc00bc695add9fd54bf3c5",
+    "sha256": {
+      "package-lock.json": "13998c0b0a69f87a6d1b2d5d44694bd31f2eaa8e43c7221f43baf2d1554baf3b",
+      "schemas/registry-catalog.schema.json": "b050ff05c49184d36d34a99a9e44c02da0b197152e4bb664c0c7f1c5bc208baf",
+      "schemas/registry.schema.json": "78dd19cdf755f683d3c037f47cd742f894bf55a7dc5693499f26a61d466b036a",
+      "schemas/source.schema.json": "33af015b30e187b673ae0fc842775f9e2dabfaa5c166c6abad4a402fe068957d",
+      "schemas/wax-contract-pin.json": "70b91e45d648d0be25312d17c0c66352b64fe99fa238bafe444e8aba2105f60c",
+      "schemas/waxrc.schema.json": "bec27acd85cf0d16355fe89bcfab6582770516b59725018136d87fdcf2cf53fd",
+      "scripts/generate.mjs": "dc897bbee1969d185ccf1b39b8e5c949d76f873700052bf9bbd1ac15fd61fa70",
+      "scripts/lib/catalogue.mjs": "22fadfb0588f003120cd12b14a1019361c702ae81d2c3ddc9c0a79986b55f74a",
+      "scripts/lib/contracts.mjs": "c19f30792ea122e7e1f1fb3d4f93695b2abef89966e870032640bf27f7af8dfd",
+      "scripts/lib/files.mjs": "28d14c3b7eeec8200be43ddff9a7d96327cbe97c4bdc5119eb5f091a129734c2",
+      "scripts/lib/recipes.mjs": "7c3f13697f96ff1f8765d2e484552340607997430c457c5f4b3b103989b7c3dd",
+      "scripts/validate.mjs": "1f4053b610893f51e3479e3dcd3b77c634483f9a72bd0648adac701ba0d3290c"
+    }
+  },
+  "id": "material-m3",
+  "recipe": {
+    "name": "curated-components-v1",
+    "overrides_sha256": "ca3d163bab055381827226140568f3bef7eaac187cebd76878e0b63e9e442356"
+  },
+  "revision": 1,
+  "schema_version": 1,
+  "source": {
+    "coverage": [
+      "Partial Jetpack Compose component pilot for androidx.compose.material3 from the pinned AndroidX source commit"
+    ],
+    "files": {
+      "LICENSE.txt": "809fa1ed21450f59827d1e9aec720bbc4b687434fa22283c6cb5dd82a47ab9c0",
+      "compose/material3/material3/build.gradle": "8980fcba9e134deffc5fa2a68777d7504be6eefcc9d05238916970cc69bbabc7",
+      "compose/material3/material3/src/commonMain/kotlin/androidx/compose/material3/Button.kt": "4d18a20b7cbe4f670ba83dcc460e9be8415dda3ab509af93dcff97a80f99882e",
+      "compose/material3/material3/src/commonMain/kotlin/androidx/compose/material3/Card.kt": "72d8880c1845a85c38df4e38f5b0596db16758f9e8b9a806a3da31613b12f0bf",
+      "compose/material3/material3/src/commonMain/kotlin/androidx/compose/material3/Checkbox.kt": "33f7be60e118a3f5133057708a51285ba67da25344258f538e9261ee0ba70738",
+      "compose/material3/material3/src/commonMain/kotlin/androidx/compose/material3/Switch.kt": "98b8c1a327eac7df2a534650341722d2cd9b71245e56acb58bf812bf740fa733",
+      "compose/material3/material3/src/commonMain/kotlin/androidx/compose/material3/Text.kt": "1c3a873964b9130b696c1cc00f99da3e6a1d00744e3494ac7c16ca7cc426a31d",
+      "libraryversions.toml": "4b8c447c659d8710c1964e88e616ff2f1437e4dd4c34712122cc3060e2085fd2"
+    },
+    "gaps": [
+      "Styling and theme tokens",
+      "Component signatures, variants and other rich detail",
+      "Components outside the named pilot",
+      "Material Web (HTML and Lit)",
+      "Material Components for iOS (UIKit)"
+    ],
+    "id": "material-m3",
+    "license": {
+      "files": [
+        "LICENSE.txt"
+      ],
+      "spdx": "Apache-2.0"
+    },
+    "minimum_wax_version": "0.11.0-alpha.1",
+    "name": "Material Design 3 (Compose)",
+    "overrides": {},
+    "packages": [
+      {
+        "channel": "alpha source-commit",
+        "coordinate": "androidx.compose.material3:material3",
+        "import": "androidx.compose.material3",
+        "manifest": "libraryversions.toml",
+        "supported_line": "1.6.x development line, pinned commit only",
+        "version": "1.6.0-alpha01",
+        "version_key": "COMPOSE_MATERIAL3"
+      }
+    ],
+    "registries": {
+      "compose": [
+        {
+          "documentation": "https://developer.android.com/reference/kotlin/androidx/compose/material3/package-summary",
+          "id": "button",
+          "package": "androidx.compose.material3",
+          "source": "compose/material3/material3/src/commonMain/kotlin/androidx/compose/material3/Button.kt",
+          "symbol": "Button"
+        },
+        {
+          "documentation": "https://developer.android.com/reference/kotlin/androidx/compose/material3/package-summary",
+          "id": "card",
+          "package": "androidx.compose.material3",
+          "source": "compose/material3/material3/src/commonMain/kotlin/androidx/compose/material3/Card.kt",
+          "symbol": "Card"
+        },
+        {
+          "documentation": "https://developer.android.com/reference/kotlin/androidx/compose/material3/package-summary",
+          "id": "checkbox",
+          "package": "androidx.compose.material3",
+          "source": "compose/material3/material3/src/commonMain/kotlin/androidx/compose/material3/Checkbox.kt",
+          "symbol": "Checkbox"
+        },
+        {
+          "documentation": "https://developer.android.com/reference/kotlin/androidx/compose/material3/package-summary",
+          "id": "switch",
+          "package": "androidx.compose.material3",
+          "source": "compose/material3/material3/src/commonMain/kotlin/androidx/compose/material3/Switch.kt",
+          "symbol": "Switch"
+        },
+        {
+          "documentation": "https://developer.android.com/reference/kotlin/androidx/compose/material3/package-summary",
+          "id": "text",
+          "package": "androidx.compose.material3",
+          "source": "compose/material3/material3/src/commonMain/kotlin/androidx/compose/material3/Text.kt",
+          "symbol": "Text"
+        }
+      ]
+    },
+    "upstream": {
+      "commit": "c8f2b366d38364cc72869b4fac20ea0ee2d9c00b",
+      "repository": "https://github.com/androidx/androidx"
+    }
+  },
+  "upstream_version": "commit:c8f2b366d38364cc72869b4fac20ea0ee2d9c00b"
+}

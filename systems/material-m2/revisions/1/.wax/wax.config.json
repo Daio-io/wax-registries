@@ -1,0 +1,14 @@
+{
+  "design_systems": {
+    "material-m2": {
+      "name": "Material Design 2 (Compose)",
+      "registries": {
+        "compose": {
+          "source": ".wax/registries/compose.json"
+        }
+      }
+    }
+  },
+  "languages": {},
+  "schema_version": 2
+}

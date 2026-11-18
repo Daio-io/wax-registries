@@ -1,0 +1,174 @@
+{
+  "coverage": [
+    "Partial React beta and experimental SwiftUI component pilots from one pinned source commit"
+  ],
+  "files": {
+    "LICENSE": "a6855be541fc8f446acd1bc4f2f8efce1ace6dce71dba32fcd8da553ee54b473",
+    "packages/core/package.json": "5c9dd5bf2cb9fc305835a123020b1df6a77b6158b80104eaac70344502618c83",
+    "packages/core/src/Avatar/Avatar.tsx": "b0e86b35d0086b7a6c1f05cd9b73f1f8bc95667da1dc21aedda51c33f68d464b",
+    "packages/core/src/Avatar/index.ts": "895f6829ef7978b06a13a716f27024b8af5898ed811ee3a624d5d5707d03efb7",
+    "packages/core/src/Badge/Badge.tsx": "a94f21e0a504d6748ff0b5c1a9a7c0ed03fe21b65f9c9e0cfdd021a280276108",
+    "packages/core/src/Badge/index.ts": "8a117898826ad265afa92fd795a0a38562dbe7ac0d7bd2ff8a88005686b44cc6",
+    "packages/core/src/Button/Button.tsx": "80eefda532c6727c610fbc5f3ec9766fe2f36f6cfde223a743167746838dec30",
+    "packages/core/src/Button/index.ts": "39f0889f503e463c27b2f065e92ed150d0bb169b37a48ec1109d3ce54f1d6919",
+    "packages/core/src/Card/Card.tsx": "159663b81862ec1e2781d2577e9a87d9fb956b3e7e6a3bb04dc8787cdbbc4036",
+    "packages/core/src/Card/index.ts": "dd875606a925420bf82a260adee476fe1cf4ee3471d2b28954fb854e6f1337ee",
+    "packages/core/src/Text/Text.tsx": "c6fda6da7dce539b43fe04963ace7d11ad36eeaa9425808bbd2ea9f72ee17f92",
+    "packages/core/src/Text/index.ts": "a04cb6446e65ac78e1979b9eeba980689fcd08baa40f9dade57a573e3c578e4f",
+    "packages/core/src/index.ts": "3df61458250f8620e833199d37585f3885c37a1e4f229f139e57a14868a0b981",
+    "packages/native/README.md": "7e938dbd19cdf1a65ed4335364db3152485cc1a8846ffdbd097424b80dd61050",
+    "packages/native/apple/Package.swift": "0edcaac3b82c9397ddd41ed011b2710c34740b93cbddea5fe5e09a75b7d71e9b",
+    "packages/native/apple/README.md": "464f552b55d6cd7f2c0c2bad743c8f129d0fd3270d711b2ebac119ef20c37865",
+    "packages/native/apple/Sources/Astryx/Avatar/Avatar.swift": "e8e64b26a471d601744ad0e4138e965548ffb8dec77fd2989948971168e1e007",
+    "packages/native/apple/Sources/Astryx/Button/Button.swift": "6cb883bca91aac274747d36589e321f0f155ec969a803f146cec5e9ce8e38e11",
+    "packages/native/apple/Sources/Astryx/Card/Card.swift": "991769d7511119a3df62f35b902e0eb64d408f5ffc9513a017a86c7f3ed72878",
+    "packages/native/apple/Sources/Astryx/Heading/Heading.swift": "31b6975a45cbde978db81da7168b060ede6a7f4efe44c021ba2660d8007ef3f2",
+    "packages/native/apple/Sources/Astryx/Text/Text.swift": "4f9fd259dfdc7fa16ea485e53f10d980542cfa170801553cc4b9b682a3c2165b"
+  },
+  "gaps": [
+    "Styling and theme tokens",
+    "Component signatures, variants and other rich detail",
+    "Components outside the named pilot",
+    "Astryx Android bindings and other native ecosystems",
+    "Swift release-artifact coverage"
+  ],
+  "id": "astryx",
+  "license": {
+    "files": [
+      "LICENSE"
+    ],
+    "spdx": "MIT"
+  },
+  "minimum_wax_version": "0.11.0-alpha.1",
+  "name": "Astryx",
+  "overrides": {},
+  "packages": [
+    {
+      "channel": "beta",
+      "coordinate": "@astryxdesign/core",
+      "manifest": "packages/core/package.json",
+      "supported_line": "0.7.x source line, pinned commit only",
+      "version": "0.7.17"
+    },
+    {
+      "channel": "experimental",
+      "coordinate": "Astryx",
+      "supported_line": "SwiftUI module at the pinned source commit"
+    }
+  ],
+  "registries": {
+    "react": [
+      {
+        "documentation": "https://github.com/meta/astryx/blob/0c5b0f052b8adcaac9deff80dde7db2b9e28dbe2/README.md",
+        "id": "avatar",
+        "package": "@astryxdesign/core",
+        "source": "packages/core/src/Avatar/Avatar.tsx",
+        "symbol": "Avatar"
+      },
+      {
+        "documentation": "https://github.com/meta/astryx/blob/0c5b0f052b8adcaac9deff80dde7db2b9e28dbe2/README.md",
+        "id": "badge",
+        "package": "@astryxdesign/core",
+        "source": "packages/core/src/Badge/Badge.tsx",
+        "symbol": "Badge"
+      },
+      {
+        "documentation": "https://github.com/meta/astryx/blob/0c5b0f052b8adcaac9deff80dde7db2b9e28dbe2/README.md",
+        "id": "button",
+        "package": "@astryxdesign/core",
+        "source": "packages/core/src/Button/Button.tsx",
+        "symbol": "Button"
+      },
+      {
+        "documentation": "https://github.com/meta/astryx/blob/0c5b0f052b8adcaac9deff80dde7db2b9e28dbe2/README.md",
+        "id": "card",
+        "package": "@astryxdesign/core",
+        "source": "packages/core/src/Card/Card.tsx",
+        "symbol": "Card"
+      },
+      {
+        "documentation": "https://github.com/meta/astryx/blob/0c5b0f052b8adcaac9deff80dde7db2b9e28dbe2/README.md",
+        "id": "text",
+        "package": "@astryxdesign/core",
+        "source": "packages/core/src/Text/Text.tsx",
+        "symbol": "Text"
+      }
+    ],
+    "swift": [
+      {
+        "checks": [
+          {
+            "kind": "swift-product",
+            "path": "packages/native/apple/Package.swift",
+            "symbol": "Astryx"
+          }
+        ],
+        "documentation": "https://github.com/meta/astryx/blob/0c5b0f052b8adcaac9deff80dde7db2b9e28dbe2/packages/native/apple/README.md",
+        "id": "avatar",
+        "package": "Astryx",
+        "source": "packages/native/apple/Sources/Astryx/Avatar/Avatar.swift",
+        "symbol": "Avatar"
+      },
+      {
+        "checks": [
+          {
+            "kind": "swift-product",
+            "path": "packages/native/apple/Package.swift",
+            "symbol": "Astryx"
+          }
+        ],
+        "documentation": "https://github.com/meta/astryx/blob/0c5b0f052b8adcaac9deff80dde7db2b9e28dbe2/packages/native/apple/README.md",
+        "id": "button",
+        "package": "Astryx",
+        "source": "packages/native/apple/Sources/Astryx/Button/Button.swift",
+        "symbol": "Button"
+      },
+      {
+        "checks": [
+          {
+            "kind": "swift-product",
+            "path": "packages/native/apple/Package.swift",
+            "symbol": "Astryx"
+          }
+        ],
+        "documentation": "https://github.com/meta/astryx/blob/0c5b0f052b8adcaac9deff80dde7db2b9e28dbe2/packages/native/apple/README.md",
+        "id": "card",
+        "package": "Astryx",
+        "source": "packages/native/apple/Sources/Astryx/Card/Card.swift",
+        "symbol": "Card"
+      },
+      {
+        "checks": [
+          {
+            "kind": "swift-product",
+            "path": "packages/native/apple/Package.swift",
+            "symbol": "Astryx"
+          }
+        ],
+        "documentation": "https://github.com/meta/astryx/blob/0c5b0f052b8adcaac9deff80dde7db2b9e28dbe2/packages/native/apple/README.md",
+        "id": "heading",
+        "package": "Astryx",
+        "source": "packages/native/apple/Sources/Astryx/Heading/Heading.swift",
+        "symbol": "Heading"
+      },
+      {
+        "checks": [
+          {
+            "kind": "swift-product",
+            "path": "packages/native/apple/Package.swift",
+            "symbol": "Astryx"
+          }
+        ],
+        "documentation": "https://github.com/meta/astryx/blob/0c5b0f052b8adcaac9deff80dde7db2b9e28dbe2/packages/native/apple/README.md",
+        "id": "text",
+        "package": "Astryx",
+        "source": "packages/native/apple/Sources/Astryx/Text/Text.swift",
+        "symbol": "Text"
+      }
+    ]
+  },
+  "upstream": {
+    "commit": "0c5b0f052b8adcaac9deff80dde7db2b9e28dbe2",
+    "repository": "https://github.com/meta/astryx"
+  }
+}

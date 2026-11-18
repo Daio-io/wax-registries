@@ -1,0 +1,70 @@
+{
+  "components": [
+    {
+      "details": {
+        "documentation": "https://developer.android.com/reference/kotlin/androidx/compose/material/package-summary",
+        "source_evidence": {
+          "path": "compose/material/material/src/commonMain/kotlin/androidx/compose/material/Button.kt",
+          "start_line": 95
+        },
+        "status": "partial"
+      },
+      "id": "button",
+      "package": "androidx.compose.material",
+      "symbol": "Button"
+    },
+    {
+      "details": {
+        "documentation": "https://developer.android.com/reference/kotlin/androidx/compose/material/package-summary",
+        "source_evidence": {
+          "path": "compose/material/material/src/commonMain/kotlin/androidx/compose/material/Card.kt",
+          "start_line": 56
+        },
+        "status": "partial"
+      },
+      "id": "card",
+      "package": "androidx.compose.material",
+      "symbol": "Card"
+    },
+    {
+      "details": {
+        "documentation": "https://developer.android.com/reference/kotlin/androidx/compose/material/package-summary",
+        "source_evidence": {
+          "path": "compose/material/material/src/commonMain/kotlin/androidx/compose/material/Checkbox.kt",
+          "start_line": 84
+        },
+        "status": "partial"
+      },
+      "id": "checkbox",
+      "package": "androidx.compose.material",
+      "symbol": "Checkbox"
+    },
+    {
+      "details": {
+        "documentation": "https://developer.android.com/reference/kotlin/androidx/compose/material/package-summary",
+        "source_evidence": {
+          "path": "compose/material/material/src/commonMain/kotlin/androidx/compose/material/Switch.kt",
+          "start_line": 93
+        },
+        "status": "partial"
+      },
+      "id": "switch",
+      "package": "androidx.compose.material",
+      "symbol": "Switch"
+    },
+    {
+      "details": {
+        "documentation": "https://developer.android.com/reference/kotlin/androidx/compose/material/package-summary",
+        "source_evidence": {
+          "path": "compose/material/material/src/commonMain/kotlin/androidx/compose/material/Text.kt",
+          "start_line": 98
+        },
+        "status": "partial"
+      },
+      "id": "text",
+      "package": "androidx.compose.material",
+      "symbol": "Text"
+    }
+  ],
+  "schema_version": 1
+}

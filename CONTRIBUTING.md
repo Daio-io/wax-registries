@@ -51,5 +51,6 @@ so validation can still reproduce their historical bytes.
 
 The schemas are exact copies from the Wax commit named in
 `schemas/wax-contract-pin.json`. A schema upgrade goes through its own review
-with new upstream hashes and a compatible minimum engine version. PR validation
-uses a read-only token and has no automatic merge step.
+with new upstream hashes and a compatible minimum engine version. The main
+branch requires the Validate catalogue check and a merge commit. PR validation
+uses a read-only token.

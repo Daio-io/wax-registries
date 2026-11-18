@@ -1,0 +1,70 @@
+{
+  "components": [
+    {
+      "details": {
+        "documentation": "https://ui.shadcn.com/docs/components/radix/badge",
+        "source_evidence": {
+          "path": "apps/v4/registry/bases/radix/ui/badge.tsx",
+          "start_line": 25
+        },
+        "status": "partial"
+      },
+      "id": "badge",
+      "package": "@/components/ui/badge",
+      "symbol": "Badge"
+    },
+    {
+      "details": {
+        "documentation": "https://ui.shadcn.com/docs/components/radix/button",
+        "source_evidence": {
+          "path": "apps/v4/registry/bases/radix/ui/button.tsx",
+          "start_line": 36
+        },
+        "status": "partial"
+      },
+      "id": "button",
+      "package": "@/components/ui/button",
+      "symbol": "Button"
+    },
+    {
+      "details": {
+        "documentation": "https://ui.shadcn.com/docs/components/radix/card",
+        "source_evidence": {
+          "path": "apps/v4/registry/bases/radix/ui/card.tsx",
+          "start_line": 4
+        },
+        "status": "partial"
+      },
+      "id": "card",
+      "package": "@/components/ui/card",
+      "symbol": "Card"
+    },
+    {
+      "details": {
+        "documentation": "https://ui.shadcn.com/docs/components/radix/checkbox",
+        "source_evidence": {
+          "path": "apps/v4/registry/bases/radix/ui/checkbox.tsx",
+          "start_line": 9
+        },
+        "status": "partial"
+      },
+      "id": "checkbox",
+      "package": "@/components/ui/checkbox",
+      "symbol": "Checkbox"
+    },
+    {
+      "details": {
+        "documentation": "https://ui.shadcn.com/docs/components/radix/separator",
+        "source_evidence": {
+          "path": "apps/v4/registry/bases/radix/ui/separator.tsx",
+          "start_line": 7
+        },
+        "status": "partial"
+      },
+      "id": "separator",
+      "package": "@/components/ui/separator",
+      "symbol": "Separator"
+    }
+  ],
+  "schema_version": 1
+}

@@ -1,0 +1,70 @@
+{
+  "components": [
+    {
+      "details": {
+        "documentation": "https://github.com/meta/astryx/blob/0c5b0f052b8adcaac9deff80dde7db2b9e28dbe2/packages/native/apple/README.md",
+        "source_evidence": {
+          "path": "packages/native/apple/Sources/Astryx/Avatar/Avatar.swift",
+          "start_line": 17
+        },
+        "status": "partial"
+      },
+      "id": "avatar",
+      "package": "Astryx",
+      "symbol": "Avatar"
+    },
+    {
+      "details": {
+        "documentation": "https://github.com/meta/astryx/blob/0c5b0f052b8adcaac9deff80dde7db2b9e28dbe2/packages/native/apple/README.md",
+        "source_evidence": {
+          "path": "packages/native/apple/Sources/Astryx/Button/Button.swift",
+          "start_line": 10
+        },
+        "status": "partial"
+      },
+      "id": "button",
+      "package": "Astryx",
+      "symbol": "Button"
+    },
+    {
+      "details": {
+        "documentation": "https://github.com/meta/astryx/blob/0c5b0f052b8adcaac9deff80dde7db2b9e28dbe2/packages/native/apple/README.md",
+        "source_evidence": {
+          "path": "packages/native/apple/Sources/Astryx/Card/Card.swift",
+          "start_line": 6
+        },
+        "status": "partial"
+      },
+      "id": "card",
+      "package": "Astryx",
+      "symbol": "Card"
+    },
+    {
+      "details": {
+        "documentation": "https://github.com/meta/astryx/blob/0c5b0f052b8adcaac9deff80dde7db2b9e28dbe2/packages/native/apple/README.md",
+        "source_evidence": {
+          "path": "packages/native/apple/Sources/Astryx/Heading/Heading.swift",
+          "start_line": 7
+        },
+        "status": "partial"
+      },
+      "id": "heading",
+      "package": "Astryx",
+      "symbol": "Heading"
+    },
+    {
+      "details": {
+        "documentation": "https://github.com/meta/astryx/blob/0c5b0f052b8adcaac9deff80dde7db2b9e28dbe2/packages/native/apple/README.md",
+        "source_evidence": {
+          "path": "packages/native/apple/Sources/Astryx/Text/Text.swift",
+          "start_line": 6
+        },
+        "status": "partial"
+      },
+      "id": "text",
+      "package": "Astryx",
+      "symbol": "Text"
+    }
+  ],
+  "schema_version": 1
+}

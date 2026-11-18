@@ -1,0 +1,70 @@
+{
+  "components": [
+    {
+      "details": {
+        "documentation": "https://developer.android.com/reference/kotlin/androidx/compose/material3/package-summary",
+        "source_evidence": {
+          "path": "compose/material3/material3/src/commonMain/kotlin/androidx/compose/material3/Button.kt",
+          "start_line": 139
+        },
+        "status": "partial"
+      },
+      "id": "button",
+      "package": "androidx.compose.material3",
+      "symbol": "Button"
+    },
+    {
+      "details": {
+        "documentation": "https://developer.android.com/reference/kotlin/androidx/compose/material3/package-summary",
+        "source_evidence": {
+          "path": "compose/material3/material3/src/commonMain/kotlin/androidx/compose/material3/Card.kt",
+          "start_line": 80
+        },
+        "status": "partial"
+      },
+      "id": "card",
+      "package": "androidx.compose.material3",
+      "symbol": "Card"
+    },
+    {
+      "details": {
+        "documentation": "https://developer.android.com/reference/kotlin/androidx/compose/material3/package-summary",
+        "source_evidence": {
+          "path": "compose/material3/material3/src/commonMain/kotlin/androidx/compose/material3/Checkbox.kt",
+          "start_line": 93
+        },
+        "status": "partial"
+      },
+      "id": "checkbox",
+      "package": "androidx.compose.material3",
+      "symbol": "Checkbox"
+    },
+    {
+      "details": {
+        "documentation": "https://developer.android.com/reference/kotlin/androidx/compose/material3/package-summary",
+        "source_evidence": {
+          "path": "compose/material3/material3/src/commonMain/kotlin/androidx/compose/material3/Switch.kt",
+          "start_line": 107
+        },
+        "status": "partial"
+      },
+      "id": "switch",
+      "package": "androidx.compose.material3",
+      "symbol": "Switch"
+    },
+    {
+      "details": {
+        "documentation": "https://developer.android.com/reference/kotlin/androidx/compose/material3/package-summary",
+        "source_evidence": {
+          "path": "compose/material3/material3/src/commonMain/kotlin/androidx/compose/material3/Text.kt",
+          "start_line": 104
+        },
+        "status": "partial"
+      },
+      "id": "text",
+      "package": "androidx.compose.material3",
+      "symbol": "Text"
+    }
+  ],
+  "schema_version": 1
+}
