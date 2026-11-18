@@ -81,21 +81,35 @@ function verifyLicenses(root, manifest, evidence) {
   }
 }
 
-function typeScriptTarget(value) {
-  if (typeof value === 'string') return /(?<!\.d)\.[cm]?tsx?$/.test(value) ? value : undefined
-  if (Array.isArray(value)) return value.map(typeScriptTarget).find(Boolean)
-  if (value && typeof value === 'object') {
-    return ['source', 'import', 'default', 'require'].map((condition) => typeScriptTarget(value[condition])).find(Boolean)
+const esmConditions = new Set(['default', 'import', 'node', 'node-addons', 'module-sync'])
+const sourceConditions = new Set([...esmConditions, 'source'])
+
+function resolveExportTarget(target, conditions) {
+  if (target == null) return target
+  if (typeof target === 'string') return target.startsWith('./') ? target : false
+  if (Array.isArray(target)) {
+    let fallback = target.length ? undefined : null
+    for (const candidate of target) {
+      const result = resolveExportTarget(candidate, conditions)
+      if (typeof result === 'string') return result
+      if (result !== undefined) fallback = result
+    }
+    return fallback
   }
-  return undefined
+  if (typeof target === 'object') {
+    // Matching conditions are tried in declaration order. An explicit null blocks the import.
+    for (const [condition, candidate] of Object.entries(target)) {
+      if (!conditions.has(condition)) continue
+      const result = resolveExportTarget(candidate, conditions)
+      if (result !== undefined) return result
+    }
+    return undefined
+  }
+  return false
 }
 
-function hasPackageRootTarget(value) {
-  if (typeof value === 'string') return value.startsWith('./') && !/\.d\.[cm]?ts$/.test(value)
-  if (Array.isArray(value)) return value.some(hasPackageRootTarget)
-  return value && typeof value === 'object' && Object.entries(value).some(([condition, target]) => (
-    condition !== 'types' && hasPackageRootTarget(target)
-  ))
+function isTypeScriptTarget(value) {
+  return typeof value === 'string' && /(?<!\.d)\.[cm]?tsx?$/.test(value)
 }
 
 function publicEntrypoint(pkg, document, evidence) {
@@ -103,8 +117,13 @@ function publicEntrypoint(pkg, document, evidence) {
   const exports = document.exports
   const includesSubpaths = exports && typeof exports === 'object' && Object.keys(exports).some((key) => key.startsWith('.'))
   const rootExport = includesSubpaths ? exports['.'] : exports
-  requireThat(exports == null || hasPackageRootTarget(rootExport), `Package root export is missing from ${pkg.manifest}`)
-  const target = [rootExport, document.source, document.module, document.main].map(typeScriptTarget).find(Boolean)
+  const runtimeTarget = resolveExportTarget(rootExport, esmConditions)
+  requireThat(
+    exports == null || (typeof runtimeTarget === 'string' && !/\.d\.[cm]?ts$/.test(runtimeTarget)),
+    `Package root export is missing from ${pkg.manifest}`,
+  )
+  const sourceTarget = resolveExportTarget(rootExport, sourceConditions)
+  const target = [sourceTarget, document.source, document.module, document.main].find(isTypeScriptTarget)
   if (target) {
     requireThat(!isAbsolute(target), `Package entrypoint must be relative in ${pkg.manifest}`)
     const source = join(packageDir, target)
@@ -235,30 +254,59 @@ function blockCommentEnd(text, start) {
   return text.length
 }
 
+const nativeTrivia = /\/\/[^\r\n]*|\/\*|(#*)("""|")|(')/
+
+function triviaEnd(text, token, kotlin) {
+  const [opener, hashes = '', doubleQuote, singleQuote] = token
+  const start = token.index + opener.length
+  if (opener === '/*') return blockCommentEnd(text, start)
+  const quote = doubleQuote ?? singleQuote
+  return quote ? stringEnd(text, start, quote, hashes, kotlin) : start
+}
+
+function interpolationEnd(text, start, kotlin) {
+  const [open, close] = kotlin ? ['{', '}'] : ['(', ')']
+  const tokens = new RegExp(nativeTrivia.source + (kotlin ? '|[{}]' : '|[()]'), 'g')
+  tokens.lastIndex = start
+  let depth = 1
+  for (let token = tokens.exec(text); token; token = tokens.exec(text)) {
+    if (token[0] === open) {
+      depth += 1
+    } else if (token[0] === close) {
+      depth -= 1
+      if (depth === 0) return tokens.lastIndex
+    } else {
+      tokens.lastIndex = triviaEnd(text, token, kotlin)
+    }
+  }
+  return text.length
+}
+
 function stringEnd(text, start, quote, hashes, kotlin) {
   const delimiter = quote + hashes
   const escape = '\\' + hashes
+  const interpolation = kotlin ? '${' : escape + '('
   for (let index = start; index < text.length; index += 1) {
     if (text.startsWith(delimiter, index)) return index + delimiter.length
-    if (!(kotlin && quote === '"""') && text.startsWith(escape, index)) index += escape.length
+    if (quote !== "'" && text.startsWith(interpolation, index)) {
+      index = interpolationEnd(text, index + interpolation.length, kotlin) - 1
+    } else if (!(kotlin && quote === '"""') && text.startsWith(escape, index)) {
+      index += escape.length
+    }
   }
   return text.length
 }
 
 // Mask trivia without shifting source line numbers or counting braces inside literals.
 function maskNativeTrivia(text, { kotlin = false, keepStrings = false } = {}) {
-  const trivia = /\/\/[^\r\n]*|\/\*|(#*)("""|")|(')/g
+  const trivia = new RegExp(nativeTrivia, 'g')
   let result = ''
   let cursor = 0
   for (let token = trivia.exec(text); token; token = trivia.exec(text)) {
     result += text.slice(cursor, token.index)
-    const [opener, hashes = '', doubleQuote, singleQuote] = token
-    const quote = doubleQuote ?? singleQuote
-    let end = trivia.lastIndex
-    if (opener === '/*') end = blockCommentEnd(text, end)
-    if (quote) end = stringEnd(text, end, quote, hashes, kotlin)
+    const end = triviaEnd(text, token, kotlin)
     const value = text.slice(token.index, end)
-    result += keepStrings && quote ? value : value.replace(/[^\r\n]/g, ' ')
+    result += keepStrings && !value.startsWith('/') ? value : value.replace(/[^\r\n]/g, ' ')
     cursor = trivia.lastIndex = end
   }
   return result + text.slice(cursor)

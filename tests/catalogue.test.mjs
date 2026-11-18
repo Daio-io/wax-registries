@@ -117,6 +117,7 @@ test('requires a top-level Compose component and records its import namespace an
   const inputs = {
     [declaration]: `package androidx.compose.material
 private object Hidden {
+  val token = "\${"}"}"
   @Composable
   public fun Button() {}
 }
@@ -158,6 +159,7 @@ private const val json = """{ "key": "value"
 @Composable
 public fun Button() {}
 """
+private val interpolated = "\${"{"}"
 @Composable
 public fun Button() {}
 `)
@@ -165,7 +167,7 @@ public fun Button() {}
   const root = 'systems/sample-ui/revisions/1'
   const [button] = readJson(cwd, `${root}/.wax/registries/compose.json`).components
   assert.equal(button.package, namespace)
-  assert.equal(button.details.source_evidence.start_line, 8)
+  assert.equal(button.details.source_evidence.start_line, 9)
   assert.equal(readJson(cwd, `${root}/provenance.json`).source.packages[0].version, '1.14.0-alpha01')
   succeeded(command(cwd, 'validate', '--base', 'baseline'))
 })
@@ -340,6 +342,7 @@ test('groups Swift and React under one revision and requires a top-level Swift m
   const packagePath = 'packages/apple/Package.swift'
   snapshot(cwd, swiftPath, `import SwiftUI
 internal enum Hidden {
+  static let token = "\\("}")"
   public struct Button: View {}
 }
 `)
@@ -365,6 +368,7 @@ private let json = #"""
 { "key": "value"
 public struct Button: View {}
 """#
+private let interpolated = #"\\#("{")"#
 public struct Button: View {}
 `)
   succeeded(command(cwd, 'generate', '--source', 'sample-ui', '--revision', '1'))
@@ -373,7 +377,7 @@ public struct Button: View {}
   assert.equal(index.entries.length, 1)
   assert.deepEqual(Object.keys(index.entries[0].registries), ['react', 'swift'])
   const [button] = readJson(cwd, 'systems/sample-ui/revisions/1/.wax/registries/swift.json').components
-  assert.equal(button.details.source_evidence.start_line, 7)
+  assert.equal(button.details.source_evidence.start_line, 8)
 })
 
 test('replays a published revision after a reviewed schema upgrade', (t) => {
@@ -443,6 +447,8 @@ test('rejects React packages whose export map does not expose the package root',
     { '.': {} },
     { '.': null },
     { '.': { types: './dist/index.d.ts' } },
+    { '.': { default: null, import: './dist/index.cjs' } },
+    { '.': { import: null, require: './dist/index.cjs' } },
     [],
   ]) {
     snapshot(cwd, 'package.json', JSON.stringify({
