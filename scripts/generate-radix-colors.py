@@ -5,9 +5,18 @@ import re
 import sys
 
 root = Path(sys.argv[1])
+index = (root / "src/index.ts").read_text()
+modules = []
+for line in index.splitlines():
+    if not line.strip():
+        continue
+    export = re.fullmatch(r'export \* from "\./(\w+)";', line)
+    assert export is not None, line
+    modules.append(export.group(1))
+
 tokens = []
-for filename in ("light.ts", "dark.ts", "blackA.ts", "whiteA.ts"):
-    path = Path("src") / filename
+for module in modules:
+    path = Path("src") / f"{module}.ts"
     source = (root / path).read_text()
     pattern = r"export const (\w+) = \{\n(.*?)\n\};"
     assert not re.sub(pattern, "", source, flags=re.S).strip(), path
