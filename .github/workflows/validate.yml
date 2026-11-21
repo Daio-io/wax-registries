@@ -50,7 +50,7 @@ jobs:
           tracked = subprocess.check_output(["git", "ls-files", "-z", "systems"], text=True)
           assert {Path(path) for path in tracked.split("\0") if path} == expected_files
           PY
-      - name: Preserve published registry files
+      - name: Preserve published registry paths
         run: |
-          test -z "$(git diff --name-only --diff-filter=DMRT "$BASE_SHA" HEAD -- systems/)"
+          test -z "$(git diff --name-only --diff-filter=DRT "$BASE_SHA" HEAD -- systems/)"
           git diff --check "$BASE_SHA" HEAD

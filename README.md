@@ -20,6 +20,15 @@ wax scan --language react --root src \
   --design-system https://raw.githubusercontent.com/Daio-io/wax-registries/main/systems/shadcn/releases/4.23.0/.wax/registries/react.json
 ```
 
+If you installed `public-shadcn-r1` before the correction, update its pinned
+snapshot by refreshing the catalogue and reinstalling revision 1.
+
+```sh
+wax registry find shadcn
+wax registry delete public-shadcn-r1
+wax registry install --version 1 shadcn
+```
+
 ## Regenerate a registry
 
 Use Wax CLI and React pack `0.10.3-alpha2` for this release. The projection gives
