@@ -14,12 +14,12 @@
       "registries": {
         "react": {
           "path": ".wax/registries/react.json",
-          "sha256": "b252cde68a98c44adb35fa911c16d3cfafe88874175ab51bdca9f42d1afb1bd2"
+          "sha256": "41dc0f590cd1e5223d2d0a54fd8f7a901b90486ec5eef30af39cc5e6e11f3318"
         }
       },
       "provenance": {
         "path": "provenance.json",
-        "sha256": "a638021d6308611a11798a2e40dfddb916ff803ee4be06ee0cb4b9b19dbda67b"
+        "sha256": "545d9d72908d0a80b56f18460c76e8b8707d3acb003b343fa52290f21f07f049"
       },
       "upstream": [
         {

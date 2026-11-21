@@ -8,8 +8,8 @@
   },
   "generation": {
     "command": "wax registry discover --design-system shadcn --name 'shadcn/ui' --language react --root ui --force --dry-run",
-    "wax_version": "0.10.2-alpha.1",
-    "react_pack_version": "0.10.2-alpha.1",
+    "wax_version": "0.10.3-alpha2",
+    "react_pack_version": "0.10.3-alpha2",
     "import_pattern": "@/components/ui/<file>"
   },
   "component_count": 353
