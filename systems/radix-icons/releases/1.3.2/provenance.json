@@ -1,0 +1,17 @@
+{
+  "schema_version": 1,
+  "upstream": {
+    "repository": "https://github.com/radix-ui/icons",
+    "package": "@radix-ui/react-icons",
+    "version": "1.3.2",
+    "commit": "bde33b13aa5848555f5512ac12155930fb4beb7d",
+    "source_root": "packages/radix-icons/src",
+    "tag": "@radix-ui/react-icons@1.3.2"
+  },
+  "generation": {
+    "command": "WAX_HOME=\"$wax_home\" wax registry discover --repo-root \"$upstream\" --design-system radix-icons --name \"Radix Icons\" --language react --root packages/radix-icons/src --force --dry-run",
+    "wax_version": "0.10.3-alpha2",
+    "react_pack_version": "0.10.3-alpha2"
+  },
+  "component_count": 318
+}
