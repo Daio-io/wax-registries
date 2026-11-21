@@ -35,6 +35,39 @@
       ]
     },
     {
+      "id": "radix-themes",
+      "name": "Radix Themes",
+      "revision": 1,
+      "subdir": "systems/radix-themes/releases/3.3.0",
+      "minimum_wax_version": "0.10.2-alpha.1",
+      "definition": {
+        "path": ".wax/wax.config.json",
+        "sha256": "2a510f47503fda62e9d53d2847bdb80096c358eb581167fdd0d31776cd338c6b"
+      },
+      "registries": {
+        "react": {
+          "path": ".wax/registries/react.json",
+          "sha256": "b5b5d58ba5a706d1d68de3a0a1820b4aeed77a5166240b8ee391ea2007c7c17b"
+        }
+      },
+      "provenance": {
+        "path": "provenance.json",
+        "sha256": "8248bc5e44acf2adf4f5e6b454d6c5e0f5e9fc05de6ae0cf00e6c6c04acb8519"
+      },
+      "upstream": [
+        {
+          "source": "https://github.com/radix-ui/themes",
+          "version": "@radix-ui/themes@3.3.0"
+        }
+      ],
+      "coverage": [
+        "React components from the public Themes entry point"
+      ],
+      "gaps": [
+        "Theme CSS tokens; renamed imports; runtime helpers"
+      ]
+    },
+    {
       "id": "shadcn",
       "name": "shadcn/ui",
       "revision": 1,

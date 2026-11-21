@@ -1,0 +1,17 @@
+{
+  "schema_version": 1,
+  "upstream": {
+    "repository": "https://github.com/radix-ui/themes",
+    "package": "@radix-ui/themes",
+    "version": "3.3.0",
+    "commit": "7300f2a9be4309e04b2c1b4e43b5d7cf4a58eb43",
+    "source_root": "packages/radix-ui-themes/src/components",
+    "tag": "3.3.0"
+  },
+  "generation": {
+    "command": "python3 scripts/generate-radix-themes.py \"$upstream\"",
+    "wax_version": "0.10.3-alpha2",
+    "react_pack_version": "0.10.3-alpha2"
+  },
+  "component_count": 131
+}
