@@ -69,6 +69,40 @@
       ]
     },
     {
+      "id": "radix-primitives",
+      "name": "Radix Primitives",
+      "revision": 1,
+      "subdir": "systems/radix-primitives/releases/1.8.1",
+      "minimum_wax_version": "0.10.2-alpha.1",
+      "definition": {
+        "path": ".wax/wax.config.json",
+        "sha256": "0d501ad1555576885a6352fc0b01b0e935828a6a41ffa86d0c4cb7a1017a1de9"
+      },
+      "registries": {
+        "react": {
+          "path": ".wax/registries/react.json",
+          "sha256": "6643262b12d55b6ebe767e943cea53e76f9f7adff37750976531f893a54322db"
+        }
+      },
+      "provenance": {
+        "path": "provenance.json",
+        "sha256": "eb8390fa888ccf472c56366b68c65001f820a1fbebeba3d1084b3dd3bb795bf8"
+      },
+      "upstream": [
+        {
+          "source": "https://github.com/radix-ui/primitives",
+          "version": "radix-ui@1.8.1"
+        }
+      ],
+      "coverage": [
+        "Package-qualified named exports from the scoped React packages",
+        "Documented compound components under the radix-ui umbrella"
+      ],
+      "gaps": [
+        "Scoped shorthand names shared across packages; renamed imports; non-component utilities"
+      ]
+    },
+    {
       "id": "radix-themes",
       "name": "Radix Themes",
       "revision": 1,

@@ -1,0 +1,16 @@
+{
+  "schema_version": 1,
+  "upstream": {
+    "repository": "https://github.com/radix-ui/primitives",
+    "package": "radix-ui",
+    "version": "1.8.1",
+    "commit": "925c88b773bb32aecf1b52a296a1a21ba7a720b9",
+    "source_root": "packages/react"
+  },
+  "generation": {
+    "command": "python3 scripts/generate-radix-primitives.py \"$upstream\"",
+    "wax_version": "0.10.3-alpha2",
+    "react_pack_version": "0.10.3-alpha2"
+  },
+  "component_count": 556
+}
