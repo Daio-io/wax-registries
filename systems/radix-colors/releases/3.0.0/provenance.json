@@ -1,0 +1,16 @@
+{
+  "schema_version": 1,
+  "upstream": {
+    "repository": "https://github.com/radix-ui/colors",
+    "package": "@radix-ui/colors",
+    "version": "3.0.0",
+    "commit": "c4d0e50006c71ec51c4d6ff349062ab261b57e67",
+    "source_root": "src"
+  },
+  "generation": {
+    "command": "python3 scripts/generate-radix-colors.py \"$upstream\"",
+    "wax_version": "0.10.3-alpha2"
+  },
+  "component_count": 0,
+  "token_count": 3024
+}

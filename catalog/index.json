@@ -2,6 +2,39 @@
   "schema_version": 1,
   "entries": [
     {
+      "id": "radix-colors",
+      "name": "Radix Colors",
+      "revision": 1,
+      "subdir": "systems/radix-colors/releases/3.0.0",
+      "minimum_wax_version": "0.10.2-alpha.1",
+      "definition": {
+        "path": ".wax/wax.config.json",
+        "sha256": "8baab0fd4408807b4c28f107a799693917760a17e0871d9a40756b6ca27a57ef"
+      },
+      "registries": {
+        "react": {
+          "path": ".wax/registries/react.json",
+          "sha256": "9b9caa9cf9e8074280db46bacca5e2049f23d71377bf243377252197ec3e1ee8"
+        }
+      },
+      "provenance": {
+        "path": "provenance.json",
+        "sha256": "ba07372aaee5f859b41e071078d93022512eb8c2e80ff2cfcb78409856040fda"
+      },
+      "upstream": [
+        {
+          "source": "https://github.com/radix-ui/colors",
+          "version": "@radix-ui/colors@3.0.0"
+        }
+      ],
+      "coverage": [
+        "Exact JavaScript palette property references with literal color values"
+      ],
+      "gaps": [
+        "CSS custom properties; renamed palette bindings; expression matching does not verify import origins"
+      ]
+    },
+    {
       "id": "radix-icons",
       "name": "Radix Icons",
       "revision": 1,
