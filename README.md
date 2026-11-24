@@ -31,7 +31,7 @@ wax registry install --version 1 shadcn
 
 ## Regenerate a registry
 
-Use Wax CLI and React pack `0.10.3-alpha2` for this release. The projection gives
+Use Wax CLI and React pack `0.11.0-alpha1` for this release. The projection gives
 Wax one package name per file so it records the path used by shadcn consumers.
 After discovery, map the reported paths back to the pinned upstream checkout.
 
@@ -42,7 +42,7 @@ git clone --depth 1 --filter=blob:none --sparse --branch 'shadcn@4.23.0' \
 source_root=apps/v4/registry/bases/radix/ui
 git -C "$scratch/upstream" sparse-checkout set "$source_root"
 test "$(git -C "$scratch/upstream" rev-parse HEAD)" = 96da9cc7f1aa10580a3741664e2a77c721206c00 || exit 1
-WAX_HOME="$scratch/wax-home" wax language install react@0.10.3-alpha2
+WAX_HOME="$scratch/wax-home" wax language install react@0.11.0-alpha1
 
 for source in "$scratch/upstream/$source_root/"*.tsx; do
   file=${source##*/}
@@ -55,7 +55,7 @@ done
 
 WAX_HOME="$scratch/wax-home" wax registry discover \
   --repo-root "$scratch/projection" --design-system shadcn --name 'shadcn/ui' \
-  --language react --root ui --force --dry-run > "$scratch/discovered-react.json"
+  --language react --root ui --dry-run > "$scratch/discovered-react.json"
 
 python3 - "$scratch" "$source_root" <<'PY'
 import json
