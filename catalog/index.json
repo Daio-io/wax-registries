@@ -19,7 +19,7 @@
       },
       "provenance": {
         "path": "provenance.json",
-        "sha256": "af8d7fdbbc287912258cb79192eb1ec31a5bea55b630a45b04148573e409ea18"
+        "sha256": "f507e900a3933c3b09e031f8555d765a39dbf23b72f5f56e3747a2476aab3c5c"
       },
       "upstream": [
         {
@@ -31,7 +31,7 @@
         "All React icon components exported by @radix-ui/react-icons"
       ],
       "gaps": [
-        "Renamed React imports; standalone SVG and design-tool assets"
+        "Standalone SVG and design-tool assets"
       ]
     },
     {
