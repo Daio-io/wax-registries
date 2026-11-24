@@ -14,12 +14,12 @@
       "registries": {
         "react": {
           "path": ".wax/registries/react.json",
-          "sha256": "9b9caa9cf9e8074280db46bacca5e2049f23d71377bf243377252197ec3e1ee8"
+          "sha256": "2297236d48ef1a3c71b265959273299e3c78069b488e457ba561287c2d41aa5a"
         }
       },
       "provenance": {
         "path": "provenance.json",
-        "sha256": "ba07372aaee5f859b41e071078d93022512eb8c2e80ff2cfcb78409856040fda"
+        "sha256": "b2e79cb7ab395cf421b23df2b0184fc59c86f72a401b21a37570ffe588fe23bb"
       },
       "upstream": [
         {
@@ -31,7 +31,8 @@
         "Exact JavaScript palette property references with literal color values"
       ],
       "gaps": [
-        "CSS custom properties; renamed palette bindings; expression matching does not verify import origins"
+        "Legacy rgba() tokens in blackA and whiteA are carried forward without package-aware discovery metadata",
+        "CSS custom-property bindings are not generated from this source tree"
       ]
     },
     {

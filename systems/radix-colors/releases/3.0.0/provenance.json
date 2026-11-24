@@ -8,8 +8,15 @@
     "source_root": "src"
   },
   "generation": {
-    "command": "python3 scripts/generate-radix-colors.py \"$upstream\"",
-    "wax_version": "0.10.3-alpha2"
+    "command": "WAX_HOME=\"$wax_home\" wax registry discover --repo-root \"$upstream\" --design-system radix-colors --name \"Radix Colors\" --language react --root src --dry-run",
+    "wax_version": "0.11.0-alpha1",
+    "react_pack_version": "0.11.0-alpha1",
+    "merge": {
+      "base_commit": "7eb9218cf7ad7b69f9624d102caaa6625344c581",
+      "identity": "token key",
+      "preserve": "Existing IDs and authored fields. Keep entries discovery does not emit.",
+      "retained_entries": 24
+    }
   },
   "component_count": 0,
   "token_count": 3024
