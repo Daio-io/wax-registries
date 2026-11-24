@@ -52,7 +52,7 @@
       },
       "provenance": {
         "path": "provenance.json",
-        "sha256": "8248bc5e44acf2adf4f5e6b454d6c5e0f5e9fc05de6ae0cf00e6c6c04acb8519"
+        "sha256": "fc0821fd3ac66ed6b6b6ba41ad8a9192bf5dea062a71752e30963a1444f6848c"
       },
       "upstream": [
         {
@@ -64,7 +64,7 @@
         "React components from the public Themes entry point"
       ],
       "gaps": [
-        "Theme CSS tokens; renamed imports; runtime helpers"
+        "Theme CSS tokens; runtime helpers; six public pass-through exports are carried forward from the prior registry"
       ]
     },
     {
