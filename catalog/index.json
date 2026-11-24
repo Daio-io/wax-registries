@@ -2,6 +2,40 @@
   "schema_version": 1,
   "entries": [
     {
+      "id": "radix-colors",
+      "name": "Radix Colors",
+      "revision": 1,
+      "subdir": "systems/radix-colors/releases/3.0.0",
+      "minimum_wax_version": "0.10.2-alpha.1",
+      "definition": {
+        "path": ".wax/wax.config.json",
+        "sha256": "8baab0fd4408807b4c28f107a799693917760a17e0871d9a40756b6ca27a57ef"
+      },
+      "registries": {
+        "react": {
+          "path": ".wax/registries/react.json",
+          "sha256": "2297236d48ef1a3c71b265959273299e3c78069b488e457ba561287c2d41aa5a"
+        }
+      },
+      "provenance": {
+        "path": "provenance.json",
+        "sha256": "b2e79cb7ab395cf421b23df2b0184fc59c86f72a401b21a37570ffe588fe23bb"
+      },
+      "upstream": [
+        {
+          "source": "https://github.com/radix-ui/colors",
+          "version": "@radix-ui/colors@3.0.0"
+        }
+      ],
+      "coverage": [
+        "Exact JavaScript palette property references with literal color values"
+      ],
+      "gaps": [
+        "Legacy rgba() tokens in blackA and whiteA are carried forward without package-aware discovery metadata",
+        "CSS custom-property bindings are not generated from this source tree"
+      ]
+    },
+    {
       "id": "radix-icons",
       "name": "Radix Icons",
       "revision": 1,
