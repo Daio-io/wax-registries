@@ -1,0 +1,2887 @@
+{
+  "schema_version": 1,
+  "components": [
+    {
+      "id": "ds.accessible-icon",
+      "symbol": "AccessibleIcon",
+      "package": "@radix-ui/themes",
+      "details": {
+        "status": "partial",
+        "source_evidence": {
+          "path": "packages/radix-ui-themes/src/components/accessible-icon.tsx",
+          "start_line": 2,
+          "end_line": 2
+        },
+        "signature": {
+          "type_text": "export const AccessibleIcon = AccessibleIconPrimitive.Root;"
+        },
+        "field_gaps": [
+          {
+            "field": "signature.parameters",
+            "reason": "Props are declared by the re-exported primitive."
+          }
+        ]
+      }
+    },
+    {
+      "id": "ds.alert-dialog-action",
+      "symbol": "AlertDialog.Action",
+      "package": "@radix-ui/themes",
+      "details": {
+        "field_gaps": [
+          {
+            "field": "signature.parameters",
+            "reason": "the exported component has no direct props type annotation"
+          }
+        ],
+        "signature": {
+          "type_text": "const AlertDialogAction = React.forwardRef<AlertDialogActionElement, AlertDialogActionProps>(\n  ({ children, ...props }, forwardedRef) =>"
+        },
+        "source_evidence": {
+          "end_line": 110,
+          "path": "packages/radix-ui-themes/src/components/alert-dialog.tsx",
+          "start_line": 104
+        },
+        "status": "partial"
+      }
+    },
+    {
+      "id": "ds.alert-dialog-cancel",
+      "symbol": "AlertDialog.Cancel",
+      "package": "@radix-ui/themes",
+      "details": {
+        "field_gaps": [
+          {
+            "field": "signature.parameters",
+            "reason": "the exported component has no direct props type annotation"
+          }
+        ],
+        "signature": {
+          "type_text": "const AlertDialogCancel = React.forwardRef<AlertDialogCancelElement, AlertDialogCancelProps>(\n  ({ children, ...props }, forwardedRef) =>"
+        },
+        "source_evidence": {
+          "end_line": 124,
+          "path": "packages/radix-ui-themes/src/components/alert-dialog.tsx",
+          "start_line": 118
+        },
+        "status": "partial"
+      }
+    },
+    {
+      "id": "ds.alert-dialog-content",
+      "symbol": "AlertDialog.Content",
+      "package": "@radix-ui/themes",
+      "details": {
+        "field_gaps": [
+          {
+            "field": "signature.parameters",
+            "reason": "the exported component has no direct props type annotation"
+          }
+        ],
+        "signature": {
+          "type_text": "const AlertDialogContent = React.forwardRef<AlertDialogContentElement, AlertDialogContentProps>(\n  ({ align, ...props }, forwardedRef) =>"
+        },
+        "source_evidence": {
+          "end_line": 73,
+          "path": "packages/radix-ui-themes/src/components/alert-dialog.tsx",
+          "start_line": 48
+        },
+        "status": "partial"
+      }
+    },
+    {
+      "id": "ds.alert-dialog-description",
+      "symbol": "AlertDialog.Description",
+      "package": "@radix-ui/themes",
+      "details": {
+        "field_gaps": [
+          {
+            "field": "signature.parameters",
+            "reason": "the exported component has no direct props type annotation"
+          }
+        ],
+        "signature": {
+          "type_text": "const AlertDialogDescription = React.forwardRef<\n  AlertDialogDescriptionElement,\n  AlertDialogDescriptionProps\n>((props, forwardedRef) =>"
+        },
+        "source_evidence": {
+          "end_line": 96,
+          "path": "packages/radix-ui-themes/src/components/alert-dialog.tsx",
+          "start_line": 89
+        },
+        "status": "partial"
+      }
+    },
+    {
+      "id": "ds.alert-dialog-root",
+      "symbol": "AlertDialog.Root",
+      "package": "@radix-ui/themes",
+      "details": {
+        "field_gaps": [
+          {
+            "field": "signature.parameters",
+            "reason": "the exported component has no direct props type annotation"
+          }
+        ],
+        "signature": {
+          "type_text": "const AlertDialogRoot: React.FC<AlertDialogRootProps> = (props) =>"
+        },
+        "source_evidence": {
+          "end_line": 24,
+          "path": "packages/radix-ui-themes/src/components/alert-dialog.tsx",
+          "start_line": 22
+        },
+        "status": "partial"
+      }
+    },
+    {
+      "id": "ds.alert-dialog-title",
+      "symbol": "AlertDialog.Title",
+      "package": "@radix-ui/themes",
+      "details": {
+        "field_gaps": [
+          {
+            "field": "signature.parameters",
+            "reason": "the exported component has no direct props type annotation"
+          }
+        ],
+        "signature": {
+          "type_text": "const AlertDialogTitle = React.forwardRef<AlertDialogTitleElement, AlertDialogTitleProps>(\n  (props, forwardedRef) =>"
+        },
+        "source_evidence": {
+          "end_line": 84,
+          "path": "packages/radix-ui-themes/src/components/alert-dialog.tsx",
+          "start_line": 78
+        },
+        "status": "partial"
+      }
+    },
+    {
+      "id": "ds.alert-dialog-trigger",
+      "symbol": "AlertDialog.Trigger",
+      "package": "@radix-ui/themes",
+      "details": {
+        "field_gaps": [
+          {
+            "field": "signature.parameters",
+            "reason": "the exported component has no direct props type annotation"
+          }
+        ],
+        "signature": {
+          "type_text": "const AlertDialogTrigger = React.forwardRef<AlertDialogTriggerElement, AlertDialogTriggerProps>(\n  ({ children, ...props }, forwardedRef) =>"
+        },
+        "source_evidence": {
+          "end_line": 38,
+          "path": "packages/radix-ui-themes/src/components/alert-dialog.tsx",
+          "start_line": 32
+        },
+        "status": "partial"
+      }
+    },
+    {
+      "id": "ds.aspect-ratio",
+      "symbol": "AspectRatio",
+      "package": "@radix-ui/themes",
+      "details": {
+        "status": "partial",
+        "source_evidence": {
+          "path": "packages/radix-ui-themes/src/components/aspect-ratio.tsx",
+          "start_line": 2,
+          "end_line": 2
+        },
+        "signature": {
+          "type_text": "export const AspectRatio = AspectRatioPrimitive.Root;"
+        },
+        "field_gaps": [
+          {
+            "field": "signature.parameters",
+            "reason": "Props are declared by the re-exported primitive."
+          }
+        ]
+      }
+    },
+    {
+      "id": "ds.avatar",
+      "symbol": "Avatar",
+      "package": "@radix-ui/themes",
+      "details": {
+        "field_gaps": [
+          {
+            "field": "signature.parameters",
+            "reason": "the exported component has no direct props type annotation"
+          }
+        ],
+        "signature": {
+          "type_text": "const Avatar = React.forwardRef<AvatarImplElement, AvatarProps>((props, forwardedRef) =>"
+        },
+        "source_evidence": {
+          "end_line": 36,
+          "path": "packages/radix-ui-themes/src/components/avatar.tsx",
+          "start_line": 17
+        },
+        "status": "partial"
+      }
+    },
+    {
+      "id": "ds.badge",
+      "symbol": "Badge",
+      "package": "@radix-ui/themes",
+      "details": {
+        "field_gaps": [
+          {
+            "field": "signature.parameters",
+            "reason": "the exported component has no direct props type annotation"
+          }
+        ],
+        "signature": {
+          "type_text": "const Badge = React.forwardRef<BadgeElement, BadgeProps>((props, forwardedRef) =>"
+        },
+        "source_evidence": {
+          "end_line": 33,
+          "path": "packages/radix-ui-themes/src/components/badge.tsx",
+          "start_line": 17
+        },
+        "status": "partial"
+      }
+    },
+    {
+      "id": "ds.blockquote",
+      "symbol": "Blockquote",
+      "package": "@radix-ui/themes",
+      "details": {
+        "field_gaps": [
+          {
+            "field": "signature.parameters",
+            "reason": "the exported component has no direct props type annotation"
+          }
+        ],
+        "signature": {
+          "type_text": "const Blockquote = React.forwardRef<BlockquoteElement, BlockquoteProps>((props, forwardedRef) =>"
+        },
+        "source_evidence": {
+          "end_line": 29,
+          "path": "packages/radix-ui-themes/src/components/blockquote.tsx",
+          "start_line": 16
+        },
+        "status": "partial"
+      }
+    },
+    {
+      "id": "ds.box",
+      "symbol": "Box",
+      "package": "@radix-ui/themes",
+      "details": {
+        "field_gaps": [
+          {
+            "field": "signature.parameters",
+            "reason": "the exported component has no direct props type annotation"
+          }
+        ],
+        "signature": {
+          "type_text": "const Box = React.forwardRef<BoxElement, BoxProps>((props, forwardedRef) =>"
+        },
+        "source_evidence": {
+          "end_line": 30,
+          "path": "packages/radix-ui-themes/src/components/box.tsx",
+          "start_line": 21
+        },
+        "status": "partial"
+      }
+    },
+    {
+      "id": "ds.button",
+      "symbol": "Button",
+      "package": "@radix-ui/themes",
+      "details": {
+        "field_gaps": [
+          {
+            "field": "signature.parameters",
+            "reason": "the exported component has no direct props type annotation"
+          }
+        ],
+        "signature": {
+          "type_text": "const Button = React.forwardRef<ButtonElement, ButtonProps>(\n  ({ className, ...props }, forwardedRef) =>"
+        },
+        "source_evidence": {
+          "end_line": 12,
+          "path": "packages/radix-ui-themes/src/components/button.tsx",
+          "start_line": 8
+        },
+        "status": "partial"
+      }
+    },
+    {
+      "id": "ds.callout-icon",
+      "symbol": "Callout.Icon",
+      "package": "@radix-ui/themes",
+      "details": {
+        "field_gaps": [
+          {
+            "field": "signature.parameters",
+            "reason": "the exported component has no direct props type annotation"
+          }
+        ],
+        "signature": {
+          "type_text": "const CalloutIcon = React.forwardRef<CalloutIconElement, CalloutIconProps>(\n  ({ className, ...props }, forwardedRef) =>"
+        },
+        "source_evidence": {
+          "end_line": 62,
+          "path": "packages/radix-ui-themes/src/components/callout.tsx",
+          "start_line": 56
+        },
+        "status": "partial"
+      }
+    },
+    {
+      "id": "ds.callout-root",
+      "symbol": "Callout.Root",
+      "package": "@radix-ui/themes",
+      "details": {
+        "field_gaps": [
+          {
+            "field": "signature.parameters",
+            "reason": "the exported component has no direct props type annotation"
+          }
+        ],
+        "signature": {
+          "type_text": "const CalloutRoot = React.forwardRef<CalloutRootElement, CalloutRootProps>(\n  (props, forwardedRef) =>"
+        },
+        "source_evidence": {
+          "end_line": 51,
+          "path": "packages/radix-ui-themes/src/components/callout.tsx",
+          "start_line": 29
+        },
+        "status": "partial"
+      }
+    },
+    {
+      "id": "ds.callout-text",
+      "symbol": "Callout.Text",
+      "package": "@radix-ui/themes",
+      "details": {
+        "field_gaps": [
+          {
+            "field": "signature.parameters",
+            "reason": "the exported component has no direct props type annotation"
+          }
+        ],
+        "signature": {
+          "type_text": "const CalloutText = React.forwardRef<CalloutTextElement, CalloutTextProps>(\n  ({ className, ...props }, forwardedRef) =>"
+        },
+        "source_evidence": {
+          "end_line": 81,
+          "path": "packages/radix-ui-themes/src/components/callout.tsx",
+          "start_line": 67
+        },
+        "status": "partial"
+      }
+    },
+    {
+      "id": "ds.card",
+      "symbol": "Card",
+      "package": "@radix-ui/themes",
+      "details": {
+        "field_gaps": [
+          {
+            "field": "signature.parameters",
+            "reason": "the exported component has no direct props type annotation"
+          }
+        ],
+        "signature": {
+          "type_text": "const Card = React.forwardRef<CardElement, CardProps>((props, forwardedRef) =>"
+        },
+        "source_evidence": {
+          "end_line": 26,
+          "path": "packages/radix-ui-themes/src/components/card.tsx",
+          "start_line": 16
+        },
+        "status": "partial"
+      }
+    },
+    {
+      "id": "ds.checkbox",
+      "symbol": "Checkbox",
+      "package": "@radix-ui/themes",
+      "details": {
+        "field_gaps": [
+          {
+            "field": "signature.parameters",
+            "reason": "the exported component has no direct props type annotation"
+          }
+        ],
+        "signature": {
+          "type_text": "const Checkbox = React.forwardRef<CheckboxElement, CheckboxProps>((props, forwardedRef) =>"
+        },
+        "source_evidence": {
+          "end_line": 62,
+          "path": "packages/radix-ui-themes/src/components/checkbox.tsx",
+          "start_line": 27
+        },
+        "status": "partial"
+      }
+    },
+    {
+      "id": "ds.checkbox-cards-item",
+      "symbol": "CheckboxCards.Item",
+      "package": "@radix-ui/themes",
+      "details": {
+        "field_gaps": [
+          {
+            "field": "signature.parameters",
+            "reason": "the exported component has no direct props type annotation"
+          }
+        ],
+        "signature": {
+          "type_text": "const CheckboxCardsItem = React.forwardRef<\n  CheckboxCardsItemElement,\n  ScopedProps<CheckboxCardsItemProps>\n>(({ __scopeCheckboxCards, children, className, style, ...props }, forwardedRef) =>"
+        },
+        "source_evidence": {
+          "end_line": 114,
+          "path": "packages/radix-ui-themes/src/components/checkbox-cards.tsx",
+          "start_line": 78
+        },
+        "status": "partial"
+      }
+    },
+    {
+      "id": "ds.checkbox-cards-root",
+      "symbol": "CheckboxCards.Root",
+      "package": "@radix-ui/themes",
+      "details": {
+        "field_gaps": [
+          {
+            "field": "signature.parameters",
+            "reason": "props type `ScopedProps` is imported or unavailable locally"
+          }
+        ],
+        "signature": {
+          "type_text": "const CheckboxCardsRoot = React.forwardRef<CheckboxCardsRootElement, CheckboxCardsRootProps>(\n  (props: ScopedProps<CheckboxCardsRootProps>, forwardedRef) =>"
+        },
+        "source_evidence": {
+          "end_line": 72,
+          "path": "packages/radix-ui-themes/src/components/checkbox-cards.tsx",
+          "start_line": 46
+        },
+        "status": "partial"
+      }
+    },
+    {
+      "id": "ds.checkbox-group-item",
+      "symbol": "CheckboxGroup.Item",
+      "package": "@radix-ui/themes",
+      "details": {
+        "field_gaps": [
+          {
+            "field": "signature.parameters",
+            "reason": "props type `ScopedProps` is imported or unavailable locally"
+          }
+        ],
+        "signature": {
+          "type_text": "const CheckboxGroupItem = React.forwardRef<CheckboxGroupItemElement, CheckboxGroupItemProps>(\n  (_props: ScopedProps<CheckboxGroupItemProps>, forwardedRef) =>"
+        },
+        "source_evidence": {
+          "end_line": 113,
+          "path": "packages/radix-ui-themes/src/components/checkbox-group.tsx",
+          "start_line": 78
+        },
+        "status": "partial"
+      }
+    },
+    {
+      "id": "ds.checkbox-group-root",
+      "symbol": "CheckboxGroup.Root",
+      "package": "@radix-ui/themes",
+      "details": {
+        "field_gaps": [
+          {
+            "field": "signature.parameters",
+            "reason": "props type `ScopedProps` is imported or unavailable locally"
+          }
+        ],
+        "signature": {
+          "type_text": "const CheckboxGroupRoot = React.forwardRef<CheckboxGroupRootElement, CheckboxGroupRootProps>(\n  (\n    {\n      color = checkboxGroupRootPropDefs.color.default,\n      highContrast = checkboxGroupRootPropDefs.highContrast.default,\n      size = checkboxGroupRootPropDefs.size.default,\n      variant = checkboxGroupRootPropDefs.variant.default,\n      ...props\n    }: ScopedProps<CheckboxGroupRootProps>,\n    forwardedRef,\n  ) =>"
+        },
+        "source_evidence": {
+          "end_line": 72,
+          "path": "packages/radix-ui-themes/src/components/checkbox-group.tsx",
+          "start_line": 42
+        },
+        "status": "partial"
+      }
+    },
+    {
+      "id": "ds.chevron-down-icon",
+      "symbol": "ChevronDownIcon",
+      "package": "@radix-ui/themes",
+      "details": {
+        "field_gaps": [
+          {
+            "field": "signature.parameters",
+            "reason": "the exported component has no direct props type annotation"
+          }
+        ],
+        "signature": {
+          "type_text": "const ChevronDownIcon = React.forwardRef<IconElement, IconProps>((props, forwardedRef) =>"
+        },
+        "source_evidence": {
+          "end_line": 67,
+          "path": "packages/radix-ui-themes/src/components/icons.tsx",
+          "start_line": 53
+        },
+        "status": "partial"
+      }
+    },
+    {
+      "id": "ds.code",
+      "symbol": "Code",
+      "package": "@radix-ui/themes",
+      "details": {
+        "field_gaps": [
+          {
+            "field": "signature.parameters",
+            "reason": "the exported component has no direct props type annotation"
+          }
+        ],
+        "signature": {
+          "type_text": "const Code = React.forwardRef<CodeElement, CodeProps>((props, forwardedRef) =>"
+        },
+        "source_evidence": {
+          "end_line": 34,
+          "path": "packages/radix-ui-themes/src/components/code.tsx",
+          "start_line": 17
+        },
+        "status": "partial"
+      }
+    },
+    {
+      "id": "ds.container",
+      "symbol": "Container",
+      "package": "@radix-ui/themes",
+      "details": {
+        "field_gaps": [
+          {
+            "field": "signature.parameters",
+            "reason": "the exported component has no direct props type annotation"
+          }
+        ],
+        "signature": {
+          "type_text": "const Container = React.forwardRef<ContainerElement, ContainerProps>(\n  ({ width, minWidth, maxWidth, height, minHeight, maxHeight, ...props }, forwardedRef) =>"
+        },
+        "source_evidence": {
+          "end_line": 52,
+          "path": "packages/radix-ui-themes/src/components/container.tsx",
+          "start_line": 21
+        },
+        "status": "partial"
+      }
+    },
+    {
+      "id": "ds.context-menu-checkbox-item",
+      "symbol": "ContextMenu.CheckboxItem",
+      "package": "@radix-ui/themes",
+      "details": {
+        "field_gaps": [
+          {
+            "field": "signature.parameters",
+            "reason": "the exported component has no direct props type annotation"
+          }
+        ],
+        "signature": {
+          "type_text": "const ContextMenuCheckboxItem = React.forwardRef<\n  ContextMenuCheckboxItemElement,\n  ContextMenuCheckboxItemProps\n>((props, forwardedRef) =>"
+        },
+        "source_evidence": {
+          "end_line": 263,
+          "path": "packages/radix-ui-themes/src/components/context-menu.tsx",
+          "start_line": 231
+        },
+        "status": "partial"
+      }
+    },
+    {
+      "id": "ds.context-menu-content",
+      "symbol": "ContextMenu.Content",
+      "package": "@radix-ui/themes",
+      "details": {
+        "field_gaps": [
+          {
+            "field": "signature.parameters",
+            "reason": "the exported component has no direct props type annotation"
+          }
+        ],
+        "signature": {
+          "type_text": "const ContextMenuContent = React.forwardRef<ContextMenuContentElement, ContextMenuContentProps>(\n  (props, forwardedRef) =>"
+        },
+        "source_evidence": {
+          "end_line": 101,
+          "path": "packages/radix-ui-themes/src/components/context-menu.tsx",
+          "start_line": 54
+        },
+        "status": "partial"
+      }
+    },
+    {
+      "id": "ds.context-menu-group",
+      "symbol": "ContextMenu.Group",
+      "package": "@radix-ui/themes",
+      "details": {
+        "field_gaps": [
+          {
+            "field": "signature.parameters",
+            "reason": "the exported component has no direct props type annotation"
+          }
+        ],
+        "signature": {
+          "type_text": "const ContextMenuGroup = React.forwardRef<ContextMenuGroupElement, ContextMenuGroupProps>(\n  ({ className, ...props }, forwardedRef) =>"
+        },
+        "source_evidence": {
+          "end_line": 165,
+          "path": "packages/radix-ui-themes/src/components/context-menu.tsx",
+          "start_line": 156
+        },
+        "status": "partial"
+      }
+    },
+    {
+      "id": "ds.context-menu-item",
+      "symbol": "ContextMenu.Item",
+      "package": "@radix-ui/themes",
+      "details": {
+        "field_gaps": [
+          {
+            "field": "signature.parameters",
+            "reason": "the exported component has no direct props type annotation"
+          }
+        ],
+        "signature": {
+          "type_text": "const ContextMenuItem = React.forwardRef<ContextMenuItemElement, ContextMenuItemProps>(\n  (props, forwardedRef) =>"
+        },
+        "source_evidence": {
+          "end_line": 148,
+          "path": "packages/radix-ui-themes/src/components/context-menu.tsx",
+          "start_line": 127
+        },
+        "status": "partial"
+      }
+    },
+    {
+      "id": "ds.context-menu-label",
+      "symbol": "ContextMenu.Label",
+      "package": "@radix-ui/themes",
+      "details": {
+        "field_gaps": [
+          {
+            "field": "signature.parameters",
+            "reason": "the exported component has no direct props type annotation"
+          }
+        ],
+        "signature": {
+          "type_text": "const ContextMenuLabel = React.forwardRef<ContextMenuLabelElement, ContextMenuLabelProps>(\n  ({ className, ...props }, forwardedRef) =>"
+        },
+        "source_evidence": {
+          "end_line": 118,
+          "path": "packages/radix-ui-themes/src/components/context-menu.tsx",
+          "start_line": 109
+        },
+        "status": "partial"
+      }
+    },
+    {
+      "id": "ds.context-menu-radio-group",
+      "symbol": "ContextMenu.RadioGroup",
+      "package": "@radix-ui/themes",
+      "details": {
+        "field_gaps": [
+          {
+            "field": "signature.parameters",
+            "reason": "the exported component has no direct props type annotation"
+          }
+        ],
+        "signature": {
+          "type_text": "const ContextMenuRadioGroup = React.forwardRef<\n  ContextMenuRadioGroupElement,\n  ContextMenuRadioGroupProps\n>(({ className, ...props }, forwardedRef) =>"
+        },
+        "source_evidence": {
+          "end_line": 183,
+          "path": "packages/radix-ui-themes/src/components/context-menu.tsx",
+          "start_line": 173
+        },
+        "status": "partial"
+      }
+    },
+    {
+      "id": "ds.context-menu-radio-item",
+      "symbol": "ContextMenu.RadioItem",
+      "package": "@radix-ui/themes",
+      "details": {
+        "field_gaps": [
+          {
+            "field": "signature.parameters",
+            "reason": "the exported component has no direct props type annotation"
+          }
+        ],
+        "signature": {
+          "type_text": "const ContextMenuRadioItem = React.forwardRef<\n  ContextMenuRadioItemElement,\n  ContextMenuRadioItemProps\n>((props, forwardedRef) =>"
+        },
+        "source_evidence": {
+          "end_line": 222,
+          "path": "packages/radix-ui-themes/src/components/context-menu.tsx",
+          "start_line": 192
+        },
+        "status": "partial"
+      }
+    },
+    {
+      "id": "ds.context-menu-root",
+      "symbol": "ContextMenu.Root",
+      "package": "@radix-ui/themes",
+      "details": {
+        "field_gaps": [
+          {
+            "field": "signature.parameters",
+            "reason": "the exported component has no direct props type annotation"
+          }
+        ],
+        "signature": {
+          "type_text": "const ContextMenuRoot: React.FC<ContextMenuRootProps> = (props) =>"
+        },
+        "source_evidence": {
+          "end_line": 27,
+          "path": "packages/radix-ui-themes/src/components/context-menu.tsx",
+          "start_line": 25
+        },
+        "status": "partial"
+      }
+    },
+    {
+      "id": "ds.context-menu-separator",
+      "symbol": "ContextMenu.Separator",
+      "package": "@radix-ui/themes",
+      "details": {
+        "field_gaps": [
+          {
+            "field": "signature.parameters",
+            "reason": "the exported component has no direct props type annotation"
+          }
+        ],
+        "signature": {
+          "type_text": "const ContextMenuSeparator = React.forwardRef<\n  ContextMenuSeparatorElement,\n  ContextMenuSeparatorProps\n>(({ className, ...props }, forwardedRef) =>"
+        },
+        "source_evidence": {
+          "end_line": 371,
+          "path": "packages/radix-ui-themes/src/components/context-menu.tsx",
+          "start_line": 361
+        },
+        "status": "partial"
+      }
+    },
+    {
+      "id": "ds.context-menu-sub",
+      "symbol": "ContextMenu.Sub",
+      "package": "@radix-ui/themes",
+      "details": {
+        "field_gaps": [
+          {
+            "field": "signature.parameters",
+            "reason": "the exported component has no direct props type annotation"
+          }
+        ],
+        "signature": {
+          "type_text": "const ContextMenuSub: React.FC<ContextMenuSubProps> = (props) =>"
+        },
+        "source_evidence": {
+          "end_line": 272,
+          "path": "packages/radix-ui-themes/src/components/context-menu.tsx",
+          "start_line": 270
+        },
+        "status": "partial"
+      }
+    },
+    {
+      "id": "ds.context-menu-sub-content",
+      "symbol": "ContextMenu.SubContent",
+      "package": "@radix-ui/themes",
+      "details": {
+        "field_gaps": [
+          {
+            "field": "signature.parameters",
+            "reason": "the exported component has no direct props type annotation"
+          }
+        ],
+        "signature": {
+          "type_text": "const ContextMenuSubContent = React.forwardRef<\n  ContextMenuSubContentElement,\n  ContextMenuSubContentProps\n>((props, forwardedRef) =>"
+        },
+        "source_evidence": {
+          "end_line": 353,
+          "path": "packages/radix-ui-themes/src/components/context-menu.tsx",
+          "start_line": 314
+        },
+        "status": "partial"
+      }
+    },
+    {
+      "id": "ds.context-menu-sub-trigger",
+      "symbol": "ContextMenu.SubTrigger",
+      "package": "@radix-ui/themes",
+      "details": {
+        "field_gaps": [
+          {
+            "field": "signature.parameters",
+            "reason": "the exported component has no direct props type annotation"
+          }
+        ],
+        "signature": {
+          "type_text": "const ContextMenuSubTrigger = React.forwardRef<\n  ContextMenuSubTriggerElement,\n  ContextMenuSubTriggerProps\n>((props, forwardedRef) =>"
+        },
+        "source_evidence": {
+          "end_line": 304,
+          "path": "packages/radix-ui-themes/src/components/context-menu.tsx",
+          "start_line": 280
+        },
+        "status": "partial"
+      }
+    },
+    {
+      "id": "ds.context-menu-trigger",
+      "symbol": "ContextMenu.Trigger",
+      "package": "@radix-ui/themes",
+      "details": {
+        "field_gaps": [
+          {
+            "field": "signature.parameters",
+            "reason": "the exported component has no direct props type annotation"
+          }
+        ],
+        "signature": {
+          "type_text": "const ContextMenuTrigger = React.forwardRef<ContextMenuTriggerElement, ContextMenuTriggerProps>(\n  ({ children, ...props }, forwardedRef) =>"
+        },
+        "source_evidence": {
+          "end_line": 41,
+          "path": "packages/radix-ui-themes/src/components/context-menu.tsx",
+          "start_line": 35
+        },
+        "status": "partial"
+      }
+    },
+    {
+      "id": "ds.data-list-item",
+      "symbol": "DataList.Item",
+      "package": "@radix-ui/themes",
+      "details": {
+        "field_gaps": [
+          {
+            "field": "signature.parameters",
+            "reason": "the exported component has no direct props type annotation"
+          }
+        ],
+        "signature": {
+          "type_text": "const DataListItem = React.forwardRef<DataListItemElement, DataListItemProps>(\n  (props, forwardedRef) =>"
+        },
+        "source_evidence": {
+          "end_line": 52,
+          "path": "packages/radix-ui-themes/src/components/data-list.tsx",
+          "start_line": 45
+        },
+        "status": "partial"
+      }
+    },
+    {
+      "id": "ds.data-list-label",
+      "symbol": "DataList.Label",
+      "package": "@radix-ui/themes",
+      "details": {
+        "field_gaps": [
+          {
+            "field": "signature.parameters",
+            "reason": "the exported component has no direct props type annotation"
+          }
+        ],
+        "signature": {
+          "type_text": "const DataListLabel = React.forwardRef<DataListLabelElement, DataListLabelProps>(\n  (props, forwardedRef) =>"
+        },
+        "source_evidence": {
+          "end_line": 71,
+          "path": "packages/radix-ui-themes/src/components/data-list.tsx",
+          "start_line": 59
+        },
+        "status": "partial"
+      }
+    },
+    {
+      "id": "ds.data-list-root",
+      "symbol": "DataList.Root",
+      "package": "@radix-ui/themes",
+      "details": {
+        "field_gaps": [
+          {
+            "field": "signature.parameters",
+            "reason": "the exported component has no direct props type annotation"
+          }
+        ],
+        "signature": {
+          "type_text": "const DataListRoot = React.forwardRef<DataListRootElement, DataListRootProps>(\n  (props, forwardedRef) =>"
+        },
+        "source_evidence": {
+          "end_line": 38,
+          "path": "packages/radix-ui-themes/src/components/data-list.tsx",
+          "start_line": 21
+        },
+        "status": "partial"
+      }
+    },
+    {
+      "id": "ds.data-list-value",
+      "symbol": "DataList.Value",
+      "package": "@radix-ui/themes",
+      "details": {
+        "field_gaps": [
+          {
+            "field": "signature.parameters",
+            "reason": "the exported component has no direct props type annotation"
+          }
+        ],
+        "signature": {
+          "type_text": "const DataListValue = React.forwardRef<DataListValueElement, DataListValueProps>(\n  ({ children, className, ...props }, forwardedRef) =>"
+        },
+        "source_evidence": {
+          "end_line": 82,
+          "path": "packages/radix-ui-themes/src/components/data-list.tsx",
+          "start_line": 76
+        },
+        "status": "partial"
+      }
+    },
+    {
+      "id": "ds.dialog-close",
+      "symbol": "Dialog.Close",
+      "package": "@radix-ui/themes",
+      "details": {
+        "field_gaps": [
+          {
+            "field": "signature.parameters",
+            "reason": "the exported component has no direct props type annotation"
+          }
+        ],
+        "signature": {
+          "type_text": "const DialogClose = React.forwardRef<DialogCloseElement, DialogCloseProps>(\n  ({ children, ...props }, forwardedRef) =>"
+        },
+        "source_evidence": {
+          "end_line": 105,
+          "path": "packages/radix-ui-themes/src/components/dialog.tsx",
+          "start_line": 99
+        },
+        "status": "partial"
+      }
+    },
+    {
+      "id": "ds.dialog-content",
+      "symbol": "Dialog.Content",
+      "package": "@radix-ui/themes",
+      "details": {
+        "field_gaps": [
+          {
+            "field": "signature.parameters",
+            "reason": "the exported component has no direct props type annotation"
+          }
+        ],
+        "signature": {
+          "type_text": "const DialogContent = React.forwardRef<DialogContentElement, DialogContentProps>(\n  ({ align, ...props }, forwardedRef) =>"
+        },
+        "source_evidence": {
+          "end_line": 69,
+          "path": "packages/radix-ui-themes/src/components/dialog.tsx",
+          "start_line": 44
+        },
+        "status": "partial"
+      }
+    },
+    {
+      "id": "ds.dialog-description",
+      "symbol": "Dialog.Description",
+      "package": "@radix-ui/themes",
+      "details": {
+        "field_gaps": [
+          {
+            "field": "signature.parameters",
+            "reason": "the exported component has no direct props type annotation"
+          }
+        ],
+        "signature": {
+          "type_text": "const DialogDescription = React.forwardRef<DialogDescriptionElement, DialogDescriptionProps>(\n  (props, forwardedRef) =>"
+        },
+        "source_evidence": {
+          "end_line": 91,
+          "path": "packages/radix-ui-themes/src/components/dialog.tsx",
+          "start_line": 85
+        },
+        "status": "partial"
+      }
+    },
+    {
+      "id": "ds.dialog-root",
+      "symbol": "Dialog.Root",
+      "package": "@radix-ui/themes",
+      "details": {
+        "field_gaps": [
+          {
+            "field": "signature.parameters",
+            "reason": "the exported component has no direct props type annotation"
+          }
+        ],
+        "signature": {
+          "type_text": "const DialogRoot: React.FC<DialogRootProps> = (props) =>"
+        },
+        "source_evidence": {
+          "end_line": 20,
+          "path": "packages/radix-ui-themes/src/components/dialog.tsx",
+          "start_line": 20
+        },
+        "status": "partial"
+      }
+    },
+    {
+      "id": "ds.dialog-title",
+      "symbol": "Dialog.Title",
+      "package": "@radix-ui/themes",
+      "details": {
+        "field_gaps": [
+          {
+            "field": "signature.parameters",
+            "reason": "the exported component has no direct props type annotation"
+          }
+        ],
+        "signature": {
+          "type_text": "const DialogTitle = React.forwardRef<DialogTitleElement, DialogTitleProps>(\n  (props, forwardedRef) =>"
+        },
+        "source_evidence": {
+          "end_line": 80,
+          "path": "packages/radix-ui-themes/src/components/dialog.tsx",
+          "start_line": 74
+        },
+        "status": "partial"
+      }
+    },
+    {
+      "id": "ds.dialog-trigger",
+      "symbol": "Dialog.Trigger",
+      "package": "@radix-ui/themes",
+      "details": {
+        "field_gaps": [
+          {
+            "field": "signature.parameters",
+            "reason": "the exported component has no direct props type annotation"
+          }
+        ],
+        "signature": {
+          "type_text": "const DialogTrigger = React.forwardRef<DialogTriggerElement, DialogTriggerProps>(\n  ({ children, ...props }, forwardedRef) =>"
+        },
+        "source_evidence": {
+          "end_line": 34,
+          "path": "packages/radix-ui-themes/src/components/dialog.tsx",
+          "start_line": 28
+        },
+        "status": "partial"
+      }
+    },
+    {
+      "id": "ds.dropdown-menu-checkbox-item",
+      "symbol": "DropdownMenu.CheckboxItem",
+      "package": "@radix-ui/themes",
+      "details": {
+        "field_gaps": [
+          {
+            "field": "signature.parameters",
+            "reason": "the exported component has no direct props type annotation"
+          }
+        ],
+        "signature": {
+          "type_text": "const DropdownMenuCheckboxItem = React.forwardRef<\n  DropdownMenuCheckboxItemElement,\n  DropdownMenuCheckboxItemProps\n>((props, forwardedRef) =>"
+        },
+        "source_evidence": {
+          "end_line": 265,
+          "path": "packages/radix-ui-themes/src/components/dropdown-menu.tsx",
+          "start_line": 233
+        },
+        "status": "partial"
+      }
+    },
+    {
+      "id": "ds.dropdown-menu-content",
+      "symbol": "DropdownMenu.Content",
+      "package": "@radix-ui/themes",
+      "details": {
+        "field_gaps": [
+          {
+            "field": "signature.parameters",
+            "reason": "the exported component has no direct props type annotation"
+          }
+        ],
+        "signature": {
+          "type_text": "const DropdownMenuContent = React.forwardRef<DropdownMenuContentElement, DropdownMenuContentProps>(\n  (props, forwardedRef) =>"
+        },
+        "source_evidence": {
+          "end_line": 103,
+          "path": "packages/radix-ui-themes/src/components/dropdown-menu.tsx",
+          "start_line": 55
+        },
+        "status": "partial"
+      }
+    },
+    {
+      "id": "ds.dropdown-menu-group",
+      "symbol": "DropdownMenu.Group",
+      "package": "@radix-ui/themes",
+      "details": {
+        "field_gaps": [
+          {
+            "field": "signature.parameters",
+            "reason": "the exported component has no direct props type annotation"
+          }
+        ],
+        "signature": {
+          "type_text": "const DropdownMenuGroup = React.forwardRef<DropdownMenuGroupElement, DropdownMenuGroupProps>(\n  ({ className, ...props }, forwardedRef) =>"
+        },
+        "source_evidence": {
+          "end_line": 167,
+          "path": "packages/radix-ui-themes/src/components/dropdown-menu.tsx",
+          "start_line": 158
+        },
+        "status": "partial"
+      }
+    },
+    {
+      "id": "ds.dropdown-menu-item",
+      "symbol": "DropdownMenu.Item",
+      "package": "@radix-ui/themes",
+      "details": {
+        "field_gaps": [
+          {
+            "field": "signature.parameters",
+            "reason": "the exported component has no direct props type annotation"
+          }
+        ],
+        "signature": {
+          "type_text": "const DropdownMenuItem = React.forwardRef<DropdownMenuItemElement, DropdownMenuItemProps>(\n  (props, forwardedRef) =>"
+        },
+        "source_evidence": {
+          "end_line": 150,
+          "path": "packages/radix-ui-themes/src/components/dropdown-menu.tsx",
+          "start_line": 129
+        },
+        "status": "partial"
+      }
+    },
+    {
+      "id": "ds.dropdown-menu-label",
+      "symbol": "DropdownMenu.Label",
+      "package": "@radix-ui/themes",
+      "details": {
+        "field_gaps": [
+          {
+            "field": "signature.parameters",
+            "reason": "the exported component has no direct props type annotation"
+          }
+        ],
+        "signature": {
+          "type_text": "const DropdownMenuLabel = React.forwardRef<DropdownMenuLabelElement, DropdownMenuLabelProps>(\n  ({ className, ...props }, forwardedRef) =>"
+        },
+        "source_evidence": {
+          "end_line": 120,
+          "path": "packages/radix-ui-themes/src/components/dropdown-menu.tsx",
+          "start_line": 111
+        },
+        "status": "partial"
+      }
+    },
+    {
+      "id": "ds.dropdown-menu-radio-group",
+      "symbol": "DropdownMenu.RadioGroup",
+      "package": "@radix-ui/themes",
+      "details": {
+        "field_gaps": [
+          {
+            "field": "signature.parameters",
+            "reason": "the exported component has no direct props type annotation"
+          }
+        ],
+        "signature": {
+          "type_text": "const DropdownMenuRadioGroup = React.forwardRef<\n  DropdownMenuRadioGroupElement,\n  DropdownMenuRadioGroupProps\n>(({ className, ...props }, forwardedRef) =>"
+        },
+        "source_evidence": {
+          "end_line": 185,
+          "path": "packages/radix-ui-themes/src/components/dropdown-menu.tsx",
+          "start_line": 175
+        },
+        "status": "partial"
+      }
+    },
+    {
+      "id": "ds.dropdown-menu-radio-item",
+      "symbol": "DropdownMenu.RadioItem",
+      "package": "@radix-ui/themes",
+      "details": {
+        "field_gaps": [
+          {
+            "field": "signature.parameters",
+            "reason": "the exported component has no direct props type annotation"
+          }
+        ],
+        "signature": {
+          "type_text": "const DropdownMenuRadioItem = React.forwardRef<\n  DropdownMenuRadioItemElement,\n  DropdownMenuRadioItemProps\n>((props, forwardedRef) =>"
+        },
+        "source_evidence": {
+          "end_line": 224,
+          "path": "packages/radix-ui-themes/src/components/dropdown-menu.tsx",
+          "start_line": 194
+        },
+        "status": "partial"
+      }
+    },
+    {
+      "id": "ds.dropdown-menu-root",
+      "symbol": "DropdownMenu.Root",
+      "package": "@radix-ui/themes",
+      "details": {
+        "field_gaps": [
+          {
+            "field": "signature.parameters",
+            "reason": "the exported component has no direct props type annotation"
+          }
+        ],
+        "signature": {
+          "type_text": "const DropdownMenuRoot: React.FC<DropdownMenuRootProps> = (props) =>"
+        },
+        "source_evidence": {
+          "end_line": 28,
+          "path": "packages/radix-ui-themes/src/components/dropdown-menu.tsx",
+          "start_line": 26
+        },
+        "status": "partial"
+      }
+    },
+    {
+      "id": "ds.dropdown-menu-separator",
+      "symbol": "DropdownMenu.Separator",
+      "package": "@radix-ui/themes",
+      "details": {
+        "field_gaps": [
+          {
+            "field": "signature.parameters",
+            "reason": "the exported component has no direct props type annotation"
+          }
+        ],
+        "signature": {
+          "type_text": "const DropdownMenuSeparator = React.forwardRef<\n  DropdownMenuSeparatorElement,\n  DropdownMenuSeparatorProps\n>(({ className, ...props }, forwardedRef) =>"
+        },
+        "source_evidence": {
+          "end_line": 372,
+          "path": "packages/radix-ui-themes/src/components/dropdown-menu.tsx",
+          "start_line": 362
+        },
+        "status": "partial"
+      }
+    },
+    {
+      "id": "ds.dropdown-menu-sub",
+      "symbol": "DropdownMenu.Sub",
+      "package": "@radix-ui/themes",
+      "details": {
+        "field_gaps": [
+          {
+            "field": "signature.parameters",
+            "reason": "the exported component has no direct props type annotation"
+          }
+        ],
+        "signature": {
+          "type_text": "const DropdownMenuSub: React.FC<DropdownMenuSubProps> = (props) =>"
+        },
+        "source_evidence": {
+          "end_line": 273,
+          "path": "packages/radix-ui-themes/src/components/dropdown-menu.tsx",
+          "start_line": 271
+        },
+        "status": "partial"
+      }
+    },
+    {
+      "id": "ds.dropdown-menu-sub-content",
+      "symbol": "DropdownMenu.SubContent",
+      "package": "@radix-ui/themes",
+      "details": {
+        "field_gaps": [
+          {
+            "field": "signature.parameters",
+            "reason": "the exported component has no direct props type annotation"
+          }
+        ],
+        "signature": {
+          "type_text": "const DropdownMenuSubContent = React.forwardRef<\n  DropdownMenuSubContentElement,\n  DropdownMenuSubContentProps\n>((props, forwardedRef) =>"
+        },
+        "source_evidence": {
+          "end_line": 354,
+          "path": "packages/radix-ui-themes/src/components/dropdown-menu.tsx",
+          "start_line": 315
+        },
+        "status": "partial"
+      }
+    },
+    {
+      "id": "ds.dropdown-menu-sub-trigger",
+      "symbol": "DropdownMenu.SubTrigger",
+      "package": "@radix-ui/themes",
+      "details": {
+        "field_gaps": [
+          {
+            "field": "signature.parameters",
+            "reason": "the exported component has no direct props type annotation"
+          }
+        ],
+        "signature": {
+          "type_text": "const DropdownMenuSubTrigger = React.forwardRef<\n  DropdownMenuSubTriggerElement,\n  DropdownMenuSubTriggerProps\n>((props, forwardedRef) =>"
+        },
+        "source_evidence": {
+          "end_line": 305,
+          "path": "packages/radix-ui-themes/src/components/dropdown-menu.tsx",
+          "start_line": 281
+        },
+        "status": "partial"
+      }
+    },
+    {
+      "id": "ds.dropdown-menu-trigger",
+      "symbol": "DropdownMenu.Trigger",
+      "package": "@radix-ui/themes",
+      "details": {
+        "field_gaps": [
+          {
+            "field": "signature.parameters",
+            "reason": "the exported component has no direct props type annotation"
+          }
+        ],
+        "signature": {
+          "type_text": "const DropdownMenuTrigger = React.forwardRef<DropdownMenuTriggerElement, DropdownMenuTriggerProps>(\n  ({ children, ...props }, forwardedRef) =>"
+        },
+        "source_evidence": {
+          "end_line": 42,
+          "path": "packages/radix-ui-themes/src/components/dropdown-menu.tsx",
+          "start_line": 36
+        },
+        "status": "partial"
+      }
+    },
+    {
+      "id": "ds.dropdown-menu-trigger-icon",
+      "symbol": "DropdownMenu.TriggerIcon",
+      "package": "@radix-ui/themes",
+      "details": {
+        "field_gaps": [
+          {
+            "field": "signature.parameters",
+            "reason": "the exported component has no direct props type annotation"
+          }
+        ],
+        "signature": {
+          "type_text": "const ChevronDownIcon = React.forwardRef<IconElement, IconProps>((props, forwardedRef) =>"
+        },
+        "source_evidence": {
+          "end_line": 67,
+          "path": "packages/radix-ui-themes/src/components/icons.tsx",
+          "start_line": 53
+        },
+        "status": "partial"
+      }
+    },
+    {
+      "id": "ds.em",
+      "symbol": "Em",
+      "package": "@radix-ui/themes",
+      "details": {
+        "field_gaps": [
+          {
+            "field": "signature.parameters",
+            "reason": "the exported component has no direct props type annotation"
+          }
+        ],
+        "signature": {
+          "type_text": "const Em = React.forwardRef<EmElement, EmProps>((props, forwardedRef) =>"
+        },
+        "source_evidence": {
+          "end_line": 18,
+          "path": "packages/radix-ui-themes/src/components/em.tsx",
+          "start_line": 14
+        },
+        "status": "partial"
+      }
+    },
+    {
+      "id": "ds.flex",
+      "symbol": "Flex",
+      "package": "@radix-ui/themes",
+      "details": {
+        "field_gaps": [
+          {
+            "field": "signature.parameters",
+            "reason": "the exported component has no direct props type annotation"
+          }
+        ],
+        "signature": {
+          "type_text": "const Flex = React.forwardRef<FlexElement, FlexProps>((props, forwardedRef) =>"
+        },
+        "source_evidence": {
+          "end_line": 30,
+          "path": "packages/radix-ui-themes/src/components/flex.tsx",
+          "start_line": 21
+        },
+        "status": "partial"
+      }
+    },
+    {
+      "id": "ds.grid",
+      "symbol": "Grid",
+      "package": "@radix-ui/themes",
+      "details": {
+        "field_gaps": [
+          {
+            "field": "signature.parameters",
+            "reason": "the exported component has no direct props type annotation"
+          }
+        ],
+        "signature": {
+          "type_text": "const Grid = React.forwardRef<GridElement, GridProps>((props, forwardedRef) =>"
+        },
+        "source_evidence": {
+          "end_line": 30,
+          "path": "packages/radix-ui-themes/src/components/grid.tsx",
+          "start_line": 21
+        },
+        "status": "partial"
+      }
+    },
+    {
+      "id": "ds.heading",
+      "symbol": "Heading",
+      "package": "@radix-ui/themes",
+      "details": {
+        "field_gaps": [
+          {
+            "field": "signature.parameters",
+            "reason": "the exported component has no direct props type annotation"
+          }
+        ],
+        "signature": {
+          "type_text": "const Heading = React.forwardRef<HeadingElement, HeadingProps>((props, forwardedRef) =>"
+        },
+        "source_evidence": {
+          "end_line": 37,
+          "path": "packages/radix-ui-themes/src/components/heading.tsx",
+          "start_line": 18
+        },
+        "status": "partial"
+      }
+    },
+    {
+      "id": "ds.hover-card-content",
+      "symbol": "HoverCard.Content",
+      "package": "@radix-ui/themes",
+      "details": {
+        "field_gaps": [
+          {
+            "field": "signature.parameters",
+            "reason": "the exported component has no direct props type annotation"
+          }
+        ],
+        "signature": {
+          "type_text": "const HoverCardContent = React.forwardRef<HoverCardContentElement, HoverCardContentProps>(\n  (props, forwardedRef) =>"
+        },
+        "source_evidence": {
+          "end_line": 68,
+          "path": "packages/radix-ui-themes/src/components/hover-card.tsx",
+          "start_line": 47
+        },
+        "status": "partial"
+      }
+    },
+    {
+      "id": "ds.hover-card-root",
+      "symbol": "HoverCard.Root",
+      "package": "@radix-ui/themes",
+      "details": {
+        "field_gaps": [
+          {
+            "field": "signature.parameters",
+            "reason": "the exported component has no direct props type annotation"
+          }
+        ],
+        "signature": {
+          "type_text": "const HoverCardRoot: React.FC<HoverCardRootProps> = (props) =>"
+        },
+        "source_evidence": {
+          "end_line": 18,
+          "path": "packages/radix-ui-themes/src/components/hover-card.tsx",
+          "start_line": 16
+        },
+        "status": "partial"
+      }
+    },
+    {
+      "id": "ds.hover-card-trigger",
+      "symbol": "HoverCard.Trigger",
+      "package": "@radix-ui/themes",
+      "details": {
+        "field_gaps": [
+          {
+            "field": "signature.parameters",
+            "reason": "the exported component has no direct props type annotation"
+          }
+        ],
+        "signature": {
+          "type_text": "const HoverCardTrigger = React.forwardRef<HoverCardTriggerElement, HoverCardTriggerProps>(\n  ({ children, className, ...props }, forwardedRef) =>"
+        },
+        "source_evidence": {
+          "end_line": 37,
+          "path": "packages/radix-ui-themes/src/components/hover-card.tsx",
+          "start_line": 26
+        },
+        "status": "partial"
+      }
+    },
+    {
+      "id": "ds.icon-button",
+      "symbol": "IconButton",
+      "package": "@radix-ui/themes",
+      "details": {
+        "field_gaps": [
+          {
+            "field": "signature.parameters",
+            "reason": "the exported component has no direct props type annotation"
+          }
+        ],
+        "signature": {
+          "type_text": "const IconButton = React.forwardRef<IconButtonElement, IconButtonProps>(\n  ({ className, ...props }, forwardedRef) =>"
+        },
+        "source_evidence": {
+          "end_line": 12,
+          "path": "packages/radix-ui-themes/src/components/icon-button.tsx",
+          "start_line": 8
+        },
+        "status": "partial"
+      }
+    },
+    {
+      "id": "ds.inset",
+      "symbol": "Inset",
+      "package": "@radix-ui/themes",
+      "details": {
+        "field_gaps": [
+          {
+            "field": "signature.parameters",
+            "reason": "the exported component has no direct props type annotation"
+          }
+        ],
+        "signature": {
+          "type_text": "const Inset = React.forwardRef<InsetElement, InsetProps>((props, forwardedRef) =>"
+        },
+        "source_evidence": {
+          "end_line": 22,
+          "path": "packages/radix-ui-themes/src/components/inset.tsx",
+          "start_line": 18
+        },
+        "status": "partial"
+      }
+    },
+    {
+      "id": "ds.kbd",
+      "symbol": "Kbd",
+      "package": "@radix-ui/themes",
+      "details": {
+        "field_gaps": [
+          {
+            "field": "signature.parameters",
+            "reason": "the exported component has no direct props type annotation"
+          }
+        ],
+        "signature": {
+          "type_text": "const Kbd = React.forwardRef<KbdElement, KbdProps>((props, forwardedRef) =>"
+        },
+        "source_evidence": {
+          "end_line": 26,
+          "path": "packages/radix-ui-themes/src/components/kbd.tsx",
+          "start_line": 16
+        },
+        "status": "partial"
+      }
+    },
+    {
+      "id": "ds.link",
+      "symbol": "Link",
+      "package": "@radix-ui/themes",
+      "details": {
+        "field_gaps": [
+          {
+            "field": "signature.parameters",
+            "reason": "the exported component has no direct props type annotation"
+          }
+        ],
+        "signature": {
+          "type_text": "const Link = React.forwardRef<LinkElement, LinkProps>((props, forwardedRef) =>"
+        },
+        "source_evidence": {
+          "end_line": 33,
+          "path": "packages/radix-ui-themes/src/components/link.tsx",
+          "start_line": 15
+        },
+        "status": "partial"
+      }
+    },
+    {
+      "id": "ds.popover-anchor",
+      "symbol": "Popover.Anchor",
+      "package": "@radix-ui/themes",
+      "details": {
+        "field_gaps": [
+          {
+            "field": "signature.parameters",
+            "reason": "the exported component has no direct props type annotation"
+          }
+        ],
+        "signature": {
+          "type_text": "const PopoverAnchor = React.forwardRef<PopoverAnchorElement, PopoverAnchorProps>(\n  ({ children, ...props }, forwardedRef) =>"
+        },
+        "source_evidence": {
+          "end_line": 86,
+          "path": "packages/radix-ui-themes/src/components/popover.tsx",
+          "start_line": 82
+        },
+        "status": "partial"
+      }
+    },
+    {
+      "id": "ds.popover-close",
+      "symbol": "Popover.Close",
+      "package": "@radix-ui/themes",
+      "details": {
+        "field_gaps": [
+          {
+            "field": "signature.parameters",
+            "reason": "the exported component has no direct props type annotation"
+          }
+        ],
+        "signature": {
+          "type_text": "const PopoverClose = React.forwardRef<PopoverCloseElement, PopoverCloseProps>(\n  ({ children, ...props }, forwardedRef) =>"
+        },
+        "source_evidence": {
+          "end_line": 75,
+          "path": "packages/radix-ui-themes/src/components/popover.tsx",
+          "start_line": 69
+        },
+        "status": "partial"
+      }
+    },
+    {
+      "id": "ds.popover-content",
+      "symbol": "Popover.Content",
+      "package": "@radix-ui/themes",
+      "details": {
+        "field_gaps": [
+          {
+            "field": "signature.parameters",
+            "reason": "the exported component has no direct props type annotation"
+          }
+        ],
+        "signature": {
+          "type_text": "const PopoverContent = React.forwardRef<PopoverContentElement, PopoverContentProps>(\n  (props, forwardedRef) =>"
+        },
+        "source_evidence": {
+          "end_line": 61,
+          "path": "packages/radix-ui-themes/src/components/popover.tsx",
+          "start_line": 40
+        },
+        "status": "partial"
+      }
+    },
+    {
+      "id": "ds.popover-root",
+      "symbol": "Popover.Root",
+      "package": "@radix-ui/themes",
+      "details": {
+        "field_gaps": [
+          {
+            "field": "signature.parameters",
+            "reason": "props type `PopoverRootProps` inherits fields that require type resolution"
+          }
+        ],
+        "signature": {
+          "type_text": "const PopoverRoot: React.FC<PopoverRootProps> = (props: PopoverRootProps) =>"
+        },
+        "source_evidence": {
+          "end_line": 16,
+          "path": "packages/radix-ui-themes/src/components/popover.tsx",
+          "start_line": 14
+        },
+        "status": "partial"
+      }
+    },
+    {
+      "id": "ds.popover-trigger",
+      "symbol": "Popover.Trigger",
+      "package": "@radix-ui/themes",
+      "details": {
+        "field_gaps": [
+          {
+            "field": "signature.parameters",
+            "reason": "the exported component has no direct props type annotation"
+          }
+        ],
+        "signature": {
+          "type_text": "const PopoverTrigger = React.forwardRef<PopoverTriggerElement, PopoverTriggerProps>(\n  ({ children, ...props }, forwardedRef) =>"
+        },
+        "source_evidence": {
+          "end_line": 30,
+          "path": "packages/radix-ui-themes/src/components/popover.tsx",
+          "start_line": 24
+        },
+        "status": "partial"
+      }
+    },
+    {
+      "id": "ds.portal",
+      "symbol": "Portal",
+      "package": "@radix-ui/themes",
+      "details": {
+        "status": "partial",
+        "source_evidence": {
+          "path": "packages/radix-ui-themes/src/components/portal.tsx",
+          "start_line": 2,
+          "end_line": 2
+        },
+        "signature": {
+          "type_text": "export const Portal = PortalPrimitive.Root;"
+        },
+        "field_gaps": [
+          {
+            "field": "signature.parameters",
+            "reason": "Props are declared by the re-exported primitive."
+          }
+        ]
+      }
+    },
+    {
+      "id": "ds.progress",
+      "symbol": "Progress",
+      "package": "@radix-ui/themes",
+      "details": {
+        "field_gaps": [
+          {
+            "field": "signature.parameters",
+            "reason": "the exported component has no direct props type annotation"
+          }
+        ],
+        "signature": {
+          "type_text": "const Progress = React.forwardRef<ProgressElement, ProgressProps>((props, forwardedRef) =>"
+        },
+        "source_evidence": {
+          "end_line": 50,
+          "path": "packages/radix-ui-themes/src/components/progress.tsx",
+          "start_line": 23
+        },
+        "status": "partial"
+      }
+    },
+    {
+      "id": "ds.quote",
+      "symbol": "Quote",
+      "package": "@radix-ui/themes",
+      "details": {
+        "field_gaps": [
+          {
+            "field": "signature.parameters",
+            "reason": "the exported component has no direct props type annotation"
+          }
+        ],
+        "signature": {
+          "type_text": "const Quote = React.forwardRef<QuoteElement, QuoteProps>((props, forwardedRef) =>"
+        },
+        "source_evidence": {
+          "end_line": 18,
+          "path": "packages/radix-ui-themes/src/components/quote.tsx",
+          "start_line": 14
+        },
+        "status": "partial"
+      }
+    },
+    {
+      "id": "ds.radio",
+      "symbol": "Radio",
+      "package": "@radix-ui/themes",
+      "details": {
+        "field_gaps": [
+          {
+            "field": "signature.parameters",
+            "reason": "the exported component has no direct props type annotation"
+          }
+        ],
+        "signature": {
+          "type_text": "const Radio = React.forwardRef<RadioElement, RadioProps>((props, forwardedRef) =>"
+        },
+        "source_evidence": {
+          "end_line": 46,
+          "path": "packages/radix-ui-themes/src/components/radio.tsx",
+          "start_line": 27
+        },
+        "status": "partial"
+      }
+    },
+    {
+      "id": "ds.radio-cards-item",
+      "symbol": "RadioCards.Item",
+      "package": "@radix-ui/themes",
+      "details": {
+        "field_gaps": [
+          {
+            "field": "signature.parameters",
+            "reason": "the exported component has no direct props type annotation"
+          }
+        ],
+        "signature": {
+          "type_text": "const RadioCardsItem = React.forwardRef<RadioCardsItemElement, RadioCardsItemProps>(\n  ({ className, ...props }, forwardedRef) =>"
+        },
+        "source_evidence": {
+          "end_line": 54,
+          "path": "packages/radix-ui-themes/src/components/radio-cards.tsx",
+          "start_line": 45
+        },
+        "status": "partial"
+      }
+    },
+    {
+      "id": "ds.radio-cards-root",
+      "symbol": "RadioCards.Root",
+      "package": "@radix-ui/themes",
+      "details": {
+        "field_gaps": [
+          {
+            "field": "signature.parameters",
+            "reason": "the exported component has no direct props type annotation"
+          }
+        ],
+        "signature": {
+          "type_text": "const RadioCardsRoot = React.forwardRef<RadioCardsRootElement, RadioCardsRootProps>(\n  (props, forwardedRef) =>"
+        },
+        "source_evidence": {
+          "end_line": 39,
+          "path": "packages/radix-ui-themes/src/components/radio-cards.tsx",
+          "start_line": 21
+        },
+        "status": "partial"
+      }
+    },
+    {
+      "id": "ds.radio-group-item",
+      "symbol": "RadioGroup.Item",
+      "package": "@radix-ui/themes",
+      "details": {
+        "field_gaps": [
+          {
+            "field": "signature.parameters",
+            "reason": "props type `ScopedProps` is imported or unavailable locally"
+          }
+        ],
+        "signature": {
+          "type_text": "const RadioGroupItem = React.forwardRef<RadioGroupItemElement, RadioGroupItemProps>(\n  (_props: ScopedProps<RadioGroupItemProps>, forwardedRef) =>"
+        },
+        "source_evidence": {
+          "end_line": 108,
+          "path": "packages/radix-ui-themes/src/components/radio-group.tsx",
+          "start_line": 73
+        },
+        "status": "partial"
+      }
+    },
+    {
+      "id": "ds.radio-group-root",
+      "symbol": "RadioGroup.Root",
+      "package": "@radix-ui/themes",
+      "details": {
+        "field_gaps": [
+          {
+            "field": "signature.parameters",
+            "reason": "props type `ScopedProps` is imported or unavailable locally"
+          }
+        ],
+        "signature": {
+          "type_text": "const RadioGroupRoot = React.forwardRef<RadioGroupRootElement, RadioGroupRootProps>(\n  (\n    {\n      color = radioGroupRootPropDefs.color.default,\n      highContrast = radioGroupRootPropDefs.highContrast.default,\n      size = radioGroupRootPropDefs.size.default,\n      variant = radioGroupRootPropDefs.variant.default,\n      ...props\n    }: ScopedProps<RadioGroupRootProps>,\n    forwardedRef,\n  ) =>"
+        },
+        "source_evidence": {
+          "end_line": 67,
+          "path": "packages/radix-ui-themes/src/components/radio-group.tsx",
+          "start_line": 37
+        },
+        "status": "partial"
+      }
+    },
+    {
+      "id": "ds.reset",
+      "symbol": "Reset",
+      "package": "@radix-ui/themes",
+      "details": {
+        "field_gaps": [
+          {
+            "field": "signature.parameters",
+            "reason": "the exported component has no direct props type annotation"
+          }
+        ],
+        "signature": {
+          "type_text": "const Reset = React.forwardRef<HTMLElement, ResetProps>(\n  ({ className, children, ...props }, forwardedRef) =>"
+        },
+        "source_evidence": {
+          "end_line": 18,
+          "path": "packages/radix-ui-themes/src/components/reset.tsx",
+          "start_line": 10
+        },
+        "status": "partial"
+      }
+    },
+    {
+      "id": "ds.scroll-area",
+      "symbol": "ScrollArea",
+      "package": "@radix-ui/themes",
+      "details": {
+        "field_gaps": [
+          {
+            "field": "signature.parameters",
+            "reason": "the exported component has no direct props type annotation"
+          }
+        ],
+        "signature": {
+          "type_text": "const ScrollArea = React.forwardRef<ScrollAreaElement, ScrollAreaProps>((props, forwardedRef) =>"
+        },
+        "source_evidence": {
+          "end_line": 103,
+          "path": "packages/radix-ui-themes/src/components/scroll-area.tsx",
+          "start_line": 24
+        },
+        "status": "partial"
+      }
+    },
+    {
+      "id": "ds.section",
+      "symbol": "Section",
+      "package": "@radix-ui/themes",
+      "details": {
+        "field_gaps": [
+          {
+            "field": "signature.parameters",
+            "reason": "the exported component has no direct props type annotation"
+          }
+        ],
+        "signature": {
+          "type_text": "const Section = React.forwardRef<SectionElement, SectionProps>((props, forwardedRef) =>"
+        },
+        "source_evidence": {
+          "end_line": 29,
+          "path": "packages/radix-ui-themes/src/components/section.tsx",
+          "start_line": 18
+        },
+        "status": "partial"
+      }
+    },
+    {
+      "id": "ds.segmented-control-item",
+      "symbol": "SegmentedControl.Item",
+      "package": "@radix-ui/themes",
+      "details": {
+        "field_gaps": [
+          {
+            "field": "signature.parameters",
+            "reason": "the exported component has no direct props type annotation"
+          }
+        ],
+        "signature": {
+          "type_text": "const SegmentedControlItem = React.forwardRef<HTMLButtonElement, SegmentedControlItemProps>(\n  ({ children, className, ...props }, forwardedRef) =>"
+        },
+        "source_evidence": {
+          "end_line": 102,
+          "path": "packages/radix-ui-themes/src/components/segmented-control.tsx",
+          "start_line": 84
+        },
+        "status": "partial"
+      }
+    },
+    {
+      "id": "ds.segmented-control-root",
+      "symbol": "SegmentedControl.Root",
+      "package": "@radix-ui/themes",
+      "details": {
+        "field_gaps": [
+          {
+            "field": "signature.parameters",
+            "reason": "the exported component has no direct props type annotation"
+          }
+        ],
+        "signature": {
+          "type_text": "const SegmentedControlRoot = React.forwardRef<HTMLDivElement, SegmentedControlRootProps>(\n  (props, forwardedRef) =>"
+        },
+        "source_evidence": {
+          "end_line": 68,
+          "path": "packages/radix-ui-themes/src/components/segmented-control.tsx",
+          "start_line": 28
+        },
+        "status": "partial"
+      }
+    },
+    {
+      "id": "ds.select-content",
+      "symbol": "Select.Content",
+      "package": "@radix-ui/themes",
+      "details": {
+        "field_gaps": [
+          {
+            "field": "signature.parameters",
+            "reason": "the exported component has no direct props type annotation"
+          }
+        ],
+        "signature": {
+          "type_text": "const SelectContent = React.forwardRef<SelectContentElement, SelectContentProps>(\n  (props, forwardedRef) =>"
+        },
+        "source_evidence": {
+          "end_line": 135,
+          "path": "packages/radix-ui-themes/src/components/select.tsx",
+          "start_line": 87
+        },
+        "status": "partial"
+      }
+    },
+    {
+      "id": "ds.select-group",
+      "symbol": "Select.Group",
+      "package": "@radix-ui/themes",
+      "details": {
+        "field_gaps": [
+          {
+            "field": "signature.parameters",
+            "reason": "the exported component has no direct props type annotation"
+          }
+        ],
+        "signature": {
+          "type_text": "const SelectGroup = React.forwardRef<SelectGroupElement, SelectGroupProps>(\n  ({ className, ...props }, forwardedRef) =>"
+        },
+        "source_evidence": {
+          "end_line": 175,
+          "path": "packages/radix-ui-themes/src/components/select.tsx",
+          "start_line": 166
+        },
+        "status": "partial"
+      }
+    },
+    {
+      "id": "ds.select-item",
+      "symbol": "Select.Item",
+      "package": "@radix-ui/themes",
+      "details": {
+        "field_gaps": [
+          {
+            "field": "signature.parameters",
+            "reason": "the exported component has no direct props type annotation"
+          }
+        ],
+        "signature": {
+          "type_text": "const SelectItem = React.forwardRef<SelectItemElement, SelectItemProps>((props, forwardedRef) =>"
+        },
+        "source_evidence": {
+          "end_line": 158,
+          "path": "packages/radix-ui-themes/src/components/select.tsx",
+          "start_line": 143
+        },
+        "status": "partial"
+      }
+    },
+    {
+      "id": "ds.select-label",
+      "symbol": "Select.Label",
+      "package": "@radix-ui/themes",
+      "details": {
+        "field_gaps": [
+          {
+            "field": "signature.parameters",
+            "reason": "the exported component has no direct props type annotation"
+          }
+        ],
+        "signature": {
+          "type_text": "const SelectLabel = React.forwardRef<SelectLabelElement, SelectLabelProps>(\n  ({ className, ...props }, forwardedRef) =>"
+        },
+        "source_evidence": {
+          "end_line": 192,
+          "path": "packages/radix-ui-themes/src/components/select.tsx",
+          "start_line": 183
+        },
+        "status": "partial"
+      }
+    },
+    {
+      "id": "ds.select-root",
+      "symbol": "Select.Root",
+      "package": "@radix-ui/themes",
+      "details": {
+        "field_gaps": [
+          {
+            "field": "signature.parameters",
+            "reason": "the exported component has no direct props type annotation"
+          }
+        ],
+        "signature": {
+          "type_text": "const SelectRoot: React.FC<SelectRootProps> = (props) =>"
+        },
+        "source_evidence": {
+          "end_line": 36,
+          "path": "packages/radix-ui-themes/src/components/select.tsx",
+          "start_line": 27
+        },
+        "status": "partial"
+      }
+    },
+    {
+      "id": "ds.select-separator",
+      "symbol": "Select.Separator",
+      "package": "@radix-ui/themes",
+      "details": {
+        "field_gaps": [
+          {
+            "field": "signature.parameters",
+            "reason": "the exported component has no direct props type annotation"
+          }
+        ],
+        "signature": {
+          "type_text": "const SelectSeparator = React.forwardRef<SelectSeparatorElement, SelectSeparatorProps>(\n  ({ className, ...props }, forwardedRef) =>"
+        },
+        "source_evidence": {
+          "end_line": 209,
+          "path": "packages/radix-ui-themes/src/components/select.tsx",
+          "start_line": 200
+        },
+        "status": "partial"
+      }
+    },
+    {
+      "id": "ds.select-trigger",
+      "symbol": "Select.Trigger",
+      "package": "@radix-ui/themes",
+      "details": {
+        "field_gaps": [
+          {
+            "field": "signature.parameters",
+            "reason": "the exported component has no direct props type annotation"
+          }
+        ],
+        "signature": {
+          "type_text": "const SelectTrigger = React.forwardRef<SelectTriggerElement, SelectTriggerProps>(\n  (props, forwardedRef) =>"
+        },
+        "source_evidence": {
+          "end_line": 76,
+          "path": "packages/radix-ui-themes/src/components/select.tsx",
+          "start_line": 46
+        },
+        "status": "partial"
+      }
+    },
+    {
+      "id": "ds.separator",
+      "symbol": "Separator",
+      "package": "@radix-ui/themes",
+      "details": {
+        "field_gaps": [
+          {
+            "field": "signature.parameters",
+            "reason": "the exported component has no direct props type annotation"
+          }
+        ],
+        "signature": {
+          "type_text": "const Separator = React.forwardRef<SeparatorElement, SeparatorProps>((props, forwardedRef) =>"
+        },
+        "source_evidence": {
+          "end_line": 31,
+          "path": "packages/radix-ui-themes/src/components/separator.tsx",
+          "start_line": 16
+        },
+        "status": "partial"
+      }
+    },
+    {
+      "id": "ds.skeleton",
+      "symbol": "Skeleton",
+      "package": "@radix-ui/themes",
+      "details": {
+        "field_gaps": [
+          {
+            "field": "signature.parameters",
+            "reason": "the exported component has no direct props type annotation"
+          }
+        ],
+        "signature": {
+          "type_text": "const Skeleton = React.forwardRef<SkeletonElement, SkeletonProps>((props, forwardedRef) =>"
+        },
+        "source_evidence": {
+          "end_line": 43,
+          "path": "packages/radix-ui-themes/src/components/skeleton.tsx",
+          "start_line": 18
+        },
+        "status": "partial"
+      }
+    },
+    {
+      "id": "ds.slider",
+      "symbol": "Slider",
+      "package": "@radix-ui/themes",
+      "details": {
+        "field_gaps": [
+          {
+            "field": "signature.parameters",
+            "reason": "the exported component has no direct props type annotation"
+          }
+        ],
+        "signature": {
+          "type_text": "const Slider = React.forwardRef<SliderElement, SliderProps>((props, forwardedRef) =>"
+        },
+        "source_evidence": {
+          "end_line": 53,
+          "path": "packages/radix-ui-themes/src/components/slider.tsx",
+          "start_line": 23
+        },
+        "status": "partial"
+      }
+    },
+    {
+      "id": "ds.slot",
+      "symbol": "Slot",
+      "package": "@radix-ui/themes",
+      "details": {
+        "status": "partial",
+        "source_evidence": {
+          "path": "packages/radix-ui-themes/src/components/slot.tsx",
+          "start_line": 3,
+          "end_line": 3
+        },
+        "signature": {
+          "type_text": "export const Slot = SlotPrimitive.Root;"
+        },
+        "field_gaps": [
+          {
+            "field": "signature.parameters",
+            "reason": "Props are declared by the re-exported primitive."
+          }
+        ]
+      }
+    },
+    {
+      "id": "ds.slottable",
+      "symbol": "Slottable",
+      "package": "@radix-ui/themes",
+      "details": {
+        "status": "partial",
+        "source_evidence": {
+          "path": "packages/radix-ui-themes/src/components/slot.tsx",
+          "start_line": 4,
+          "end_line": 4
+        },
+        "signature": {
+          "type_text": "export const Slottable = SlotPrimitive.Slottable;"
+        },
+        "field_gaps": [
+          {
+            "field": "signature.parameters",
+            "reason": "Props are declared by the re-exported primitive."
+          }
+        ]
+      }
+    },
+    {
+      "id": "ds.spinner",
+      "symbol": "Spinner",
+      "package": "@radix-ui/themes",
+      "details": {
+        "field_gaps": [
+          {
+            "field": "signature.parameters",
+            "reason": "the exported component has no direct props type annotation"
+          }
+        ],
+        "signature": {
+          "type_text": "const Spinner = React.forwardRef<SpinnerElement, SpinnerProps>((props, forwardedRef) =>"
+        },
+        "source_evidence": {
+          "end_line": 58,
+          "path": "packages/radix-ui-themes/src/components/spinner.tsx",
+          "start_line": 17
+        },
+        "status": "partial"
+      }
+    },
+    {
+      "id": "ds.strong",
+      "symbol": "Strong",
+      "package": "@radix-ui/themes",
+      "details": {
+        "field_gaps": [
+          {
+            "field": "signature.parameters",
+            "reason": "the exported component has no direct props type annotation"
+          }
+        ],
+        "signature": {
+          "type_text": "const Strong = React.forwardRef<StrongElement, StrongProps>((props, forwardedRef) =>"
+        },
+        "source_evidence": {
+          "end_line": 20,
+          "path": "packages/radix-ui-themes/src/components/strong.tsx",
+          "start_line": 14
+        },
+        "status": "partial"
+      }
+    },
+    {
+      "id": "ds.switch",
+      "symbol": "Switch",
+      "package": "@radix-ui/themes",
+      "details": {
+        "field_gaps": [
+          {
+            "field": "signature.parameters",
+            "reason": "the exported component has no direct props type annotation"
+          }
+        ],
+        "signature": {
+          "type_text": "const Switch = React.forwardRef<SwitchElement, SwitchProps>((props, forwardedRef) =>"
+        },
+        "source_evidence": {
+          "end_line": 43,
+          "path": "packages/radix-ui-themes/src/components/switch.tsx",
+          "start_line": 23
+        },
+        "status": "partial"
+      }
+    },
+    {
+      "id": "ds.tab-nav-link",
+      "symbol": "TabNav.Link",
+      "package": "@radix-ui/themes",
+      "details": {
+        "field_gaps": [
+          {
+            "field": "signature.parameters",
+            "reason": "the exported component has no direct props type annotation"
+          }
+        ],
+        "signature": {
+          "type_text": "const TabNavLink = React.forwardRef<TabNavLinkElement, TabNavLinkProps>((props, forwardedRef) =>"
+        },
+        "source_evidence": {
+          "end_line": 76,
+          "path": "packages/radix-ui-themes/src/components/tab-nav.tsx",
+          "start_line": 53
+        },
+        "status": "partial"
+      }
+    },
+    {
+      "id": "ds.tab-nav-root",
+      "symbol": "TabNav.Root",
+      "package": "@radix-ui/themes",
+      "details": {
+        "field_gaps": [
+          {
+            "field": "signature.parameters",
+            "reason": "the exported component has no direct props type annotation"
+          }
+        ],
+        "signature": {
+          "type_text": "const TabNavRoot = React.forwardRef<TabNavRootElement, TabNavRootProps>((props, forwardedRef) =>"
+        },
+        "source_evidence": {
+          "end_line": 44,
+          "path": "packages/radix-ui-themes/src/components/tab-nav.tsx",
+          "start_line": 23
+        },
+        "status": "partial"
+      }
+    },
+    {
+      "id": "ds.table-body",
+      "symbol": "Table.Body",
+      "package": "@radix-ui/themes",
+      "details": {
+        "field_gaps": [
+          {
+            "field": "signature.parameters",
+            "reason": "the exported component has no direct props type annotation"
+          }
+        ],
+        "signature": {
+          "type_text": "const TableBody = React.forwardRef<TableBodyElement, TableBodyProps>(\n  ({ className, ...props }, forwardedRef) =>"
+        },
+        "source_evidence": {
+          "end_line": 55,
+          "path": "packages/radix-ui-themes/src/components/table.tsx",
+          "start_line": 51
+        },
+        "status": "partial"
+      }
+    },
+    {
+      "id": "ds.table-cell",
+      "symbol": "Table.Cell",
+      "package": "@radix-ui/themes",
+      "details": {
+        "field_gaps": [
+          {
+            "field": "signature.parameters",
+            "reason": "the exported component has no direct props type annotation"
+          }
+        ],
+        "signature": {
+          "type_text": "const TableCell = React.forwardRef<TableCellElement, TableCellProps>((props, forwardedRef) =>"
+        },
+        "source_evidence": {
+          "end_line": 74,
+          "path": "packages/radix-ui-themes/src/components/table.tsx",
+          "start_line": 71
+        },
+        "status": "partial"
+      }
+    },
+    {
+      "id": "ds.table-column-header-cell",
+      "symbol": "Table.ColumnHeaderCell",
+      "package": "@radix-ui/themes",
+      "details": {
+        "field_gaps": [
+          {
+            "field": "signature.parameters",
+            "reason": "the exported component has no direct props type annotation"
+          }
+        ],
+        "signature": {
+          "type_text": "const TableColumnHeaderCell = React.forwardRef<\n  TableColumnHeaderCellElement,\n  TableColumnHeaderCellProps\n>((props, forwardedRef) =>"
+        },
+        "source_evidence": {
+          "end_line": 93,
+          "path": "packages/radix-ui-themes/src/components/table.tsx",
+          "start_line": 80
+        },
+        "status": "partial"
+      }
+    },
+    {
+      "id": "ds.table-header",
+      "symbol": "Table.Header",
+      "package": "@radix-ui/themes",
+      "details": {
+        "field_gaps": [
+          {
+            "field": "signature.parameters",
+            "reason": "the exported component has no direct props type annotation"
+          }
+        ],
+        "signature": {
+          "type_text": "const TableHeader = React.forwardRef<TableHeaderElement, TableHeaderProps>(\n  ({ className, ...props }, forwardedRef) =>"
+        },
+        "source_evidence": {
+          "end_line": 46,
+          "path": "packages/radix-ui-themes/src/components/table.tsx",
+          "start_line": 42
+        },
+        "status": "partial"
+      }
+    },
+    {
+      "id": "ds.table-root",
+      "symbol": "Table.Root",
+      "package": "@radix-ui/themes",
+      "details": {
+        "field_gaps": [
+          {
+            "field": "signature.parameters",
+            "reason": "the exported component has no direct props type annotation"
+          }
+        ],
+        "signature": {
+          "type_text": "const TableRoot = React.forwardRef<TableRootElement, TableRootProps>((props, forwardedRef) =>"
+        },
+        "source_evidence": {
+          "end_line": 37,
+          "path": "packages/radix-ui-themes/src/components/table.tsx",
+          "start_line": 18
+        },
+        "status": "partial"
+      }
+    },
+    {
+      "id": "ds.table-row",
+      "symbol": "Table.Row",
+      "package": "@radix-ui/themes",
+      "details": {
+        "field_gaps": [
+          {
+            "field": "signature.parameters",
+            "reason": "the exported component has no direct props type annotation"
+          }
+        ],
+        "signature": {
+          "type_text": "const TableRow = React.forwardRef<TableRowElement, TableRowProps>((props, forwardedRef) =>"
+        },
+        "source_evidence": {
+          "end_line": 64,
+          "path": "packages/radix-ui-themes/src/components/table.tsx",
+          "start_line": 61
+        },
+        "status": "partial"
+      }
+    },
+    {
+      "id": "ds.table-row-header-cell",
+      "symbol": "Table.RowHeaderCell",
+      "package": "@radix-ui/themes",
+      "details": {
+        "field_gaps": [
+          {
+            "field": "signature.parameters",
+            "reason": "the exported component has no direct props type annotation"
+          }
+        ],
+        "signature": {
+          "type_text": "const TableRowHeaderCell = React.forwardRef<TableRowHeaderCellElement, TableRowHeaderCellProps>(\n  (props, forwardedRef) =>"
+        },
+        "source_evidence": {
+          "end_line": 111,
+          "path": "packages/radix-ui-themes/src/components/table.tsx",
+          "start_line": 99
+        },
+        "status": "partial"
+      }
+    },
+    {
+      "id": "ds.tabs-content",
+      "symbol": "Tabs.Content",
+      "package": "@radix-ui/themes",
+      "details": {
+        "field_gaps": [
+          {
+            "field": "signature.parameters",
+            "reason": "the exported component has no direct props type annotation"
+          }
+        ],
+        "signature": {
+          "type_text": "const TabsContent = React.forwardRef<TabsContentElement, TabsContentProps>(\n  (props, forwardedRef) =>"
+        },
+        "source_evidence": {
+          "end_line": 97,
+          "path": "packages/radix-ui-themes/src/components/tabs.tsx",
+          "start_line": 86
+        },
+        "status": "partial"
+      }
+    },
+    {
+      "id": "ds.tabs-list",
+      "symbol": "Tabs.List",
+      "package": "@radix-ui/themes",
+      "details": {
+        "field_gaps": [
+          {
+            "field": "signature.parameters",
+            "reason": "the exported component has no direct props type annotation"
+          }
+        ],
+        "signature": {
+          "type_text": "const TabsList = React.forwardRef<TabsListElement, TabsListProps>((props, forwardedRef) =>"
+        },
+        "source_evidence": {
+          "end_line": 51,
+          "path": "packages/radix-ui-themes/src/components/tabs.tsx",
+          "start_line": 40
+        },
+        "status": "partial"
+      }
+    },
+    {
+      "id": "ds.tabs-root",
+      "symbol": "Tabs.Root",
+      "package": "@radix-ui/themes",
+      "details": {
+        "field_gaps": [
+          {
+            "field": "signature.parameters",
+            "reason": "the exported component has no direct props type annotation"
+          }
+        ],
+        "signature": {
+          "type_text": "const TabsRoot = React.forwardRef<TabsRootElement, TabsRootProps>((props, forwardedRef) =>"
+        },
+        "source_evidence": {
+          "end_line": 30,
+          "path": "packages/radix-ui-themes/src/components/tabs.tsx",
+          "start_line": 21
+        },
+        "status": "partial"
+      }
+    },
+    {
+      "id": "ds.tabs-trigger",
+      "symbol": "Tabs.Trigger",
+      "package": "@radix-ui/themes",
+      "details": {
+        "field_gaps": [
+          {
+            "field": "signature.parameters",
+            "reason": "the exported component has no direct props type annotation"
+          }
+        ],
+        "signature": {
+          "type_text": "const TabsTrigger = React.forwardRef<TabsTriggerElement, TabsTriggerProps>(\n  (props, forwardedRef) =>"
+        },
+        "source_evidence": {
+          "end_line": 76,
+          "path": "packages/radix-ui-themes/src/components/tabs.tsx",
+          "start_line": 59
+        },
+        "status": "partial"
+      }
+    },
+    {
+      "id": "ds.text",
+      "symbol": "Text",
+      "package": "@radix-ui/themes",
+      "details": {
+        "field_gaps": [
+          {
+            "field": "signature.parameters",
+            "reason": "the exported component has no direct props type annotation"
+          }
+        ],
+        "signature": {
+          "type_text": "const Text = React.forwardRef<TextElement, TextProps>((props, forwardedRef) =>"
+        },
+        "source_evidence": {
+          "end_line": 41,
+          "path": "packages/radix-ui-themes/src/components/text.tsx",
+          "start_line": 22
+        },
+        "status": "partial"
+      }
+    },
+    {
+      "id": "ds.text-area",
+      "symbol": "TextArea",
+      "package": "@radix-ui/themes",
+      "details": {
+        "field_gaps": [
+          {
+            "field": "signature.parameters",
+            "reason": "the exported component has no direct props type annotation"
+          }
+        ],
+        "signature": {
+          "type_text": "const TextArea = React.forwardRef<TextAreaElement, TextAreaProps>((props, forwardedRef) =>"
+        },
+        "source_evidence": {
+          "end_line": 38,
+          "path": "packages/radix-ui-themes/src/components/text-area.tsx",
+          "start_line": 22
+        },
+        "status": "partial"
+      }
+    },
+    {
+      "id": "ds.text-field-root",
+      "symbol": "TextField.Root",
+      "package": "@radix-ui/themes",
+      "details": {
+        "field_gaps": [
+          {
+            "field": "signature.parameters",
+            "reason": "the exported component has no direct props type annotation"
+          }
+        ],
+        "signature": {
+          "type_text": "const TextFieldRoot = React.forwardRef<TextFieldRootElement, TextFieldRootProps>(\n  (props, forwardedRef) =>"
+        },
+        "source_evidence": {
+          "end_line": 89,
+          "path": "packages/radix-ui-themes/src/components/text-field.tsx",
+          "start_line": 40
+        },
+        "status": "partial"
+      }
+    },
+    {
+      "id": "ds.text-field-slot",
+      "symbol": "TextField.Slot",
+      "package": "@radix-ui/themes",
+      "details": {
+        "field_gaps": [
+          {
+            "field": "signature.parameters",
+            "reason": "the exported component has no direct props type annotation"
+          }
+        ],
+        "signature": {
+          "type_text": "const TextFieldSlot = React.forwardRef<TextFieldSlotElement, TextFieldSlotProps>(\n  (props, forwardedRef) =>"
+        },
+        "source_evidence": {
+          "end_line": 109,
+          "path": "packages/radix-ui-themes/src/components/text-field.tsx",
+          "start_line": 96
+        },
+        "status": "partial"
+      }
+    },
+    {
+      "id": "ds.theme",
+      "symbol": "Theme",
+      "package": "@radix-ui/themes",
+      "details": {
+        "field_gaps": [
+          {
+            "field": "signature.parameters",
+            "reason": "the exported component has no direct props type annotation"
+          }
+        ],
+        "signature": {
+          "type_text": "const Theme = React.forwardRef<ThemeImplElement, ThemeProps>((props, forwardedRef) =>"
+        },
+        "source_evidence": {
+          "end_line": 64,
+          "path": "packages/radix-ui-themes/src/components/theme.tsx",
+          "start_line": 51
+        },
+        "status": "partial"
+      }
+    },
+    {
+      "id": "ds.theme-panel",
+      "symbol": "ThemePanel",
+      "package": "@radix-ui/themes",
+      "details": {
+        "field_gaps": [
+          {
+            "field": "signature.parameters",
+            "reason": "the exported component has no direct props type annotation"
+          }
+        ],
+        "signature": {
+          "type_text": "const ThemePanel = React.forwardRef<ThemePanelImplElement, ThemePanelProps>(\n  ({ defaultOpen = true, ...props }, forwardedRef) =>"
+        },
+        "source_evidence": {
+          "end_line": 36,
+          "path": "packages/radix-ui-themes/src/components/theme-panel.tsx",
+          "start_line": 31
+        },
+        "status": "partial"
+      }
+    },
+    {
+      "id": "ds.thick-check-icon",
+      "symbol": "ThickCheckIcon",
+      "package": "@radix-ui/themes",
+      "details": {
+        "field_gaps": [
+          {
+            "field": "signature.parameters",
+            "reason": "the exported component has no direct props type annotation"
+          }
+        ],
+        "signature": {
+          "type_text": "const ThickCheckIcon = React.forwardRef<IconElement, IconProps>((props, forwardedRef) =>"
+        },
+        "source_evidence": {
+          "end_line": 50,
+          "path": "packages/radix-ui-themes/src/components/icons.tsx",
+          "start_line": 32
+        },
+        "status": "partial"
+      }
+    },
+    {
+      "id": "ds.thick-chevron-right-icon",
+      "symbol": "ThickChevronRightIcon",
+      "package": "@radix-ui/themes",
+      "details": {
+        "field_gaps": [
+          {
+            "field": "signature.parameters",
+            "reason": "the exported component has no direct props type annotation"
+          }
+        ],
+        "signature": {
+          "type_text": "const ThickChevronRightIcon = React.forwardRef<IconElement, IconProps>((props, forwardedRef) =>"
+        },
+        "source_evidence": {
+          "end_line": 88,
+          "path": "packages/radix-ui-themes/src/components/icons.tsx",
+          "start_line": 70
+        },
+        "status": "partial"
+      }
+    },
+    {
+      "id": "ds.thick-divider-horizontal-icon",
+      "symbol": "ThickDividerHorizontalIcon",
+      "package": "@radix-ui/themes",
+      "details": {
+        "field_gaps": [
+          {
+            "field": "signature.parameters",
+            "reason": "the exported component has no direct props type annotation"
+          }
+        ],
+        "signature": {
+          "type_text": "const ThickDividerHorizontalIcon = React.forwardRef<IconElement, IconProps>(\n  (props, forwardedRef) =>"
+        },
+        "source_evidence": {
+          "end_line": 28,
+          "path": "packages/radix-ui-themes/src/components/icons.tsx",
+          "start_line": 8
+        },
+        "status": "partial"
+      }
+    },
+    {
+      "id": "ds.tooltip",
+      "symbol": "Tooltip",
+      "package": "@radix-ui/themes",
+      "details": {
+        "field_gaps": [
+          {
+            "field": "signature.parameters",
+            "reason": "the exported component has no direct props type annotation"
+          }
+        ],
+        "signature": {
+          "type_text": "const Tooltip = React.forwardRef<TooltipElement, TooltipProps>((props, forwardedRef) =>"
+        },
+        "source_evidence": {
+          "end_line": 60,
+          "path": "packages/radix-ui-themes/src/components/tooltip.tsx",
+          "start_line": 23
+        },
+        "status": "partial"
+      }
+    },
+    {
+      "id": "ds.visually-hidden",
+      "symbol": "VisuallyHidden",
+      "package": "@radix-ui/themes",
+      "details": {
+        "status": "partial",
+        "source_evidence": {
+          "path": "packages/radix-ui-themes/src/components/visually-hidden.tsx",
+          "start_line": 2,
+          "end_line": 2
+        },
+        "signature": {
+          "type_text": "export const VisuallyHidden = VisuallyHiddenPrimitive.Root;"
+        },
+        "field_gaps": [
+          {
+            "field": "signature.parameters",
+            "reason": "Props are declared by the re-exported primitive."
+          }
+        ]
+      }
+    }
+  ]
+}

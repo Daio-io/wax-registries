@@ -35,6 +35,39 @@
       ]
     },
     {
+      "id": "radix-themes",
+      "name": "Radix Themes",
+      "revision": 1,
+      "subdir": "systems/radix-themes/releases/3.3.0",
+      "minimum_wax_version": "0.10.2-alpha.1",
+      "definition": {
+        "path": ".wax/wax.config.json",
+        "sha256": "2a510f47503fda62e9d53d2847bdb80096c358eb581167fdd0d31776cd338c6b"
+      },
+      "registries": {
+        "react": {
+          "path": ".wax/registries/react.json",
+          "sha256": "b5b5d58ba5a706d1d68de3a0a1820b4aeed77a5166240b8ee391ea2007c7c17b"
+        }
+      },
+      "provenance": {
+        "path": "provenance.json",
+        "sha256": "fc0821fd3ac66ed6b6b6ba41ad8a9192bf5dea062a71752e30963a1444f6848c"
+      },
+      "upstream": [
+        {
+          "source": "https://github.com/radix-ui/themes",
+          "version": "@radix-ui/themes@3.3.0"
+        }
+      ],
+      "coverage": [
+        "React components from the public Themes entry point"
+      ],
+      "gaps": [
+        "Theme CSS tokens; runtime helpers; six public pass-through exports are carried forward from the prior registry"
+      ]
+    },
+    {
       "id": "shadcn",
       "name": "shadcn/ui",
       "revision": 1,
