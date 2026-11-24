@@ -1,0 +1,67 @@
+{
+  "schema_version": 1,
+  "upstream": {
+    "repository": "https://github.com/radix-ui/primitives",
+    "package": "radix-ui",
+    "version": "1.8.1",
+    "commit": "925c88b773bb32aecf1b52a296a1a21ba7a720b9",
+    "source_root": "packages/react"
+  },
+  "generation": {
+    "command": "WAX_HOME=\"$wax_home\" wax registry discover --repo-root \"$upstream\" --design-system radix-primitives --name \"Radix Primitives\" --language react --root \"$source_root\" --dry-run",
+    "wax_version": "0.11.0-alpha1",
+    "react_pack_version": "0.11.0-alpha1",
+    "source_roots": [
+      "packages/react/accessible-icon/src",
+      "packages/react/accordion/src",
+      "packages/react/alert-dialog/src",
+      "packages/react/aspect-ratio/src",
+      "packages/react/avatar/src",
+      "packages/react/checkbox/src",
+      "packages/react/collapsible/src",
+      "packages/react/context-menu/src",
+      "packages/react/dialog/src",
+      "packages/react/direction/src",
+      "packages/react/dropdown-menu/src",
+      "packages/react/form/src",
+      "packages/react/hover-card/src",
+      "packages/react/label/src",
+      "packages/react/menubar/src",
+      "packages/react/navigation-menu/src",
+      "packages/react/one-time-password-field/src",
+      "packages/react/password-toggle-field/src",
+      "packages/react/popover/src",
+      "packages/react/portal/src",
+      "packages/react/progress/src",
+      "packages/react/radio-group/src",
+      "packages/react/scroll-area/src",
+      "packages/react/select/src",
+      "packages/react/separator/src",
+      "packages/react/slider/src",
+      "packages/react/slot/src",
+      "packages/react/switch/src",
+      "packages/react/tabs/src",
+      "packages/react/toast/src",
+      "packages/react/toggle-group/src",
+      "packages/react/toggle/src",
+      "packages/react/toolbar/src",
+      "packages/react/tooltip/src",
+      "packages/react/visually-hidden/src"
+    ],
+    "source_root_mode": "Run discovery separately for each root.",
+    "merge": {
+      "base_commit": "6bf34343aa8df285e13e241809a5d1fa90731aca",
+      "identity": "package and public symbol",
+      "preserve": "Existing IDs and authored fields. Keep entries discovery does not emit.",
+      "retained_entries": 373,
+      "new_id_format": "ds.radix-<scoped package suffix>-<kebab-case symbol>",
+      "retained_entries_by_package": {
+        "@radix-ui/react-dialog": 1,
+        "@radix-ui/react-password-toggle-field": 1,
+        "@radix-ui/react-slot": 1,
+        "radix-ui": 370
+      }
+    }
+  },
+  "component_count": 739
+}

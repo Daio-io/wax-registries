@@ -1,0 +1,14 @@
+{
+  "schema_version": 2,
+  "languages": {},
+  "design_systems": {
+    "radix-primitives": {
+      "name": "Radix Primitives",
+      "registries": {
+        "react": {
+          "source": ".wax/registries/react.json"
+        }
+      }
+    }
+  }
+}
