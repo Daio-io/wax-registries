@@ -2146,16 +2146,19 @@
       "details": {
         "status": "partial",
         "source_evidence": {
+          "end_line": 746,
           "path": "packages/react/navigation-menu/src/navigation-menu.tsx",
-          "start_line": 730,
-          "end_line": 730
+          "start_line": 730
         },
         "field_gaps": [
           {
-            "field": "signature",
-            "reason": "Wax did not extract the wrapped declaration."
+            "field": "signature.parameters",
+            "reason": "props type `ScopedProps` is imported or unavailable locally"
           }
-        ]
+        ],
+        "signature": {
+          "type_text": "const NavigationMenuIndicator = /* @__PURE__ */ React.forwardRef<\n  NavigationMenuIndicatorElement,\n  NavigationMenuIndicatorProps\n>(function NavigationMenuIndicator(props: ScopedProps<NavigationMenuIndicatorProps>, forwardedRef)"
+        }
       }
     },
     {
@@ -2668,16 +2671,19 @@
       "details": {
         "status": "partial",
         "source_evidence": {
+          "end_line": 29,
           "path": "packages/react/portal/src/portal.tsx",
-          "start_line": 19,
-          "end_line": 19
+          "start_line": 19
         },
         "field_gaps": [
           {
-            "field": "signature",
-            "reason": "Wax did not extract the wrapped declaration."
+            "field": "signature.parameters",
+            "reason": "the exported component has no direct props type annotation"
           }
-        ]
+        ],
+        "signature": {
+          "type_text": "const Portal = /* @__PURE__ */ React.forwardRef<PortalElement, PortalProps>(\n  function Portal(props, forwardedRef)"
+        }
       }
     },
     {
@@ -2789,6 +2795,4016 @@
       "id": "ds.radio-group-item",
       "package": "@radix-ui/react-radio-group",
       "symbol": "RadioGroupItem"
+    },
+    {
+      "details": {
+        "field_gaps": [
+          {
+            "field": "signature.parameters",
+            "reason": "the exported component has no direct props type annotation"
+          }
+        ],
+        "signature": {
+          "type_text": "const AccessibleIcon: React.FC<AccessibleIconProps> = ({ children, label }) =>"
+        },
+        "source_evidence": {
+          "end_line": 25,
+          "path": "packages/react/accessible-icon/src/accessible-icon.tsx",
+          "start_line": 13
+        },
+        "status": "partial"
+      },
+      "id": "ds.radix-accessible-icon-root",
+      "package": "@radix-ui/react-accessible-icon",
+      "symbol": "Root"
+    },
+    {
+      "details": {
+        "documentation": "`AccordionContent` contains the collapsible content for an `AccordionItem`.",
+        "field_gaps": [
+          {
+            "field": "signature.parameters",
+            "reason": "props type `ScopedProps` is imported or unavailable locally"
+          }
+        ],
+        "signature": {
+          "type_text": "const AccordionContent = /* @__PURE__ */ React.forwardRef<\n  AccordionContentElement,\n  AccordionContentProps\n>(\n  // blank line to reduce diff noise\n  function AccordionContent(props: ScopedProps<AccordionContentProps>, forwardedRef)"
+        },
+        "source_evidence": {
+          "end_line": 548,
+          "path": "packages/react/accordion/src/accordion.tsx",
+          "start_line": 522
+        },
+        "status": "partial"
+      },
+      "id": "ds.radix-accordion-content",
+      "package": "@radix-ui/react-accordion",
+      "symbol": "Content"
+    },
+    {
+      "details": {
+        "documentation": "`AccordionHeader` contains the content for the parts of an `AccordionItem` that will be visible\nwhether or not its content is collapsed.",
+        "field_gaps": [
+          {
+            "field": "signature.parameters",
+            "reason": "props type `ScopedProps` is imported or unavailable locally"
+          }
+        ],
+        "signature": {
+          "type_text": "const AccordionHeader = /* @__PURE__ */ React.forwardRef<\n  AccordionHeaderElement,\n  AccordionHeaderProps\n>(\n  // blank line to reduce diff noise\n  function AccordionHeader(props: ScopedProps<AccordionHeaderProps>, forwardedRef)"
+        },
+        "source_evidence": {
+          "end_line": 467,
+          "path": "packages/react/accordion/src/accordion.tsx",
+          "start_line": 448
+        },
+        "status": "partial"
+      },
+      "id": "ds.radix-accordion-header",
+      "package": "@radix-ui/react-accordion",
+      "symbol": "Header"
+    },
+    {
+      "details": {
+        "documentation": "`AccordionItem` contains all of the parts of a collapsible section inside of an `Accordion`.",
+        "field_gaps": [
+          {
+            "field": "signature.parameters",
+            "reason": "props type `ScopedProps` is imported or unavailable locally"
+          }
+        ],
+        "signature": {
+          "type_text": "const AccordionItem = /* @__PURE__ */ React.forwardRef<AccordionItemElement, AccordionItemProps>(\n  function AccordionItem(props: ScopedProps<AccordionItemProps>, forwardedRef)"
+        },
+        "source_evidence": {
+          "end_line": 432,
+          "path": "packages/react/accordion/src/accordion.tsx",
+          "start_line": 396
+        },
+        "status": "partial"
+      },
+      "id": "ds.radix-accordion-item",
+      "package": "@radix-ui/react-accordion",
+      "symbol": "Item"
+    },
+    {
+      "details": {
+        "field_gaps": [
+          {
+            "field": "signature.parameters",
+            "reason": "props type `ScopedProps` is imported or unavailable locally"
+          }
+        ],
+        "signature": {
+          "type_text": "const Accordion = /* @__PURE__ */ React.forwardRef<\n  AccordionElement,\n  AccordionSingleProps | AccordionMultipleProps\n>(\n  // blank line to reduce diff noise\n  function Accordion(\n    props: ScopedProps<AccordionSingleProps | AccordionMultipleProps>,\n    forwardedRef,\n  )"
+        },
+        "source_evidence": {
+          "end_line": 81,
+          "path": "packages/react/accordion/src/accordion.tsx",
+          "start_line": 59
+        },
+        "status": "partial"
+      },
+      "id": "ds.radix-accordion-root",
+      "package": "@radix-ui/react-accordion",
+      "symbol": "Root"
+    },
+    {
+      "details": {
+        "documentation": "`AccordionTrigger` is the trigger that toggles the collapsed state of an `AccordionItem`. It\nshould always be nested inside of an `AccordionHeader`.",
+        "field_gaps": [
+          {
+            "field": "signature.parameters",
+            "reason": "props type `ScopedProps` is imported or unavailable locally"
+          }
+        ],
+        "signature": {
+          "type_text": "const AccordionTrigger = /* @__PURE__ */ React.forwardRef<\n  AccordionTriggerElement,\n  AccordionTriggerProps\n>(\n  // blank line to reduce diff noise\n  function AccordionTrigger(props: ScopedProps<AccordionTriggerProps>, forwardedRef)"
+        },
+        "source_evidence": {
+          "end_line": 507,
+          "path": "packages/react/accordion/src/accordion.tsx",
+          "start_line": 483
+        },
+        "status": "partial"
+      },
+      "id": "ds.radix-accordion-trigger",
+      "package": "@radix-ui/react-accordion",
+      "symbol": "Trigger"
+    },
+    {
+      "details": {
+        "field_gaps": [
+          {
+            "field": "signature.parameters",
+            "reason": "props type `ScopedProps` is imported or unavailable locally"
+          }
+        ],
+        "signature": {
+          "type_text": "const AlertDialogAction = React.forwardRef<AlertDialogActionElement, AlertDialogActionProps>(\n  function AlertDialogAction(props: ScopedProps<AlertDialogActionProps>, forwardedRef)"
+        },
+        "source_evidence": {
+          "end_line": 174,
+          "path": "packages/react/alert-dialog/src/alert-dialog.tsx",
+          "start_line": 168
+        },
+        "status": "partial"
+      },
+      "id": "ds.radix-alert-dialog-action",
+      "package": "@radix-ui/react-alert-dialog",
+      "symbol": "Action"
+    },
+    {
+      "details": {
+        "field_gaps": [
+          {
+            "field": "signature.parameters",
+            "reason": "props type `ScopedProps` is imported or unavailable locally"
+          }
+        ],
+        "signature": {
+          "type_text": "const AlertDialogCancel = React.forwardRef<AlertDialogCancelElement, AlertDialogCancelProps>(\n  function AlertDialogCancel(props: ScopedProps<AlertDialogCancelProps>, forwardedRef)"
+        },
+        "source_evidence": {
+          "end_line": 193,
+          "path": "packages/react/alert-dialog/src/alert-dialog.tsx",
+          "start_line": 185
+        },
+        "status": "partial"
+      },
+      "id": "ds.radix-alert-dialog-cancel",
+      "package": "@radix-ui/react-alert-dialog",
+      "symbol": "Cancel"
+    },
+    {
+      "details": {
+        "field_gaps": [
+          {
+            "field": "signature.parameters",
+            "reason": "props type `ScopedProps` is imported or unavailable locally"
+          }
+        ],
+        "signature": {
+          "type_text": "const AlertDialogContent = React.forwardRef<AlertDialogContentElement, AlertDialogContentProps>(\n  function AlertDialogContent(props: ScopedProps<AlertDialogContentProps>, forwardedRef)"
+        },
+        "source_evidence": {
+          "end_line": 125,
+          "path": "packages/react/alert-dialog/src/alert-dialog.tsx",
+          "start_line": 98
+        },
+        "status": "partial"
+      },
+      "id": "ds.radix-alert-dialog-content",
+      "package": "@radix-ui/react-alert-dialog",
+      "symbol": "Content"
+    },
+    {
+      "details": {
+        "field_gaps": [
+          {
+            "field": "signature.parameters",
+            "reason": "props type `ScopedProps` is imported or unavailable locally"
+          }
+        ],
+        "signature": {
+          "type_text": "const AlertDialogDescription = React.forwardRef<\n  AlertDialogDescriptionElement,\n  AlertDialogDescriptionProps\n>(function AlertDialogDescription(props: ScopedProps<AlertDialogDescriptionProps>, forwardedRef)"
+        },
+        "source_evidence": {
+          "end_line": 158,
+          "path": "packages/react/alert-dialog/src/alert-dialog.tsx",
+          "start_line": 151
+        },
+        "status": "partial"
+      },
+      "id": "ds.radix-alert-dialog-description",
+      "package": "@radix-ui/react-alert-dialog",
+      "symbol": "Description"
+    },
+    {
+      "details": {
+        "field_gaps": [
+          {
+            "field": "signature.parameters",
+            "reason": "props type `ScopedProps` is imported or unavailable locally"
+          }
+        ],
+        "signature": {
+          "type_text": "const AlertDialogOverlay = React.forwardRef<AlertDialogOverlayElement, AlertDialogOverlayProps>(\n  function AlertDialogOverlay(props: ScopedProps<AlertDialogOverlayProps>, forwardedRef)"
+        },
+        "source_evidence": {
+          "end_line": 76,
+          "path": "packages/react/alert-dialog/src/alert-dialog.tsx",
+          "start_line": 70
+        },
+        "status": "partial"
+      },
+      "id": "ds.radix-alert-dialog-overlay",
+      "package": "@radix-ui/react-alert-dialog",
+      "symbol": "Overlay"
+    },
+    {
+      "details": {
+        "field_gaps": [
+          {
+            "field": "signature.parameters",
+            "reason": "props type `ScopedProps` is imported or unavailable locally"
+          }
+        ],
+        "signature": {
+          "type_text": "const AlertDialogPortal: React.FC<AlertDialogPortalProps> = (\n  props: ScopedProps<AlertDialogPortalProps>,\n) =>"
+        },
+        "source_evidence": {
+          "end_line": 60,
+          "path": "packages/react/alert-dialog/src/alert-dialog.tsx",
+          "start_line": 54
+        },
+        "status": "partial"
+      },
+      "id": "ds.radix-alert-dialog-portal",
+      "package": "@radix-ui/react-alert-dialog",
+      "symbol": "Portal"
+    },
+    {
+      "details": {
+        "field_gaps": [
+          {
+            "field": "signature.parameters",
+            "reason": "props type `ScopedProps` is imported or unavailable locally"
+          }
+        ],
+        "signature": {
+          "type_text": "const AlertDialog: React.FC<AlertDialogProps> = (props: ScopedProps<AlertDialogProps>) =>"
+        },
+        "source_evidence": {
+          "end_line": 29,
+          "path": "packages/react/alert-dialog/src/alert-dialog.tsx",
+          "start_line": 25
+        },
+        "status": "partial"
+      },
+      "id": "ds.radix-alert-dialog-root",
+      "package": "@radix-ui/react-alert-dialog",
+      "symbol": "Root"
+    },
+    {
+      "details": {
+        "field_gaps": [
+          {
+            "field": "signature.parameters",
+            "reason": "props type `ScopedProps` is imported or unavailable locally"
+          }
+        ],
+        "signature": {
+          "type_text": "const AlertDialogTitle = React.forwardRef<AlertDialogTitleElement, AlertDialogTitleProps>(\n  function AlertDialogTitle(props: ScopedProps<AlertDialogTitleProps>, forwardedRef)"
+        },
+        "source_evidence": {
+          "end_line": 141,
+          "path": "packages/react/alert-dialog/src/alert-dialog.tsx",
+          "start_line": 135
+        },
+        "status": "partial"
+      },
+      "id": "ds.radix-alert-dialog-title",
+      "package": "@radix-ui/react-alert-dialog",
+      "symbol": "Title"
+    },
+    {
+      "details": {
+        "field_gaps": [
+          {
+            "field": "signature.parameters",
+            "reason": "props type `ScopedProps` is imported or unavailable locally"
+          }
+        ],
+        "signature": {
+          "type_text": "const AlertDialogTrigger = React.forwardRef<AlertDialogTriggerElement, AlertDialogTriggerProps>(\n  function AlertDialogTrigger(props: ScopedProps<AlertDialogTriggerProps>, forwardedRef)"
+        },
+        "source_evidence": {
+          "end_line": 45,
+          "path": "packages/react/alert-dialog/src/alert-dialog.tsx",
+          "start_line": 39
+        },
+        "status": "partial"
+      },
+      "id": "ds.radix-alert-dialog-trigger",
+      "package": "@radix-ui/react-alert-dialog",
+      "symbol": "Trigger"
+    },
+    {
+      "details": {
+        "field_gaps": [
+          {
+            "field": "signature.parameters",
+            "reason": "the exported component has no direct props type annotation"
+          }
+        ],
+        "signature": {
+          "type_text": "const AspectRatio = /* @__PURE__ */ React.forwardRef<AspectRatioElement, AspectRatioProps>(\n  function AspectRatio(props, forwardedRef)"
+        },
+        "source_evidence": {
+          "end_line": 44,
+          "path": "packages/react/aspect-ratio/src/aspect-ratio.tsx",
+          "start_line": 14
+        },
+        "status": "partial"
+      },
+      "id": "ds.radix-aspect-ratio-root",
+      "package": "@radix-ui/react-aspect-ratio",
+      "symbol": "Root"
+    },
+    {
+      "details": {
+        "field_gaps": [
+          {
+            "field": "signature.parameters",
+            "reason": "props type `ScopedProps` is imported or unavailable locally"
+          }
+        ],
+        "signature": {
+          "type_text": "const AvatarFallback = /* @__PURE__ */ React.forwardRef<AvatarFallbackElement, AvatarFallbackProps>(\n  function AvatarFallback(props: ScopedProps<AvatarFallbackProps>, forwardedRef)"
+        },
+        "source_evidence": {
+          "end_line": 144,
+          "path": "packages/react/avatar/src/avatar.tsx",
+          "start_line": 127
+        },
+        "status": "partial"
+      },
+      "id": "ds.radix-avatar-fallback",
+      "package": "@radix-ui/react-avatar",
+      "symbol": "Fallback"
+    },
+    {
+      "details": {
+        "field_gaps": [
+          {
+            "field": "signature.parameters",
+            "reason": "props type `ScopedProps` is imported or unavailable locally"
+          }
+        ],
+        "signature": {
+          "type_text": "const AvatarImage = /* @__PURE__ */ React.forwardRef<AvatarImageElement, AvatarImageProps>(\n  function AvatarImage(props: ScopedProps<AvatarImageProps>, forwardedRef)"
+        },
+        "source_evidence": {
+          "end_line": 114,
+          "path": "packages/react/avatar/src/avatar.tsx",
+          "start_line": 83
+        },
+        "status": "partial"
+      },
+      "id": "ds.radix-avatar-image",
+      "package": "@radix-ui/react-avatar",
+      "symbol": "Image"
+    },
+    {
+      "details": {
+        "field_gaps": [
+          {
+            "field": "signature.parameters",
+            "reason": "props type `ScopedProps` is imported or unavailable locally"
+          }
+        ],
+        "signature": {
+          "type_text": "const Avatar = /* @__PURE__ */ React.forwardRef<AvatarElement, AvatarProps>(\n  // blank line to reduce diff noise\n  function Avatar(props: ScopedProps<AvatarProps>, forwardedRef)"
+        },
+        "source_evidence": {
+          "end_line": 67,
+          "path": "packages/react/avatar/src/avatar.tsx",
+          "start_line": 46
+        },
+        "status": "partial"
+      },
+      "id": "ds.radix-avatar-root",
+      "package": "@radix-ui/react-avatar",
+      "symbol": "Root"
+    },
+    {
+      "details": {
+        "field_gaps": [
+          {
+            "field": "signature.parameters",
+            "reason": "props type `ScopedProps` is imported or unavailable locally"
+          }
+        ],
+        "signature": {
+          "type_text": "const CheckboxIndicator = /* @__PURE__ */ React.forwardRef<\n  CheckboxIndicatorElement,\n  CheckboxIndicatorProps\n>(\n  // blank line to reduce diff noise\n  function CheckboxIndicator(props: ScopedProps<CheckboxIndicatorProps>, forwardedRef)"
+        },
+        "source_evidence": {
+          "end_line": 305,
+          "path": "packages/react/checkbox/src/checkbox.tsx",
+          "start_line": 283
+        },
+        "status": "partial"
+      },
+      "id": "ds.radix-checkbox-indicator",
+      "package": "@radix-ui/react-checkbox",
+      "symbol": "Indicator"
+    },
+    {
+      "details": {
+        "field_gaps": [
+          {
+            "field": "signature.parameters",
+            "reason": "props type `ScopedProps` is imported or unavailable locally"
+          }
+        ],
+        "signature": {
+          "type_text": "const Checkbox = /* @__PURE__ */ React.forwardRef<CheckboxElement, CheckboxProps>(\n  // blank line to reduce diff noise\n  function Checkbox(props: ScopedProps<CheckboxProps>, forwardedRef)"
+        },
+        "source_evidence": {
+          "end_line": 265,
+          "path": "packages/react/checkbox/src/checkbox.tsx",
+          "start_line": 218
+        },
+        "status": "partial"
+      },
+      "id": "ds.radix-checkbox-root",
+      "package": "@radix-ui/react-checkbox",
+      "symbol": "Root"
+    },
+    {
+      "details": {
+        "field_gaps": [
+          {
+            "field": "signature.parameters",
+            "reason": "props type `ScopedProps` is imported or unavailable locally"
+          }
+        ],
+        "signature": {
+          "type_text": "const CollapsibleContent = /* @__PURE__ */ React.forwardRef<\n  CollapsibleContentElement,\n  CollapsibleContentProps\n>(\n  // blank line to reduce diff noise\n  function CollapsibleContent(props: ScopedProps<CollapsibleContentProps>, forwardedRef)"
+        },
+        "source_evidence": {
+          "end_line": 143,
+          "path": "packages/react/collapsible/src/collapsible.tsx",
+          "start_line": 127
+        },
+        "status": "partial"
+      },
+      "id": "ds.radix-collapsible-content",
+      "package": "@radix-ui/react-collapsible",
+      "symbol": "Content"
+    },
+    {
+      "details": {
+        "field_gaps": [
+          {
+            "field": "signature.parameters",
+            "reason": "props type `ScopedProps` is imported or unavailable locally"
+          }
+        ],
+        "signature": {
+          "type_text": "const Collapsible = /* @__PURE__ */ React.forwardRef<CollapsibleElement, CollapsibleProps>(\n  function Collapsible(props: ScopedProps<CollapsibleProps>, forwardedRef)"
+        },
+        "source_evidence": {
+          "end_line": 76,
+          "path": "packages/react/collapsible/src/collapsible.tsx",
+          "start_line": 41
+        },
+        "status": "partial"
+      },
+      "id": "ds.radix-collapsible-root",
+      "package": "@radix-ui/react-collapsible",
+      "symbol": "Root"
+    },
+    {
+      "details": {
+        "field_gaps": [
+          {
+            "field": "signature.parameters",
+            "reason": "props type `ScopedProps` is imported or unavailable locally"
+          }
+        ],
+        "signature": {
+          "type_text": "const CollapsibleTrigger = /* @__PURE__ */ React.forwardRef<\n  CollapsibleTriggerElement,\n  CollapsibleTriggerProps\n>(\n  // blank line to reduce diff noise\n  function CollapsibleTrigger(props: ScopedProps<CollapsibleTriggerProps>, forwardedRef)"
+        },
+        "source_evidence": {
+          "end_line": 110,
+          "path": "packages/react/collapsible/src/collapsible.tsx",
+          "start_line": 88
+        },
+        "status": "partial"
+      },
+      "id": "ds.radix-collapsible-trigger",
+      "package": "@radix-ui/react-collapsible",
+      "symbol": "Trigger"
+    },
+    {
+      "details": {
+        "field_gaps": [
+          {
+            "field": "signature.parameters",
+            "reason": "props type `ScopedProps` is imported or unavailable locally"
+          }
+        ],
+        "signature": {
+          "type_text": "const ContextMenuArrow = /* @__PURE__ */ React.forwardRef<\n  ContextMenuArrowElement,\n  ContextMenuArrowProps\n>(\n  // blank line to reduce diff noise\n  function ContextMenuArrow(props: ScopedProps<ContextMenuArrowProps>, forwardedRef)"
+        },
+        "source_evidence": {
+          "end_line": 446,
+          "path": "packages/react/context-menu/src/context-menu.tsx",
+          "start_line": 436
+        },
+        "status": "partial"
+      },
+      "id": "ds.radix-context-menu-arrow",
+      "package": "@radix-ui/react-context-menu",
+      "symbol": "Arrow"
+    },
+    {
+      "details": {
+        "field_gaps": [
+          {
+            "field": "signature.parameters",
+            "reason": "props type `ScopedProps` is imported or unavailable locally"
+          }
+        ],
+        "signature": {
+          "type_text": "const ContextMenuCheckboxItem = /* @__PURE__ */ React.forwardRef<\n  ContextMenuCheckboxItemElement,\n  ContextMenuCheckboxItemProps\n>(function ContextMenuCheckboxItem(props: ScopedProps<ContextMenuCheckboxItemProps>, forwardedRef)"
+        },
+        "source_evidence": {
+          "end_line": 355,
+          "path": "packages/react/context-menu/src/context-menu.tsx",
+          "start_line": 348
+        },
+        "status": "partial"
+      },
+      "id": "ds.radix-context-menu-checkbox-item",
+      "package": "@radix-ui/react-context-menu",
+      "symbol": "CheckboxItem"
+    },
+    {
+      "details": {
+        "field_gaps": [
+          {
+            "field": "signature.parameters",
+            "reason": "props type `ScopedProps` is imported or unavailable locally"
+          }
+        ],
+        "signature": {
+          "type_text": "const ContextMenuContent = /* @__PURE__ */ React.forwardRef<\n  ContextMenuContentElement,\n  ContextMenuContentProps\n>(\n  // blank line to reduce diff noise\n  function ContextMenuContent(props: ScopedProps<ContextMenuContentProps>, forwardedRef)"
+        },
+        "source_evidence": {
+          "end_line": 278,
+          "path": "packages/react/context-menu/src/context-menu.tsx",
+          "start_line": 231
+        },
+        "status": "partial"
+      },
+      "id": "ds.radix-context-menu-content",
+      "package": "@radix-ui/react-context-menu",
+      "symbol": "Content"
+    },
+    {
+      "details": {
+        "field_gaps": [
+          {
+            "field": "signature.parameters",
+            "reason": "props type `ScopedProps` is imported or unavailable locally"
+          }
+        ],
+        "signature": {
+          "type_text": "const ContextMenuGroup = /* @__PURE__ */ React.forwardRef<\n  ContextMenuGroupElement,\n  ContextMenuGroupProps\n>(\n  // blank line to reduce diff noise\n  function ContextMenuGroup(props: ScopedProps<ContextMenuGroupProps>, forwardedRef)"
+        },
+        "source_evidence": {
+          "end_line": 298,
+          "path": "packages/react/context-menu/src/context-menu.tsx",
+          "start_line": 288
+        },
+        "status": "partial"
+      },
+      "id": "ds.radix-context-menu-group",
+      "package": "@radix-ui/react-context-menu",
+      "symbol": "Group"
+    },
+    {
+      "details": {
+        "field_gaps": [
+          {
+            "field": "signature.parameters",
+            "reason": "props type `ScopedProps` is imported or unavailable locally"
+          }
+        ],
+        "signature": {
+          "type_text": "const ContextMenuItem = /* @__PURE__ */ React.forwardRef<\n  ContextMenuItemElement,\n  ContextMenuItemProps\n>(\n  // blank line to reduce diff noise\n  function ContextMenuItem(props: ScopedProps<ContextMenuItemProps>, forwardedRef)"
+        },
+        "source_evidence": {
+          "end_line": 338,
+          "path": "packages/react/context-menu/src/context-menu.tsx",
+          "start_line": 328
+        },
+        "status": "partial"
+      },
+      "id": "ds.radix-context-menu-item",
+      "package": "@radix-ui/react-context-menu",
+      "symbol": "Item"
+    },
+    {
+      "details": {
+        "field_gaps": [
+          {
+            "field": "signature.parameters",
+            "reason": "props type `ScopedProps` is imported or unavailable locally"
+          }
+        ],
+        "signature": {
+          "type_text": "const ContextMenuItemIndicator = /* @__PURE__ */ React.forwardRef<\n  ContextMenuItemIndicatorElement,\n  ContextMenuItemIndicatorProps\n>(function ContextMenuItemIndicator(\n  props: ScopedProps<ContextMenuItemIndicatorProps>,\n  forwardedRef,\n)"
+        },
+        "source_evidence": {
+          "end_line": 409,
+          "path": "packages/react/context-menu/src/context-menu.tsx",
+          "start_line": 399
+        },
+        "status": "partial"
+      },
+      "id": "ds.radix-context-menu-item-indicator",
+      "package": "@radix-ui/react-context-menu",
+      "symbol": "ItemIndicator"
+    },
+    {
+      "details": {
+        "field_gaps": [
+          {
+            "field": "signature.parameters",
+            "reason": "props type `ScopedProps` is imported or unavailable locally"
+          }
+        ],
+        "signature": {
+          "type_text": "const ContextMenuLabel = /* @__PURE__ */ React.forwardRef<\n  ContextMenuLabelElement,\n  ContextMenuLabelProps\n>(\n  // blank line to reduce diff noise\n  function ContextMenuLabel(props: ScopedProps<ContextMenuLabelProps>, forwardedRef)"
+        },
+        "source_evidence": {
+          "end_line": 318,
+          "path": "packages/react/context-menu/src/context-menu.tsx",
+          "start_line": 308
+        },
+        "status": "partial"
+      },
+      "id": "ds.radix-context-menu-label",
+      "package": "@radix-ui/react-context-menu",
+      "symbol": "Label"
+    },
+    {
+      "details": {
+        "field_gaps": [
+          {
+            "field": "signature.parameters",
+            "reason": "props type `ScopedProps` is imported or unavailable locally"
+          }
+        ],
+        "signature": {
+          "type_text": "const ContextMenuPortal: React.FC<ContextMenuPortalProps> = (\n  props: ScopedProps<ContextMenuPortalProps>,\n) =>"
+        },
+        "source_evidence": {
+          "end_line": 219,
+          "path": "packages/react/context-menu/src/context-menu.tsx",
+          "start_line": 213
+        },
+        "status": "partial"
+      },
+      "id": "ds.radix-context-menu-portal",
+      "package": "@radix-ui/react-context-menu",
+      "symbol": "Portal"
+    },
+    {
+      "details": {
+        "field_gaps": [
+          {
+            "field": "signature.parameters",
+            "reason": "props type `ScopedProps` is imported or unavailable locally"
+          }
+        ],
+        "signature": {
+          "type_text": "const ContextMenuRadioGroup = /* @__PURE__ */ React.forwardRef<\n  ContextMenuRadioGroupElement,\n  ContextMenuRadioGroupProps\n>(function ContextMenuRadioGroup(props: ScopedProps<ContextMenuRadioGroupProps>, forwardedRef)"
+        },
+        "source_evidence": {
+          "end_line": 372,
+          "path": "packages/react/context-menu/src/context-menu.tsx",
+          "start_line": 365
+        },
+        "status": "partial"
+      },
+      "id": "ds.radix-context-menu-radio-group",
+      "package": "@radix-ui/react-context-menu",
+      "symbol": "RadioGroup"
+    },
+    {
+      "details": {
+        "field_gaps": [
+          {
+            "field": "signature.parameters",
+            "reason": "props type `ScopedProps` is imported or unavailable locally"
+          }
+        ],
+        "signature": {
+          "type_text": "const ContextMenuRadioItem = /* @__PURE__ */ React.forwardRef<\n  ContextMenuRadioItemElement,\n  ContextMenuRadioItemProps\n>(function ContextMenuRadioItem(props: ScopedProps<ContextMenuRadioItemProps>, forwardedRef)"
+        },
+        "source_evidence": {
+          "end_line": 389,
+          "path": "packages/react/context-menu/src/context-menu.tsx",
+          "start_line": 382
+        },
+        "status": "partial"
+      },
+      "id": "ds.radix-context-menu-radio-item",
+      "package": "@radix-ui/react-context-menu",
+      "symbol": "RadioItem"
+    },
+    {
+      "details": {
+        "field_gaps": [
+          {
+            "field": "signature.parameters",
+            "reason": "props type `ScopedProps` is imported or unavailable locally"
+          }
+        ],
+        "signature": {
+          "type_text": "const ContextMenu: React.FC<ContextMenuProps> = (props: ScopedProps<ContextMenuProps>) =>"
+        },
+        "source_evidence": {
+          "end_line": 98,
+          "path": "packages/react/context-menu/src/context-menu.tsx",
+          "start_line": 50
+        },
+        "status": "partial"
+      },
+      "id": "ds.radix-context-menu-root",
+      "package": "@radix-ui/react-context-menu",
+      "symbol": "Root"
+    },
+    {
+      "details": {
+        "field_gaps": [
+          {
+            "field": "signature.parameters",
+            "reason": "props type `ScopedProps` is imported or unavailable locally"
+          }
+        ],
+        "signature": {
+          "type_text": "const ContextMenuSeparator = /* @__PURE__ */ React.forwardRef<\n  ContextMenuSeparatorElement,\n  ContextMenuSeparatorProps\n>(function ContextMenuSeparator(props: ScopedProps<ContextMenuSeparatorProps>, forwardedRef)"
+        },
+        "source_evidence": {
+          "end_line": 426,
+          "path": "packages/react/context-menu/src/context-menu.tsx",
+          "start_line": 419
+        },
+        "status": "partial"
+      },
+      "id": "ds.radix-context-menu-separator",
+      "package": "@radix-ui/react-context-menu",
+      "symbol": "Separator"
+    },
+    {
+      "details": {
+        "field_gaps": [
+          {
+            "field": "signature.parameters",
+            "reason": "props type `ScopedProps` is imported or unavailable locally"
+          }
+        ],
+        "signature": {
+          "type_text": "const ContextMenuSub: React.FC<ContextMenuSubProps> = (props: ScopedProps<ContextMenuSubProps>) =>"
+        },
+        "source_evidence": {
+          "end_line": 476,
+          "path": "packages/react/context-menu/src/context-menu.tsx",
+          "start_line": 461
+        },
+        "status": "partial"
+      },
+      "id": "ds.radix-context-menu-sub",
+      "package": "@radix-ui/react-context-menu",
+      "symbol": "Sub"
+    },
+    {
+      "details": {
+        "field_gaps": [
+          {
+            "field": "signature.parameters",
+            "reason": "props type `ScopedProps` is imported or unavailable locally"
+          }
+        ],
+        "signature": {
+          "type_text": "const ContextMenuSubContent = /* @__PURE__ */ React.forwardRef<\n  ContextMenuSubContentElement,\n  ContextMenuSubContentProps\n>(function ContextMenuSubContent(props: ScopedProps<ContextMenuSubContentProps>, forwardedRef)"
+        },
+        "source_evidence": {
+          "end_line": 528,
+          "path": "packages/react/context-menu/src/context-menu.tsx",
+          "start_line": 503
+        },
+        "status": "partial"
+      },
+      "id": "ds.radix-context-menu-sub-content",
+      "package": "@radix-ui/react-context-menu",
+      "symbol": "SubContent"
+    },
+    {
+      "details": {
+        "field_gaps": [
+          {
+            "field": "signature.parameters",
+            "reason": "props type `ScopedProps` is imported or unavailable locally"
+          }
+        ],
+        "signature": {
+          "type_text": "const ContextMenuSubTrigger = /* @__PURE__ */ React.forwardRef<\n  ContextMenuSubTriggerElement,\n  ContextMenuSubTriggerProps\n>(function ContextMenuSubTrigger(props: ScopedProps<ContextMenuSubTriggerProps>, forwardedRef)"
+        },
+        "source_evidence": {
+          "end_line": 493,
+          "path": "packages/react/context-menu/src/context-menu.tsx",
+          "start_line": 486
+        },
+        "status": "partial"
+      },
+      "id": "ds.radix-context-menu-sub-trigger",
+      "package": "@radix-ui/react-context-menu",
+      "symbol": "SubTrigger"
+    },
+    {
+      "details": {
+        "field_gaps": [
+          {
+            "field": "signature.parameters",
+            "reason": "props type `ScopedProps` is imported or unavailable locally"
+          }
+        ],
+        "signature": {
+          "type_text": "const ContextMenuTrigger = /* @__PURE__ */ React.forwardRef<\n  ContextMenuTriggerElement,\n  ContextMenuTriggerProps\n>(\n  // blank line to reduce diff noise\n  function ContextMenuTrigger(props: ScopedProps<ContextMenuTriggerProps>, forwardedRef)"
+        },
+        "source_evidence": {
+          "end_line": 204,
+          "path": "packages/react/context-menu/src/context-menu.tsx",
+          "start_line": 112
+        },
+        "status": "partial"
+      },
+      "id": "ds.radix-context-menu-trigger",
+      "package": "@radix-ui/react-context-menu",
+      "symbol": "Trigger"
+    },
+    {
+      "details": {
+        "field_gaps": [
+          {
+            "field": "signature.parameters",
+            "reason": "props type `ScopedProps` is imported or unavailable locally"
+          }
+        ],
+        "signature": {
+          "type_text": "const DialogClose = /* @__PURE__ */ React.forwardRef<DialogCloseElement, DialogCloseProps>(\n  function DialogClose(props: ScopedProps<DialogCloseProps>, forwardedRef)"
+        },
+        "source_evidence": {
+          "end_line": 551,
+          "path": "packages/react/dialog/src/dialog.tsx",
+          "start_line": 538
+        },
+        "status": "partial"
+      },
+      "id": "ds.radix-dialog-close",
+      "package": "@radix-ui/react-dialog",
+      "symbol": "Close"
+    },
+    {
+      "details": {
+        "field_gaps": [
+          {
+            "field": "signature.parameters",
+            "reason": "props type `ScopedProps` is imported or unavailable locally"
+          }
+        ],
+        "signature": {
+          "type_text": "const DialogContent = /* @__PURE__ */ React.forwardRef<DialogContentElement, DialogContentProps>(\n  function DialogContent(props: ScopedProps<DialogContentProps>, forwardedRef)"
+        },
+        "source_evidence": {
+          "end_line": 286,
+          "path": "packages/react/dialog/src/dialog.tsx",
+          "start_line": 271
+        },
+        "status": "partial"
+      },
+      "id": "ds.radix-dialog-content",
+      "package": "@radix-ui/react-dialog",
+      "symbol": "Content"
+    },
+    {
+      "details": {
+        "field_gaps": [
+          {
+            "field": "signature.parameters",
+            "reason": "props type `ScopedProps` is imported or unavailable locally"
+          }
+        ],
+        "signature": {
+          "type_text": "const DialogDescription = /* @__PURE__ */ React.forwardRef<\n  DialogDescriptionElement,\n  DialogDescriptionProps\n>(\n  // blank line to reduce diff noise\n  function DialogDescription(props: ScopedProps<DialogDescriptionProps>, forwardedRef)"
+        },
+        "source_evidence": {
+          "end_line": 527,
+          "path": "packages/react/dialog/src/dialog.tsx",
+          "start_line": 512
+        },
+        "status": "partial"
+      },
+      "id": "ds.radix-dialog-description",
+      "package": "@radix-ui/react-dialog",
+      "symbol": "Description"
+    },
+    {
+      "details": {
+        "field_gaps": [
+          {
+            "field": "signature.parameters",
+            "reason": "props type `ScopedProps` is imported or unavailable locally"
+          }
+        ],
+        "signature": {
+          "type_text": "const DialogOverlay = /* @__PURE__ */ React.forwardRef<DialogOverlayElement, DialogOverlayProps>(\n  function DialogOverlay(props: ScopedProps<DialogOverlayProps>, forwardedRef)"
+        },
+        "source_evidence": {
+          "end_line": 208,
+          "path": "packages/react/dialog/src/dialog.tsx",
+          "start_line": 197
+        },
+        "status": "partial"
+      },
+      "id": "ds.radix-dialog-overlay",
+      "package": "@radix-ui/react-dialog",
+      "symbol": "Overlay"
+    },
+    {
+      "details": {
+        "field_gaps": [
+          {
+            "field": "signature.parameters",
+            "reason": "props type `ScopedProps` is imported or unavailable locally"
+          }
+        ],
+        "signature": {
+          "type_text": "const DialogPortal: React.FC<DialogPortalProps> = (props: ScopedProps<DialogPortalProps>) =>"
+        },
+        "source_evidence": {
+          "end_line": 180,
+          "path": "packages/react/dialog/src/dialog.tsx",
+          "start_line": 166
+        },
+        "status": "partial"
+      },
+      "id": "ds.radix-dialog-portal",
+      "package": "@radix-ui/react-dialog",
+      "symbol": "Portal"
+    },
+    {
+      "details": {
+        "field_gaps": [
+          {
+            "field": "signature.parameters",
+            "reason": "props type `ScopedProps` is imported or unavailable locally"
+          }
+        ],
+        "signature": {
+          "type_text": "const Dialog: React.FC<DialogProps> = (props: ScopedProps<DialogProps>) =>"
+        },
+        "source_evidence": {
+          "end_line": 109,
+          "path": "packages/react/dialog/src/dialog.tsx",
+          "start_line": 65
+        },
+        "status": "partial"
+      },
+      "id": "ds.radix-dialog-root",
+      "package": "@radix-ui/react-dialog",
+      "symbol": "Root"
+    },
+    {
+      "details": {
+        "field_gaps": [
+          {
+            "field": "signature.parameters",
+            "reason": "props type `ScopedProps` is imported or unavailable locally"
+          }
+        ],
+        "signature": {
+          "type_text": "const DialogTitle = /* @__PURE__ */ React.forwardRef<DialogTitleElement, DialogTitleProps>(\n  function DialogTitle(props: ScopedProps<DialogTitleProps>, forwardedRef)"
+        },
+        "source_evidence": {
+          "end_line": 502,
+          "path": "packages/react/dialog/src/dialog.tsx",
+          "start_line": 491
+        },
+        "status": "partial"
+      },
+      "id": "ds.radix-dialog-title",
+      "package": "@radix-ui/react-dialog",
+      "symbol": "Title"
+    },
+    {
+      "details": {
+        "field_gaps": [
+          {
+            "field": "signature.parameters",
+            "reason": "props type `ScopedProps` is imported or unavailable locally"
+          }
+        ],
+        "signature": {
+          "type_text": "const DialogTrigger = /* @__PURE__ */ React.forwardRef<DialogTriggerElement, DialogTriggerProps>(\n  function DialogTrigger(props: ScopedProps<DialogTriggerProps>, forwardedRef)"
+        },
+        "source_evidence": {
+          "end_line": 139,
+          "path": "packages/react/dialog/src/dialog.tsx",
+          "start_line": 121
+        },
+        "status": "partial"
+      },
+      "id": "ds.radix-dialog-trigger",
+      "package": "@radix-ui/react-dialog",
+      "symbol": "Trigger"
+    },
+    {
+      "details": {
+        "field_gaps": [
+          {
+            "field": "signature.parameters",
+            "reason": "the exported component has no direct props type annotation"
+          }
+        ],
+        "signature": {
+          "type_text": "const DirectionProvider: React.FC<DirectionProviderProps> = (props) =>"
+        },
+        "source_evidence": {
+          "end_line": 23,
+          "path": "packages/react/direction/src/direction.tsx",
+          "start_line": 20
+        },
+        "status": "partial"
+      },
+      "id": "ds.radix-direction-provider",
+      "package": "@radix-ui/react-direction",
+      "symbol": "Provider"
+    },
+    {
+      "details": {
+        "field_gaps": [
+          {
+            "field": "signature.parameters",
+            "reason": "props type `ScopedProps` is imported or unavailable locally"
+          }
+        ],
+        "signature": {
+          "type_text": "const DropdownMenuArrow = /* @__PURE__ */ React.forwardRef<\n  DropdownMenuArrowElement,\n  DropdownMenuArrowProps\n>(\n  // blank line to reduce diff noise\n  function DropdownMenuArrow(props: ScopedProps<DropdownMenuArrowProps>, forwardedRef)"
+        },
+        "source_evidence": {
+          "end_line": 391,
+          "path": "packages/react/dropdown-menu/src/dropdown-menu.tsx",
+          "start_line": 381
+        },
+        "status": "partial"
+      },
+      "id": "ds.radix-dropdown-menu-arrow",
+      "package": "@radix-ui/react-dropdown-menu",
+      "symbol": "Arrow"
+    },
+    {
+      "details": {
+        "field_gaps": [
+          {
+            "field": "signature.parameters",
+            "reason": "props type `ScopedProps` is imported or unavailable locally"
+          }
+        ],
+        "signature": {
+          "type_text": "const DropdownMenuCheckboxItem = /* @__PURE__ */ React.forwardRef<\n  DropdownMenuCheckboxItemElement,\n  DropdownMenuCheckboxItemProps\n>(function DropdownMenuCheckboxItem(\n  props: ScopedProps<DropdownMenuCheckboxItemProps>,\n  forwardedRef,\n)"
+        },
+        "source_evidence": {
+          "end_line": 300,
+          "path": "packages/react/dropdown-menu/src/dropdown-menu.tsx",
+          "start_line": 290
+        },
+        "status": "partial"
+      },
+      "id": "ds.radix-dropdown-menu-checkbox-item",
+      "package": "@radix-ui/react-dropdown-menu",
+      "symbol": "CheckboxItem"
+    },
+    {
+      "details": {
+        "field_gaps": [
+          {
+            "field": "signature.parameters",
+            "reason": "props type `ScopedProps` is imported or unavailable locally"
+          }
+        ],
+        "signature": {
+          "type_text": "const DropdownMenuContent = /* @__PURE__ */ React.forwardRef<\n  DropdownMenuContentElement,\n  DropdownMenuContentProps\n>(\n  // blank line to reduce diff noise\n  function DropdownMenuContent(props: ScopedProps<DropdownMenuContentProps>, forwardedRef)"
+        },
+        "source_evidence": {
+          "end_line": 220,
+          "path": "packages/react/dropdown-menu/src/dropdown-menu.tsx",
+          "start_line": 174
+        },
+        "status": "partial"
+      },
+      "id": "ds.radix-dropdown-menu-content",
+      "package": "@radix-ui/react-dropdown-menu",
+      "symbol": "Content"
+    },
+    {
+      "details": {
+        "field_gaps": [
+          {
+            "field": "signature.parameters",
+            "reason": "props type `ScopedProps` is imported or unavailable locally"
+          }
+        ],
+        "signature": {
+          "type_text": "const DropdownMenuGroup = /* @__PURE__ */ React.forwardRef<\n  DropdownMenuGroupElement,\n  DropdownMenuGroupProps\n>(\n  // blank line to reduce diff noise\n  function DropdownMenuGroup(props: ScopedProps<DropdownMenuGroupProps>, forwardedRef)"
+        },
+        "source_evidence": {
+          "end_line": 240,
+          "path": "packages/react/dropdown-menu/src/dropdown-menu.tsx",
+          "start_line": 230
+        },
+        "status": "partial"
+      },
+      "id": "ds.radix-dropdown-menu-group",
+      "package": "@radix-ui/react-dropdown-menu",
+      "symbol": "Group"
+    },
+    {
+      "details": {
+        "field_gaps": [
+          {
+            "field": "signature.parameters",
+            "reason": "props type `ScopedProps` is imported or unavailable locally"
+          }
+        ],
+        "signature": {
+          "type_text": "const DropdownMenuItem = /* @__PURE__ */ React.forwardRef<\n  DropdownMenuItemElement,\n  DropdownMenuItemProps\n>(\n  // blank line to reduce diff noise\n  function DropdownMenuItem(props: ScopedProps<DropdownMenuItemProps>, forwardedRef)"
+        },
+        "source_evidence": {
+          "end_line": 280,
+          "path": "packages/react/dropdown-menu/src/dropdown-menu.tsx",
+          "start_line": 270
+        },
+        "status": "partial"
+      },
+      "id": "ds.radix-dropdown-menu-item",
+      "package": "@radix-ui/react-dropdown-menu",
+      "symbol": "Item"
+    },
+    {
+      "details": {
+        "field_gaps": [
+          {
+            "field": "signature.parameters",
+            "reason": "props type `ScopedProps` is imported or unavailable locally"
+          }
+        ],
+        "signature": {
+          "type_text": "const DropdownMenuItemIndicator = /* @__PURE__ */ React.forwardRef<\n  DropdownMenuItemIndicatorElement,\n  DropdownMenuItemIndicatorProps\n>(function DropdownMenuItemIndicator(\n  props: ScopedProps<DropdownMenuItemIndicatorProps>,\n  forwardedRef,\n)"
+        },
+        "source_evidence": {
+          "end_line": 354,
+          "path": "packages/react/dropdown-menu/src/dropdown-menu.tsx",
+          "start_line": 344
+        },
+        "status": "partial"
+      },
+      "id": "ds.radix-dropdown-menu-item-indicator",
+      "package": "@radix-ui/react-dropdown-menu",
+      "symbol": "ItemIndicator"
+    },
+    {
+      "details": {
+        "field_gaps": [
+          {
+            "field": "signature.parameters",
+            "reason": "props type `ScopedProps` is imported or unavailable locally"
+          }
+        ],
+        "signature": {
+          "type_text": "const DropdownMenuLabel = /* @__PURE__ */ React.forwardRef<\n  DropdownMenuLabelElement,\n  DropdownMenuLabelProps\n>(\n  // blank line to reduce diff noise\n  function DropdownMenuLabel(props: ScopedProps<DropdownMenuLabelProps>, forwardedRef)"
+        },
+        "source_evidence": {
+          "end_line": 260,
+          "path": "packages/react/dropdown-menu/src/dropdown-menu.tsx",
+          "start_line": 250
+        },
+        "status": "partial"
+      },
+      "id": "ds.radix-dropdown-menu-label",
+      "package": "@radix-ui/react-dropdown-menu",
+      "symbol": "Label"
+    },
+    {
+      "details": {
+        "field_gaps": [
+          {
+            "field": "signature.parameters",
+            "reason": "props type `ScopedProps` is imported or unavailable locally"
+          }
+        ],
+        "signature": {
+          "type_text": "const DropdownMenuPortal: React.FC<DropdownMenuPortalProps> = (\n  props: ScopedProps<DropdownMenuPortalProps>,\n) =>"
+        },
+        "source_evidence": {
+          "end_line": 162,
+          "path": "packages/react/dropdown-menu/src/dropdown-menu.tsx",
+          "start_line": 156
+        },
+        "status": "partial"
+      },
+      "id": "ds.radix-dropdown-menu-portal",
+      "package": "@radix-ui/react-dropdown-menu",
+      "symbol": "Portal"
+    },
+    {
+      "details": {
+        "field_gaps": [
+          {
+            "field": "signature.parameters",
+            "reason": "props type `ScopedProps` is imported or unavailable locally"
+          }
+        ],
+        "signature": {
+          "type_text": "const DropdownMenuRadioGroup = /* @__PURE__ */ React.forwardRef<\n  DropdownMenuRadioGroupElement,\n  DropdownMenuRadioGroupProps\n>(function DropdownMenuRadioGroup(props: ScopedProps<DropdownMenuRadioGroupProps>, forwardedRef)"
+        },
+        "source_evidence": {
+          "end_line": 317,
+          "path": "packages/react/dropdown-menu/src/dropdown-menu.tsx",
+          "start_line": 310
+        },
+        "status": "partial"
+      },
+      "id": "ds.radix-dropdown-menu-radio-group",
+      "package": "@radix-ui/react-dropdown-menu",
+      "symbol": "RadioGroup"
+    },
+    {
+      "details": {
+        "field_gaps": [
+          {
+            "field": "signature.parameters",
+            "reason": "props type `ScopedProps` is imported or unavailable locally"
+          }
+        ],
+        "signature": {
+          "type_text": "const DropdownMenuRadioItem = /* @__PURE__ */ React.forwardRef<\n  DropdownMenuRadioItemElement,\n  DropdownMenuRadioItemProps\n>(function DropdownMenuRadioItem(props: ScopedProps<DropdownMenuRadioItemProps>, forwardedRef)"
+        },
+        "source_evidence": {
+          "end_line": 334,
+          "path": "packages/react/dropdown-menu/src/dropdown-menu.tsx",
+          "start_line": 327
+        },
+        "status": "partial"
+      },
+      "id": "ds.radix-dropdown-menu-radio-item",
+      "package": "@radix-ui/react-dropdown-menu",
+      "symbol": "RadioItem"
+    },
+    {
+      "details": {
+        "field_gaps": [
+          {
+            "field": "signature.parameters",
+            "reason": "props type `ScopedProps` is imported or unavailable locally"
+          }
+        ],
+        "signature": {
+          "type_text": "const DropdownMenu: React.FC<DropdownMenuProps> = (props: ScopedProps<DropdownMenuProps>) =>"
+        },
+        "source_evidence": {
+          "end_line": 90,
+          "path": "packages/react/dropdown-menu/src/dropdown-menu.tsx",
+          "start_line": 55
+        },
+        "status": "partial"
+      },
+      "id": "ds.radix-dropdown-menu-root",
+      "package": "@radix-ui/react-dropdown-menu",
+      "symbol": "Root"
+    },
+    {
+      "details": {
+        "field_gaps": [
+          {
+            "field": "signature.parameters",
+            "reason": "props type `ScopedProps` is imported or unavailable locally"
+          }
+        ],
+        "signature": {
+          "type_text": "const DropdownMenuSeparator = /* @__PURE__ */ React.forwardRef<\n  DropdownMenuSeparatorElement,\n  DropdownMenuSeparatorProps\n>(function DropdownMenuSeparator(props: ScopedProps<DropdownMenuSeparatorProps>, forwardedRef)"
+        },
+        "source_evidence": {
+          "end_line": 371,
+          "path": "packages/react/dropdown-menu/src/dropdown-menu.tsx",
+          "start_line": 364
+        },
+        "status": "partial"
+      },
+      "id": "ds.radix-dropdown-menu-separator",
+      "package": "@radix-ui/react-dropdown-menu",
+      "symbol": "Separator"
+    },
+    {
+      "details": {
+        "field_gaps": [
+          {
+            "field": "signature.parameters",
+            "reason": "props type `ScopedProps` is imported or unavailable locally"
+          }
+        ],
+        "signature": {
+          "type_text": "const DropdownMenuSub: React.FC<DropdownMenuSubProps> = (\n  props: ScopedProps<DropdownMenuSubProps>,\n) =>"
+        },
+        "source_evidence": {
+          "end_line": 421,
+          "path": "packages/react/dropdown-menu/src/dropdown-menu.tsx",
+          "start_line": 404
+        },
+        "status": "partial"
+      },
+      "id": "ds.radix-dropdown-menu-sub",
+      "package": "@radix-ui/react-dropdown-menu",
+      "symbol": "Sub"
+    },
+    {
+      "details": {
+        "field_gaps": [
+          {
+            "field": "signature.parameters",
+            "reason": "props type `ScopedProps` is imported or unavailable locally"
+          }
+        ],
+        "signature": {
+          "type_text": "const DropdownMenuSubContent = /* @__PURE__ */ React.forwardRef<\n  DropdownMenuSubContentElement,\n  DropdownMenuSubContentProps\n>(function DropdownMenuSubContent(props: ScopedProps<DropdownMenuSubContentProps>, forwardedRef)"
+        },
+        "source_evidence": {
+          "end_line": 473,
+          "path": "packages/react/dropdown-menu/src/dropdown-menu.tsx",
+          "start_line": 448
+        },
+        "status": "partial"
+      },
+      "id": "ds.radix-dropdown-menu-sub-content",
+      "package": "@radix-ui/react-dropdown-menu",
+      "symbol": "SubContent"
+    },
+    {
+      "details": {
+        "field_gaps": [
+          {
+            "field": "signature.parameters",
+            "reason": "props type `ScopedProps` is imported or unavailable locally"
+          }
+        ],
+        "signature": {
+          "type_text": "const DropdownMenuSubTrigger = /* @__PURE__ */ React.forwardRef<\n  DropdownMenuSubTriggerElement,\n  DropdownMenuSubTriggerProps\n>(function DropdownMenuSubTrigger(props: ScopedProps<DropdownMenuSubTriggerProps>, forwardedRef)"
+        },
+        "source_evidence": {
+          "end_line": 438,
+          "path": "packages/react/dropdown-menu/src/dropdown-menu.tsx",
+          "start_line": 431
+        },
+        "status": "partial"
+      },
+      "id": "ds.radix-dropdown-menu-sub-trigger",
+      "package": "@radix-ui/react-dropdown-menu",
+      "symbol": "SubTrigger"
+    },
+    {
+      "details": {
+        "field_gaps": [
+          {
+            "field": "signature.parameters",
+            "reason": "props type `ScopedProps` is imported or unavailable locally"
+          }
+        ],
+        "signature": {
+          "type_text": "const DropdownMenuTrigger = /* @__PURE__ */ React.forwardRef<\n  DropdownMenuTriggerElement,\n  DropdownMenuTriggerProps\n>(\n  // blank line to reduce diff noise\n  function DropdownMenuTrigger(props: ScopedProps<DropdownMenuTriggerProps>, forwardedRef)"
+        },
+        "source_evidence": {
+          "end_line": 147,
+          "path": "packages/react/dropdown-menu/src/dropdown-menu.tsx",
+          "start_line": 102
+        },
+        "status": "partial"
+      },
+      "id": "ds.radix-dropdown-menu-trigger",
+      "package": "@radix-ui/react-dropdown-menu",
+      "symbol": "Trigger"
+    },
+    {
+      "details": {
+        "field_gaps": [
+          {
+            "field": "signature.parameters",
+            "reason": "props type `ScopedProps` is imported or unavailable locally"
+          }
+        ],
+        "signature": {
+          "type_text": "const FormControl = /* @__PURE__ */ React.forwardRef<FormControlElement, FormControlProps>(\n  function FormControl(props: ScopedProps<FormControlProps>, forwardedRef)"
+        },
+        "source_evidence": {
+          "end_line": 455,
+          "path": "packages/react/form/src/form.tsx",
+          "start_line": 285
+        },
+        "status": "partial"
+      },
+      "id": "ds.radix-form-control",
+      "package": "@radix-ui/react-form",
+      "symbol": "Control"
+    },
+    {
+      "details": {
+        "field_gaps": [
+          {
+            "field": "signature.parameters",
+            "reason": "props type `ScopedProps` is imported or unavailable locally"
+          }
+        ],
+        "signature": {
+          "type_text": "const FormField = /* @__PURE__ */ React.forwardRef<FormFieldElement, FormFieldProps>(\n  function FormField(props: ScopedProps<FormFieldProps>, forwardedRef)"
+        },
+        "source_evidence": {
+          "end_line": 227,
+          "path": "packages/react/form/src/form.tsx",
+          "start_line": 209
+        },
+        "status": "partial"
+      },
+      "id": "ds.radix-form-field",
+      "package": "@radix-ui/react-form",
+      "symbol": "Field"
+    },
+    {
+      "details": {
+        "field_gaps": [
+          {
+            "field": "signature.parameters",
+            "reason": "props type `ScopedProps` is imported or unavailable locally"
+          }
+        ],
+        "signature": {
+          "type_text": "const FormLabel = /* @__PURE__ */ React.forwardRef<FormLabelElement, FormLabelProps>(\n  function FormLabel(props: ScopedProps<FormLabelProps>, forwardedRef)"
+        },
+        "source_evidence": {
+          "end_line": 273,
+          "path": "packages/react/form/src/form.tsx",
+          "start_line": 241
+        },
+        "status": "partial"
+      },
+      "id": "ds.radix-form-label",
+      "package": "@radix-ui/react-form",
+      "symbol": "Label"
+    },
+    {
+      "details": {
+        "field_gaps": [
+          {
+            "field": "signature.parameters",
+            "reason": "props type `ScopedProps` is imported or unavailable locally"
+          }
+        ],
+        "signature": {
+          "type_text": "const FormMessage = /* @__PURE__ */ React.forwardRef<FormMessageElement, FormMessageProps>(\n  function FormMessage(props: ScopedProps<FormMessageProps>, forwardedRef)"
+        },
+        "source_evidence": {
+          "end_line": 521,
+          "path": "packages/react/form/src/form.tsx",
+          "start_line": 498
+        },
+        "status": "partial"
+      },
+      "id": "ds.radix-form-message",
+      "package": "@radix-ui/react-form",
+      "symbol": "Message"
+    },
+    {
+      "details": {
+        "field_gaps": [
+          {
+            "field": "signature.parameters",
+            "reason": "props type `ScopedProps` is imported or unavailable locally"
+          }
+        ],
+        "signature": {
+          "type_text": "const Form = /* @__PURE__ */ React.forwardRef<FormElement, FormProps>(\n  // blank line to reduce diff noise\n  function Form(props: ScopedProps<FormProps>, forwardedRef)"
+        },
+        "source_evidence": {
+          "end_line": 186,
+          "path": "packages/react/form/src/form.tsx",
+          "start_line": 56
+        },
+        "status": "partial"
+      },
+      "id": "ds.radix-form-root",
+      "package": "@radix-ui/react-form",
+      "symbol": "Root"
+    },
+    {
+      "details": {
+        "field_gaps": [
+          {
+            "field": "signature.parameters",
+            "reason": "props type `ScopedProps` is imported or unavailable locally"
+          }
+        ],
+        "signature": {
+          "type_text": "const FormSubmit = /* @__PURE__ */ React.forwardRef<FormSubmitElement, FormSubmitProps>(\n  function FormSubmit(props: ScopedProps<FormSubmitProps>, forwardedRef)"
+        },
+        "source_evidence": {
+          "end_line": 663,
+          "path": "packages/react/form/src/form.tsx",
+          "start_line": 658
+        },
+        "status": "partial"
+      },
+      "id": "ds.radix-form-submit",
+      "package": "@radix-ui/react-form",
+      "symbol": "Submit"
+    },
+    {
+      "details": {
+        "field_gaps": [
+          {
+            "field": "signature.parameters",
+            "reason": "props type `ScopedProps` is imported or unavailable locally"
+          }
+        ],
+        "signature": {
+          "type_text": "const FormValidityState = (props: ScopedProps<FormValidityStateProps>) =>"
+        },
+        "source_evidence": {
+          "end_line": 648,
+          "path": "packages/react/form/src/form.tsx",
+          "start_line": 636
+        },
+        "status": "partial"
+      },
+      "id": "ds.radix-form-validity-state",
+      "package": "@radix-ui/react-form",
+      "symbol": "ValidityState"
+    },
+    {
+      "details": {
+        "field_gaps": [
+          {
+            "field": "signature.parameters",
+            "reason": "props type `ScopedProps` is imported or unavailable locally"
+          }
+        ],
+        "signature": {
+          "type_text": "const HoverCardArrow = /* @__PURE__ */ React.forwardRef<HoverCardArrowElement, HoverCardArrowProps>(\n  function HoverCardArrow(props: ScopedProps<HoverCardArrowProps>, forwardedRef)"
+        },
+        "source_evidence": {
+          "end_line": 388,
+          "path": "packages/react/hover-card/src/hover-card.tsx",
+          "start_line": 382
+        },
+        "status": "partial"
+      },
+      "id": "ds.radix-hover-card-arrow",
+      "package": "@radix-ui/react-hover-card",
+      "symbol": "Arrow"
+    },
+    {
+      "details": {
+        "field_gaps": [
+          {
+            "field": "signature.parameters",
+            "reason": "props type `ScopedProps` is imported or unavailable locally"
+          }
+        ],
+        "signature": {
+          "type_text": "const HoverCardContent = /* @__PURE__ */ React.forwardRef<\n  HoverCardContentElement,\n  HoverCardContentProps\n>(\n  // blank line to reduce diff noise\n  function HoverCardContent(props: ScopedProps<HoverCardContentProps>, forwardedRef)"
+        },
+        "source_evidence": {
+          "end_line": 227,
+          "path": "packages/react/hover-card/src/hover-card.tsx",
+          "start_line": 206
+        },
+        "status": "partial"
+      },
+      "id": "ds.radix-hover-card-content",
+      "package": "@radix-ui/react-hover-card",
+      "symbol": "Content"
+    },
+    {
+      "details": {
+        "field_gaps": [
+          {
+            "field": "signature.parameters",
+            "reason": "props type `ScopedProps` is imported or unavailable locally"
+          }
+        ],
+        "signature": {
+          "type_text": "const HoverCardPortal: React.FC<HoverCardPortalProps> = (\n  props: ScopedProps<HoverCardPortalProps>,\n) =>"
+        },
+        "source_evidence": {
+          "end_line": 189,
+          "path": "packages/react/hover-card/src/hover-card.tsx",
+          "start_line": 175
+        },
+        "status": "partial"
+      },
+      "id": "ds.radix-hover-card-portal",
+      "package": "@radix-ui/react-hover-card",
+      "symbol": "Portal"
+    },
+    {
+      "details": {
+        "field_gaps": [
+          {
+            "field": "signature.parameters",
+            "reason": "props type `ScopedProps` is imported or unavailable locally"
+          }
+        ],
+        "signature": {
+          "type_text": "const HoverCard: React.FC<HoverCardProps> = (props: ScopedProps<HoverCardProps>) =>"
+        },
+        "source_evidence": {
+          "end_line": 111,
+          "path": "packages/react/hover-card/src/hover-card.tsx",
+          "start_line": 52
+        },
+        "status": "partial"
+      },
+      "id": "ds.radix-hover-card-root",
+      "package": "@radix-ui/react-hover-card",
+      "symbol": "Root"
+    },
+    {
+      "details": {
+        "field_gaps": [
+          {
+            "field": "signature.parameters",
+            "reason": "props type `ScopedProps` is imported or unavailable locally"
+          }
+        ],
+        "signature": {
+          "type_text": "const HoverCardTrigger = /* @__PURE__ */ React.forwardRef<\n  HoverCardTriggerElement,\n  HoverCardTriggerProps\n>(\n  // blank line to reduce diff noise\n  function HoverCardTrigger(props: ScopedProps<HoverCardTriggerProps>, forwardedRef)"
+        },
+        "source_evidence": {
+          "end_line": 148,
+          "path": "packages/react/hover-card/src/hover-card.tsx",
+          "start_line": 123
+        },
+        "status": "partial"
+      },
+      "id": "ds.radix-hover-card-trigger",
+      "package": "@radix-ui/react-hover-card",
+      "symbol": "Trigger"
+    },
+    {
+      "details": {
+        "field_gaps": [
+          {
+            "field": "signature.parameters",
+            "reason": "the exported component has no direct props type annotation"
+          }
+        ],
+        "signature": {
+          "type_text": "const Label = /* @__PURE__ */ React.forwardRef<LabelElement, LabelProps>(\n  function Label(props, forwardedRef)"
+        },
+        "source_evidence": {
+          "end_line": 30,
+          "path": "packages/react/label/src/label.tsx",
+          "start_line": 12
+        },
+        "status": "partial"
+      },
+      "id": "ds.radix-label-root",
+      "package": "@radix-ui/react-label",
+      "symbol": "Root"
+    },
+    {
+      "details": {
+        "field_gaps": [
+          {
+            "field": "signature.parameters",
+            "reason": "props type `ScopedProps` is imported or unavailable locally"
+          }
+        ],
+        "signature": {
+          "type_text": "const MenubarArrow = /* @__PURE__ */ React.forwardRef<MenubarArrowElement, MenubarArrowProps>(\n  function MenubarArrow(props: ScopedProps<MenubarArrowProps>, forwardedRef)"
+        },
+        "source_evidence": {
+          "end_line": 554,
+          "path": "packages/react/menubar/src/menubar.tsx",
+          "start_line": 548
+        },
+        "status": "partial"
+      },
+      "id": "ds.radix-menubar-arrow",
+      "package": "@radix-ui/react-menubar",
+      "symbol": "Arrow"
+    },
+    {
+      "details": {
+        "field_gaps": [
+          {
+            "field": "signature.parameters",
+            "reason": "props type `ScopedProps` is imported or unavailable locally"
+          }
+        ],
+        "signature": {
+          "type_text": "const MenubarCheckboxItem = /* @__PURE__ */ React.forwardRef<\n  MenubarCheckboxItemElement,\n  MenubarCheckboxItemProps\n>(\n  // blank line to reduce diff noise\n  function MenubarCheckboxItem(props: ScopedProps<MenubarCheckboxItemProps>, forwardedRef)"
+        },
+        "source_evidence": {
+          "end_line": 461,
+          "path": "packages/react/menubar/src/menubar.tsx",
+          "start_line": 451
+        },
+        "status": "partial"
+      },
+      "id": "ds.radix-menubar-checkbox-item",
+      "package": "@radix-ui/react-menubar",
+      "symbol": "CheckboxItem"
+    },
+    {
+      "details": {
+        "field_gaps": [
+          {
+            "field": "signature.parameters",
+            "reason": "props type `ScopedProps` is imported or unavailable locally"
+          }
+        ],
+        "signature": {
+          "type_text": "const MenubarContent = /* @__PURE__ */ React.forwardRef<MenubarContentElement, MenubarContentProps>(\n  function MenubarContent(props: ScopedProps<MenubarContentProps>, forwardedRef)"
+        },
+        "source_evidence": {
+          "end_line": 393,
+          "path": "packages/react/menubar/src/menubar.tsx",
+          "start_line": 306
+        },
+        "status": "partial"
+      },
+      "id": "ds.radix-menubar-content",
+      "package": "@radix-ui/react-menubar",
+      "symbol": "Content"
+    },
+    {
+      "details": {
+        "field_gaps": [
+          {
+            "field": "signature.parameters",
+            "reason": "props type `ScopedProps` is imported or unavailable locally"
+          }
+        ],
+        "signature": {
+          "type_text": "const MenubarGroup = /* @__PURE__ */ React.forwardRef<MenubarGroupElement, MenubarGroupProps>(\n  function MenubarGroup(props: ScopedProps<MenubarGroupProps>, forwardedRef)"
+        },
+        "source_evidence": {
+          "end_line": 409,
+          "path": "packages/react/menubar/src/menubar.tsx",
+          "start_line": 403
+        },
+        "status": "partial"
+      },
+      "id": "ds.radix-menubar-group",
+      "package": "@radix-ui/react-menubar",
+      "symbol": "Group"
+    },
+    {
+      "details": {
+        "field_gaps": [
+          {
+            "field": "signature.parameters",
+            "reason": "props type `ScopedProps` is imported or unavailable locally"
+          }
+        ],
+        "signature": {
+          "type_text": "const MenubarItem = /* @__PURE__ */ React.forwardRef<MenubarItemElement, MenubarItemProps>(\n  function MenubarItem(props: ScopedProps<MenubarItemProps>, forwardedRef)"
+        },
+        "source_evidence": {
+          "end_line": 441,
+          "path": "packages/react/menubar/src/menubar.tsx",
+          "start_line": 435
+        },
+        "status": "partial"
+      },
+      "id": "ds.radix-menubar-item",
+      "package": "@radix-ui/react-menubar",
+      "symbol": "Item"
+    },
+    {
+      "details": {
+        "field_gaps": [
+          {
+            "field": "signature.parameters",
+            "reason": "props type `ScopedProps` is imported or unavailable locally"
+          }
+        ],
+        "signature": {
+          "type_text": "const MenubarItemIndicator = /* @__PURE__ */ React.forwardRef<\n  MenubarItemIndicatorElement,\n  MenubarItemIndicatorProps\n>(function MenubarItemIndicator(props: ScopedProps<MenubarItemIndicatorProps>, forwardedRef)"
+        },
+        "source_evidence": {
+          "end_line": 518,
+          "path": "packages/react/menubar/src/menubar.tsx",
+          "start_line": 511
+        },
+        "status": "partial"
+      },
+      "id": "ds.radix-menubar-item-indicator",
+      "package": "@radix-ui/react-menubar",
+      "symbol": "ItemIndicator"
+    },
+    {
+      "details": {
+        "field_gaps": [
+          {
+            "field": "signature.parameters",
+            "reason": "props type `ScopedProps` is imported or unavailable locally"
+          }
+        ],
+        "signature": {
+          "type_text": "const MenubarLabel = /* @__PURE__ */ React.forwardRef<MenubarLabelElement, MenubarLabelProps>(\n  function MenubarLabel(props: ScopedProps<MenubarLabelProps>, forwardedRef)"
+        },
+        "source_evidence": {
+          "end_line": 425,
+          "path": "packages/react/menubar/src/menubar.tsx",
+          "start_line": 419
+        },
+        "status": "partial"
+      },
+      "id": "ds.radix-menubar-label",
+      "package": "@radix-ui/react-menubar",
+      "symbol": "Label"
+    },
+    {
+      "details": {
+        "field_gaps": [
+          {
+            "field": "signature.parameters",
+            "reason": "props type `ScopedProps` is imported or unavailable locally"
+          }
+        ],
+        "signature": {
+          "type_text": "const MenubarMenu = (props: ScopedProps<MenubarMenuProps>) =>"
+        },
+        "source_evidence": {
+          "end_line": 199,
+          "path": "packages/react/menubar/src/menubar.tsx",
+          "start_line": 160
+        },
+        "status": "partial"
+      },
+      "id": "ds.radix-menubar-menu",
+      "package": "@radix-ui/react-menubar",
+      "symbol": "Menu"
+    },
+    {
+      "details": {
+        "field_gaps": [
+          {
+            "field": "signature.parameters",
+            "reason": "props type `ScopedProps` is imported or unavailable locally"
+          }
+        ],
+        "signature": {
+          "type_text": "const MenubarPortal: React.FC<MenubarPortalProps> = (props: ScopedProps<MenubarPortalProps>) =>"
+        },
+        "source_evidence": {
+          "end_line": 294,
+          "path": "packages/react/menubar/src/menubar.tsx",
+          "start_line": 290
+        },
+        "status": "partial"
+      },
+      "id": "ds.radix-menubar-portal",
+      "package": "@radix-ui/react-menubar",
+      "symbol": "Portal"
+    },
+    {
+      "details": {
+        "field_gaps": [
+          {
+            "field": "signature.parameters",
+            "reason": "props type `ScopedProps` is imported or unavailable locally"
+          }
+        ],
+        "signature": {
+          "type_text": "const MenubarRadioGroup = /* @__PURE__ */ React.forwardRef<\n  MenubarRadioGroupElement,\n  MenubarRadioGroupProps\n>(\n  // blank line to reduce diff noise\n  function MenubarRadioGroup(props: ScopedProps<MenubarRadioGroupProps>, forwardedRef)"
+        },
+        "source_evidence": {
+          "end_line": 481,
+          "path": "packages/react/menubar/src/menubar.tsx",
+          "start_line": 471
+        },
+        "status": "partial"
+      },
+      "id": "ds.radix-menubar-radio-group",
+      "package": "@radix-ui/react-menubar",
+      "symbol": "RadioGroup"
+    },
+    {
+      "details": {
+        "field_gaps": [
+          {
+            "field": "signature.parameters",
+            "reason": "props type `ScopedProps` is imported or unavailable locally"
+          }
+        ],
+        "signature": {
+          "type_text": "const MenubarRadioItem = /* @__PURE__ */ React.forwardRef<\n  MenubarRadioItemElement,\n  MenubarRadioItemProps\n>(\n  // blank line to reduce diff noise\n  function MenubarRadioItem(props: ScopedProps<MenubarRadioItemProps>, forwardedRef)"
+        },
+        "source_evidence": {
+          "end_line": 501,
+          "path": "packages/react/menubar/src/menubar.tsx",
+          "start_line": 491
+        },
+        "status": "partial"
+      },
+      "id": "ds.radix-menubar-radio-item",
+      "package": "@radix-ui/react-menubar",
+      "symbol": "RadioItem"
+    },
+    {
+      "details": {
+        "field_gaps": [
+          {
+            "field": "signature.parameters",
+            "reason": "props type `ScopedProps` is imported or unavailable locally"
+          }
+        ],
+        "signature": {
+          "type_text": "const Menubar = /* @__PURE__ */ React.forwardRef<MenubarElement, MenubarProps>(\n  // blank line to reduce diff noise\n  function Menubar(props: ScopedProps<MenubarProps>, forwardedRef)"
+        },
+        "source_evidence": {
+          "end_line": 136,
+          "path": "packages/react/menubar/src/menubar.tsx",
+          "start_line": 68
+        },
+        "status": "partial"
+      },
+      "id": "ds.radix-menubar-root",
+      "package": "@radix-ui/react-menubar",
+      "symbol": "Root"
+    },
+    {
+      "details": {
+        "field_gaps": [
+          {
+            "field": "signature.parameters",
+            "reason": "props type `ScopedProps` is imported or unavailable locally"
+          }
+        ],
+        "signature": {
+          "type_text": "const MenubarSeparator = /* @__PURE__ */ React.forwardRef<\n  MenubarSeparatorElement,\n  MenubarSeparatorProps\n>(\n  // blank line to reduce diff noise\n  function MenubarSeparator(props: ScopedProps<MenubarSeparatorProps>, forwardedRef)"
+        },
+        "source_evidence": {
+          "end_line": 538,
+          "path": "packages/react/menubar/src/menubar.tsx",
+          "start_line": 528
+        },
+        "status": "partial"
+      },
+      "id": "ds.radix-menubar-separator",
+      "package": "@radix-ui/react-menubar",
+      "symbol": "Separator"
+    },
+    {
+      "details": {
+        "field_gaps": [
+          {
+            "field": "signature.parameters",
+            "reason": "props type `ScopedProps` is imported or unavailable locally"
+          }
+        ],
+        "signature": {
+          "type_text": "const MenubarSub: React.FC<MenubarSubProps> = (props: ScopedProps<MenubarSubProps>) =>"
+        },
+        "source_evidence": {
+          "end_line": 584,
+          "path": "packages/react/menubar/src/menubar.tsx",
+          "start_line": 569
+        },
+        "status": "partial"
+      },
+      "id": "ds.radix-menubar-sub",
+      "package": "@radix-ui/react-menubar",
+      "symbol": "Sub"
+    },
+    {
+      "details": {
+        "field_gaps": [
+          {
+            "field": "signature.parameters",
+            "reason": "props type `ScopedProps` is imported or unavailable locally"
+          }
+        ],
+        "signature": {
+          "type_text": "const MenubarSubContent = /* @__PURE__ */ React.forwardRef<\n  MenubarSubContentElement,\n  MenubarSubContentProps\n>(\n  // blank line to reduce diff noise\n  function MenubarSubContent(props: ScopedProps<MenubarSubContentProps>, forwardedRef)"
+        },
+        "source_evidence": {
+          "end_line": 650,
+          "path": "packages/react/menubar/src/menubar.tsx",
+          "start_line": 621
+        },
+        "status": "partial"
+      },
+      "id": "ds.radix-menubar-sub-content",
+      "package": "@radix-ui/react-menubar",
+      "symbol": "SubContent"
+    },
+    {
+      "details": {
+        "field_gaps": [
+          {
+            "field": "signature.parameters",
+            "reason": "props type `ScopedProps` is imported or unavailable locally"
+          }
+        ],
+        "signature": {
+          "type_text": "const MenubarSubTrigger = /* @__PURE__ */ React.forwardRef<\n  MenubarSubTriggerElement,\n  MenubarSubTriggerProps\n>(\n  // blank line to reduce diff noise\n  function MenubarSubTrigger(props: ScopedProps<MenubarSubTriggerProps>, forwardedRef)"
+        },
+        "source_evidence": {
+          "end_line": 611,
+          "path": "packages/react/menubar/src/menubar.tsx",
+          "start_line": 594
+        },
+        "status": "partial"
+      },
+      "id": "ds.radix-menubar-sub-trigger",
+      "package": "@radix-ui/react-menubar",
+      "symbol": "SubTrigger"
+    },
+    {
+      "details": {
+        "field_gaps": [
+          {
+            "field": "signature.parameters",
+            "reason": "props type `ScopedProps` is imported or unavailable locally"
+          }
+        ],
+        "signature": {
+          "type_text": "const MenubarTrigger = /* @__PURE__ */ React.forwardRef<MenubarTriggerElement, MenubarTriggerProps>(\n  function MenubarTrigger(props: ScopedProps<MenubarTriggerProps>, forwardedRef)"
+        },
+        "source_evidence": {
+          "end_line": 281,
+          "path": "packages/react/menubar/src/menubar.tsx",
+          "start_line": 211
+        },
+        "status": "partial"
+      },
+      "id": "ds.radix-menubar-trigger",
+      "package": "@radix-ui/react-menubar",
+      "symbol": "Trigger"
+    },
+    {
+      "details": {
+        "field_gaps": [
+          {
+            "field": "signature.parameters",
+            "reason": "props type `ScopedProps` is imported or unavailable locally"
+          }
+        ],
+        "signature": {
+          "type_text": "const NavigationMenuContent = /* @__PURE__ */ React.forwardRef<\n  NavigationMenuContentElement,\n  NavigationMenuContentProps\n>(function NavigationMenuContent(props: ScopedProps<NavigationMenuContentProps>, forwardedRef)"
+        },
+        "source_evidence": {
+          "end_line": 883,
+          "path": "packages/react/navigation-menu/src/navigation-menu.tsx",
+          "start_line": 836
+        },
+        "status": "partial"
+      },
+      "id": "ds.radix-navigation-menu-content",
+      "package": "@radix-ui/react-navigation-menu",
+      "symbol": "Content"
+    },
+    {
+      "details": {
+        "field_gaps": [
+          {
+            "field": "signature.parameters",
+            "reason": "props type `ScopedProps` is imported or unavailable locally"
+          }
+        ],
+        "signature": {
+          "type_text": "const NavigationMenuIndicator = /* @__PURE__ */ React.forwardRef<\n  NavigationMenuIndicatorElement,\n  NavigationMenuIndicatorProps\n>(function NavigationMenuIndicator(props: ScopedProps<NavigationMenuIndicatorProps>, forwardedRef)"
+        },
+        "source_evidence": {
+          "end_line": 746,
+          "path": "packages/react/navigation-menu/src/navigation-menu.tsx",
+          "start_line": 730
+        },
+        "status": "partial"
+      },
+      "id": "ds.radix-navigation-menu-indicator",
+      "package": "@radix-ui/react-navigation-menu",
+      "symbol": "Indicator"
+    },
+    {
+      "details": {
+        "field_gaps": [
+          {
+            "field": "signature.parameters",
+            "reason": "props type `ScopedProps` is imported or unavailable locally"
+          }
+        ],
+        "signature": {
+          "type_text": "const NavigationMenuItem = /* @__PURE__ */ React.forwardRef<\n  NavigationMenuItemElement,\n  NavigationMenuItemProps\n>(\n  // blank line to reduce diff noise\n  function NavigationMenuItem(props: ScopedProps<NavigationMenuItemProps>, forwardedRef)"
+        },
+        "source_evidence": {
+          "end_line": 549,
+          "path": "packages/react/navigation-menu/src/navigation-menu.tsx",
+          "start_line": 500
+        },
+        "status": "partial"
+      },
+      "id": "ds.radix-navigation-menu-item",
+      "package": "@radix-ui/react-navigation-menu",
+      "symbol": "Item"
+    },
+    {
+      "details": {
+        "field_gaps": [
+          {
+            "field": "signature.parameters",
+            "reason": "props type `ScopedProps` is imported or unavailable locally"
+          }
+        ],
+        "signature": {
+          "type_text": "const NavigationMenuLink = /* @__PURE__ */ React.forwardRef<\n  NavigationMenuLinkElement,\n  NavigationMenuLinkProps\n>(\n  // blank line to reduce diff noise\n  function NavigationMenuLink(props: ScopedProps<NavigationMenuLinkProps>, forwardedRef)"
+        },
+        "source_evidence": {
+          "end_line": 713,
+          "path": "packages/react/navigation-menu/src/navigation-menu.tsx",
+          "start_line": 673
+        },
+        "status": "partial"
+      },
+      "id": "ds.radix-navigation-menu-link",
+      "package": "@radix-ui/react-navigation-menu",
+      "symbol": "Link"
+    },
+    {
+      "details": {
+        "field_gaps": [
+          {
+            "field": "signature.parameters",
+            "reason": "props type `ScopedProps` is imported or unavailable locally"
+          }
+        ],
+        "signature": {
+          "type_text": "const NavigationMenuList = /* @__PURE__ */ React.forwardRef<\n  NavigationMenuListElement,\n  NavigationMenuListProps\n>(\n  // blank line to reduce diff noise\n  function NavigationMenuList(props: ScopedProps<NavigationMenuListProps>, forwardedRef)"
+        },
+        "source_evidence": {
+          "end_line": 469,
+          "path": "packages/react/navigation-menu/src/navigation-menu.tsx",
+          "start_line": 448
+        },
+        "status": "partial"
+      },
+      "id": "ds.radix-navigation-menu-list",
+      "package": "@radix-ui/react-navigation-menu",
+      "symbol": "List"
+    },
+    {
+      "details": {
+        "field_gaps": [
+          {
+            "field": "signature.parameters",
+            "reason": "props type `ScopedProps` is imported or unavailable locally"
+          }
+        ],
+        "signature": {
+          "type_text": "const NavigationMenu = /* @__PURE__ */ React.forwardRef<NavigationMenuElement, NavigationMenuProps>(\n  function NavigationMenu(props: ScopedProps<NavigationMenuProps>, forwardedRef)"
+        },
+        "source_evidence": {
+          "end_line": 262,
+          "path": "packages/react/navigation-menu/src/navigation-menu.tsx",
+          "start_line": 130
+        },
+        "status": "partial"
+      },
+      "id": "ds.radix-navigation-menu-root",
+      "package": "@radix-ui/react-navigation-menu",
+      "symbol": "Root"
+    },
+    {
+      "details": {
+        "field_gaps": [
+          {
+            "field": "signature.parameters",
+            "reason": "props type `ScopedProps` is imported or unavailable locally"
+          }
+        ],
+        "signature": {
+          "type_text": "const NavigationMenuSub = /* @__PURE__ */ React.forwardRef<\n  NavigationMenuSubElement,\n  NavigationMenuSubProps\n>(\n  // blank line to reduce diff noise\n  function NavigationMenuSub(props: ScopedProps<NavigationMenuSubProps>, forwardedRef)"
+        },
+        "source_evidence": {
+          "end_line": 348,
+          "path": "packages/react/navigation-menu/src/navigation-menu.tsx",
+          "start_line": 300
+        },
+        "status": "partial"
+      },
+      "id": "ds.radix-navigation-menu-sub",
+      "package": "@radix-ui/react-navigation-menu",
+      "symbol": "Sub"
+    },
+    {
+      "details": {
+        "field_gaps": [
+          {
+            "field": "signature.parameters",
+            "reason": "props type `ScopedProps` is imported or unavailable locally"
+          }
+        ],
+        "signature": {
+          "type_text": "const NavigationMenuTrigger = /* @__PURE__ */ React.forwardRef<\n  NavigationMenuTriggerElement,\n  NavigationMenuTriggerProps\n>(function NavigationMenuTrigger(props: ScopedProps<NavigationMenuTriggerProps>, forwardedRef)"
+        },
+        "source_evidence": {
+          "end_line": 659,
+          "path": "packages/react/navigation-menu/src/navigation-menu.tsx",
+          "start_line": 561
+        },
+        "status": "partial"
+      },
+      "id": "ds.radix-navigation-menu-trigger",
+      "package": "@radix-ui/react-navigation-menu",
+      "symbol": "Trigger"
+    },
+    {
+      "details": {
+        "field_gaps": [
+          {
+            "field": "signature.parameters",
+            "reason": "props type `ScopedProps` is imported or unavailable locally"
+          }
+        ],
+        "signature": {
+          "type_text": "const NavigationMenuViewport = /* @__PURE__ */ React.forwardRef<\n  NavigationMenuViewportElement,\n  NavigationMenuViewportProps\n>(function NavigationMenuViewport(props: ScopedProps<NavigationMenuViewportProps>, forwardedRef)"
+        },
+        "source_evidence": {
+          "end_line": 1114,
+          "path": "packages/react/navigation-menu/src/navigation-menu.tsx",
+          "start_line": 1101
+        },
+        "status": "partial"
+      },
+      "id": "ds.radix-navigation-menu-viewport",
+      "package": "@radix-ui/react-navigation-menu",
+      "symbol": "Viewport"
+    },
+    {
+      "details": {
+        "field_gaps": [
+          {
+            "field": "signature.parameters",
+            "reason": "props type `ScopedProps` is imported or unavailable locally"
+          }
+        ],
+        "signature": {
+          "type_text": "const OneTimePasswordFieldHiddenInput = /* @__PURE__ */ React.forwardRef<\n  HTMLInputElement,\n  OneTimePasswordFieldHiddenInputProps\n>(function OneTimePasswordFieldHiddenInput(\n  { __scopeOneTimePasswordField, ...props }: ScopedProps<OneTimePasswordFieldHiddenInputProps>,\n  forwardedRef,\n)"
+        },
+        "source_evidence": {
+          "end_line": 564,
+          "path": "packages/react/one-time-password-field/src/one-time-password-field.tsx",
+          "start_line": 536
+        },
+        "status": "partial"
+      },
+      "id": "ds.radix-one-time-password-field-hidden-input",
+      "package": "@radix-ui/react-one-time-password-field",
+      "symbol": "HiddenInput"
+    },
+    {
+      "details": {
+        "field_gaps": [
+          {
+            "field": "signature.parameters",
+            "reason": "props type `ScopedProps` is imported or unavailable locally"
+          }
+        ],
+        "signature": {
+          "type_text": "const OneTimePasswordFieldInput = /* @__PURE__ */ React.forwardRef<\n  HTMLInputElement,\n  OneTimePasswordFieldInputProps\n>(function OneTimePasswordFieldInput(\n  {\n    __scopeOneTimePasswordField,\n    onInvalidChange,\n    index: indexProp,\n    ...props\n  }: ScopedProps<OneTimePasswordFieldInputProps>,\n  forwardedRef,\n)"
+        },
+        "source_evidence": {
+          "end_line": 921,
+          "path": "packages/react/one-time-password-field/src/one-time-password-field.tsx",
+          "start_line": 595
+        },
+        "status": "partial"
+      },
+      "id": "ds.radix-one-time-password-field-input",
+      "package": "@radix-ui/react-one-time-password-field",
+      "symbol": "Input"
+    },
+    {
+      "details": {
+        "field_gaps": [
+          {
+            "field": "signature.parameters",
+            "reason": "props type `ScopedProps` is imported or unavailable locally"
+          }
+        ],
+        "signature": {
+          "type_text": "const OneTimePasswordField = /* @__PURE__ */ React.forwardRef<\n  HTMLDivElement,\n  OneTimePasswordFieldProps\n>(\n  // blank line to reduce diff noise\n  function OneTimePasswordFieldImpl(\n    {\n      __scopeOneTimePasswordField,\n      defaultValue,\n      value: valueProp,\n      onValueChange,\n      autoSubmit = false,\n      children,\n      onPaste,\n      onAutoSubmit,\n      disabled = false,\n      readOnly = false,\n      autoComplete = AutoComplete.OneTimeCode,\n      autoFocus = false,\n      form,\n      name,\n      placeholder,\n      type = InputType.Text,\n      // TODO: Change default to vertical when inputs use vertical writing mode\n      orientation = 'horizontal',\n      dir,\n      validationType = InputValidationType.Numeric,\n      sanitizeValue: sanitizeValueProp,\n      ...domProps\n    }: ScopedProps<OneTimePasswordFieldProps>,\n    forwardedRef,\n  )"
+        },
+        "source_evidence": {
+          "end_line": 518,
+          "path": "packages/react/one-time-password-field/src/one-time-password-field.tsx",
+          "start_line": 215
+        },
+        "status": "partial"
+      },
+      "id": "ds.radix-one-time-password-field-root",
+      "package": "@radix-ui/react-one-time-password-field",
+      "symbol": "Root"
+    },
+    {
+      "details": {
+        "field_gaps": [
+          {
+            "field": "signature.parameters",
+            "reason": "props type `ScopedProps` is imported or unavailable locally"
+          }
+        ],
+        "signature": {
+          "type_text": "const PasswordToggleFieldIcon = /* @__PURE__ */ React.forwardRef<\n  SVGSVGElement,\n  PasswordToggleFieldIconProps\n>(\n  // blank line to reduce diff noise\n  function PasswordToggleFieldIcon(\n    {\n      __scopePasswordToggleField,\n      // @ts-expect-error\n      children,\n      ...props\n    }: ScopedProps<PasswordToggleFieldIconProps>,\n    forwardedRef,\n  )"
+        },
+        "source_evidence": {
+          "end_line": 475,
+          "path": "packages/react/password-toggle-field/src/password-toggle-field.tsx",
+          "start_line": 450
+        },
+        "status": "partial"
+      },
+      "id": "ds.radix-password-toggle-field-icon",
+      "package": "@radix-ui/react-password-toggle-field",
+      "symbol": "Icon"
+    },
+    {
+      "details": {
+        "field_gaps": [
+          {
+            "field": "signature.parameters",
+            "reason": "props type `ScopedProps` is imported or unavailable locally"
+          }
+        ],
+        "signature": {
+          "type_text": "const PasswordToggleFieldInput = /* @__PURE__ */ React.forwardRef<\n  HTMLInputElement,\n  PasswordToggleFieldInputProps\n>(\n  // blank line to reduce diff noise\n  function PasswordToggleFieldInput(\n    {\n      __scopePasswordToggleField,\n      autoComplete = AutoComplete.CurrentPassword,\n      autoCapitalize = 'off',\n      spellCheck = false,\n      id: idProp,\n      ...props\n    }: ScopedProps<PasswordToggleFieldInputProps>,\n    forwardedRef,\n  )"
+        },
+        "source_evidence": {
+          "end_line": 231,
+          "path": "packages/react/password-toggle-field/src/password-toggle-field.tsx",
+          "start_line": 150
+        },
+        "status": "partial"
+      },
+      "id": "ds.radix-password-toggle-field-input",
+      "package": "@radix-ui/react-password-toggle-field",
+      "symbol": "Input"
+    },
+    {
+      "details": {
+        "field_gaps": [
+          {
+            "field": "signature.parameters",
+            "reason": "props type `ScopedProps` is imported or unavailable locally"
+          }
+        ],
+        "signature": {
+          "type_text": "const PasswordToggleField: React.FC<PasswordToggleFieldProps> = ({\n  __scopePasswordToggleField,\n  ...props\n}: ScopedProps<PasswordToggleFieldProps>) =>"
+        },
+        "source_evidence": {
+          "end_line": 129,
+          "path": "packages/react/password-toggle-field/src/password-toggle-field.tsx",
+          "start_line": 66
+        },
+        "status": "partial"
+      },
+      "id": "ds.radix-password-toggle-field-root",
+      "package": "@radix-ui/react-password-toggle-field",
+      "symbol": "Root"
+    },
+    {
+      "details": {
+        "field_gaps": [
+          {
+            "field": "signature.parameters",
+            "reason": "props type `ScopedProps` is imported or unavailable locally"
+          }
+        ],
+        "signature": {
+          "type_text": "const PasswordToggleFieldToggle = /* @__PURE__ */ React.forwardRef<\n  HTMLButtonElement,\n  PasswordToggleFieldToggleProps\n>(\n  // blank line to reduce diff noise\n  function PasswordToggleFieldToggle(\n    {\n      __scopePasswordToggleField,\n      onClick,\n      onPointerDown,\n      onPointerCancel,\n      onPointerUp,\n      onFocus,\n      children,\n      'aria-label': ariaLabelProp,\n      'aria-controls': ariaControls,\n      'aria-hidden': ariaHidden,\n      tabIndex,\n      ...props\n    }: ScopedProps<PasswordToggleFieldToggleProps>,\n    forwardedRef,\n  )"
+        },
+        "source_evidence": {
+          "end_line": 399,
+          "path": "packages/react/password-toggle-field/src/password-toggle-field.tsx",
+          "start_line": 243
+        },
+        "status": "partial"
+      },
+      "id": "ds.radix-password-toggle-field-toggle",
+      "package": "@radix-ui/react-password-toggle-field",
+      "symbol": "Toggle"
+    },
+    {
+      "details": {
+        "field_gaps": [
+          {
+            "field": "signature.parameters",
+            "reason": "props type `ScopedProps` is imported or unavailable locally"
+          }
+        ],
+        "signature": {
+          "type_text": "const PopoverAnchor = /* @__PURE__ */ React.forwardRef<PopoverAnchorElement, PopoverAnchorProps>(\n  function PopoverAnchor(props: ScopedProps<PopoverAnchorProps>, forwardedRef)"
+        },
+        "source_evidence": {
+          "end_line": 140,
+          "path": "packages/react/popover/src/popover.tsx",
+          "start_line": 126
+        },
+        "status": "partial"
+      },
+      "id": "ds.radix-popover-anchor",
+      "package": "@radix-ui/react-popover",
+      "symbol": "Anchor"
+    },
+    {
+      "details": {
+        "field_gaps": [
+          {
+            "field": "signature.parameters",
+            "reason": "props type `ScopedProps` is imported or unavailable locally"
+          }
+        ],
+        "signature": {
+          "type_text": "const PopoverArrow = /* @__PURE__ */ React.forwardRef<PopoverArrowElement, PopoverArrowProps>(\n  function PopoverArrow(props: ScopedProps<PopoverArrowProps>, forwardedRef)"
+        },
+        "source_evidence": {
+          "end_line": 608,
+          "path": "packages/react/popover/src/popover.tsx",
+          "start_line": 602
+        },
+        "status": "partial"
+      },
+      "id": "ds.radix-popover-arrow",
+      "package": "@radix-ui/react-popover",
+      "symbol": "Arrow"
+    },
+    {
+      "details": {
+        "field_gaps": [
+          {
+            "field": "signature.parameters",
+            "reason": "props type `ScopedProps` is imported or unavailable locally"
+          }
+        ],
+        "signature": {
+          "type_text": "const PopoverClose = /* @__PURE__ */ React.forwardRef<PopoverCloseElement, PopoverCloseProps>(\n  function PopoverClose(props: ScopedProps<PopoverCloseProps>, forwardedRef)"
+        },
+        "source_evidence": {
+          "end_line": 592,
+          "path": "packages/react/popover/src/popover.tsx",
+          "start_line": 579
+        },
+        "status": "partial"
+      },
+      "id": "ds.radix-popover-close",
+      "package": "@radix-ui/react-popover",
+      "symbol": "Close"
+    },
+    {
+      "details": {
+        "field_gaps": [
+          {
+            "field": "signature.parameters",
+            "reason": "props type `ScopedProps` is imported or unavailable locally"
+          }
+        ],
+        "signature": {
+          "type_text": "const PopoverContent = /* @__PURE__ */ React.forwardRef<\n  PopoverContentTypeElement,\n  PopoverContentProps\n>(\n  // blank line to reduce diff noise\n  function PopoverContent(props: ScopedProps<PopoverContentProps>, forwardedRef)"
+        },
+        "source_evidence": {
+          "end_line": 254,
+          "path": "packages/react/popover/src/popover.tsx",
+          "start_line": 235
+        },
+        "status": "partial"
+      },
+      "id": "ds.radix-popover-content",
+      "package": "@radix-ui/react-popover",
+      "symbol": "Content"
+    },
+    {
+      "details": {
+        "field_gaps": [
+          {
+            "field": "signature.parameters",
+            "reason": "props type `ScopedProps` is imported or unavailable locally"
+          }
+        ],
+        "signature": {
+          "type_text": "const PopoverDescription = /* @__PURE__ */ React.forwardRef<\n  PopoverDescriptionElement,\n  PopoverDescriptionProps\n>(function PopoverDescription(props: ScopedProps<PopoverDescriptionProps>, forwardedRef)"
+        },
+        "source_evidence": {
+          "end_line": 568,
+          "path": "packages/react/popover/src/popover.tsx",
+          "start_line": 555
+        },
+        "status": "partial"
+      },
+      "id": "ds.radix-popover-description",
+      "package": "@radix-ui/react-popover",
+      "symbol": "Description"
+    },
+    {
+      "details": {
+        "field_gaps": [
+          {
+            "field": "signature.parameters",
+            "reason": "props type `ScopedProps` is imported or unavailable locally"
+          }
+        ],
+        "signature": {
+          "type_text": "const PopoverPortal: React.FC<PopoverPortalProps> = (props: ScopedProps<PopoverPortalProps>) =>"
+        },
+        "source_evidence": {
+          "end_line": 219,
+          "path": "packages/react/popover/src/popover.tsx",
+          "start_line": 207
+        },
+        "status": "partial"
+      },
+      "id": "ds.radix-popover-portal",
+      "package": "@radix-ui/react-popover",
+      "symbol": "Portal"
+    },
+    {
+      "details": {
+        "field_gaps": [
+          {
+            "field": "signature.parameters",
+            "reason": "props type `ScopedProps` is imported or unavailable locally"
+          }
+        ],
+        "signature": {
+          "type_text": "const Popover: React.FC<PopoverProps> = (props: ScopedProps<PopoverProps>) =>"
+        },
+        "source_evidence": {
+          "end_line": 114,
+          "path": "packages/react/popover/src/popover.tsx",
+          "start_line": 69
+        },
+        "status": "partial"
+      },
+      "id": "ds.radix-popover-root",
+      "package": "@radix-ui/react-popover",
+      "symbol": "Root"
+    },
+    {
+      "details": {
+        "field_gaps": [
+          {
+            "field": "signature.parameters",
+            "reason": "props type `ScopedProps` is imported or unavailable locally"
+          }
+        ],
+        "signature": {
+          "type_text": "const PopoverTitle = /* @__PURE__ */ React.forwardRef<PopoverTitleElement, PopoverTitleProps>(\n  function PopoverTitle(props: ScopedProps<PopoverTitleProps>, forwardedRef)"
+        },
+        "source_evidence": {
+          "end_line": 545,
+          "path": "packages/react/popover/src/popover.tsx",
+          "start_line": 533
+        },
+        "status": "partial"
+      },
+      "id": "ds.radix-popover-title",
+      "package": "@radix-ui/react-popover",
+      "symbol": "Title"
+    },
+    {
+      "details": {
+        "field_gaps": [
+          {
+            "field": "signature.parameters",
+            "reason": "props type `ScopedProps` is imported or unavailable locally"
+          }
+        ],
+        "signature": {
+          "type_text": "const PopoverTrigger = /* @__PURE__ */ React.forwardRef<PopoverTriggerElement, PopoverTriggerProps>(\n  function PopoverTrigger(props: ScopedProps<PopoverTriggerProps>, forwardedRef)"
+        },
+        "source_evidence": {
+          "end_line": 180,
+          "path": "packages/react/popover/src/popover.tsx",
+          "start_line": 152
+        },
+        "status": "partial"
+      },
+      "id": "ds.radix-popover-trigger",
+      "package": "@radix-ui/react-popover",
+      "symbol": "Trigger"
+    },
+    {
+      "details": {
+        "field_gaps": [
+          {
+            "field": "signature.parameters",
+            "reason": "the exported component has no direct props type annotation"
+          }
+        ],
+        "signature": {
+          "type_text": "const Portal = /* @__PURE__ */ React.forwardRef<PortalElement, PortalProps>(\n  function Portal(props, forwardedRef)"
+        },
+        "source_evidence": {
+          "end_line": 29,
+          "path": "packages/react/portal/src/portal.tsx",
+          "start_line": 19
+        },
+        "status": "partial"
+      },
+      "id": "ds.radix-portal-root",
+      "package": "@radix-ui/react-portal",
+      "symbol": "Root"
+    },
+    {
+      "details": {
+        "field_gaps": [
+          {
+            "field": "signature.parameters",
+            "reason": "props type `ScopedProps` is imported or unavailable locally"
+          }
+        ],
+        "signature": {
+          "type_text": "const ProgressIndicator = /* @__PURE__ */ React.forwardRef<\n  ProgressIndicatorElement,\n  ProgressIndicatorProps\n>(\n  // blank line to reduce diff noise\n  function ProgressIndicator(props: ScopedProps<ProgressIndicatorProps>, forwardedRef)"
+        },
+        "source_evidence": {
+          "end_line": 102,
+          "path": "packages/react/progress/src/progress.tsx",
+          "start_line": 84
+        },
+        "status": "partial"
+      },
+      "id": "ds.radix-progress-indicator",
+      "package": "@radix-ui/react-progress",
+      "symbol": "Indicator"
+    },
+    {
+      "details": {
+        "field_gaps": [
+          {
+            "field": "signature.parameters",
+            "reason": "props type `ScopedProps` is imported or unavailable locally"
+          }
+        ],
+        "signature": {
+          "type_text": "const Progress = /* @__PURE__ */ React.forwardRef<ProgressElement, ProgressProps>(\n  // blank line to reduce diff noise\n  function Progress(props: ScopedProps<ProgressProps>, forwardedRef)"
+        },
+        "source_evidence": {
+          "end_line": 73,
+          "path": "packages/react/progress/src/progress.tsx",
+          "start_line": 32
+        },
+        "status": "partial"
+      },
+      "id": "ds.radix-progress-root",
+      "package": "@radix-ui/react-progress",
+      "symbol": "Root"
+    },
+    {
+      "details": {
+        "field_gaps": [
+          {
+            "field": "signature.parameters",
+            "reason": "props type `ScopedProps` is imported or unavailable locally"
+          }
+        ],
+        "signature": {
+          "type_text": "const RadioGroupIndicator = /* @__PURE__ */ React.forwardRef<\n  RadioGroupIndicatorElement,\n  RadioGroupIndicatorProps\n>(\n  // blank line to reduce diff noise\n  function RadioGroupIndicator(props: ScopedProps<RadioGroupIndicatorProps>, forwardedRef)"
+        },
+        "source_evidence": {
+          "end_line": 325,
+          "path": "packages/react/radio-group/src/radio-group.tsx",
+          "start_line": 315
+        },
+        "status": "partial"
+      },
+      "id": "ds.radix-radio-group-indicator",
+      "package": "@radix-ui/react-radio-group",
+      "symbol": "Indicator"
+    },
+    {
+      "details": {
+        "field_gaps": [
+          {
+            "field": "signature.parameters",
+            "reason": "props type `ScopedProps` is imported or unavailable locally"
+          }
+        ],
+        "signature": {
+          "type_text": "const RadioGroupItem = /* @__PURE__ */ React.forwardRef<RadioGroupItemElement, RadioGroupItemProps>(\n  function RadioGroupItem(props: ScopedProps<RadioGroupItemProps>, forwardedRef)"
+        },
+        "source_evidence": {
+          "end_line": 284,
+          "path": "packages/react/radio-group/src/radio-group.tsx",
+          "start_line": 255
+        },
+        "status": "partial"
+      },
+      "id": "ds.radix-radio-group-item",
+      "package": "@radix-ui/react-radio-group",
+      "symbol": "Item"
+    },
+    {
+      "details": {
+        "field_gaps": [
+          {
+            "field": "signature.parameters",
+            "reason": "props type `ScopedProps` is imported or unavailable locally"
+          }
+        ],
+        "signature": {
+          "type_text": "const RadioGroup = /* @__PURE__ */ React.forwardRef<RadioGroupElement, RadioGroupProps>(\n  function RadioGroup(props: ScopedProps<RadioGroupProps>, forwardedRef)"
+        },
+        "source_evidence": {
+          "end_line": 134,
+          "path": "packages/react/radio-group/src/radio-group.tsx",
+          "start_line": 65
+        },
+        "status": "partial"
+      },
+      "id": "ds.radix-radio-group-root",
+      "package": "@radix-ui/react-radio-group",
+      "symbol": "Root"
+    },
+    {
+      "details": {
+        "field_gaps": [
+          {
+            "field": "signature.parameters",
+            "reason": "props type `ScopedProps` is imported or unavailable locally"
+          }
+        ],
+        "signature": {
+          "type_text": "const ScrollAreaContent = /* @__PURE__ */ React.forwardRef<\n  ScrollAreaContentElement,\n  ScrollAreaContentProps\n>(function ScrollAreaContent(props: ScopedProps<ScrollAreaContentProps>, forwardedRef)"
+        },
+        "source_evidence": {
+          "end_line": 312,
+          "path": "packages/react/scroll-area/src/scroll-area.tsx",
+          "start_line": 290
+        },
+        "status": "partial"
+      },
+      "id": "ds.radix-scroll-area-content",
+      "package": "@radix-ui/react-scroll-area",
+      "symbol": "Content"
+    },
+    {
+      "details": {
+        "field_gaps": [
+          {
+            "field": "signature.parameters",
+            "reason": "props type `ScopedProps` is imported or unavailable locally"
+          }
+        ],
+        "signature": {
+          "type_text": "const ScrollAreaCorner = /* @__PURE__ */ React.forwardRef<\n  ScrollAreaCornerElement,\n  ScrollAreaCornerProps\n>(\n  // blank line to reduce diff noise\n  function ScrollAreaCorner(props: ScopedProps<ScrollAreaCornerProps>, forwardedRef)"
+        },
+        "source_evidence": {
+          "end_line": 992,
+          "path": "packages/react/scroll-area/src/scroll-area.tsx",
+          "start_line": 981
+        },
+        "status": "partial"
+      },
+      "id": "ds.radix-scroll-area-corner",
+      "package": "@radix-ui/react-scroll-area",
+      "symbol": "Corner"
+    },
+    {
+      "details": {
+        "field_gaps": [
+          {
+            "field": "signature.parameters",
+            "reason": "props type `ScopedProps` is imported or unavailable locally"
+          }
+        ],
+        "signature": {
+          "type_text": "const ScrollArea = /* @__PURE__ */ React.forwardRef<ScrollAreaElement, ScrollAreaProps>(\n  function ScrollArea(props: ScopedProps<ScrollAreaProps>, forwardedRef)"
+        },
+        "source_evidence": {
+          "end_line": 147,
+          "path": "packages/react/scroll-area/src/scroll-area.tsx",
+          "start_line": 89
+        },
+        "status": "partial"
+      },
+      "id": "ds.radix-scroll-area-root",
+      "package": "@radix-ui/react-scroll-area",
+      "symbol": "Root"
+    },
+    {
+      "details": {
+        "field_gaps": [
+          {
+            "field": "signature.parameters",
+            "reason": "props type `ScopedProps` is imported or unavailable locally"
+          }
+        ],
+        "signature": {
+          "type_text": "const ScrollAreaScrollbar = /* @__PURE__ */ React.forwardRef<\n  ScrollAreaScrollbarElement,\n  ScrollAreaScrollbarProps\n>(\n  // blank line to reduce diff noise\n  function ScrollAreaScrollbar(props: ScopedProps<ScrollAreaScrollbarProps>, forwardedRef)"
+        },
+        "source_evidence": {
+          "end_line": 353,
+          "path": "packages/react/scroll-area/src/scroll-area.tsx",
+          "start_line": 325
+        },
+        "status": "partial"
+      },
+      "id": "ds.radix-scroll-area-scrollbar",
+      "package": "@radix-ui/react-scroll-area",
+      "symbol": "Scrollbar"
+    },
+    {
+      "details": {
+        "field_gaps": [
+          {
+            "field": "signature.parameters",
+            "reason": "props type `ScopedProps` is imported or unavailable locally"
+          }
+        ],
+        "signature": {
+          "type_text": "const ScrollAreaThumb = /* @__PURE__ */ React.forwardRef<\n  ScrollAreaThumbElement,\n  ScrollAreaThumbProps\n>(\n  // blank line to reduce diff noise\n  function ScrollAreaThumb(props: ScopedProps<ScrollAreaThumbProps>, forwardedRef)"
+        },
+        "source_evidence": {
+          "end_line": 901,
+          "path": "packages/react/scroll-area/src/scroll-area.tsx",
+          "start_line": 887
+        },
+        "status": "partial"
+      },
+      "id": "ds.radix-scroll-area-thumb",
+      "package": "@radix-ui/react-scroll-area",
+      "symbol": "Thumb"
+    },
+    {
+      "details": {
+        "field_gaps": [
+          {
+            "field": "signature.parameters",
+            "reason": "props type `ScopedProps` is imported or unavailable locally"
+          }
+        ],
+        "signature": {
+          "type_text": "const ScrollAreaViewport = /* @__PURE__ */ React.forwardRef<\n  ScrollAreaViewportElement,\n  ScrollAreaViewportProps\n>(\n  // blank line to reduce diff noise\n  function ScrollAreaViewport(props: ScopedProps<ScrollAreaViewportProps>, forwardedRef)"
+        },
+        "source_evidence": {
+          "end_line": 264,
+          "path": "packages/react/scroll-area/src/scroll-area.tsx",
+          "start_line": 170
+        },
+        "status": "partial"
+      },
+      "id": "ds.radix-scroll-area-viewport",
+      "package": "@radix-ui/react-scroll-area",
+      "symbol": "Viewport"
+    },
+    {
+      "details": {
+        "field_gaps": [
+          {
+            "field": "signature.parameters",
+            "reason": "props type `ScopedProps` is imported or unavailable locally"
+          }
+        ],
+        "signature": {
+          "type_text": "const SelectArrow = /* @__PURE__ */ React.forwardRef<SelectArrowElement, SelectArrowProps>(\n  function SelectArrow(props: ScopedProps<SelectArrowProps>, forwardedRef)"
+        },
+        "source_evidence": {
+          "end_line": 1804,
+          "path": "packages/react/select/src/select.tsx",
+          "start_line": 1795
+        },
+        "status": "partial"
+      },
+      "id": "ds.radix-select-arrow",
+      "package": "@radix-ui/react-select",
+      "symbol": "Arrow"
+    },
+    {
+      "details": {
+        "field_gaps": [
+          {
+            "field": "signature.parameters",
+            "reason": "props type `ScopedProps` is imported or unavailable locally"
+          }
+        ],
+        "signature": {
+          "type_text": "const SelectContent = /* @__PURE__ */ React.forwardRef<SelectContentElement, SelectContentProps>(\n  function SelectContent(props: ScopedProps<SelectContentProps>, forwardedRef)"
+        },
+        "source_evidence": {
+          "end_line": 581,
+          "path": "packages/react/select/src/select.tsx",
+          "start_line": 552
+        },
+        "status": "partial"
+      },
+      "id": "ds.radix-select-content",
+      "package": "@radix-ui/react-select",
+      "symbol": "Content"
+    },
+    {
+      "details": {
+        "field_gaps": [
+          {
+            "field": "signature.parameters",
+            "reason": "props type `ScopedProps` is imported or unavailable locally"
+          }
+        ],
+        "signature": {
+          "type_text": "const SelectGroup = /* @__PURE__ */ React.forwardRef<SelectGroupElement, SelectGroupProps>(\n  function SelectGroup(props: ScopedProps<SelectGroupProps>, forwardedRef)"
+        },
+        "source_evidence": {
+          "end_line": 1360,
+          "path": "packages/react/select/src/select.tsx",
+          "start_line": 1350
+        },
+        "status": "partial"
+      },
+      "id": "ds.radix-select-group",
+      "package": "@radix-ui/react-select",
+      "symbol": "Group"
+    },
+    {
+      "details": {
+        "field_gaps": [
+          {
+            "field": "signature.parameters",
+            "reason": "props type `ScopedProps` is imported or unavailable locally"
+          }
+        ],
+        "signature": {
+          "type_text": "const SelectIcon = /* @__PURE__ */ React.forwardRef<SelectIconElement, SelectIconProps>(\n  function SelectIcon(props: ScopedProps<SelectIconProps>, forwardedRef)"
+        },
+        "source_evidence": {
+          "end_line": 501,
+          "path": "packages/react/select/src/select.tsx",
+          "start_line": 492
+        },
+        "status": "partial"
+      },
+      "id": "ds.radix-select-icon",
+      "package": "@radix-ui/react-select",
+      "symbol": "Icon"
+    },
+    {
+      "details": {
+        "field_gaps": [
+          {
+            "field": "signature.parameters",
+            "reason": "props type `ScopedProps` is imported or unavailable locally"
+          }
+        ],
+        "signature": {
+          "type_text": "const SelectItem = /* @__PURE__ */ React.forwardRef<SelectItemElement, SelectItemProps>(\n  function SelectItem(props: ScopedProps<SelectItemProps>, forwardedRef)"
+        },
+        "source_evidence": {
+          "end_line": 1529,
+          "path": "packages/react/select/src/select.tsx",
+          "start_line": 1403
+        },
+        "status": "partial"
+      },
+      "id": "ds.radix-select-item",
+      "package": "@radix-ui/react-select",
+      "symbol": "Item"
+    },
+    {
+      "details": {
+        "field_gaps": [
+          {
+            "field": "signature.parameters",
+            "reason": "props type `ScopedProps` is imported or unavailable locally"
+          }
+        ],
+        "signature": {
+          "type_text": "const SelectItemIndicator = /* @__PURE__ */ React.forwardRef<\n  SelectItemIndicatorElement,\n  SelectItemIndicatorProps\n>(\n  // blank line to reduce diff noise\n  function SelectItemIndicator(props: ScopedProps<SelectItemIndicatorProps>, forwardedRef)"
+        },
+        "source_evidence": {
+          "end_line": 1614,
+          "path": "packages/react/select/src/select.tsx",
+          "start_line": 1602
+        },
+        "status": "partial"
+      },
+      "id": "ds.radix-select-item-indicator",
+      "package": "@radix-ui/react-select",
+      "symbol": "ItemIndicator"
+    },
+    {
+      "details": {
+        "field_gaps": [
+          {
+            "field": "signature.parameters",
+            "reason": "props type `ScopedProps` is imported or unavailable locally"
+          }
+        ],
+        "signature": {
+          "type_text": "const SelectItemText = /* @__PURE__ */ React.forwardRef<SelectItemTextElement, SelectItemTextProps>(\n  function SelectItemText(props: ScopedProps<SelectItemTextProps>, forwardedRef)"
+        },
+        "source_evidence": {
+          "end_line": 1591,
+          "path": "packages/react/select/src/select.tsx",
+          "start_line": 1540
+        },
+        "status": "partial"
+      },
+      "id": "ds.radix-select-item-text",
+      "package": "@radix-ui/react-select",
+      "symbol": "ItemText"
+    },
+    {
+      "details": {
+        "field_gaps": [
+          {
+            "field": "signature.parameters",
+            "reason": "props type `ScopedProps` is imported or unavailable locally"
+          }
+        ],
+        "signature": {
+          "type_text": "const SelectLabel = /* @__PURE__ */ React.forwardRef<SelectLabelElement, SelectLabelProps>(\n  function SelectLabel(props: ScopedProps<SelectLabelProps>, forwardedRef)"
+        },
+        "source_evidence": {
+          "end_line": 1377,
+          "path": "packages/react/select/src/select.tsx",
+          "start_line": 1371
+        },
+        "status": "partial"
+      },
+      "id": "ds.radix-select-label",
+      "package": "@radix-ui/react-select",
+      "symbol": "Label"
+    },
+    {
+      "details": {
+        "field_gaps": [
+          {
+            "field": "signature.parameters",
+            "reason": "props type `ScopedProps` is imported or unavailable locally"
+          }
+        ],
+        "signature": {
+          "type_text": "const SelectPortal: React.FC<SelectPortalProps> = (props: ScopedProps<SelectPortalProps>) =>"
+        },
+        "source_evidence": {
+          "end_line": 535,
+          "path": "packages/react/select/src/select.tsx",
+          "start_line": 528
+        },
+        "status": "partial"
+      },
+      "id": "ds.radix-select-portal",
+      "package": "@radix-ui/react-select",
+      "symbol": "Portal"
+    },
+    {
+      "details": {
+        "field_gaps": [
+          {
+            "field": "signature.parameters",
+            "reason": "props type `ScopedProps` is imported or unavailable locally"
+          }
+        ],
+        "signature": {
+          "type_text": "const Select: React.FC<SelectProps> = (props: ScopedProps<SelectProps>) =>"
+        },
+        "source_evidence": {
+          "end_line": 327,
+          "path": "packages/react/select/src/select.tsx",
+          "start_line": 307
+        },
+        "status": "partial"
+      },
+      "id": "ds.radix-select-root",
+      "package": "@radix-ui/react-select",
+      "symbol": "Root"
+    },
+    {
+      "details": {
+        "field_gaps": [
+          {
+            "field": "signature.parameters",
+            "reason": "props type `ScopedProps` is imported or unavailable locally"
+          }
+        ],
+        "signature": {
+          "type_text": "const SelectScrollDownButton = /* @__PURE__ */ React.forwardRef<\n  SelectScrollDownButtonElement,\n  SelectScrollDownButtonProps\n>(function SelectScrollDownButton(props: ScopedProps<SelectScrollDownButtonProps>, forwardedRef)"
+        },
+        "source_evidence": {
+          "end_line": 1707,
+          "path": "packages/react/select/src/select.tsx",
+          "start_line": 1670
+        },
+        "status": "partial"
+      },
+      "id": "ds.radix-select-scroll-down-button",
+      "package": "@radix-ui/react-select",
+      "symbol": "ScrollDownButton"
+    },
+    {
+      "details": {
+        "field_gaps": [
+          {
+            "field": "signature.parameters",
+            "reason": "props type `ScopedProps` is imported or unavailable locally"
+          }
+        ],
+        "signature": {
+          "type_text": "const SelectScrollUpButton = /* @__PURE__ */ React.forwardRef<\n  SelectScrollUpButtonElement,\n  SelectScrollUpButtonProps\n>(function SelectScrollUpButton(props: ScopedProps<SelectScrollUpButtonProps>, forwardedRef)"
+        },
+        "source_evidence": {
+          "end_line": 1659,
+          "path": "packages/react/select/src/select.tsx",
+          "start_line": 1625
+        },
+        "status": "partial"
+      },
+      "id": "ds.radix-select-scroll-up-button",
+      "package": "@radix-ui/react-select",
+      "symbol": "ScrollUpButton"
+    },
+    {
+      "details": {
+        "field_gaps": [
+          {
+            "field": "signature.parameters",
+            "reason": "props type `ScopedProps` is imported or unavailable locally"
+          }
+        ],
+        "signature": {
+          "type_text": "const SelectSeparator = /* @__PURE__ */ React.forwardRef<\n  SelectSeparatorElement,\n  SelectSeparatorProps\n>(\n  // blank line to reduce diff noise\n  function SelectSeparator(props: ScopedProps<SelectSeparatorProps>, forwardedRef)"
+        },
+        "source_evidence": {
+          "end_line": 1783,
+          "path": "packages/react/select/src/select.tsx",
+          "start_line": 1774
+        },
+        "status": "partial"
+      },
+      "id": "ds.radix-select-separator",
+      "package": "@radix-ui/react-select",
+      "symbol": "Separator"
+    },
+    {
+      "details": {
+        "field_gaps": [
+          {
+            "field": "signature.parameters",
+            "reason": "props type `ScopedProps` is imported or unavailable locally"
+          }
+        ],
+        "signature": {
+          "type_text": "const SelectTrigger = /* @__PURE__ */ React.forwardRef<SelectTriggerElement, SelectTriggerProps>(\n  function SelectTrigger(props: ScopedProps<SelectTriggerProps>, forwardedRef)"
+        },
+        "source_evidence": {
+          "end_line": 439,
+          "path": "packages/react/select/src/select.tsx",
+          "start_line": 339
+        },
+        "status": "partial"
+      },
+      "id": "ds.radix-select-trigger",
+      "package": "@radix-ui/react-select",
+      "symbol": "Trigger"
+    },
+    {
+      "details": {
+        "field_gaps": [
+          {
+            "field": "signature.parameters",
+            "reason": "props type `ScopedProps` is imported or unavailable locally"
+          }
+        ],
+        "signature": {
+          "type_text": "const SelectValue = /* @__PURE__ */ React.forwardRef<SelectValueElement, SelectValueProps>(\n  function SelectValue(props: ScopedProps<SelectValueProps>, forwardedRef)"
+        },
+        "source_evidence": {
+          "end_line": 483,
+          "path": "packages/react/select/src/select.tsx",
+          "start_line": 453
+        },
+        "status": "partial"
+      },
+      "id": "ds.radix-select-value",
+      "package": "@radix-ui/react-select",
+      "symbol": "Value"
+    },
+    {
+      "details": {
+        "field_gaps": [
+          {
+            "field": "signature.parameters",
+            "reason": "props type `ScopedProps` is imported or unavailable locally"
+          }
+        ],
+        "signature": {
+          "type_text": "const SelectViewport = /* @__PURE__ */ React.forwardRef<SelectViewportElement, SelectViewportProps>(\n  function SelectViewport(props: ScopedProps<SelectViewportProps>, forwardedRef)"
+        },
+        "source_evidence": {
+          "end_line": 1334,
+          "path": "packages/react/select/src/select.tsx",
+          "start_line": 1267
+        },
+        "status": "partial"
+      },
+      "id": "ds.radix-select-viewport",
+      "package": "@radix-ui/react-select",
+      "symbol": "Viewport"
+    },
+    {
+      "details": {
+        "field_gaps": [
+          {
+            "field": "signature.parameters",
+            "reason": "the exported component has no direct props type annotation"
+          }
+        ],
+        "signature": {
+          "type_text": "const Separator = /* @__PURE__ */ React.forwardRef<SeparatorElement, SeparatorProps>(\n  function Separator(props, forwardedRef)"
+        },
+        "source_evidence": {
+          "end_line": 50,
+          "path": "packages/react/separator/src/separator.tsx",
+          "start_line": 31
+        },
+        "status": "partial"
+      },
+      "id": "ds.radix-separator-root",
+      "package": "@radix-ui/react-separator",
+      "symbol": "Root"
+    },
+    {
+      "details": {
+        "field_gaps": [
+          {
+            "field": "signature.parameters",
+            "reason": "props type `ScopedProps` is imported or unavailable locally"
+          }
+        ],
+        "signature": {
+          "type_text": "const SliderRange = /* @__PURE__ */ React.forwardRef<HTMLSpanElement, SliderRangeProps>(\n  function SliderRange(props: ScopedProps<SliderRangeProps>, forwardedRef)"
+        },
+        "source_evidence": {
+          "end_line": 627,
+          "path": "packages/react/slider/src/slider.tsx",
+          "start_line": 599
+        },
+        "status": "partial"
+      },
+      "id": "ds.radix-slider-range",
+      "package": "@radix-ui/react-slider",
+      "symbol": "Range"
+    },
+    {
+      "details": {
+        "field_gaps": [
+          {
+            "field": "signature.parameters",
+            "reason": "props type `ScopedProps` is imported or unavailable locally"
+          }
+        ],
+        "signature": {
+          "type_text": "const Slider = /* @__PURE__ */ React.forwardRef<HTMLSpanElement, SliderProps>(\n  // blank line to reduce diff noise\n  function Slider(props: ScopedProps<SliderProps>, forwardedRef)"
+        },
+        "source_evidence": {
+          "end_line": 303,
+          "path": "packages/react/slider/src/slider.tsx",
+          "start_line": 110
+        },
+        "status": "partial"
+      },
+      "id": "ds.radix-slider-root",
+      "package": "@radix-ui/react-slider",
+      "symbol": "Root"
+    },
+    {
+      "details": {
+        "field_gaps": [
+          {
+            "field": "signature.parameters",
+            "reason": "props type `ScopedProps` is imported or unavailable locally"
+          }
+        ],
+        "signature": {
+          "type_text": "const SliderThumb = /* @__PURE__ */ React.forwardRef<HTMLSpanElement, SliderThumbProps>(\n  function SliderThumb(props: ScopedProps<SliderThumbProps>, forwardedRef)"
+        },
+        "source_evidence": {
+          "end_line": 814,
+          "path": "packages/react/slider/src/slider.tsx",
+          "start_line": 786
+        },
+        "status": "partial"
+      },
+      "id": "ds.radix-slider-thumb",
+      "package": "@radix-ui/react-slider",
+      "symbol": "Thumb"
+    },
+    {
+      "details": {
+        "field_gaps": [
+          {
+            "field": "signature.parameters",
+            "reason": "props type `ScopedProps` is imported or unavailable locally"
+          }
+        ],
+        "signature": {
+          "type_text": "const SliderTrack = /* @__PURE__ */ React.forwardRef<HTMLSpanElement, SliderTrackProps>(\n  function SliderTrack(props: ScopedProps<SliderTrackProps>, forwardedRef)"
+        },
+        "source_evidence": {
+          "end_line": 589,
+          "path": "packages/react/slider/src/slider.tsx",
+          "start_line": 576
+        },
+        "status": "partial"
+      },
+      "id": "ds.radix-slider-track",
+      "package": "@radix-ui/react-slider",
+      "symbol": "Track"
+    },
+    {
+      "details": {
+        "field_gaps": [
+          {
+            "field": "signature.type_text",
+            "reason": "the public signature of the factory result requires type resolution"
+          },
+          {
+            "field": "signature.parameters",
+            "reason": "the exported component has no direct props type annotation"
+          }
+        ],
+        "signature": {},
+        "source_evidence": {
+          "end_line": 95,
+          "path": "packages/react/slot/src/slot.tsx",
+          "start_line": 95
+        },
+        "status": "partial"
+      },
+      "id": "ds.radix-slot-root",
+      "package": "@radix-ui/react-slot",
+      "symbol": "Root"
+    },
+    {
+      "details": {
+        "field_gaps": [
+          {
+            "field": "signature.parameters",
+            "reason": "props type `ScopedProps` is imported or unavailable locally"
+          }
+        ],
+        "signature": {
+          "type_text": "const Switch = /* @__PURE__ */ React.forwardRef<SwitchElement, SwitchProps>(\n  // blank line to reduce diff noise\n  function Switch(props: ScopedProps<SwitchProps>, forwardedRef)"
+        },
+        "source_evidence": {
+          "end_line": 250,
+          "path": "packages/react/switch/src/switch.tsx",
+          "start_line": 203
+        },
+        "status": "partial"
+      },
+      "id": "ds.radix-switch-root",
+      "package": "@radix-ui/react-switch",
+      "symbol": "Root"
+    },
+    {
+      "details": {
+        "field_gaps": [
+          {
+            "field": "signature.parameters",
+            "reason": "props type `ScopedProps` is imported or unavailable locally"
+          }
+        ],
+        "signature": {
+          "type_text": "const SwitchThumb = /* @__PURE__ */ React.forwardRef<SwitchThumbElement, SwitchThumbProps>(\n  function SwitchThumb(props: ScopedProps<SwitchThumbProps>, forwardedRef)"
+        },
+        "source_evidence": {
+          "end_line": 275,
+          "path": "packages/react/switch/src/switch.tsx",
+          "start_line": 262
+        },
+        "status": "partial"
+      },
+      "id": "ds.radix-switch-thumb",
+      "package": "@radix-ui/react-switch",
+      "symbol": "Thumb"
+    },
+    {
+      "details": {
+        "field_gaps": [
+          {
+            "field": "signature.parameters",
+            "reason": "props type `ScopedProps` is imported or unavailable locally"
+          }
+        ],
+        "signature": {
+          "type_text": "const TabsContent = /* @__PURE__ */ React.forwardRef<TabsContentElement, TabsContentProps>(\n  function TabsContent(props: ScopedProps<TabsContentProps>, forwardedRef)"
+        },
+        "source_evidence": {
+          "end_line": 287,
+          "path": "packages/react/tabs/src/tabs.tsx",
+          "start_line": 249
+        },
+        "status": "partial"
+      },
+      "id": "ds.radix-tabs-content",
+      "package": "@radix-ui/react-tabs",
+      "symbol": "Content"
+    },
+    {
+      "details": {
+        "field_gaps": [
+          {
+            "field": "signature.parameters",
+            "reason": "props type `ScopedProps` is imported or unavailable locally"
+          }
+        ],
+        "signature": {
+          "type_text": "const TabsList = /* @__PURE__ */ React.forwardRef<TabsListElement, TabsListProps>(\n  // blank line to reduce diff noise\n  function TabsList(props: ScopedProps<TabsListProps>, forwardedRef)"
+        },
+        "source_evidence": {
+          "end_line": 147,
+          "path": "packages/react/tabs/src/tabs.tsx",
+          "start_line": 124
+        },
+        "status": "partial"
+      },
+      "id": "ds.radix-tabs-list",
+      "package": "@radix-ui/react-tabs",
+      "symbol": "List"
+    },
+    {
+      "details": {
+        "field_gaps": [
+          {
+            "field": "signature.parameters",
+            "reason": "props type `ScopedProps` is imported or unavailable locally"
+          }
+        ],
+        "signature": {
+          "type_text": "const Tabs = /* @__PURE__ */ React.forwardRef<TabsElement, TabsProps>(\n  // blank line to reduce diff noise\n  function Tabs(props: ScopedProps<TabsProps>, forwardedRef)"
+        },
+        "source_evidence": {
+          "end_line": 111,
+          "path": "packages/react/tabs/src/tabs.tsx",
+          "start_line": 71
+        },
+        "status": "partial"
+      },
+      "id": "ds.radix-tabs-root",
+      "package": "@radix-ui/react-tabs",
+      "symbol": "Root"
+    },
+    {
+      "details": {
+        "field_gaps": [
+          {
+            "field": "signature.parameters",
+            "reason": "props type `ScopedProps` is imported or unavailable locally"
+          }
+        ],
+        "signature": {
+          "type_text": "const TabsTrigger = /* @__PURE__ */ React.forwardRef<TabsTriggerElement, TabsTriggerProps>(\n  function TabsTrigger(props: ScopedProps<TabsTriggerProps>, forwardedRef)"
+        },
+        "source_evidence": {
+          "end_line": 230,
+          "path": "packages/react/tabs/src/tabs.tsx",
+          "start_line": 161
+        },
+        "status": "partial"
+      },
+      "id": "ds.radix-tabs-trigger",
+      "package": "@radix-ui/react-tabs",
+      "symbol": "Trigger"
+    },
+    {
+      "details": {
+        "field_gaps": [
+          {
+            "field": "signature.parameters",
+            "reason": "props type `ScopedProps` is imported or unavailable locally"
+          }
+        ],
+        "signature": {
+          "type_text": "const ToastAction = /* @__PURE__ */ React.forwardRef<ToastActionElement, ToastActionProps>(\n  function ToastAction(props: ScopedProps<ToastActionProps>, forwardedRef)"
+        },
+        "source_evidence": {
+          "end_line": 842,
+          "path": "packages/react/toast/src/toast.tsx",
+          "start_line": 825
+        },
+        "status": "partial"
+      },
+      "id": "ds.radix-toast-action",
+      "package": "@radix-ui/react-toast",
+      "symbol": "Action"
+    },
+    {
+      "details": {
+        "field_gaps": [
+          {
+            "field": "signature.parameters",
+            "reason": "props type `ScopedProps` is imported or unavailable locally"
+          }
+        ],
+        "signature": {
+          "type_text": "const ToastClose = /* @__PURE__ */ React.forwardRef<ToastCloseElement, ToastCloseProps>(\n  function ToastClose(props: ScopedProps<ToastCloseProps>, forwardedRef)"
+        },
+        "source_evidence": {
+          "end_line": 870,
+          "path": "packages/react/toast/src/toast.tsx",
+          "start_line": 854
+        },
+        "status": "partial"
+      },
+      "id": "ds.radix-toast-close",
+      "package": "@radix-ui/react-toast",
+      "symbol": "Close"
+    },
+    {
+      "details": {
+        "field_gaps": [
+          {
+            "field": "signature.parameters",
+            "reason": "props type `ScopedProps` is imported or unavailable locally"
+          }
+        ],
+        "signature": {
+          "type_text": "const ToastDescription = /* @__PURE__ */ React.forwardRef<\n  ToastDescriptionElement,\n  ToastDescriptionProps\n>(\n  // blank line to reduce diff noise\n  function ToastDescription(props: ScopedProps<ToastDescriptionProps>, forwardedRef)"
+        },
+        "source_evidence": {
+          "end_line": 806,
+          "path": "packages/react/toast/src/toast.tsx",
+          "start_line": 797
+        },
+        "status": "partial"
+      },
+      "id": "ds.radix-toast-description",
+      "package": "@radix-ui/react-toast",
+      "symbol": "Description"
+    },
+    {
+      "details": {
+        "field_gaps": [
+          {
+            "field": "signature.parameters",
+            "reason": "props type `ScopedProps` is imported or unavailable locally"
+          }
+        ],
+        "signature": {
+          "type_text": "const ToastProvider: React.FC<ToastProviderProps> = (props: ScopedProps<ToastProviderProps>) =>"
+        },
+        "source_evidence": {
+          "end_line": 161,
+          "path": "packages/react/toast/src/toast.tsx",
+          "start_line": 112
+        },
+        "status": "partial"
+      },
+      "id": "ds.radix-toast-provider",
+      "package": "@radix-ui/react-toast",
+      "symbol": "Provider"
+    },
+    {
+      "details": {
+        "field_gaps": [
+          {
+            "field": "signature.parameters",
+            "reason": "props type `ScopedProps` is imported or unavailable locally"
+          }
+        ],
+        "signature": {
+          "type_text": "const Toast = /* @__PURE__ */ React.forwardRef<ToastElement, ToastProps>(\n  // blank line to reduce diff noise\n  function Toast(props: ScopedProps<ToastProps>, forwardedRef)"
+        },
+        "source_evidence": {
+          "end_line": 478,
+          "path": "packages/react/toast/src/toast.tsx",
+          "start_line": 430
+        },
+        "status": "partial"
+      },
+      "id": "ds.radix-toast-root",
+      "package": "@radix-ui/react-toast",
+      "symbol": "Root"
+    },
+    {
+      "details": {
+        "field_gaps": [
+          {
+            "field": "signature.parameters",
+            "reason": "props type `ScopedProps` is imported or unavailable locally"
+          }
+        ],
+        "signature": {
+          "type_text": "const ToastTitle = /* @__PURE__ */ React.forwardRef<ToastTitleElement, ToastTitleProps>(\n  function ToastTitle(props: ScopedProps<ToastTitleProps>, forwardedRef)"
+        },
+        "source_evidence": {
+          "end_line": 788,
+          "path": "packages/react/toast/src/toast.tsx",
+          "start_line": 783
+        },
+        "status": "partial"
+      },
+      "id": "ds.radix-toast-title",
+      "package": "@radix-ui/react-toast",
+      "symbol": "Title"
+    },
+    {
+      "details": {
+        "field_gaps": [
+          {
+            "field": "signature.parameters",
+            "reason": "props type `ScopedProps` is imported or unavailable locally"
+          }
+        ],
+        "signature": {
+          "type_text": "const ToastViewport = /* @__PURE__ */ React.forwardRef<ToastViewportElement, ToastViewportProps>(\n  function ToastViewport(props: ScopedProps<ToastViewportProps>, forwardedRef)"
+        },
+        "source_evidence": {
+          "end_line": 370,
+          "path": "packages/react/toast/src/toast.tsx",
+          "start_line": 188
+        },
+        "status": "partial"
+      },
+      "id": "ds.radix-toast-viewport",
+      "package": "@radix-ui/react-toast",
+      "symbol": "Viewport"
+    },
+    {
+      "details": {
+        "field_gaps": [
+          {
+            "field": "signature.parameters",
+            "reason": "props type `ScopedProps` is imported or unavailable locally"
+          }
+        ],
+        "signature": {
+          "type_text": "const ToggleGroupItem = /* @__PURE__ */ React.forwardRef<\n  ToggleGroupItemElement,\n  ToggleGroupItemProps\n>(\n  // blank line to reduce diff noise\n  function ToggleGroupItem(props: ScopedProps<ToggleGroupItemProps>, forwardedRef)"
+        },
+        "source_evidence": {
+          "end_line": 277,
+          "path": "packages/react/toggle-group/src/toggle-group.tsx",
+          "start_line": 250
+        },
+        "status": "partial"
+      },
+      "id": "ds.radix-toggle-group-item",
+      "package": "@radix-ui/react-toggle-group",
+      "symbol": "Item"
+    },
+    {
+      "details": {
+        "field_gaps": [
+          {
+            "field": "signature.parameters",
+            "reason": "the exported component has no direct props type annotation"
+          }
+        ],
+        "signature": {
+          "type_text": "const ToggleGroup = /* @__PURE__ */ React.forwardRef<\n  ToggleGroupElement,\n  ToggleGroupSingleProps | ToggleGroupMultipleProps\n>(function ToggleGroup(props, forwardedRef)"
+        },
+        "source_evidence": {
+          "end_line": 56,
+          "path": "packages/react/toggle-group/src/toggle-group.tsx",
+          "start_line": 39
+        },
+        "status": "partial"
+      },
+      "id": "ds.radix-toggle-group-root",
+      "package": "@radix-ui/react-toggle-group",
+      "symbol": "Root"
+    },
+    {
+      "details": {
+        "field_gaps": [
+          {
+            "field": "signature.parameters",
+            "reason": "the exported component has no direct props type annotation"
+          }
+        ],
+        "signature": {
+          "type_text": "const Toggle = /* @__PURE__ */ React.forwardRef<ToggleElement, ToggleProps>(\n  function Toggle(props, forwardedRef)"
+        },
+        "source_evidence": {
+          "end_line": 58,
+          "path": "packages/react/toggle/src/toggle.tsx",
+          "start_line": 31
+        },
+        "status": "partial"
+      },
+      "id": "ds.radix-toggle-root",
+      "package": "@radix-ui/react-toggle",
+      "symbol": "Root"
+    },
+    {
+      "details": {
+        "field_gaps": [
+          {
+            "field": "signature.parameters",
+            "reason": "props type `ScopedProps` is imported or unavailable locally"
+          }
+        ],
+        "signature": {
+          "type_text": "const ToolbarButton = /* @__PURE__ */ React.forwardRef<ToolbarButtonElement, ToolbarButtonProps>(\n  function ToolbarButton(props: ScopedProps<ToolbarButtonProps>, forwardedRef)"
+        },
+        "source_evidence": {
+          "end_line": 118,
+          "path": "packages/react/toolbar/src/toolbar.tsx",
+          "start_line": 108
+        },
+        "status": "partial"
+      },
+      "id": "ds.radix-toolbar-button",
+      "package": "@radix-ui/react-toolbar",
+      "symbol": "Button"
+    },
+    {
+      "details": {
+        "field_gaps": [
+          {
+            "field": "signature.parameters",
+            "reason": "props type `ScopedProps` is imported or unavailable locally"
+          }
+        ],
+        "signature": {
+          "type_text": "const ToolbarLink = /* @__PURE__ */ React.forwardRef<ToolbarLinkElement, ToolbarLinkProps>(\n  function ToolbarLink(props: ScopedProps<ToolbarLinkProps>, forwardedRef)"
+        },
+        "source_evidence": {
+          "end_line": 154,
+          "path": "packages/react/toolbar/src/toolbar.tsx",
+          "start_line": 128
+        },
+        "status": "partial"
+      },
+      "id": "ds.radix-toolbar-link",
+      "package": "@radix-ui/react-toolbar",
+      "symbol": "Link"
+    },
+    {
+      "details": {
+        "field_gaps": [
+          {
+            "field": "signature.parameters",
+            "reason": "props type `ScopedProps` is imported or unavailable locally"
+          }
+        ],
+        "signature": {
+          "type_text": "const Toolbar = /* @__PURE__ */ React.forwardRef<ToolbarElement, ToolbarProps>(\n  // blank line to reduce diff noise\n  function Toolbar(props: ScopedProps<ToolbarProps>, forwardedRef)"
+        },
+        "source_evidence": {
+          "end_line": 70,
+          "path": "packages/react/toolbar/src/toolbar.tsx",
+          "start_line": 44
+        },
+        "status": "partial"
+      },
+      "id": "ds.radix-toolbar-root",
+      "package": "@radix-ui/react-toolbar",
+      "symbol": "Root"
+    },
+    {
+      "details": {
+        "field_gaps": [
+          {
+            "field": "signature.parameters",
+            "reason": "props type `ScopedProps` is imported or unavailable locally"
+          }
+        ],
+        "signature": {
+          "type_text": "const ToolbarSeparator = /* @__PURE__ */ React.forwardRef<\n  ToolbarSeparatorElement,\n  ToolbarSeparatorProps\n>(\n  // blank line to reduce diff noise\n  function ToolbarSeparator(props: ScopedProps<ToolbarSeparatorProps>, forwardedRef)"
+        },
+        "source_evidence": {
+          "end_line": 98,
+          "path": "packages/react/toolbar/src/toolbar.tsx",
+          "start_line": 82
+        },
+        "status": "partial"
+      },
+      "id": "ds.radix-toolbar-separator",
+      "package": "@radix-ui/react-toolbar",
+      "symbol": "Separator"
+    },
+    {
+      "details": {
+        "field_gaps": [
+          {
+            "field": "signature.parameters",
+            "reason": "props type `ScopedProps` is imported or unavailable locally"
+          }
+        ],
+        "signature": {
+          "type_text": "const ToolbarToggleGroup = /* @__PURE__ */ React.forwardRef<\n  ToolbarToggleGroupElement,\n  ToolbarToggleGroupSingleProps | ToolbarToggleGroupMultipleProps\n>(\n  // blank line to reduce diff noise\n  function ToolbarToggleGroup(\n    props: ScopedProps<ToolbarToggleGroupSingleProps | ToolbarToggleGroupMultipleProps>,\n    forwardedRef,\n  )"
+        },
+        "source_evidence": {
+          "end_line": 190,
+          "path": "packages/react/toolbar/src/toolbar.tsx",
+          "start_line": 167
+        },
+        "status": "partial"
+      },
+      "id": "ds.radix-toolbar-toggle-group",
+      "package": "@radix-ui/react-toolbar",
+      "symbol": "ToggleGroup"
+    },
+    {
+      "details": {
+        "field_gaps": [
+          {
+            "field": "signature.parameters",
+            "reason": "props type `ScopedProps` is imported or unavailable locally"
+          }
+        ],
+        "signature": {
+          "type_text": "const ToolbarToggleItem = /* @__PURE__ */ React.forwardRef<\n  ToolbarToggleItemElement,\n  ToolbarToggleItemProps\n>(\n  // blank line to reduce diff noise\n  function ToolbarToggleItem(props: ScopedProps<ToolbarToggleItemProps>, forwardedRef)"
+        },
+        "source_evidence": {
+          "end_line": 216,
+          "path": "packages/react/toolbar/src/toolbar.tsx",
+          "start_line": 200
+        },
+        "status": "partial"
+      },
+      "id": "ds.radix-toolbar-toggle-item",
+      "package": "@radix-ui/react-toolbar",
+      "symbol": "ToggleItem"
+    },
+    {
+      "details": {
+        "field_gaps": [
+          {
+            "field": "signature.parameters",
+            "reason": "props type `ScopedProps` is imported or unavailable locally"
+          }
+        ],
+        "signature": {
+          "type_text": "const TooltipArrow = /* @__PURE__ */ React.forwardRef<TooltipArrowElement, TooltipArrowProps>(\n  function TooltipArrow(props: ScopedProps<TooltipArrowProps>, forwardedRef)"
+        },
+        "source_evidence": {
+          "end_line": 623,
+          "path": "packages/react/tooltip/src/tooltip.tsx",
+          "start_line": 617
+        },
+        "status": "partial"
+      },
+      "id": "ds.radix-tooltip-arrow",
+      "package": "@radix-ui/react-tooltip",
+      "symbol": "Arrow"
+    },
+    {
+      "details": {
+        "field_gaps": [
+          {
+            "field": "signature.parameters",
+            "reason": "props type `ScopedProps` is imported or unavailable locally"
+          }
+        ],
+        "signature": {
+          "type_text": "const TooltipContent = /* @__PURE__ */ React.forwardRef<TooltipContentElement, TooltipContentProps>(\n  function TooltipContent(props: ScopedProps<TooltipContentProps>, forwardedRef)"
+        },
+        "source_evidence": {
+          "end_line": 403,
+          "path": "packages/react/tooltip/src/tooltip.tsx",
+          "start_line": 387
+        },
+        "status": "partial"
+      },
+      "id": "ds.radix-tooltip-content",
+      "package": "@radix-ui/react-tooltip",
+      "symbol": "Content"
+    },
+    {
+      "details": {
+        "field_gaps": [
+          {
+            "field": "signature.parameters",
+            "reason": "props type `ScopedProps` is imported or unavailable locally"
+          }
+        ],
+        "signature": {
+          "type_text": "const TooltipPortal: React.FC<TooltipPortalProps> = (props: ScopedProps<TooltipPortalProps>) =>"
+        },
+        "source_evidence": {
+          "end_line": 370,
+          "path": "packages/react/tooltip/src/tooltip.tsx",
+          "start_line": 358
+        },
+        "status": "partial"
+      },
+      "id": "ds.radix-tooltip-portal",
+      "package": "@radix-ui/react-tooltip",
+      "symbol": "Portal"
+    },
+    {
+      "details": {
+        "field_gaps": [
+          {
+            "field": "signature.parameters",
+            "reason": "props type `ScopedProps` is imported or unavailable locally"
+          }
+        ],
+        "signature": {
+          "type_text": "const TooltipProvider: React.FC<TooltipProviderProps> = (\n  props: ScopedProps<TooltipProviderProps>,\n) =>"
+        },
+        "source_evidence": {
+          "end_line": 112,
+          "path": "packages/react/tooltip/src/tooltip.tsx",
+          "start_line": 66
+        },
+        "status": "partial"
+      },
+      "id": "ds.radix-tooltip-provider",
+      "package": "@radix-ui/react-tooltip",
+      "symbol": "Provider"
+    },
+    {
+      "details": {
+        "field_gaps": [
+          {
+            "field": "signature.parameters",
+            "reason": "props type `ScopedProps` is imported or unavailable locally"
+          }
+        ],
+        "signature": {
+          "type_text": "const Tooltip: React.FC<TooltipProps> = (props: ScopedProps<TooltipProps>) =>"
+        },
+        "source_evidence": {
+          "end_line": 260,
+          "path": "packages/react/tooltip/src/tooltip.tsx",
+          "start_line": 155
+        },
+        "status": "partial"
+      },
+      "id": "ds.radix-tooltip-root",
+      "package": "@radix-ui/react-tooltip",
+      "symbol": "Root"
+    },
+    {
+      "details": {
+        "field_gaps": [
+          {
+            "field": "signature.parameters",
+            "reason": "props type `ScopedProps` is imported or unavailable locally"
+          }
+        ],
+        "signature": {
+          "type_text": "const TooltipTrigger = /* @__PURE__ */ React.forwardRef<TooltipTriggerElement, TooltipTriggerProps>(\n  function TooltipTrigger(props: ScopedProps<TooltipTriggerProps>, forwardedRef)"
+        },
+        "source_evidence": {
+          "end_line": 331,
+          "path": "packages/react/tooltip/src/tooltip.tsx",
+          "start_line": 272
+        },
+        "status": "partial"
+      },
+      "id": "ds.radix-tooltip-trigger",
+      "package": "@radix-ui/react-tooltip",
+      "symbol": "Trigger"
     },
     {
       "details": {
@@ -10916,6 +14932,28 @@
         "field_gaps": [
           {
             "field": "signature.parameters",
+            "reason": "the exported component has no direct props type annotation"
+          }
+        ],
+        "signature": {
+          "type_text": "const VisuallyHidden = /* @__PURE__ */ React.forwardRef<VisuallyHiddenElement, VisuallyHiddenProps>(\n  function VisuallyHidden(props, forwardedRef)"
+        },
+        "source_evidence": {
+          "end_line": 36,
+          "path": "packages/react/visually-hidden/src/visually-hidden.tsx",
+          "start_line": 26
+        },
+        "status": "partial"
+      },
+      "id": "ds.radix-visually-hidden-root",
+      "package": "@radix-ui/react-visually-hidden",
+      "symbol": "Root"
+    },
+    {
+      "details": {
+        "field_gaps": [
+          {
+            "field": "signature.parameters",
             "reason": "props type `ScopedProps` is imported or unavailable locally"
           }
         ],
@@ -11512,16 +15550,21 @@
       "details": {
         "status": "partial",
         "source_evidence": {
+          "end_line": 95,
           "path": "packages/react/slot/src/slot.tsx",
-          "start_line": 95,
-          "end_line": 95
+          "start_line": 95
         },
         "field_gaps": [
           {
-            "field": "signature",
-            "reason": "Wax did not extract the wrapped declaration."
+            "field": "signature.type_text",
+            "reason": "the public signature of the factory result requires type resolution"
+          },
+          {
+            "field": "signature.parameters",
+            "reason": "the exported component has no direct props type annotation"
           }
-        ]
+        ],
+        "signature": {}
       }
     },
     {

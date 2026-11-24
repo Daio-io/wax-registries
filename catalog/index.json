@@ -81,12 +81,12 @@
       "registries": {
         "react": {
           "path": ".wax/registries/react.json",
-          "sha256": "6643262b12d55b6ebe767e943cea53e76f9f7adff37750976531f893a54322db"
+          "sha256": "25bfcf3e1e58f5beed2d137caecdefdf5b167256906bd7ec99a2b959171fe982"
         }
       },
       "provenance": {
         "path": "provenance.json",
-        "sha256": "eb8390fa888ccf472c56366b68c65001f820a1fbebeba3d1084b3dd3bb795bf8"
+        "sha256": "38821e168c4e1556faf1890f2660fe1e063b36e062274aa6cefb7537ce3741e6"
       },
       "upstream": [
         {
@@ -95,11 +95,12 @@
         }
       ],
       "coverage": [
-        "Package-qualified named exports from the scoped React packages",
-        "Documented compound components under the radix-ui umbrella"
+        "Package-qualified named and shorthand React exports from scoped Primitives packages",
+        "Compound components under the radix-ui umbrella"
       ],
       "gaps": [
-        "Scoped shorthand names shared across packages; renamed imports; non-component utilities"
+        "Scoped shorthand matching requires Wax 0.11; umbrella records are carried forward because discovery does not follow workspace package re-exports",
+        "Non-component utilities"
       ]
     },
     {
