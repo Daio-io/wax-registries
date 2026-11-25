@@ -29,6 +29,27 @@ wax registry delete public-shadcn-r1
 wax registry install --version 1 shadcn
 ```
 
+## Neobrutalism Components
+
+The [React registry](systems/neobrutalism/releases/d9bc689/.wax/registries/react.json)
+contains source evidence and signatures for 326 components from
+[`ekmas/neobrutalism-components`](https://github.com/ekmas/neobrutalism-components).
+Upstream publishes no release tags, so this release is pinned to commit
+[`d9bc689`](https://github.com/ekmas/neobrutalism-components/commit/d9bc68914485a1d7761c7c48a7d10c23844e8468).
+It covers stock `@/components/ui/<file>` imports installed with the shadcn CLI.
+The [catalogue index](catalog/index.json) lists the components that discovery
+misses.
+
+```sh
+wax scan --language react --root src \
+  --design-system https://raw.githubusercontent.com/Daio-io/wax-registries/main/systems/neobrutalism/releases/d9bc689/.wax/registries/react.json
+```
+
+To regenerate it, follow the shadcn/ui steps below with these inputs. Clone
+the upstream with a full checkout and check out the pinned commit. Set
+`source_root=src/components/ui`, skip `combobox.tsx` and `data-table.tsx`,
+and pass `--design-system neobrutalism --name 'Neobrutalism Components'`.
+
 ## Regenerate a registry
 
 Use Wax CLI and React pack `0.11.0-alpha1` for this release. The projection gives
