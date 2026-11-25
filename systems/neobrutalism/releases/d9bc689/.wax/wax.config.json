@@ -1,0 +1,13 @@
+{
+  "design_systems": {
+    "neobrutalism": {
+      "name": "Neobrutalism Components",
+      "registries": {
+        "react": {
+          "source": ".wax/registries/react.json"
+        }
+      }
+    }
+  },
+  "schema_version": 2
+}

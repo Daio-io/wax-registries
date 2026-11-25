@@ -2,6 +2,42 @@
   "schema_version": 1,
   "entries": [
     {
+      "id": "neobrutalism",
+      "name": "Neobrutalism Components",
+      "revision": 1,
+      "subdir": "systems/neobrutalism/releases/d9bc689",
+      "minimum_wax_version": "0.10.2-alpha.1",
+      "definition": {
+        "path": ".wax/wax.config.json",
+        "sha256": "b8473b3373e3f5ccfd3bc83c8b59b8d935d3cbbd5e59e8d39831944a7de9fd33"
+      },
+      "registries": {
+        "react": {
+          "path": ".wax/registries/react.json",
+          "sha256": "f4016221581cda794ae224355a1b1febee1295991985fcaea65f195b4abe98e9"
+        }
+      },
+      "provenance": {
+        "path": "provenance.json",
+        "sha256": "1a7b07d0a45d39f84a2cb6f75424ddd3d2d17e4e5324a2593f57d371ea4687ca"
+      },
+      "upstream": [
+        {
+          "source": "https://github.com/ekmas/neobrutalism-components",
+          "version": "d9bc68914485a1d7761c7c48a7d10c23844e8468"
+        }
+      ],
+      "coverage": [
+        "React components from src/components/ui with shadcn-style @/components/ui/<file> imports"
+      ],
+      "gaps": [
+        "Upstream has no release tags; this release is pinned to a main-branch commit",
+        "17 public exports are missing because the React pack does not discover components that return useRender() without JSX, constant aliases such as const Select = SelectPrimitive.Root, or re-exports from @base-ui/react",
+        "Theme CSS custom properties and colour palettes are not generated",
+        "Copy-paste demos combobox.tsx and data-table.tsx, which are not published in the upstream registry.json"
+      ]
+    },
+    {
       "id": "radix-colors",
       "name": "Radix Colors",
       "revision": 1,
