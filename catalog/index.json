@@ -6,7 +6,7 @@
       "name": "Neobrutalism Components",
       "revision": 1,
       "subdir": "systems/neobrutalism/releases/d9bc689",
-      "minimum_wax_version": "0.10.2-alpha.1",
+      "minimum_wax_version": "0.12.0-alpha1",
       "definition": {
         "path": ".wax/wax.config.json",
         "sha256": "b8473b3373e3f5ccfd3bc83c8b59b8d935d3cbbd5e59e8d39831944a7de9fd33"
@@ -178,7 +178,7 @@
       "name": "shadcn/ui",
       "revision": 1,
       "subdir": "systems/shadcn/releases/4.23.0",
-      "minimum_wax_version": "0.10.2-alpha.1",
+      "minimum_wax_version": "0.12.0-alpha1",
       "definition": {
         "path": ".wax/wax.config.json",
         "sha256": "5c1a3fd2243bb4863221442ba2738ae11568d2d6278e257cb4d76ae34455461e"
