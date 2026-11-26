@@ -14,12 +14,12 @@
       "registries": {
         "react": {
           "path": ".wax/registries/react.json",
-          "sha256": "f4016221581cda794ae224355a1b1febee1295991985fcaea65f195b4abe98e9"
+          "sha256": "685e576e8516dc89f838b76bd8ceb672a31fb5d6eedc850d7c1a9827567b108b"
         }
       },
       "provenance": {
         "path": "provenance.json",
-        "sha256": "1a7b07d0a45d39f84a2cb6f75424ddd3d2d17e4e5324a2593f57d371ea4687ca"
+        "sha256": "3c10d5b645b48d6d614d0cb29444c6ed6b8cf4506424cf1cef80e4e36dae61ef"
       },
       "upstream": [
         {
@@ -28,12 +28,13 @@
         }
       ],
       "coverage": [
-        "React components from src/components/ui with shadcn-style @/components/ui/<file> imports"
+        "React components from src/components/ui with shadcn-style @/components/ui/<file> imports",
+        "Tailwind v4 theme tokens from the @theme inline block in src/styling/globals.css"
       ],
       "gaps": [
         "Upstream has no release tags; this release is pinned to a main-branch commit",
-        "17 public exports are missing because the React pack does not discover components that return useRender() without JSX, constant aliases such as const Select = SelectPrimitive.Root, or re-exports from @base-ui/react",
-        "Theme CSS custom properties and colour palettes are not generated",
+        "DirectionProvider is missing because the React pack does not follow re-exports from @base-ui/react",
+        "Dark-mode values; tokens record the light :root values",
         "Copy-paste demos combobox.tsx and data-table.tsx, which are not published in the upstream registry.json"
       ]
     },
@@ -185,12 +186,12 @@
       "registries": {
         "react": {
           "path": ".wax/registries/react.json",
-          "sha256": "41dc0f590cd1e5223d2d0a54fd8f7a901b90486ec5eef30af39cc5e6e11f3318"
+          "sha256": "be32919192e64a1ffde2d3e4dbf3d860a47f53f0815f287512daad71ae4ed3de"
         }
       },
       "provenance": {
         "path": "provenance.json",
-        "sha256": "5be544eb971b71a8f44d742cb2191c8b24037456444f0289c89503eba42f4d91"
+        "sha256": "90c9f3aee96a2e1c509cf86ac441556e1d13bc37fffe67f5d6214ba77be7da1c"
       },
       "upstream": [
         {
@@ -199,10 +200,12 @@
         }
       ],
       "coverage": [
-        "React components from the Radix base with @/components/ui/<file> imports"
+        "React components from the Radix base with @/components/ui/<file> imports",
+        "Tailwind v4 theme tokens from the @theme inline block of the documented globals.css, with the default neutral base colour"
       ],
       "gaps": [
-        "Base UI, alternative import aliases, and theme tokens"
+        "Base UI, alternative import aliases, and base colours other than neutral",
+        "Dark-mode values; tokens record the light :root values"
       ]
     }
   ]
