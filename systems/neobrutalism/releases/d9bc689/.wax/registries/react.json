@@ -101,10 +101,22 @@
         "field_gaps": [
           {
             "field": "signature.parameters",
-            "reason": "props type shape is not a local type reference or inline object type"
+            "reason": "props intersection member `React.ComponentProps<\"div\">` requires type resolution"
           }
         ],
         "signature": {
+          "parameters": [
+            {
+              "allowed_values": [
+                "default",
+                "destructive"
+              ],
+              "default": "\"default\"",
+              "name": "variant",
+              "required": false,
+              "type_kind": "enum"
+            }
+          ],
           "type_text": "function Alert({\n  className,\n  variant,\n  ...props\n}: React.ComponentProps<\"div\"> & VariantProps<typeof alertVariants>)"
         },
         "source_evidence": {
@@ -171,7 +183,11 @@
         "field_gaps": [
           {
             "field": "signature.parameters",
-            "reason": "props type shape is not a local type reference or inline object type"
+            "reason": "props intersection member `React.ComponentProps<typeof AlertDialogPrimitive.Close>` requires type resolution"
+          },
+          {
+            "field": "signature.parameters",
+            "reason": "props intersection member `VariantProps<typeof buttonVariants>` requires type resolution"
           }
         ],
         "signature": {
@@ -193,7 +209,11 @@
         "field_gaps": [
           {
             "field": "signature.parameters",
-            "reason": "props type shape is not a local type reference or inline object type"
+            "reason": "props intersection member `React.ComponentProps<typeof AlertDialogPrimitive.Close>` requires type resolution"
+          },
+          {
+            "field": "signature.parameters",
+            "reason": "props intersection member `VariantProps<typeof buttonVariants>` requires type resolution"
           }
         ],
         "signature": {
@@ -215,10 +235,23 @@
         "field_gaps": [
           {
             "field": "signature.parameters",
-            "reason": "props type shape is not a local type reference or inline object type"
+            "reason": "props intersection member `React.ComponentProps<typeof AlertDialogPrimitive.Popup>` requires type resolution"
           }
         ],
         "signature": {
+          "parameters": [
+            {
+              "allowed_values": [
+                "default",
+                "sm"
+              ],
+              "default": "\"default\"",
+              "name": "size",
+              "required": false,
+              "type_kind": "enum",
+              "type_text": "\"default\" | \"sm\""
+            }
+          ],
           "type_text": "function AlertDialogContent({\n  className,\n  size = \"default\",\n  ...props\n}: React.ComponentProps<typeof AlertDialogPrimitive.Popup> & {\n  size?: \"default\" | \"sm\"\n})"
         },
         "source_evidence": {
@@ -453,10 +486,47 @@
         "field_gaps": [
           {
             "field": "signature.parameters",
-            "reason": "props type shape is not a local type reference or inline object type"
+            "reason": "props intersection member `React.ComponentProps<\"div\">` requires type resolution"
           }
         ],
         "signature": {
+          "parameters": [
+            {
+              "allowed_values": [
+                "default",
+                "sm",
+                "xs"
+              ],
+              "default": "\"default\"",
+              "name": "size",
+              "required": false,
+              "type_kind": "enum"
+            },
+            {
+              "allowed_values": [
+                "horizontal",
+                "vertical"
+              ],
+              "default": "\"horizontal\"",
+              "name": "orientation",
+              "required": false,
+              "type_kind": "enum"
+            },
+            {
+              "allowed_values": [
+                "idle",
+                "uploading",
+                "processing",
+                "error",
+                "done"
+              ],
+              "default": "\"done\"",
+              "name": "state",
+              "required": false,
+              "type_kind": "enum",
+              "type_text": "\"idle\" | \"uploading\" | \"processing\" | \"error\" | \"done\""
+            }
+          ],
           "type_text": "function Attachment({\n  className,\n  state = \"done\",\n  size = \"default\",\n  orientation = \"horizontal\",\n  ...props\n}: React.ComponentProps<\"div\"> &\n  VariantProps<typeof attachmentVariants> & {\n    state?: \"idle\" | \"uploading\" | \"processing\" | \"error\" | \"done\"\n  })"
         },
         "source_evidence": {
@@ -571,10 +641,22 @@
         "field_gaps": [
           {
             "field": "signature.parameters",
-            "reason": "props type shape is not a local type reference or inline object type"
+            "reason": "props intersection member `React.ComponentProps<\"div\">` requires type resolution"
           }
         ],
         "signature": {
+          "parameters": [
+            {
+              "allowed_values": [
+                "icon",
+                "image"
+              ],
+              "default": "\"icon\"",
+              "name": "variant",
+              "required": false,
+              "type_kind": "enum"
+            }
+          ],
           "type_text": "function AttachmentMedia({\n  className,\n  variant = \"icon\",\n  ...props\n}: React.ComponentProps<\"div\"> & VariantProps<typeof attachmentMediaVariants>)"
         },
         "source_evidence": {
@@ -614,13 +696,51 @@
     },
     {
       "details": {
+        "signature": {
+          "parameters": [
+            {
+              "name": "props",
+              "package": "@base-ui/react/use-render",
+              "required": true,
+              "type_text": "useRender.ComponentProps<\"button\">"
+            }
+          ],
+          "type_text": "function AttachmentTrigger({\n  className,\n  render,\n  type,\n  ...props\n}: useRender.ComponentProps<\"button\">)"
+        },
+        "source_evidence": {
+          "end_line": 189,
+          "path": "src/components/ui/attachment.tsx",
+          "start_line": 169
+        },
+        "status": "complete"
+      },
+      "id": "ds.attachment-trigger",
+      "package": "@/components/ui/attachment",
+      "symbol": "AttachmentTrigger"
+    },
+    {
+      "details": {
         "field_gaps": [
           {
             "field": "signature.parameters",
-            "reason": "props type shape is not a local type reference or inline object type"
+            "reason": "props intersection member `React.ComponentProps<typeof AvatarPrimitive.Root>` requires type resolution"
           }
         ],
         "signature": {
+          "parameters": [
+            {
+              "allowed_values": [
+                "default",
+                "sm",
+                "lg"
+              ],
+              "default": "\"default\"",
+              "name": "size",
+              "required": false,
+              "type_kind": "enum",
+              "type_text": "\"default\" | \"sm\" | \"lg\""
+            }
+          ],
           "type_text": "function Avatar({\n  className,\n  size = \"default\",\n  ...props\n}: React.ComponentProps<typeof AvatarPrimitive.Root> & {\n  size?: \"default\" | \"sm\" | \"lg\"\n})"
         },
         "source_evidence": {
@@ -756,6 +876,40 @@
     },
     {
       "details": {
+        "field_gaps": [
+          {
+            "field": "signature.parameters",
+            "reason": "props intersection member `useRender.ComponentProps<\"span\">` requires type resolution"
+          }
+        ],
+        "signature": {
+          "parameters": [
+            {
+              "allowed_values": [
+                "default",
+                "neutral"
+              ],
+              "default": "\"default\"",
+              "name": "variant",
+              "required": false,
+              "type_kind": "enum"
+            }
+          ],
+          "type_text": "function Badge({\n  className,\n  variant,\n  render,\n  ...props\n}: useRender.ComponentProps<\"span\"> & VariantProps<typeof badgeVariants>)"
+        },
+        "source_evidence": {
+          "end_line": 46,
+          "path": "src/components/ui/badge.tsx",
+          "start_line": 26
+        },
+        "status": "partial"
+      },
+      "id": "ds.badge",
+      "package": "@/components/ui/badge",
+      "symbol": "Badge"
+    },
+    {
+      "details": {
         "signature": {
           "parameters": [
             {
@@ -825,6 +979,30 @@
       "id": "ds.breadcrumb-item",
       "package": "@/components/ui/breadcrumb",
       "symbol": "BreadcrumbItem"
+    },
+    {
+      "details": {
+        "signature": {
+          "parameters": [
+            {
+              "name": "props",
+              "package": "@base-ui/react/use-render",
+              "required": true,
+              "type_text": "useRender.ComponentProps<\"a\">"
+            }
+          ],
+          "type_text": "function BreadcrumbLink({\n  className,\n  render,\n  ...props\n}: useRender.ComponentProps<\"a\">)"
+        },
+        "source_evidence": {
+          "end_line": 51,
+          "path": "src/components/ui/breadcrumb.tsx",
+          "start_line": 38
+        },
+        "status": "complete"
+      },
+      "id": "ds.breadcrumb-link",
+      "package": "@/components/ui/breadcrumb",
+      "symbol": "BreadcrumbLink"
     },
     {
       "details": {
@@ -903,10 +1081,35 @@
         "field_gaps": [
           {
             "field": "signature.parameters",
-            "reason": "props type shape is not a local type reference or inline object type"
+            "reason": "props intersection member `React.ComponentProps<\"div\">` requires type resolution"
           }
         ],
         "signature": {
+          "parameters": [
+            {
+              "allowed_values": [
+                "default",
+                "secondary",
+                "muted",
+                "destructive"
+              ],
+              "default": "\"default\"",
+              "name": "variant",
+              "required": false,
+              "type_kind": "enum"
+            },
+            {
+              "allowed_values": [
+                "start",
+                "end"
+              ],
+              "default": "\"start\"",
+              "name": "align",
+              "required": false,
+              "type_kind": "enum",
+              "type_text": "\"start\" | \"end\""
+            }
+          ],
           "type_text": "function Bubble({\n  variant = \"default\",\n  align = \"start\",\n  className,\n  ...props\n}: React.ComponentProps<\"div\"> &\n  VariantProps<typeof bubbleVariants> & {\n    align?: \"start\" | \"end\"\n  })"
         },
         "source_evidence": {
@@ -919,6 +1122,30 @@
       "id": "ds.bubble",
       "package": "@/components/ui/bubble",
       "symbol": "Bubble"
+    },
+    {
+      "details": {
+        "signature": {
+          "parameters": [
+            {
+              "name": "props",
+              "package": "@base-ui/react/use-render",
+              "required": true,
+              "type_text": "useRender.ComponentProps<\"div\">"
+            }
+          ],
+          "type_text": "function BubbleContent({\n  className,\n  render,\n  ...props\n}: useRender.ComponentProps<\"div\">)"
+        },
+        "source_evidence": {
+          "end_line": 83,
+          "path": "src/components/ui/bubble.tsx",
+          "start_line": 62
+        },
+        "status": "complete"
+      },
+      "id": "ds.bubble-content",
+      "package": "@/components/ui/bubble",
+      "symbol": "BubbleContent"
     },
     {
       "details": {
@@ -949,10 +1176,34 @@
         "field_gaps": [
           {
             "field": "signature.parameters",
-            "reason": "props type shape is not a local type reference or inline object type"
+            "reason": "props intersection member `React.ComponentProps<\"div\">` requires type resolution"
           }
         ],
         "signature": {
+          "parameters": [
+            {
+              "allowed_values": [
+                "start",
+                "end"
+              ],
+              "default": "\"end\"",
+              "name": "align",
+              "required": false,
+              "type_kind": "enum",
+              "type_text": "\"start\" | \"end\""
+            },
+            {
+              "allowed_values": [
+                "top",
+                "bottom"
+              ],
+              "default": "\"bottom\"",
+              "name": "side",
+              "required": false,
+              "type_kind": "enum",
+              "type_text": "\"top\" | \"bottom\""
+            }
+          ],
           "type_text": "function BubbleReactions({\n  side = \"bottom\",\n  align = \"end\",\n  className,\n  ...props\n}: React.ComponentProps<\"div\"> & {\n  align?: \"start\" | \"end\"\n  side?: \"top\" | \"bottom\"\n})"
         },
         "source_evidence": {
@@ -971,10 +1222,40 @@
         "field_gaps": [
           {
             "field": "signature.parameters",
-            "reason": "props type shape is not a local type reference or inline object type"
+            "reason": "props intersection member `React.ComponentProps<typeof ButtonPrimitive>` requires type resolution"
           }
         ],
         "signature": {
+          "parameters": [
+            {
+              "allowed_values": [
+                "default",
+                "noShadow",
+                "neutral",
+                "reverse"
+              ],
+              "default": "\"default\"",
+              "name": "variant",
+              "required": false,
+              "type_kind": "enum"
+            },
+            {
+              "allowed_values": [
+                "default",
+                "xs",
+                "sm",
+                "lg",
+                "icon",
+                "icon-xs",
+                "icon-sm",
+                "icon-lg"
+              ],
+              "default": "\"default\"",
+              "name": "size",
+              "required": false,
+              "type_kind": "enum"
+            }
+          ],
           "type_text": "function Button({\n  className,\n  variant,\n  size,\n  ...props\n}: React.ComponentProps<typeof ButtonPrimitive> &\n  VariantProps<typeof buttonVariants>)"
         },
         "source_evidence": {
@@ -993,10 +1274,22 @@
         "field_gaps": [
           {
             "field": "signature.parameters",
-            "reason": "props type shape is not a local type reference or inline object type"
+            "reason": "props intersection member `React.ComponentProps<\"div\">` requires type resolution"
           }
         ],
         "signature": {
+          "parameters": [
+            {
+              "allowed_values": [
+                "horizontal",
+                "vertical"
+              ],
+              "default": "\"horizontal\"",
+              "name": "orientation",
+              "required": false,
+              "type_kind": "enum"
+            }
+          ],
           "type_text": "function ButtonGroup({\n  className,\n  orientation,\n  ...props\n}: React.ComponentProps<\"div\"> & VariantProps<typeof buttonGroupVariants>)"
         },
         "source_evidence": {
@@ -1015,10 +1308,23 @@
         "field_gaps": [
           {
             "field": "signature.parameters",
-            "reason": "props type shape is not a local type reference or inline object type"
+            "reason": "props intersection member `React.ComponentProps<\"div\">` requires type resolution"
           }
         ],
         "signature": {
+          "parameters": [
+            {
+              "allowed_values": [
+                "horizontal",
+                "vertical"
+              ],
+              "default": "\"vertical\"",
+              "name": "orientation",
+              "required": false,
+              "type_kind": "enum",
+              "type_text": "\"horizontal\" | \"vertical\""
+            }
+          ],
           "type_text": "function ButtonGroupSeparator({\n  className,\n  orientation = \"vertical\",\n  ...props\n}: React.ComponentProps<\"div\"> & {\n  orientation?: \"horizontal\" | \"vertical\"\n})"
         },
         "source_evidence": {
@@ -1031,6 +1337,30 @@
       "id": "ds.button-group-separator",
       "package": "@/components/ui/button-group",
       "symbol": "ButtonGroupSeparator"
+    },
+    {
+      "details": {
+        "signature": {
+          "parameters": [
+            {
+              "name": "props",
+              "package": "@base-ui/react/use-render",
+              "required": true,
+              "type_text": "useRender.ComponentProps<\"div\">"
+            }
+          ],
+          "type_text": "function ButtonGroupText({\n  className,\n  render,\n  ...props\n}: useRender.ComponentProps<\"div\">)"
+        },
+        "source_evidence": {
+          "end_line": 65,
+          "path": "src/components/ui/button-group.tsx",
+          "start_line": 44
+        },
+        "status": "complete"
+      },
+      "id": "ds.button-group-text",
+      "package": "@/components/ui/button-group",
+      "symbol": "ButtonGroupText"
     },
     {
       "details": {
@@ -1083,10 +1413,23 @@
         "field_gaps": [
           {
             "field": "signature.parameters",
-            "reason": "props type shape is not a local type reference or inline object type"
+            "reason": "props intersection member `React.ComponentProps<\"div\">` requires type resolution"
           }
         ],
         "signature": {
+          "parameters": [
+            {
+              "allowed_values": [
+                "default",
+                "sm"
+              ],
+              "default": "\"default\"",
+              "name": "size",
+              "required": false,
+              "type_kind": "enum",
+              "type_text": "\"default\" | \"sm\""
+            }
+          ],
           "type_text": "function Card({\n  className,\n  size = \"default\",\n  ...props\n}: React.ComponentProps<\"div\"> & { size?: \"default\" | \"sm\" })"
         },
         "source_evidence": {
@@ -1249,10 +1592,39 @@
         "field_gaps": [
           {
             "field": "signature.parameters",
-            "reason": "props type shape is not a local type reference or inline object type"
+            "reason": "props intersection member `React.ComponentProps<\"div\">` requires type resolution"
           }
         ],
         "signature": {
+          "parameters": [
+            {
+              "name": "opts",
+              "required": false,
+              "type_text": "CarouselOptions"
+            },
+            {
+              "name": "plugins",
+              "required": false,
+              "type_text": "CarouselPlugin"
+            },
+            {
+              "allowed_values": [
+                "horizontal",
+                "vertical"
+              ],
+              "default": "\"horizontal\"",
+              "name": "orientation",
+              "required": false,
+              "type_kind": "enum",
+              "type_text": "\"horizontal\" | \"vertical\""
+            },
+            {
+              "name": "setApi",
+              "required": false,
+              "type_kind": "function",
+              "type_text": "(api: CarouselApi) => void"
+            }
+          ],
           "type_text": "function Carousel({\n  orientation = \"horizontal\",\n  opts,\n  setApi,\n  plugins,\n  className,\n  children,\n  ...props\n}: React.ComponentProps<\"div\"> & CarouselProps)"
         },
         "source_evidence": {
@@ -1367,10 +1739,29 @@
         "field_gaps": [
           {
             "field": "signature.parameters",
-            "reason": "props type shape is not a local type reference or inline object type"
+            "reason": "props intersection member `React.ComponentProps<\"div\">` requires type resolution"
           }
         ],
         "signature": {
+          "parameters": [
+            {
+              "name": "config",
+              "required": true,
+              "type_text": "ChartConfig"
+            },
+            {
+              "name": "children",
+              "required": true,
+              "type_text": "React.ComponentProps<\n    typeof RechartsPrimitive.ResponsiveContainer\n  >[\"children\"]"
+            },
+            {
+              "default": "INITIAL_DIMENSION",
+              "name": "initialDimension",
+              "required": false,
+              "type_kind": "object",
+              "type_text": "{\n    width: number\n    height: number\n  }"
+            }
+          ],
           "type_text": "function ChartContainer({\n  id,\n  className,\n  children,\n  config,\n  initialDimension = INITIAL_DIMENSION,\n  ...props\n}: React.ComponentProps<\"div\"> & {\n  config: ChartConfig\n  children: React.ComponentProps<\n    typeof RechartsPrimitive.ResponsiveContainer\n  >[\"children\"]\n  initialDimension?: {\n    width: number\n    height: number\n  }\n})"
         },
         "source_evidence": {
@@ -1388,11 +1779,54 @@
       "details": {
         "field_gaps": [
           {
+            "field": "signature.type_text",
+            "reason": "the public signature of the factory result requires type resolution"
+          },
+          {
             "field": "signature.parameters",
-            "reason": "props type shape is not a local type reference or inline object type"
+            "reason": "the exported component has no direct props type annotation"
+          }
+        ],
+        "signature": {},
+        "source_evidence": {
+          "end_line": 282,
+          "path": "src/components/ui/chart.tsx",
+          "start_line": 282
+        },
+        "status": "partial"
+      },
+      "id": "ds.chart-legend",
+      "package": "@/components/ui/chart",
+      "symbol": "ChartLegend"
+    },
+    {
+      "details": {
+        "field_gaps": [
+          {
+            "field": "signature.parameters",
+            "reason": "props intersection member `React.ComponentProps<\"div\">` requires type resolution"
+          },
+          {
+            "field": "signature.parameters",
+            "reason": "props intersection member `RechartsPrimitive.DefaultLegendContentProps` requires type resolution"
           }
         ],
         "signature": {
+          "parameters": [
+            {
+              "default": "false",
+              "name": "hideIcon",
+              "required": false,
+              "type_kind": "boolean",
+              "type_text": "boolean"
+            },
+            {
+              "name": "nameKey",
+              "required": false,
+              "type_kind": "string",
+              "type_text": "string"
+            }
+          ],
           "type_text": "function ChartLegendContent({\n  className,\n  hideIcon = false,\n  payload,\n  verticalAlign = \"bottom\",\n  nameKey,\n}: React.ComponentProps<\"div\"> & {\n  hideIcon?: boolean\n  nameKey?: string\n} & RechartsPrimitive.DefaultLegendContentProps)"
         },
         "source_evidence": {
@@ -1439,11 +1873,83 @@
       "details": {
         "field_gaps": [
           {
+            "field": "signature.type_text",
+            "reason": "the public signature of the factory result requires type resolution"
+          },
+          {
             "field": "signature.parameters",
-            "reason": "props type shape is not a local type reference or inline object type"
+            "reason": "the exported component has no direct props type annotation"
+          }
+        ],
+        "signature": {},
+        "source_evidence": {
+          "end_line": 123,
+          "path": "src/components/ui/chart.tsx",
+          "start_line": 123
+        },
+        "status": "partial"
+      },
+      "id": "ds.chart-tooltip",
+      "package": "@/components/ui/chart",
+      "symbol": "ChartTooltip"
+    },
+    {
+      "details": {
+        "field_gaps": [
+          {
+            "field": "signature.parameters",
+            "reason": "props intersection member `React.ComponentProps<typeof RechartsPrimitive.Tooltip>` requires type resolution"
+          },
+          {
+            "field": "signature.parameters",
+            "reason": "props intersection member `React.ComponentProps<\"div\">` requires type resolution"
+          },
+          {
+            "field": "signature.parameters",
+            "reason": "props intersection member `Omit<\n    RechartsPrimitive.DefaultTooltipContentProps<\n      TooltipValueType,\n      TooltipNameType\n    >,\n    \"accessibilityLayer\"\n  >` requires type resolution"
           }
         ],
         "signature": {
+          "parameters": [
+            {
+              "default": "false",
+              "name": "hideLabel",
+              "required": false,
+              "type_kind": "boolean",
+              "type_text": "boolean"
+            },
+            {
+              "default": "false",
+              "name": "hideIndicator",
+              "required": false,
+              "type_kind": "boolean",
+              "type_text": "boolean"
+            },
+            {
+              "allowed_values": [
+                "line",
+                "dot",
+                "dashed"
+              ],
+              "default": "\"dot\"",
+              "name": "indicator",
+              "required": false,
+              "type_kind": "enum",
+              "type_text": "\"line\" | \"dot\" | \"dashed\""
+            },
+            {
+              "name": "nameKey",
+              "required": false,
+              "type_kind": "string",
+              "type_text": "string"
+            },
+            {
+              "name": "labelKey",
+              "required": false,
+              "type_kind": "string",
+              "type_text": "string"
+            }
+          ],
           "type_text": "function ChartTooltipContent({\n  active,\n  payload,\n  className,\n  indicator = \"dot\",\n  hideLabel = false,\n  hideIndicator = false,\n  label,\n  labelFormatter,\n  labelClassName,\n  formatter,\n  color,\n  nameKey,\n  labelKey,\n}: React.ComponentProps<typeof RechartsPrimitive.Tooltip> &\n  React.ComponentProps<\"div\"> & {\n    hideLabel?: boolean\n    hideIndicator?: boolean\n    indicator?: \"line\" | \"dot\" | \"dashed\"\n    nameKey?: string\n    labelKey?: string\n  } & Omit<\n    RechartsPrimitive.DefaultTooltipContentProps<\n      TooltipValueType,\n      TooltipNameType\n    >,\n    \"accessibilityLayer\"\n  >)"
         },
         "source_evidence": {
@@ -1582,10 +2088,31 @@
         "field_gaps": [
           {
             "field": "signature.parameters",
-            "reason": "props type shape is not a local type reference or inline object type"
+            "reason": "props intersection member `Omit<React.ComponentProps<typeof Dialog>, \"children\">` requires type resolution"
           }
         ],
         "signature": {
+          "parameters": [
+            {
+              "default": "\"Command Palette\"",
+              "name": "title",
+              "required": false,
+              "type_kind": "string",
+              "type_text": "string"
+            },
+            {
+              "default": "\"Search for a command to run...\"",
+              "name": "description",
+              "required": false,
+              "type_kind": "string",
+              "type_text": "string"
+            },
+            {
+              "name": "children",
+              "required": true,
+              "type_text": "React.ReactNode"
+            }
+          ],
           "type_text": "function CommandDialog({\n  title = \"Command Palette\",\n  description = \"Search for a command to run...\",\n  children,\n  ...props\n}: Omit<React.ComponentProps<typeof Dialog>, \"children\"> & {\n  title?: string\n  description?: string\n  children: React.ReactNode\n})"
         },
         "source_evidence": {
@@ -1820,7 +2347,11 @@
         "field_gaps": [
           {
             "field": "signature.parameters",
-            "reason": "props type shape is not a local type reference or inline object type"
+            "reason": "props intersection member `React.ComponentProps<typeof ContextMenuPrimitive.Popup>` requires type resolution"
+          },
+          {
+            "field": "signature.parameters",
+            "reason": "props intersection member `Pick<\n    React.ComponentProps<typeof ContextMenuPrimitive.Positioner>,\n    \"align\" | \"alignOffset\" | \"side\" | \"sideOffset\"\n  >` requires type resolution"
           }
         ],
         "signature": {
@@ -1866,10 +2397,29 @@
         "field_gaps": [
           {
             "field": "signature.parameters",
-            "reason": "props type shape is not a local type reference or inline object type"
+            "reason": "props intersection member `React.ComponentProps<typeof ContextMenuPrimitive.Item>` requires type resolution"
           }
         ],
         "signature": {
+          "parameters": [
+            {
+              "name": "inset",
+              "required": false,
+              "type_kind": "boolean",
+              "type_text": "boolean"
+            },
+            {
+              "allowed_values": [
+                "default",
+                "destructive"
+              ],
+              "default": "\"default\"",
+              "name": "variant",
+              "required": false,
+              "type_kind": "enum",
+              "type_text": "\"default\" | \"destructive\""
+            }
+          ],
           "type_text": "function ContextMenuItem({\n  className,\n  inset,\n  variant = \"default\",\n  ...props\n}: React.ComponentProps<typeof ContextMenuPrimitive.Item> & {\n  inset?: boolean\n  variant?: \"default\" | \"destructive\"\n})"
         },
         "source_evidence": {
@@ -1888,10 +2438,18 @@
         "field_gaps": [
           {
             "field": "signature.parameters",
-            "reason": "props type shape is not a local type reference or inline object type"
+            "reason": "props intersection member `React.ComponentProps<typeof ContextMenuPrimitive.GroupLabel>` requires type resolution"
           }
         ],
         "signature": {
+          "parameters": [
+            {
+              "name": "inset",
+              "required": false,
+              "type_kind": "boolean",
+              "type_text": "boolean"
+            }
+          ],
           "type_text": "function ContextMenuLabel({\n  className,\n  inset,\n  ...props\n}: React.ComponentProps<typeof ContextMenuPrimitive.GroupLabel> & {\n  inset?: boolean\n})"
         },
         "source_evidence": {
@@ -2054,7 +2612,11 @@
         "field_gaps": [
           {
             "field": "signature.parameters",
-            "reason": "props type shape is not a local type reference or inline object type"
+            "reason": "props intersection member `React.ComponentProps<typeof ContextMenuPrimitive.Popup>` requires type resolution"
+          },
+          {
+            "field": "signature.parameters",
+            "reason": "props intersection member `Pick<\n    React.ComponentProps<typeof ContextMenuPrimitive.Positioner>,\n    \"align\" | \"alignOffset\" | \"side\" | \"sideOffset\"\n  >` requires type resolution"
           }
         ],
         "signature": {
@@ -2076,10 +2638,18 @@
         "field_gaps": [
           {
             "field": "signature.parameters",
-            "reason": "props type shape is not a local type reference or inline object type"
+            "reason": "props intersection member `React.ComponentProps<typeof ContextMenuPrimitive.SubmenuTrigger>` requires type resolution"
           }
         ],
         "signature": {
+          "parameters": [
+            {
+              "name": "inset",
+              "required": false,
+              "type_kind": "boolean",
+              "type_text": "boolean"
+            }
+          ],
           "type_text": "function ContextMenuSubTrigger({\n  className,\n  inset,\n  children,\n  ...props\n}: React.ComponentProps<typeof ContextMenuPrimitive.SubmenuTrigger> & {\n  inset?: boolean\n})"
         },
         "source_evidence": {
@@ -2170,10 +2740,19 @@
         "field_gaps": [
           {
             "field": "signature.parameters",
-            "reason": "props type shape is not a local type reference or inline object type"
+            "reason": "props intersection member `React.ComponentProps<typeof DialogPrimitive.Popup>` requires type resolution"
           }
         ],
         "signature": {
+          "parameters": [
+            {
+              "default": "true",
+              "name": "showCloseButton",
+              "required": false,
+              "type_kind": "boolean",
+              "type_text": "boolean"
+            }
+          ],
           "type_text": "function DialogContent({\n  className,\n  children,\n  showCloseButton = true,\n  ...props\n}: React.ComponentProps<typeof DialogPrimitive.Popup> & {\n  showCloseButton?: boolean\n})"
         },
         "source_evidence": {
@@ -2360,10 +2939,19 @@
         "field_gaps": [
           {
             "field": "signature.parameters",
-            "reason": "props type shape is not a local type reference or inline object type"
+            "reason": "props intersection member `React.ComponentProps<typeof DrawerPrimitive.Root>` requires type resolution"
           }
         ],
         "signature": {
+          "parameters": [
+            {
+              "default": "swipeDirection === \"down\"",
+              "name": "showSwipeHandle",
+              "required": false,
+              "type_kind": "boolean",
+              "type_text": "boolean"
+            }
+          ],
           "type_text": "function Drawer({\n  modal = true,\n  snapPoints,\n  swipeDirection = \"down\",\n  showSwipeHandle = swipeDirection === \"down\",\n  ...props\n}: React.ComponentProps<typeof DrawerPrimitive.Root> & {\n  showSwipeHandle?: boolean\n})"
         },
         "source_evidence": {
@@ -2670,7 +3258,11 @@
         "field_gaps": [
           {
             "field": "signature.parameters",
-            "reason": "props type shape is not a local type reference or inline object type"
+            "reason": "props intersection member `React.ComponentProps<typeof MenuPrimitive.Popup>` requires type resolution"
+          },
+          {
+            "field": "signature.parameters",
+            "reason": "props intersection member `Pick<\n    React.ComponentProps<typeof MenuPrimitive.Positioner>,\n    \"align\" | \"alignOffset\" | \"side\" | \"sideOffset\"\n  >` requires type resolution"
           }
         ],
         "signature": {
@@ -2716,10 +3308,18 @@
         "field_gaps": [
           {
             "field": "signature.parameters",
-            "reason": "props type shape is not a local type reference or inline object type"
+            "reason": "props intersection member `React.ComponentProps<typeof MenuPrimitive.Item>` requires type resolution"
           }
         ],
         "signature": {
+          "parameters": [
+            {
+              "name": "inset",
+              "required": false,
+              "type_kind": "boolean",
+              "type_text": "boolean"
+            }
+          ],
           "type_text": "function DropdownMenuItem({\n  className,\n  inset,\n  ...props\n}: React.ComponentProps<typeof MenuPrimitive.Item> & {\n  inset?: boolean\n})"
         },
         "source_evidence": {
@@ -2738,10 +3338,18 @@
         "field_gaps": [
           {
             "field": "signature.parameters",
-            "reason": "props type shape is not a local type reference or inline object type"
+            "reason": "props intersection member `React.ComponentProps<typeof MenuPrimitive.GroupLabel>` requires type resolution"
           }
         ],
         "signature": {
+          "parameters": [
+            {
+              "name": "inset",
+              "required": false,
+              "type_kind": "boolean",
+              "type_text": "boolean"
+            }
+          ],
           "type_text": "function DropdownMenuLabel({\n  className,\n  inset,\n  ...props\n}: React.ComponentProps<typeof MenuPrimitive.GroupLabel> & {\n  inset?: boolean\n})"
         },
         "source_evidence": {
@@ -2904,7 +3512,11 @@
         "field_gaps": [
           {
             "field": "signature.parameters",
-            "reason": "props type shape is not a local type reference or inline object type"
+            "reason": "props intersection member `React.ComponentProps<typeof MenuPrimitive.Popup>` requires type resolution"
+          },
+          {
+            "field": "signature.parameters",
+            "reason": "props intersection member `Pick<\n    React.ComponentProps<typeof MenuPrimitive.Positioner>,\n    \"align\" | \"alignOffset\" | \"side\" | \"sideOffset\"\n  >` requires type resolution"
           }
         ],
         "signature": {
@@ -2926,10 +3538,18 @@
         "field_gaps": [
           {
             "field": "signature.parameters",
-            "reason": "props type shape is not a local type reference or inline object type"
+            "reason": "props intersection member `React.ComponentProps<typeof MenuPrimitive.SubmenuTrigger>` requires type resolution"
           }
         ],
         "signature": {
+          "parameters": [
+            {
+              "name": "inset",
+              "required": false,
+              "type_kind": "boolean",
+              "type_text": "boolean"
+            }
+          ],
           "type_text": "function DropdownMenuSubTrigger({\n  className,\n  inset,\n  children,\n  ...props\n}: React.ComponentProps<typeof MenuPrimitive.SubmenuTrigger> & {\n  inset?: boolean\n})"
         },
         "source_evidence": {
@@ -3068,10 +3688,22 @@
         "field_gaps": [
           {
             "field": "signature.parameters",
-            "reason": "props type shape is not a local type reference or inline object type"
+            "reason": "props intersection member `React.ComponentProps<\"div\">` requires type resolution"
           }
         ],
         "signature": {
+          "parameters": [
+            {
+              "allowed_values": [
+                "default",
+                "icon"
+              ],
+              "default": "\"default\"",
+              "name": "variant",
+              "required": false,
+              "type_kind": "enum"
+            }
+          ],
           "type_text": "function EmptyMedia({\n  className,\n  variant = \"default\",\n  ...props\n}: React.ComponentProps<\"div\"> & VariantProps<typeof emptyMediaVariants>)"
         },
         "source_evidence": {
@@ -3114,10 +3746,23 @@
         "field_gaps": [
           {
             "field": "signature.parameters",
-            "reason": "props type shape is not a local type reference or inline object type"
+            "reason": "props intersection member `React.ComponentProps<\"div\">` requires type resolution"
           }
         ],
         "signature": {
+          "parameters": [
+            {
+              "allowed_values": [
+                "vertical",
+                "horizontal",
+                "responsive"
+              ],
+              "default": "\"vertical\"",
+              "name": "orientation",
+              "required": false,
+              "type_kind": "enum"
+            }
+          ],
           "type_text": "function Field({\n  className,\n  orientation = \"vertical\",\n  ...props\n}: React.ComponentProps<\"div\"> & VariantProps<typeof fieldVariants>)"
         },
         "source_evidence": {
@@ -3184,10 +3829,17 @@
         "field_gaps": [
           {
             "field": "signature.parameters",
-            "reason": "props type shape is not a local type reference or inline object type"
+            "reason": "props intersection member `React.ComponentProps<\"div\">` requires type resolution"
           }
         ],
         "signature": {
+          "parameters": [
+            {
+              "name": "errors",
+              "required": false,
+              "type_text": "Array<{ message?: string } | undefined>"
+            }
+          ],
           "type_text": "function FieldError({\n  className,\n  children,\n  errors,\n  ...props\n}: React.ComponentProps<\"div\"> & {\n  errors?: Array<{ message?: string } | undefined>\n})"
         },
         "source_evidence": {
@@ -3254,10 +3906,23 @@
         "field_gaps": [
           {
             "field": "signature.parameters",
-            "reason": "props type shape is not a local type reference or inline object type"
+            "reason": "props intersection member `React.ComponentProps<\"legend\">` requires type resolution"
           }
         ],
         "signature": {
+          "parameters": [
+            {
+              "allowed_values": [
+                "legend",
+                "label"
+              ],
+              "default": "\"legend\"",
+              "name": "variant",
+              "required": false,
+              "type_kind": "enum",
+              "type_text": "\"legend\" | \"label\""
+            }
+          ],
           "type_text": "function FieldLegend({\n  className,\n  variant = \"legend\",\n  ...props\n}: React.ComponentProps<\"legend\"> & { variant?: \"legend\" | \"label\" })"
         },
         "source_evidence": {
@@ -3276,10 +3941,17 @@
         "field_gaps": [
           {
             "field": "signature.parameters",
-            "reason": "props type shape is not a local type reference or inline object type"
+            "reason": "props intersection member `React.ComponentProps<\"div\">` requires type resolution"
           }
         ],
         "signature": {
+          "parameters": [
+            {
+              "name": "children",
+              "required": false,
+              "type_text": "React.ReactNode"
+            }
+          ],
           "type_text": "function FieldSeparator({\n  children,\n  className,\n  ...props\n}: React.ComponentProps<\"div\"> & {\n  children?: React.ReactNode\n})"
         },
         "source_evidence": {
@@ -3340,6 +4012,54 @@
       "id": "ds.field-title",
       "package": "@/components/ui/field",
       "symbol": "FieldTitle"
+    },
+    {
+      "details": {
+        "field_gaps": [
+          {
+            "field": "signature.type_text",
+            "reason": "the public signature of the factory result requires type resolution"
+          },
+          {
+            "field": "signature.parameters",
+            "reason": "the exported component has no direct props type annotation"
+          }
+        ],
+        "signature": {},
+        "source_evidence": {
+          "end_line": 21,
+          "path": "src/components/ui/form.tsx",
+          "start_line": 21
+        },
+        "status": "partial"
+      },
+      "id": "ds.form",
+      "package": "@/components/ui/form",
+      "symbol": "Form"
+    },
+    {
+      "details": {
+        "signature": {
+          "parameters": [
+            {
+              "name": "props",
+              "package": "@base-ui/react/use-render",
+              "required": true,
+              "type_text": "useRender.ComponentProps<\"div\">"
+            }
+          ],
+          "type_text": "function FormControl({\n  children,\n  render,\n  ...props\n}: useRender.ComponentProps<\"div\">)"
+        },
+        "source_evidence": {
+          "end_line": 137,
+          "path": "src/components/ui/form.tsx",
+          "start_line": 107
+        },
+        "status": "complete"
+      },
+      "id": "ds.form-control",
+      "package": "@/components/ui/form",
+      "symbol": "FormControl"
     },
     {
       "details": {
@@ -3490,7 +4210,11 @@
         "field_gaps": [
           {
             "field": "signature.parameters",
-            "reason": "props type shape is not a local type reference or inline object type"
+            "reason": "props intersection member `React.ComponentProps<typeof HoverCardPrimitive.Popup>` requires type resolution"
+          },
+          {
+            "field": "signature.parameters",
+            "reason": "props intersection member `Pick<\n    React.ComponentProps<typeof HoverCardPrimitive.Positioner>,\n    \"align\" | \"alignOffset\" | \"side\" | \"sideOffset\"\n  >` requires type resolution"
           }
         ],
         "signature": {
@@ -3620,10 +4344,24 @@
         "field_gaps": [
           {
             "field": "signature.parameters",
-            "reason": "props type shape is not a local type reference or inline object type"
+            "reason": "props intersection member `React.ComponentProps<\"div\">` requires type resolution"
           }
         ],
         "signature": {
+          "parameters": [
+            {
+              "allowed_values": [
+                "inline-start",
+                "inline-end",
+                "block-start",
+                "block-end"
+              ],
+              "default": "\"inline-start\"",
+              "name": "align",
+              "required": false,
+              "type_kind": "enum"
+            }
+          ],
           "type_text": "function InputGroupAddon({\n  className,\n  align = \"inline-start\",\n  ...props\n}: React.ComponentProps<\"div\"> & VariantProps<typeof inputGroupAddonVariants>)"
         },
         "source_evidence": {
@@ -3642,10 +4380,36 @@
         "field_gaps": [
           {
             "field": "signature.parameters",
-            "reason": "props type shape is not a local type reference or inline object type"
+            "reason": "props intersection member `Omit<React.ComponentProps<typeof Button>, \"size\" | \"type\">` requires type resolution"
           }
         ],
         "signature": {
+          "parameters": [
+            {
+              "allowed_values": [
+                "xs",
+                "sm",
+                "icon-xs",
+                "icon-sm"
+              ],
+              "default": "\"xs\"",
+              "name": "size",
+              "required": false,
+              "type_kind": "enum"
+            },
+            {
+              "allowed_values": [
+                "button",
+                "submit",
+                "reset"
+              ],
+              "default": "\"button\"",
+              "name": "type",
+              "required": false,
+              "type_kind": "enum",
+              "type_text": "\"button\" | \"submit\" | \"reset\""
+            }
+          ],
           "type_text": "function InputGroupButton({\n  className,\n  type = \"button\",\n  variant,\n  size = \"xs\",\n  ...props\n}: Omit<React.ComponentProps<typeof Button>, \"size\" | \"type\"> &\n  VariantProps<typeof inputGroupButtonVariants> & {\n    type?: \"button\" | \"submit\" | \"reset\"\n  })"
         },
         "source_evidence": {
@@ -3736,10 +4500,18 @@
         "field_gaps": [
           {
             "field": "signature.parameters",
-            "reason": "props type shape is not a local type reference or inline object type"
+            "reason": "props intersection member `React.ComponentProps<typeof OTPInput>` requires type resolution"
           }
         ],
         "signature": {
+          "parameters": [
+            {
+              "name": "containerClassName",
+              "required": false,
+              "type_kind": "string",
+              "type_text": "string"
+            }
+          ],
           "type_text": "function InputOTP({\n  className,\n  containerClassName,\n  ...props\n}: React.ComponentProps<typeof OTPInput> & {\n  containerClassName?: string\n})"
         },
         "source_evidence": {
@@ -3806,10 +4578,18 @@
         "field_gaps": [
           {
             "field": "signature.parameters",
-            "reason": "props type shape is not a local type reference or inline object type"
+            "reason": "props intersection member `React.ComponentProps<\"div\">` requires type resolution"
           }
         ],
         "signature": {
+          "parameters": [
+            {
+              "name": "index",
+              "required": true,
+              "type_kind": "number",
+              "type_text": "number"
+            }
+          ],
           "type_text": "function InputOTPSlot({\n  index,\n  className,\n  ...props\n}: React.ComponentProps<\"div\"> & { index: number })"
         },
         "source_evidence": {
@@ -3822,6 +4602,41 @@
       "id": "ds.input-otp-slot",
       "package": "@/components/ui/input-otp",
       "symbol": "InputOTPSlot"
+    },
+    {
+      "details": {
+        "field_gaps": [
+          {
+            "field": "signature.parameters",
+            "reason": "props intersection member `useRender.ComponentProps<\"div\">` requires type resolution"
+          }
+        ],
+        "signature": {
+          "parameters": [
+            {
+              "allowed_values": [
+                "default",
+                "sm",
+                "xs"
+              ],
+              "default": "\"default\"",
+              "name": "size",
+              "required": false,
+              "type_kind": "enum"
+            }
+          ],
+          "type_text": "function Item({\n  className,\n  size = \"default\",\n  render,\n  ...props\n}: useRender.ComponentProps<\"div\"> & VariantProps<typeof itemVariants>)"
+        },
+        "source_evidence": {
+          "end_line": 61,
+          "path": "src/components/ui/item.tsx",
+          "start_line": 41
+        },
+        "status": "partial"
+      },
+      "id": "ds.item",
+      "package": "@/components/ui/item",
+      "symbol": "Item"
     },
     {
       "details": {
@@ -3972,10 +4787,23 @@
         "field_gaps": [
           {
             "field": "signature.parameters",
-            "reason": "props type shape is not a local type reference or inline object type"
+            "reason": "props intersection member `React.ComponentProps<\"div\">` requires type resolution"
           }
         ],
         "signature": {
+          "parameters": [
+            {
+              "allowed_values": [
+                "default",
+                "icon",
+                "image"
+              ],
+              "default": "\"default\"",
+              "name": "variant",
+              "required": false,
+              "type_kind": "enum"
+            }
+          ],
           "type_text": "function ItemMedia({\n  className,\n  variant = \"default\",\n  ...props\n}: React.ComponentProps<\"div\"> & VariantProps<typeof itemMediaVariants>)"
         },
         "source_evidence": {
@@ -4084,6 +4912,41 @@
       "id": "ds.label",
       "package": "@/components/ui/label",
       "symbol": "Label"
+    },
+    {
+      "details": {
+        "field_gaps": [
+          {
+            "field": "signature.parameters",
+            "reason": "props intersection member `useRender.ComponentProps<\"div\">` requires type resolution"
+          }
+        ],
+        "signature": {
+          "parameters": [
+            {
+              "allowed_values": [
+                "default",
+                "separator",
+                "border"
+              ],
+              "default": "\"default\"",
+              "name": "variant",
+              "required": false,
+              "type_kind": "enum"
+            }
+          ],
+          "type_text": "function Marker({\n  className,\n  variant = \"default\",\n  render,\n  ...props\n}: useRender.ComponentProps<\"div\"> & VariantProps<typeof markerVariants>)"
+        },
+        "source_evidence": {
+          "end_line": 45,
+          "path": "src/components/ui/marker.tsx",
+          "start_line": 25
+        },
+        "status": "partial"
+      },
+      "id": "ds.marker",
+      "package": "@/components/ui/marker",
+      "symbol": "Marker"
     },
     {
       "details": {
@@ -4210,7 +5073,11 @@
         "field_gaps": [
           {
             "field": "signature.parameters",
-            "reason": "props type shape is not a local type reference or inline object type"
+            "reason": "props intersection member `React.ComponentProps<typeof MenuPrimitive.Popup>` requires type resolution"
+          },
+          {
+            "field": "signature.parameters",
+            "reason": "props intersection member `Pick<\n    React.ComponentProps<typeof MenuPrimitive.Positioner>,\n    \"align\" | \"alignOffset\" | \"side\" | \"sideOffset\"\n  >` requires type resolution"
           }
         ],
         "signature": {
@@ -4256,10 +5123,18 @@
         "field_gaps": [
           {
             "field": "signature.parameters",
-            "reason": "props type shape is not a local type reference or inline object type"
+            "reason": "props intersection member `React.ComponentProps<typeof MenuPrimitive.Item>` requires type resolution"
           }
         ],
         "signature": {
+          "parameters": [
+            {
+              "name": "inset",
+              "required": false,
+              "type_kind": "boolean",
+              "type_text": "boolean"
+            }
+          ],
           "type_text": "function MenubarItem({\n  className,\n  inset,\n  ...props\n}: React.ComponentProps<typeof MenuPrimitive.Item> & {\n  inset?: boolean\n})"
         },
         "source_evidence": {
@@ -4278,10 +5153,18 @@
         "field_gaps": [
           {
             "field": "signature.parameters",
-            "reason": "props type shape is not a local type reference or inline object type"
+            "reason": "props intersection member `React.ComponentProps<typeof MenuPrimitive.GroupLabel>` requires type resolution"
           }
         ],
         "signature": {
+          "parameters": [
+            {
+              "name": "inset",
+              "required": false,
+              "type_kind": "boolean",
+              "type_text": "boolean"
+            }
+          ],
           "type_text": "function MenubarLabel({\n  className,\n  inset,\n  ...props\n}: React.ComponentProps<typeof MenuPrimitive.GroupLabel> & {\n  inset?: boolean\n})"
         },
         "source_evidence": {
@@ -4468,7 +5351,11 @@
         "field_gaps": [
           {
             "field": "signature.parameters",
-            "reason": "props type shape is not a local type reference or inline object type"
+            "reason": "props intersection member `React.ComponentProps<typeof MenuPrimitive.Popup>` requires type resolution"
+          },
+          {
+            "field": "signature.parameters",
+            "reason": "props intersection member `Pick<\n    React.ComponentProps<typeof MenuPrimitive.Positioner>,\n    \"align\" | \"alignOffset\" | \"side\" | \"sideOffset\"\n  >` requires type resolution"
           }
         ],
         "signature": {
@@ -4490,10 +5377,18 @@
         "field_gaps": [
           {
             "field": "signature.parameters",
-            "reason": "props type shape is not a local type reference or inline object type"
+            "reason": "props intersection member `React.ComponentProps<typeof MenuPrimitive.SubmenuTrigger>` requires type resolution"
           }
         ],
         "signature": {
+          "parameters": [
+            {
+              "name": "inset",
+              "required": false,
+              "type_kind": "boolean",
+              "type_text": "boolean"
+            }
+          ],
           "type_text": "function MenubarSubTrigger({\n  className,\n  inset,\n  children,\n  ...props\n}: React.ComponentProps<typeof MenuPrimitive.SubmenuTrigger> & {\n  inset?: boolean\n})"
         },
         "source_evidence": {
@@ -4536,10 +5431,23 @@
         "field_gaps": [
           {
             "field": "signature.parameters",
-            "reason": "props type shape is not a local type reference or inline object type"
+            "reason": "props intersection member `React.ComponentProps<\"div\">` requires type resolution"
           }
         ],
         "signature": {
+          "parameters": [
+            {
+              "allowed_values": [
+                "start",
+                "end"
+              ],
+              "default": "\"start\"",
+              "name": "align",
+              "required": false,
+              "type_kind": "enum",
+              "type_text": "\"start\" | \"end\""
+            }
+          ],
           "type_text": "function Message({\n  className,\n  align = \"start\",\n  ...props\n}: React.ComponentProps<\"div\"> & { align?: \"start\" | \"end\" })"
         },
         "source_evidence": {
@@ -4702,7 +5610,11 @@
         "field_gaps": [
           {
             "field": "signature.parameters",
-            "reason": "props type shape is not a local type reference or inline object type"
+            "reason": "props intersection member `React.ComponentProps<typeof MessageScrollerPrimitive.Button>` requires type resolution"
+          },
+          {
+            "field": "signature.parameters",
+            "reason": "props intersection member `Pick<React.ComponentProps<typeof Button>, \"variant\" | \"size\">` requires type resolution"
           }
         ],
         "signature": {
@@ -4820,10 +5732,23 @@
         "field_gaps": [
           {
             "field": "signature.parameters",
-            "reason": "props type `NativeSelectProps` is imported or unavailable locally"
+            "reason": "props intersection member `Omit<React.ComponentProps<\"select\">, \"size\">` requires type resolution"
           }
         ],
         "signature": {
+          "parameters": [
+            {
+              "allowed_values": [
+                "sm",
+                "default"
+              ],
+              "default": "\"default\"",
+              "name": "size",
+              "required": false,
+              "type_kind": "enum",
+              "type_text": "\"sm\" | \"default\""
+            }
+          ],
           "type_text": "function NativeSelect({\n  className,\n  size = \"default\",\n  ...props\n}: NativeSelectProps)"
         },
         "source_evidence": {
@@ -5058,7 +5983,11 @@
         "field_gaps": [
           {
             "field": "signature.parameters",
-            "reason": "props type shape is not a local type reference or inline object type"
+            "reason": "props intersection member `React.ComponentProps<typeof NavigationMenuPrimitive.Viewport>` requires type resolution"
+          },
+          {
+            "field": "signature.parameters",
+            "reason": "props intersection member `Pick<\n    React.ComponentProps<typeof NavigationMenuPrimitive.Positioner>,\n    \"align\" | \"alignOffset\" | \"side\" | \"sideOffset\"\n  >` requires type resolution"
           }
         ],
         "signature": {
@@ -5176,10 +6105,31 @@
         "field_gaps": [
           {
             "field": "signature.parameters",
-            "reason": "props type shape is not a local type reference or inline object type"
+            "reason": "props intersection member `React.ComponentProps<\"a\">` requires type resolution"
           }
         ],
         "signature": {
+          "parameters": [
+            {
+              "name": "isActive",
+              "required": false,
+              "type_kind": "boolean",
+              "type_text": "boolean"
+            },
+            {
+              "allowed_values": [
+                "default",
+                "sm",
+                "lg",
+                "icon"
+              ],
+              "default": "\"icon\"",
+              "name": "size",
+              "required": false,
+              "type_kind": "enum",
+              "type_text": "\"default\" | \"sm\" | \"lg\" | \"icon\""
+            }
+          ],
           "type_text": "function PaginationLink({\n  className,\n  isActive,\n  size = \"icon\",\n  ...props\n}: React.ComponentProps<\"a\"> & {\n  isActive?: boolean\n  size?: \"default\" | \"sm\" | \"lg\" | \"icon\"\n})"
         },
         "source_evidence": {
@@ -5270,7 +6220,11 @@
         "field_gaps": [
           {
             "field": "signature.parameters",
-            "reason": "props type shape is not a local type reference or inline object type"
+            "reason": "props intersection member `React.ComponentProps<typeof PopoverPrimitive.Popup>` requires type resolution"
+          },
+          {
+            "field": "signature.parameters",
+            "reason": "props intersection member `Pick<\n    React.ComponentProps<typeof PopoverPrimitive.Positioner>,\n    \"align\" | \"alignOffset\" | \"side\" | \"sideOffset\"\n  >` requires type resolution"
           }
         ],
         "signature": {
@@ -5724,7 +6678,11 @@
         "field_gaps": [
           {
             "field": "signature.parameters",
-            "reason": "props type shape is not a local type reference or inline object type"
+            "reason": "props intersection member `React.ComponentProps<typeof QuestionnairePrimitive.Next>` requires type resolution"
+          },
+          {
+            "field": "signature.parameters",
+            "reason": "props intersection member `Pick<React.ComponentProps<typeof Button>, \"size\" | \"variant\">` requires type resolution"
           }
         ],
         "signature": {
@@ -5746,7 +6704,11 @@
         "field_gaps": [
           {
             "field": "signature.parameters",
-            "reason": "props type shape is not a local type reference or inline object type"
+            "reason": "props intersection member `React.ComponentProps<typeof QuestionnairePrimitive.Previous>` requires type resolution"
+          },
+          {
+            "field": "signature.parameters",
+            "reason": "props intersection member `Pick<React.ComponentProps<typeof Button>, \"size\" | \"variant\">` requires type resolution"
           }
         ],
         "signature": {
@@ -5792,7 +6754,11 @@
         "field_gaps": [
           {
             "field": "signature.parameters",
-            "reason": "props type shape is not a local type reference or inline object type"
+            "reason": "props intersection member `React.ComponentProps<typeof QuestionnairePrimitive.Skip>` requires type resolution"
+          },
+          {
+            "field": "signature.parameters",
+            "reason": "props intersection member `Pick<React.ComponentProps<typeof Button>, \"size\" | \"variant\">` requires type resolution"
           }
         ],
         "signature": {
@@ -5814,7 +6780,11 @@
         "field_gaps": [
           {
             "field": "signature.parameters",
-            "reason": "props type shape is not a local type reference or inline object type"
+            "reason": "props intersection member `React.ComponentProps<typeof QuestionnairePrimitive.Submit>` requires type resolution"
+          },
+          {
+            "field": "signature.parameters",
+            "reason": "props intersection member `Pick<React.ComponentProps<typeof Button>, \"size\" | \"variant\">` requires type resolution"
           }
         ],
         "signature": {
@@ -5908,10 +6878,18 @@
         "field_gaps": [
           {
             "field": "signature.parameters",
-            "reason": "props type shape is not a local type reference or inline object type"
+            "reason": "props intersection member `ResizablePrimitive.SeparatorProps` requires type resolution"
           }
         ],
         "signature": {
+          "parameters": [
+            {
+              "name": "withHandle",
+              "required": false,
+              "type_kind": "boolean",
+              "type_text": "boolean"
+            }
+          ],
           "type_text": "function ResizableHandle({\n  withHandle,\n  className,\n  ...props\n}: ResizablePrimitive.SeparatorProps & {\n  withHandle?: boolean\n})"
         },
         "source_evidence": {
@@ -6025,8 +7003,36 @@
       "details": {
         "field_gaps": [
           {
+            "field": "signature.type_text",
+            "reason": "the public signature of the factory result requires type resolution"
+          },
+          {
             "field": "signature.parameters",
-            "reason": "props type shape is not a local type reference or inline object type"
+            "reason": "the exported component has no direct props type annotation"
+          }
+        ],
+        "signature": {},
+        "source_evidence": {
+          "end_line": 10,
+          "path": "src/components/ui/select.tsx",
+          "start_line": 10
+        },
+        "status": "partial"
+      },
+      "id": "ds.select",
+      "package": "@/components/ui/select",
+      "symbol": "Select"
+    },
+    {
+      "details": {
+        "field_gaps": [
+          {
+            "field": "signature.parameters",
+            "reason": "props intersection member `React.ComponentProps<typeof SelectPrimitive.Popup>` requires type resolution"
+          },
+          {
+            "field": "signature.parameters",
+            "reason": "props intersection member `Pick<\n    React.ComponentProps<typeof SelectPrimitive.Positioner>,\n    \"align\" | \"alignOffset\" | \"side\" | \"sideOffset\" | \"alignItemWithTrigger\"\n  >` requires type resolution"
           }
         ],
         "signature": {
@@ -6288,10 +7294,32 @@
         "field_gaps": [
           {
             "field": "signature.parameters",
-            "reason": "props type shape is not a local type reference or inline object type"
+            "reason": "props intersection member `React.ComponentProps<typeof SheetPrimitive.Popup>` requires type resolution"
           }
         ],
         "signature": {
+          "parameters": [
+            {
+              "allowed_values": [
+                "top",
+                "bottom",
+                "left",
+                "right"
+              ],
+              "default": "\"right\"",
+              "name": "side",
+              "required": false,
+              "type_kind": "enum",
+              "type_text": "\"top\" | \"bottom\" | \"left\" | \"right\""
+            },
+            {
+              "default": "true",
+              "name": "showCloseButton",
+              "required": false,
+              "type_kind": "boolean",
+              "type_text": "boolean"
+            }
+          ],
           "type_text": "function SheetContent({\n  className,\n  children,\n  side = \"right\",\n  showCloseButton = true,\n  ...props\n}: React.ComponentProps<typeof SheetPrimitive.Popup> & {\n  side?: \"top\" | \"bottom\" | \"left\" | \"right\"\n  showCloseButton?: boolean\n})"
         },
         "source_evidence": {
@@ -6478,10 +7506,47 @@
         "field_gaps": [
           {
             "field": "signature.parameters",
-            "reason": "props type shape is not a local type reference or inline object type"
+            "reason": "props intersection member `React.ComponentProps<\"div\">` requires type resolution"
           }
         ],
         "signature": {
+          "parameters": [
+            {
+              "allowed_values": [
+                "left",
+                "right"
+              ],
+              "default": "\"left\"",
+              "name": "side",
+              "required": false,
+              "type_kind": "enum",
+              "type_text": "\"left\" | \"right\""
+            },
+            {
+              "allowed_values": [
+                "sidebar",
+                "floating",
+                "inset"
+              ],
+              "default": "\"sidebar\"",
+              "name": "variant",
+              "required": false,
+              "type_kind": "enum",
+              "type_text": "\"sidebar\" | \"floating\" | \"inset\""
+            },
+            {
+              "allowed_values": [
+                "offcanvas",
+                "icon",
+                "none"
+              ],
+              "default": "\"offcanvas\"",
+              "name": "collapsible",
+              "required": false,
+              "type_kind": "enum",
+              "type_text": "\"offcanvas\" | \"icon\" | \"none\""
+            }
+          ],
           "type_text": "function Sidebar({\n  side = \"left\",\n  variant = \"sidebar\",\n  collapsible = \"offcanvas\",\n  className,\n  children,\n  ...props\n}: React.ComponentProps<\"div\"> & {\n  side?: \"left\" | \"right\"\n  variant?: \"sidebar\" | \"floating\" | \"inset\"\n  collapsible?: \"offcanvas\" | \"icon\" | \"none\"\n})"
         },
         "source_evidence": {
@@ -6573,6 +7638,30 @@
           "parameters": [
             {
               "name": "props",
+              "package": "@base-ui/react/use-render",
+              "required": true,
+              "type_text": "useRender.ComponentProps<\"button\">"
+            }
+          ],
+          "type_text": "function SidebarGroupAction({\n  className,\n  render,\n  ...props\n}: useRender.ComponentProps<\"button\">)"
+        },
+        "source_evidence": {
+          "end_line": 447,
+          "path": "src/components/ui/sidebar.tsx",
+          "start_line": 422
+        },
+        "status": "complete"
+      },
+      "id": "ds.sidebar-group-action",
+      "package": "@/components/ui/sidebar",
+      "symbol": "SidebarGroupAction"
+    },
+    {
+      "details": {
+        "signature": {
+          "parameters": [
+            {
+              "name": "props",
               "package": "react",
               "required": true,
               "type_text": "React.ComponentProps<\"div\">"
@@ -6590,6 +7679,30 @@
       "id": "ds.sidebar-group-content",
       "package": "@/components/ui/sidebar",
       "symbol": "SidebarGroupContent"
+    },
+    {
+      "details": {
+        "signature": {
+          "parameters": [
+            {
+              "name": "props",
+              "package": "@base-ui/react/use-render",
+              "required": true,
+              "type_text": "useRender.ComponentProps<\"div\">"
+            }
+          ],
+          "type_text": "function SidebarGroupLabel({\n  className,\n  render,\n  ...props\n}: useRender.ComponentProps<\"div\">)"
+        },
+        "source_evidence": {
+          "end_line": 420,
+          "path": "src/components/ui/sidebar.tsx",
+          "start_line": 397
+        },
+        "status": "complete"
+      },
+      "id": "ds.sidebar-group-label",
+      "package": "@/components/ui/sidebar",
+      "symbol": "SidebarGroupLabel"
     },
     {
       "details": {
@@ -6689,6 +7802,37 @@
     },
     {
       "details": {
+        "field_gaps": [
+          {
+            "field": "signature.parameters",
+            "reason": "props intersection member `useRender.ComponentProps<\"button\">` requires type resolution"
+          }
+        ],
+        "signature": {
+          "parameters": [
+            {
+              "default": "false",
+              "name": "showOnHover",
+              "required": false,
+              "type_kind": "boolean",
+              "type_text": "boolean"
+            }
+          ],
+          "type_text": "function SidebarMenuAction({\n  className,\n  render,\n  showOnHover = false,\n  ...props\n}: useRender.ComponentProps<\"button\"> & {\n  showOnHover?: boolean\n})"
+        },
+        "source_evidence": {
+          "end_line": 588,
+          "path": "src/components/ui/sidebar.tsx",
+          "start_line": 555
+        },
+        "status": "partial"
+      },
+      "id": "ds.sidebar-menu-action",
+      "package": "@/components/ui/sidebar",
+      "symbol": "SidebarMenuAction"
+    },
+    {
+      "details": {
         "signature": {
           "parameters": [
             {
@@ -6716,10 +7860,35 @@
         "field_gaps": [
           {
             "field": "signature.parameters",
-            "reason": "props type shape is not a local type reference or inline object type"
+            "reason": "props intersection member `useRender.ComponentProps<\"button\">` requires type resolution"
           }
         ],
         "signature": {
+          "parameters": [
+            {
+              "default": "false",
+              "name": "isActive",
+              "required": false,
+              "type_kind": "boolean",
+              "type_text": "boolean"
+            },
+            {
+              "name": "tooltip",
+              "required": false,
+              "type_text": "string | React.ComponentProps<typeof TooltipContent>"
+            },
+            {
+              "allowed_values": [
+                "default",
+                "sm",
+                "lg"
+              ],
+              "default": "\"default\"",
+              "name": "size",
+              "required": false,
+              "type_kind": "enum"
+            }
+          ],
           "type_text": "function SidebarMenuButton({\n  render,\n  isActive = false,\n  size = \"default\",\n  tooltip,\n  className,\n  ...props\n}: useRender.ComponentProps<\"button\"> & {\n  isActive?: boolean\n  tooltip?: string | React.ComponentProps<typeof TooltipContent>\n} & VariantProps<typeof sidebarMenuButtonVariants>)"
         },
         "source_evidence": {
@@ -6762,10 +7931,19 @@
         "field_gaps": [
           {
             "field": "signature.parameters",
-            "reason": "props type shape is not a local type reference or inline object type"
+            "reason": "props intersection member `React.ComponentProps<\"div\">` requires type resolution"
           }
         ],
         "signature": {
+          "parameters": [
+            {
+              "default": "false",
+              "name": "showIcon",
+              "required": false,
+              "type_kind": "boolean",
+              "type_text": "boolean"
+            }
+          ],
           "type_text": "function SidebarMenuSkeleton({\n  className,\n  showIcon = false,\n  ...props\n}: React.ComponentProps<\"div\"> & {\n  showIcon?: boolean\n})"
         },
         "source_evidence": {
@@ -6805,6 +7983,48 @@
     },
     {
       "details": {
+        "field_gaps": [
+          {
+            "field": "signature.parameters",
+            "reason": "props intersection member `useRender.ComponentProps<\"a\">` requires type resolution"
+          }
+        ],
+        "signature": {
+          "parameters": [
+            {
+              "allowed_values": [
+                "sm",
+                "md"
+              ],
+              "default": "\"md\"",
+              "name": "size",
+              "required": false,
+              "type_kind": "enum",
+              "type_text": "\"sm\" | \"md\""
+            },
+            {
+              "default": "false",
+              "name": "isActive",
+              "required": false,
+              "type_kind": "boolean",
+              "type_text": "boolean"
+            }
+          ],
+          "type_text": "function SidebarMenuSubButton({\n  render,\n  size = \"md\",\n  isActive = false,\n  className,\n  ...props\n}: useRender.ComponentProps<\"a\"> & {\n  size?: \"sm\" | \"md\"\n  isActive?: boolean\n})"
+        },
+        "source_evidence": {
+          "end_line": 712,
+          "path": "src/components/ui/sidebar.tsx",
+          "start_line": 679
+        },
+        "status": "partial"
+      },
+      "id": "ds.sidebar-menu-sub-button",
+      "package": "@/components/ui/sidebar",
+      "symbol": "SidebarMenuSubButton"
+    },
+    {
+      "details": {
         "signature": {
           "parameters": [
             {
@@ -6832,10 +8052,31 @@
         "field_gaps": [
           {
             "field": "signature.parameters",
-            "reason": "props type shape is not a local type reference or inline object type"
+            "reason": "props intersection member `React.ComponentProps<\"div\">` requires type resolution"
           }
         ],
         "signature": {
+          "parameters": [
+            {
+              "default": "true",
+              "name": "defaultOpen",
+              "required": false,
+              "type_kind": "boolean",
+              "type_text": "boolean"
+            },
+            {
+              "name": "open",
+              "required": false,
+              "type_kind": "boolean",
+              "type_text": "boolean"
+            },
+            {
+              "name": "onOpenChange",
+              "required": false,
+              "type_kind": "function",
+              "type_text": "(open: boolean) => void"
+            }
+          ],
           "type_text": "function SidebarProvider({\n  defaultOpen = true,\n  open: openProp,\n  onOpenChange: setOpenProp,\n  className,\n  style,\n  children,\n  ...props\n}: React.ComponentProps<\"div\"> & {\n  defaultOpen?: boolean\n  open?: boolean\n  onOpenChange?: (open: boolean) => void\n})"
         },
         "source_evidence": {
@@ -6973,10 +8214,23 @@
         "field_gaps": [
           {
             "field": "signature.parameters",
-            "reason": "props type shape is not a local type reference or inline object type"
+            "reason": "props intersection member `React.ComponentProps<typeof SwitchPrimitive.Root>` requires type resolution"
           }
         ],
         "signature": {
+          "parameters": [
+            {
+              "allowed_values": [
+                "sm",
+                "default"
+              ],
+              "default": "\"default\"",
+              "name": "size",
+              "required": false,
+              "type_kind": "enum",
+              "type_text": "\"sm\" | \"default\""
+            }
+          ],
           "type_text": "function Switch({\n  className,\n  size = \"default\",\n  ...props\n}: React.ComponentProps<typeof SwitchPrimitive.Root> & {\n  size?: \"sm\" | \"default\"\n})"
         },
         "source_evidence": {
@@ -7235,10 +8489,22 @@
         "field_gaps": [
           {
             "field": "signature.parameters",
-            "reason": "props type shape is not a local type reference or inline object type"
+            "reason": "props intersection member `React.ComponentProps<typeof TabsPrimitive.List>` requires type resolution"
           }
         ],
         "signature": {
+          "parameters": [
+            {
+              "allowed_values": [
+                "default",
+                "line"
+              ],
+              "default": "\"default\"",
+              "name": "variant",
+              "required": false,
+              "type_kind": "enum"
+            }
+          ],
           "type_text": "function TabsList({\n  className,\n  variant = \"default\",\n  ...props\n}: React.ComponentProps<typeof TabsPrimitive.List> &\n  VariantProps<typeof tabsListVariants>)"
         },
         "source_evidence": {
@@ -7535,10 +8801,33 @@
         "field_gaps": [
           {
             "field": "signature.parameters",
-            "reason": "props type shape is not a local type reference or inline object type"
+            "reason": "props intersection member `TogglePrimitive.Props` requires type resolution"
           }
         ],
         "signature": {
+          "parameters": [
+            {
+              "allowed_values": [
+                "default",
+                "outline"
+              ],
+              "default": "\"default\"",
+              "name": "variant",
+              "required": false,
+              "type_kind": "enum"
+            },
+            {
+              "allowed_values": [
+                "default",
+                "sm",
+                "lg"
+              ],
+              "default": "\"default\"",
+              "name": "size",
+              "required": false,
+              "type_kind": "enum"
+            }
+          ],
           "type_text": "function Toggle({\n  className,\n  variant = \"default\",\n  size = \"default\",\n  ...props\n}: TogglePrimitive.Props & VariantProps<typeof toggleVariants>)"
         },
         "source_evidence": {
@@ -7557,10 +8846,34 @@
         "field_gaps": [
           {
             "field": "signature.parameters",
-            "reason": "props type shape is not a local type reference or inline object type"
+            "reason": "props intersection member `ToggleGroupPrimitive.Props` requires type resolution"
+          },
+          {
+            "field": "signature.parameters",
+            "reason": "props intersection member `VariantProps<typeof toggleVariants>` requires type resolution"
           }
         ],
         "signature": {
+          "parameters": [
+            {
+              "default": "2",
+              "name": "spacing",
+              "required": false,
+              "type_kind": "number",
+              "type_text": "number"
+            },
+            {
+              "allowed_values": [
+                "horizontal",
+                "vertical"
+              ],
+              "default": "\"horizontal\"",
+              "name": "orientation",
+              "required": false,
+              "type_kind": "enum",
+              "type_text": "\"horizontal\" | \"vertical\""
+            }
+          ],
           "type_text": "function ToggleGroup({\n  className,\n  variant,\n  size,\n  spacing = 2,\n  orientation = \"horizontal\",\n  children,\n  ...props\n}: ToggleGroupPrimitive.Props &\n  VariantProps<typeof toggleVariants> & {\n    spacing?: number\n    orientation?: \"horizontal\" | \"vertical\"\n  })"
         },
         "source_evidence": {
@@ -7579,7 +8892,11 @@
         "field_gaps": [
           {
             "field": "signature.parameters",
-            "reason": "props type shape is not a local type reference or inline object type"
+            "reason": "props intersection member `TogglePrimitive.Props` requires type resolution"
+          },
+          {
+            "field": "signature.parameters",
+            "reason": "props intersection member `VariantProps<typeof toggleVariants>` requires type resolution"
           }
         ],
         "signature": {
@@ -7625,7 +8942,11 @@
         "field_gaps": [
           {
             "field": "signature.parameters",
-            "reason": "props type shape is not a local type reference or inline object type"
+            "reason": "props intersection member `React.ComponentProps<typeof TooltipPrimitive.Popup>` requires type resolution"
+          },
+          {
+            "field": "signature.parameters",
+            "reason": "props intersection member `Pick<\n    React.ComponentProps<typeof TooltipPrimitive.Positioner>,\n    \"align\" | \"alignOffset\" | \"side\" | \"sideOffset\"\n  >` requires type resolution"
           }
         ],
         "signature": {
@@ -7691,5 +9012,412 @@
       "symbol": "TooltipTrigger"
     }
   ],
-  "schema_version": 1
+  "schema_version": 1,
+  "tokens": [
+    {
+      "category": "unknown",
+      "details": {
+        "discovered_literal_value": "marquee 5s linear infinite",
+        "source_evidence": {
+          "end_line": 73,
+          "path": "src/styling/globals.css",
+          "start_line": 73
+        },
+        "status": "complete"
+      },
+      "id": "css.animate-marquee",
+      "key": "var(--animate-marquee)",
+      "value": "marquee 5s linear infinite"
+    },
+    {
+      "category": "unknown",
+      "details": {
+        "discovered_literal_value": "marquee2 5s linear infinite",
+        "source_evidence": {
+          "end_line": 74,
+          "path": "src/styling/globals.css",
+          "start_line": 74
+        },
+        "status": "complete"
+      },
+      "id": "css.animate-marquee2",
+      "key": "var(--animate-marquee2)",
+      "value": "marquee2 5s linear infinite"
+    },
+    {
+      "category": "unknown",
+      "details": {
+        "discovered_literal_value": "orbit 180s linear infinite",
+        "source_evidence": {
+          "end_line": 75,
+          "path": "src/styling/globals.css",
+          "start_line": 75
+        },
+        "status": "complete"
+      },
+      "id": "css.animate-orbit",
+      "key": "var(--animate-orbit)",
+      "value": "orbit 180s linear infinite"
+    },
+    {
+      "category": "unknown",
+      "details": {
+        "discovered_literal_value": "orbit 180s linear infinite reverse",
+        "source_evidence": {
+          "end_line": 76,
+          "path": "src/styling/globals.css",
+          "start_line": 76
+        },
+        "status": "complete"
+      },
+      "id": "css.animate-orbit-reverse",
+      "key": "var(--animate-orbit-reverse)",
+      "value": "orbit 180s linear infinite reverse"
+    },
+    {
+      "category": "color",
+      "details": {
+        "discovered_literal_value": "hsl(214, 95%, 93%)",
+        "source_evidence": {
+          "end_line": 46,
+          "path": "src/styling/globals.css",
+          "start_line": 46
+        },
+        "status": "complete"
+      },
+      "id": "css.color-background",
+      "key": "var(--color-background)",
+      "value": "hsl(214, 95%, 93%)"
+    },
+    {
+      "category": "color",
+      "details": {
+        "discovered_literal_value": "oklch(0% 0 0)",
+        "source_evidence": {
+          "end_line": 50,
+          "path": "src/styling/globals.css",
+          "start_line": 50
+        },
+        "status": "complete"
+      },
+      "id": "css.color-border",
+      "key": "var(--color-border)",
+      "value": "oklch(0% 0 0)"
+    },
+    {
+      "category": "color",
+      "details": {
+        "discovered_literal_value": "#5294ff",
+        "source_evidence": {
+          "end_line": 54,
+          "path": "src/styling/globals.css",
+          "start_line": 54
+        },
+        "status": "complete"
+      },
+      "id": "css.color-chart-1",
+      "key": "var(--color-chart-1)",
+      "value": "#5294ff"
+    },
+    {
+      "category": "color",
+      "details": {
+        "discovered_literal_value": "#ff4d50",
+        "source_evidence": {
+          "end_line": 55,
+          "path": "src/styling/globals.css",
+          "start_line": 55
+        },
+        "status": "complete"
+      },
+      "id": "css.color-chart-2",
+      "key": "var(--color-chart-2)",
+      "value": "#ff4d50"
+    },
+    {
+      "category": "color",
+      "details": {
+        "discovered_literal_value": "#facc00",
+        "source_evidence": {
+          "end_line": 56,
+          "path": "src/styling/globals.css",
+          "start_line": 56
+        },
+        "status": "complete"
+      },
+      "id": "css.color-chart-3",
+      "key": "var(--color-chart-3)",
+      "value": "#facc00"
+    },
+    {
+      "category": "color",
+      "details": {
+        "discovered_literal_value": "#05e17a",
+        "source_evidence": {
+          "end_line": 57,
+          "path": "src/styling/globals.css",
+          "start_line": 57
+        },
+        "status": "complete"
+      },
+      "id": "css.color-chart-4",
+      "key": "var(--color-chart-4)",
+      "value": "#05e17a"
+    },
+    {
+      "category": "color",
+      "details": {
+        "discovered_literal_value": "#7a83ff",
+        "source_evidence": {
+          "end_line": 58,
+          "path": "src/styling/globals.css",
+          "start_line": 58
+        },
+        "status": "complete"
+      },
+      "id": "css.color-chart-5",
+      "key": "var(--color-chart-5)",
+      "value": "#7a83ff"
+    },
+    {
+      "category": "color",
+      "details": {
+        "discovered_literal_value": "oklch(0% 0 0)",
+        "source_evidence": {
+          "end_line": 48,
+          "path": "src/styling/globals.css",
+          "start_line": 48
+        },
+        "status": "complete"
+      },
+      "id": "css.color-foreground",
+      "key": "var(--color-foreground)",
+      "value": "oklch(0% 0 0)"
+    },
+    {
+      "category": "color",
+      "details": {
+        "discovered_literal_value": "hsl(217, 100%, 66%)",
+        "source_evidence": {
+          "end_line": 45,
+          "path": "src/styling/globals.css",
+          "start_line": 45
+        },
+        "status": "complete"
+      },
+      "id": "css.color-main",
+      "key": "var(--color-main)",
+      "value": "hsl(217, 100%, 66%)"
+    },
+    {
+      "category": "color",
+      "details": {
+        "discovered_literal_value": "oklch(0% 0 0)",
+        "source_evidence": {
+          "end_line": 49,
+          "path": "src/styling/globals.css",
+          "start_line": 49
+        },
+        "status": "complete"
+      },
+      "id": "css.color-main-foreground",
+      "key": "var(--color-main-foreground)",
+      "value": "oklch(0% 0 0)"
+    },
+    {
+      "category": "color",
+      "details": {
+        "discovered_literal_value": "oklch(0% 0 0 / 0.8)",
+        "source_evidence": {
+          "end_line": 51,
+          "path": "src/styling/globals.css",
+          "start_line": 51
+        },
+        "status": "complete"
+      },
+      "id": "css.color-overlay",
+      "key": "var(--color-overlay)",
+      "value": "oklch(0% 0 0 / 0.8)"
+    },
+    {
+      "category": "color",
+      "details": {
+        "discovered_literal_value": "oklch(0% 0 0)",
+        "source_evidence": {
+          "end_line": 52,
+          "path": "src/styling/globals.css",
+          "start_line": 52
+        },
+        "status": "complete"
+      },
+      "id": "css.color-ring",
+      "key": "var(--color-ring)",
+      "value": "oklch(0% 0 0)"
+    },
+    {
+      "category": "color",
+      "details": {
+        "discovered_literal_value": "oklch(100% 0 0)",
+        "source_evidence": {
+          "end_line": 47,
+          "path": "src/styling/globals.css",
+          "start_line": 47
+        },
+        "status": "complete"
+      },
+      "id": "css.color-secondary-background",
+      "key": "var(--color-secondary-background)",
+      "value": "oklch(100% 0 0)"
+    },
+    {
+      "category": "typography",
+      "details": {
+        "discovered_literal_value": "500",
+        "source_evidence": {
+          "end_line": 70,
+          "path": "src/styling/globals.css",
+          "start_line": 70
+        },
+        "status": "complete"
+      },
+      "id": "css.font-weight-base",
+      "key": "var(--font-weight-base)",
+      "value": "500"
+    },
+    {
+      "category": "typography",
+      "details": {
+        "discovered_literal_value": "700",
+        "source_evidence": {
+          "end_line": 71,
+          "path": "src/styling/globals.css",
+          "start_line": 71
+        },
+        "status": "complete"
+      },
+      "id": "css.font-weight-heading",
+      "key": "var(--font-weight-heading)",
+      "value": "700"
+    },
+    {
+      "category": "radius",
+      "details": {
+        "discovered_literal_value": "5px",
+        "source_evidence": {
+          "end_line": 65,
+          "path": "src/styling/globals.css",
+          "start_line": 65
+        },
+        "status": "complete"
+      },
+      "id": "css.radius-base",
+      "key": "var(--radius-base)",
+      "value": "5px"
+    },
+    {
+      "category": "elevation",
+      "details": {
+        "discovered_literal_value": "4px 4px 0px 0px var(--border)",
+        "source_evidence": {
+          "end_line": 68,
+          "path": "src/styling/globals.css",
+          "start_line": 68
+        },
+        "status": "complete"
+      },
+      "id": "css.shadow-nav",
+      "key": "var(--shadow-nav)",
+      "value": "4px 4px 0px 0px var(--border)"
+    },
+    {
+      "category": "elevation",
+      "details": {
+        "discovered_literal_value": "var(--box-shadow-x) var(--box-shadow-y) 0px 0px var(--border)",
+        "source_evidence": {
+          "end_line": 67,
+          "path": "src/styling/globals.css",
+          "start_line": 67
+        },
+        "status": "complete"
+      },
+      "id": "css.shadow-shadow",
+      "key": "var(--shadow-shadow)",
+      "value": "var(--box-shadow-x) var(--box-shadow-y) 0px 0px var(--border)"
+    },
+    {
+      "category": "spacing",
+      "details": {
+        "discovered_literal_value": "4px",
+        "source_evidence": {
+          "end_line": 60,
+          "path": "src/styling/globals.css",
+          "start_line": 60
+        },
+        "status": "complete"
+      },
+      "id": "css.spacing-boxShadowX",
+      "key": "var(--spacing-boxShadowX)",
+      "value": "4px"
+    },
+    {
+      "category": "spacing",
+      "details": {
+        "discovered_literal_value": "4px",
+        "source_evidence": {
+          "end_line": 61,
+          "path": "src/styling/globals.css",
+          "start_line": 61
+        },
+        "status": "complete"
+      },
+      "id": "css.spacing-boxShadowY",
+      "key": "var(--spacing-boxShadowY)",
+      "value": "4px"
+    },
+    {
+      "category": "spacing",
+      "details": {
+        "discovered_literal_value": "1300px",
+        "source_evidence": {
+          "end_line": 78,
+          "path": "src/styling/globals.css",
+          "start_line": 78
+        },
+        "status": "complete"
+      },
+      "id": "css.spacing-container",
+      "key": "var(--spacing-container)",
+      "value": "1300px"
+    },
+    {
+      "category": "spacing",
+      "details": {
+        "discovered_literal_value": "-4px",
+        "source_evidence": {
+          "end_line": 62,
+          "path": "src/styling/globals.css",
+          "start_line": 62
+        },
+        "status": "complete"
+      },
+      "id": "css.spacing-reverseBoxShadowX",
+      "key": "var(--spacing-reverseBoxShadowX)",
+      "value": "-4px"
+    },
+    {
+      "category": "spacing",
+      "details": {
+        "discovered_literal_value": "-4px",
+        "source_evidence": {
+          "end_line": 63,
+          "path": "src/styling/globals.css",
+          "start_line": 63
+        },
+        "status": "complete"
+      },
+      "id": "css.spacing-reverseBoxShadowY",
+      "key": "var(--spacing-reverseBoxShadowY)",
+      "value": "-4px"
+    }
+  ]
 }

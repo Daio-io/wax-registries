@@ -7,10 +7,18 @@
     "source_root": "apps/v4/registry/bases/radix/ui"
   },
   "generation": {
-    "command": "wax registry discover --design-system shadcn --name 'shadcn/ui' --language react --root ui --dry-run",
-    "wax_version": "0.11.0-alpha1",
-    "react_pack_version": "0.11.0-alpha1",
-    "import_pattern": "@/components/ui/<file>"
+    "command": "wax registry discover --design-system shadcn --name 'shadcn/ui' --language react --root ui --root styles --dry-run",
+    "wax_version": "0.12.0-alpha1",
+    "react_pack_version": "0.12.0-alpha1",
+    "import_pattern": "@/components/ui/<file>",
+    "tailwind_theme": {
+      "source": "apps/v4/content/docs/installation/manual.mdx",
+      "start_line": 72,
+      "end_line": 196,
+      "projection": "styles/globals.css",
+      "note": "The shadcn CLI generates the theme CSS at init, so discovery reads the globals.css block from the manual installation guide. Token evidence lines point at the guide."
+    }
   },
-  "component_count": 353
+  "component_count": 356,
+  "token_count": 39
 }

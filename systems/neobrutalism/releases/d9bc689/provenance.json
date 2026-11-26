@@ -4,17 +4,19 @@
     "repository": "https://github.com/ekmas/neobrutalism-components",
     "tag": null,
     "commit": "d9bc68914485a1d7761c7c48a7d10c23844e8468",
-    "source_root": "src/components/ui"
+    "source_root": "src/components/ui",
+    "theme_root": "src/styling"
   },
   "generation": {
-    "command": "wax registry discover --design-system neobrutalism --name 'Neobrutalism Components' --language react --root ui",
-    "wax_version": "0.11.0-alpha1",
-    "react_pack_version": "0.11.0-alpha1",
+    "command": "wax registry discover --design-system neobrutalism --name 'Neobrutalism Components' --language react --root ui --root src/styling --dry-run",
+    "wax_version": "0.12.0-alpha1",
+    "react_pack_version": "0.12.0-alpha1",
     "import_pattern": "@/components/ui/<file>",
     "excluded_files": [
       "src/components/ui/combobox.tsx",
       "src/components/ui/data-table.tsx"
     ]
   },
-  "component_count": 326
+  "component_count": 342,
+  "token_count": 27
 }
